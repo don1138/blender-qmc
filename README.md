@@ -2,7 +2,7 @@
 
 **Blender Add-on which sets a Material's Base Color to one of Pantone's Colors of the Year.**
 
-<!-- ![Blender QLE Screenshot](https://github.com/don1138/blender-qmm/blob/main/blender-qmm.jpg) -->
+![Blender PCOY Screenshot](https://github.com/don1138/blender-pcoy/blob/main/blender-pcoy.jpg)
 
 ## Installation
 
