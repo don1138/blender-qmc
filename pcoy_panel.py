@@ -54,7 +54,6 @@ def hex_to_rgb(h,alpha=1):
 def pantone_color(hex):
     material = bpy.context.object.active_material
     BSDF = material.node_tree.nodes.get('Principled BSDF')
-    #BSDF.inputs[0].default_value = (0.607, 0.717, 0.831, 1)
     BSDF.inputs[0].default_value = hex_to_rgb(hex)
     material.diffuse_color = hex_to_rgb(hex)
 
@@ -504,5 +503,5 @@ if __name__ == "__main__":
 
 
 #LIST NODE OUTPUTS
-#for i, o in enumerate(BSDF.nputs):
+#for i, o in enumerate(BSDF.inputs):
 #    print(i, o.name)
