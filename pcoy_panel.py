@@ -18,7 +18,7 @@
 
 
 bl_info = {
-    "name"       : "PCOY (Pantone Colors of the Year)",
+    "name"       : "PCOY (Pantone Color of the Year)",
     "description": "    ",
     "author"     : "Don Schnitzius",
     "version"    : (0, 1, 0),
