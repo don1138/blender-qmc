@@ -18,7 +18,7 @@ Select an object in your view, and click a button to assign that color to it.
 
 **This add-on does one very specific thing:**
 
-It sets the Base Color of the Principled BSDF Shader node specifically named "Principled BSDF" -- which is created by default with all new materials -- and also the Object's Viewport Display Color to one of the colors that Pantone has named Color of the Year.
+It sets the Base Color of the Principled BSDF Shader node specifically named "Principled BSDF" -- which is created by default with all new materials -- to one of the colors that Pantone has named Color of the Year. It also sets the Object's Viewport Display Color to the same color.
 
 This add-on will only affect the Active Material of the Currently Sleected Object.
 
