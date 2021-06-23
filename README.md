@@ -1,6 +1,6 @@
 # Blender PCOY (Pantone Color of the Year)
 
-## Blender Add-on Which Sets a Material's Base Color to One of Pantone's Colors of the Year.
+#### A Blender Add-on That Sets a Material's Base Color to One of Pantone's Colors of the Year.
 
 ![Blender PCOY Screenshot](https://github.com/don1138/blender-pcoy/blob/main/blender-pcoy.jpg)
 
