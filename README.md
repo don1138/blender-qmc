@@ -1,6 +1,6 @@
 # Blender PCOY (Pantone Color of the Year)
 
-**Blender Add-on which sets a Material's Base Color to one of Pantone's Colors of the Year.
+**Blender Add-on which sets a Material's Base Color to one of Pantone's Colors of the Year.**
 
 <!-- ![Blender QLE Screenshot](https://github.com/don1138/blender-qmm/blob/main/blender-qmm.jpg) -->
 
@@ -37,7 +37,7 @@ And because my swipe file has a bunch of Pantone swatches gathering dust, so I t
 
 ## Okay, Yeah, But Are These Colors Actually of Any Practical Use?
 
-**Jeez, mate -- IDK. You're riding me pretty hard here over an open-source freebie.
+**Jeez, mate -- IDK. You're riding me pretty hard here over an open-source freebie.**
 
 Look, they're too harsh and saturated for large objects, but some of them pop nicely when used for details.
 
