@@ -506,35 +506,3 @@ if __name__ == "__main__":
 #LIST NODE OUTPUTS
 #for i, o in enumerate(BSDF.nputs):
 #    print(i, o.name)
-
-#Pantone Color of the Year
-  #pcoy2000  = 0x9BB7D4    #Cerulean Blue
-  #pcoy2001  = 0xC74375    #Fuschia Rose
-  #pcoy2002  = 0xBF1932    #True Red
-  #pcoy2003  = 0x7BC4C4    #Aqua Sky
-  #pcoy2004  = 0xE2583E    #Tigerlily
-  #pcoy2005  = 0x53B0AE    #Blue Turquoise
-  #pcoy2006  = 0xDECDBE    #Sand Dollar
-  #pcoy2007  = 0x9B1B30    #Chili Pepper
-  #pcoy2008  = 0x5A5B9F    #Blue Iris
-  #pcoy2009  = 0xF0C05A    #Mimosa
-  #pcoy2010  = 0x45B5AA    #Turquoise
-  #pcoy2011  = 0xD94F70    #Honeysuckle
-  #pcoy2012  = 0xDD4124    #Tangerine
-  #pcoy2013  = 0x009473    #Emerald
-  #pcoy2014  = 0xB163A3    #Radiant Orchid
-  #pcoy2015  = 0x955251    #Marsala
-  #pcoy2016a = 0xF7CAC9    #Rose Quartz
-  #pcoy2016b = 0x92A8D1    #Serenity
-  #pcoy2017  = 0x88B04B    #Greenery
-  #pcoy2018  = 0x5F4B8B    #Ultra Violet
-  #pcoy2019  = 0xFF6F61    #Living Coral
-  #pcoy2020  = 0x0F4C81    #Classic Blue
-  #pcoy2021a = 0x949597    #Ultimate Gray
-  #pcoy2021b = 0xF5DF4D    #Illuminating
-  #pmsprince = 0x493452    #Prince
-  #pmsconan  = 0xFE7A0B    #Team Coco Orange
-  #pmsbcoral = 0xF4F7FC    #Bleached Coral
-  #pmsdcoral = 0xA7997E    #Dead Coral
-  #pmsuwign  = 0xFC502E    #United Way Unignorable
-  #pms383    = 0xD0DF68    #a nice green
