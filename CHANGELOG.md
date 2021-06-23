@@ -2,34 +2,34 @@
 - Create Add-on
 - Assign Colors
   - Pantone Color of the Year
-    - PCOY 2000  Cerulean Blue      #9BB7D4
-    - PCOY 2001  Fuschia Rose       #C74375
-    - PCOY 2002  True Red           #BF1932
-    - PCOY 2003  Aqua Sky           #7BC4C4
-    - PCOY 2004  Tigerlily          #E2583E
-    - PCOY 2005  Blue Turquoise     #53B0AE
-    - PCOY 2006  Sand Dollar        #DECDBE
-    - PCOY 2007  Chili Pepper       #9B1B30
-    - PCOY 2008  Blue Iris          #5A5B9F
-    - PCOY 2009  Mimosa             #F0C05A
-    - PCOY 2010  Turquoise          #45B5AA
-    - PCOY 2011  Honeysuckle        #D94F70
-    - PCOY 2012  Tangerine          #DD4124
-    - PCOY 2013  Emerald            #009473
-    - PCOY 2014  Radiant Orchid     #B163A3
-    - PCOY 2015  Marsala            #955251
-    - PCOY 2016  Rose Quartz        #F7CAC9
-    - PCOY 2016  Serenity           #92A8D1
-    - PCOY 2017  Greenery           #88B04B
-    - PCOY 2018  Ultra Violet       #5F4B8B
-    - PCOY 2019  Living Coral       #FF6F61
-    - PCOY 2020  Classic Blue       #0F4C81
-    - PCOY 2021  Ultimate Gray      #949597
-    - PCOY 2021  Illuminating       #F5DF4D
+    - PCOY 2000  Cerulean Blue      <!-- #9BB7D4 -->
+    - PCOY 2001  Fuschia Rose       <!-- #C74375 -->
+    - PCOY 2002  True Red           <!-- #BF1932 -->
+    - PCOY 2003  Aqua Sky           <!-- #7BC4C4 -->
+    - PCOY 2004  Tigerlily          <!-- #E2583E -->
+    - PCOY 2005  Blue Turquoise     <!-- #53B0AE -->
+    - PCOY 2006  Sand Dollar        <!-- #DECDBE -->
+    - PCOY 2007  Chili Pepper       <!-- #9B1B30 -->
+    - PCOY 2008  Blue Iris          <!-- #5A5B9F -->
+    - PCOY 2009  Mimosa             <!-- #F0C05A -->
+    - PCOY 2010  Turquoise          <!-- #45B5AA -->
+    - PCOY 2011  Honeysuckle        <!-- #D94F70 -->
+    - PCOY 2012  Tangerine          <!-- #DD4124 -->
+    - PCOY 2013  Emerald            <!-- #009473 -->
+    - PCOY 2014  Radiant Orchid     <!-- #B163A3 -->
+    - PCOY 2015  Marsala            <!-- #955251 -->
+    - PCOY 2016  Rose Quartz        <!-- #F7CAC9 -->
+    - PCOY 2016  Serenity           <!-- #92A8D1 -->
+    - PCOY 2017  Greenery           <!-- #88B04B -->
+    - PCOY 2018  Ultra Violet       <!-- #5F4B8B -->
+    - PCOY 2019  Living Coral       <!-- #FF6F61 -->
+    - PCOY 2020  Classic Blue       <!-- #0F4C81 -->
+    - PCOY 2021  Ultimate Gray      <!-- #949597 -->
+    - PCOY 2021  Illuminating       <!-- #F5DF4D -->
   - Extras & Apocrypha
-    - Bleached Coral                #F4F7FC
-    - Dead Coral                    #A7997E
-    - Custom Prince Purple          #493452
-    - Custom Team Coco Orange       #FE7A0B
-    - Custom United Way Unignorable #FC502E
-    - Pantone 383 A Nice Green      #D0DF68
+    - Bleached Coral                <!-- #F4F7FC -->
+    - Dead Coral                    <!-- #A7997E -->
+    - Custom Prince Purple          <!-- #493452 -->
+    - Custom Team Coco Orange       <!-- #FE7A0B -->
+    - Custom United Way Unignorable <!-- #FC502E -->
+    - Pantone 383 A Nice Green      <!-- #D0DF68 -->
