@@ -39,7 +39,7 @@ And because my swipe file has a bunch of Pantone swatches gathering dust, so may
 
 IDK, mate. They're pretty harsh for large objects, but some of them pop nicely when used for details.
 
-And if you have need of (The Ugliest Color in the World)[https://www.huffpost.com/entry/ugliest-color-pantone_n_57570df6e4b0ca5c7b504538], for dirt, cracks or crevices, you're covered.
+And if you have need of [The Ugliest Color in the World](https://www.huffpost.com/entry/ugliest-color-pantone_n_57570df6e4b0ca5c7b504538), for dirt, cracks or crevices, you're covered.
 
 <!-- ## Online Presence
 
