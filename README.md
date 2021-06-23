@@ -29,7 +29,7 @@ This add-on will only affect the Active Material of the Currently Sleected Objec
 
 ## Why Did I Make This Add-on?
 
-**Because I wanted to.** 🎤💥🤯
+**Because I wanted to!** 🎤💥🤯
 
 And because I wanted to figure out how to do this in Python.
 
