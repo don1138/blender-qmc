@@ -12,15 +12,15 @@ Install via ``Edit > Preferences > Add-ons > Install…``.
 
 ## Usage
 
-This add-on creates a panel named **Pantone Color of the Year** under ``3D Viewport > Sidebar > PCOY``.
+This add-on creates a Panel named **Pantone Color of the Year** under ``3D Viewport > Sidebar > PCOY``.
 
-Select an object in your view, and click a button to assign that color to it.
+Select an Object in your view, and click a Button to assign it a color.
 
 ## Caveats & Warnings
 
 **This add-on does one very specific thing:**
 
-It sets the Base Color of the Principled BSDF Shader node specifically named "Principled BSDF" -- which is created by default with all new materials -- to one of the colors that Pantone has named Color of the Year. It also sets the Object's Viewport Display Color to the same color.
+It sets the Base Color of the Principled BSDF Shader node specifically named "Principled BSDF" -- which is created by default with all new materials -- to one of the colors that Pantone has named Color of the Year. It also sets the Viewport Display Color to the same color.
 
 **This add-on will only affect the Active Material of the Currently Selected Object.**
 
