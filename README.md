@@ -6,7 +6,9 @@
 
 ## Installation
 
-Download ``pcoy_panel.py`` and install it via ``Edit > Preferences > Add-ons > Install…``.
+Download the latest ZIP for **Releases** or grab ``pcoy_panel.py`` from the repo.
+
+Install via ``Edit > Preferences > Add-ons > Install…``.
 
 ## Usage
 
