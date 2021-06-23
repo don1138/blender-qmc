@@ -1,8 +1,8 @@
 # Blender PCOY (Pantone Color of the Year)
 
-**Blender Add-on which sets a Material's Base Color to one of Pantone's Colors of the Year.**
+### A Blender Add-on That Sets a Material's Base Color to One of Pantone's Colors of the Year.
 
-<!-- ![Blender QLE Screenshot](https://github.com/don1138/blender-qmm/blob/main/blender-qmm.jpg) -->
+![Blender PCOY Screenshot](https://github.com/don1138/blender-pcoy/blob/main/blender-pcoy.jpg)
 
 ## Installation
 
@@ -18,9 +18,9 @@ Select an object in your view, and click a button to assign that color to it.
 
 **This add-on does one very specific thing:**
 
-It sets the Base Color of the Principled BSDF Shader node specifically named "Principled BSDF" -- which is created by default with all new materials -- and also the Object's Viewport Display Color to one of the colors that Pantone has named Color of the Year.
+It sets the Base Color of the Principled BSDF Shader node specifically named "Principled BSDF" -- which is created by default with all new materials -- to one of the colors that Pantone has named Color of the Year. It also sets the Object's Viewport Display Color to the same color.
 
-This add-on will only affect the Active Material of the Currently Sleected Object.
+**This add-on will only affect the Active Material of the Currently Sleected Object.**
 
 - If no Object is seleceted, the add-on may error out.
 - If the Active Material does not include a Principled BSDF Shader named "Principled BSDF", the add-on will error out.
