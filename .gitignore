@@ -1,5 +1,3 @@
-# Byte-compiled / optimized / DLL files
-__pycache__
 
-# Distribution / packaging
-.zip
+.DS_Store
+*.zip
