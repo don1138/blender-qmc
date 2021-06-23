@@ -12,7 +12,7 @@ Install via ``Edit > Preferences > Add-ons > Install…``.
 
 ## Usage
 
-This addon creates a panel named **Pantone Color of the Year** under ``3D Viewport > Sidebar > PCOY``.
+This add-on creates a panel named **Pantone Color of the Year** under ``3D Viewport > Sidebar > PCOY``.
 
 Select an object in your view, and click a button to assign that color to it.
 
