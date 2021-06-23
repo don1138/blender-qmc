@@ -29,17 +29,21 @@ This add-on will only affect the Active Material of the Currently Sleected Objec
 
 ## Why Did I Make This Add-on?
 
-**Because I wanted to.**
+**Because I wanted to!** 🎤💥🤯
 
-And because I wanted to figure out how to do this task in Python.
+And because I wanted to figure out how to do this in Python.
 
-And because my swipe file has a bunch of Pantone swatches gathering dust, so maybe this will help me put them to practical use.
+And because my swipe file has a bunch of Pantone swatches gathering dust, so I thought that maybe this might help me put them to practical use.
 
-## Are Any of These Colors of Practical Use?
+## Okay, Yeah, But Are These Colors Actually of Any Practical Use?
 
-IDK, mate. They're pretty harsh for large objects, but some of them pop nicely when used for details.
+**Jeez, mate -- IDK. You're riding me pretty hard here over an open-source freebie.**
 
-And if you have need of (The Ugliest Color in the World)[https://www.huffpost.com/entry/ugliest-color-pantone_n_57570df6e4b0ca5c7b504538], for dirt, cracks or crevices, you're covered.
+Look, they're too harsh and saturated for large objects, but some of them pop nicely when used for details.
+
+Or use them as a starting point, and tweak them into something better. Cut the saturation by 50-75% and see what you get.
+
+And if you have need of [The Ugliest Color in the World](https://www.huffpost.com/entry/ugliest-color-pantone_n_57570df6e4b0ca5c7b504538) for dirt, cracks, or crevices, you're covered.
 
 <!-- ## Online Presence
 
