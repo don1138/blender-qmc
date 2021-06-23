@@ -41,7 +41,7 @@ And because my swipe file has a bunch of Pantone swatches gathering dust, so I t
 
 Look, they're too harsh and saturated for large objects, but some of them pop nicely when used for details.
 
-Or use them as a starting point, and tweak them into something better. I like them better when I cut the saturation by 50-75%.
+Or use them as a starting point, and tweak them into something better. Cut the saturation by 50-75% and see what you get.
 
 And if you have need of [The Ugliest Color in the World](https://www.huffpost.com/entry/ugliest-color-pantone_n_57570df6e4b0ca5c7b504538) for dirt, cracks, or crevices, you're covered.
 
