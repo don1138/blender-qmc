@@ -14,9 +14,9 @@ Install via ``Edit > Preferences > Add-ons > Install…``.
 
 ## Usage
 
-PCOY creates a Panel named **Pantone Color of the Year** under ``3D Viewport > Sidebar > PCOY``.
+**PCOY** creates a Panel named **Pantone Color of the Year** under ``3D Viewport > Sidebar > PCOY``.
 
-MCMC creates a Panel named **Mid-Century Modern Colors** under ``3D Viewport > Sidebar > MCMC``.
+**MCMC** creates a Panel named **Mid-Century Modern Colors** under ``3D Viewport > Sidebar > MCMC``.
 
 Select an Object in your view, and click a button to assign that color to it.
 
