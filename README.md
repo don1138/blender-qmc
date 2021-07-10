@@ -1,12 +1,14 @@
-# Blender PCOY (Pantone Color of the Year) and MCM (Mid-Century Modern Colors)
+# Blender PCOY (Pantone Color of the Year) and MCMC (Mid-Century Modern Colors)
 
 ### Blender Add-ons That Assign a Custom Color to a Principled BSDF's Base Color.
 
 ![Blender PCOY Screenshot](https://github.com/don1138/blender-pcoy/blob/main/blender-pcoy.jpg)
 
+![Blender PCOY Screenshot](https://github.com/don1138/blender-pcoy/blob/main/blender-mcmc.jpg)
+
 ## Installation
 
-Download the latest ZIPs from **Releases** or grab ``pcoy_panel.py`` and ``mcm_panel.py`` from the repo.
+Download the latest ZIPs from **Releases** or grab ``pcoy_panel.py`` and ``mcmc_panel.py`` from the repo.
 
 Install via ``Edit > Preferences > Add-ons > Install…``.
 
@@ -14,7 +16,7 @@ Install via ``Edit > Preferences > Add-ons > Install…``.
 
 PCOY creates a Panel named **Pantone Color of the Year** under ``3D Viewport > Sidebar > PCOY``.
 
-MCM creates a Panel named **Mid-Century Modern Colors** under ``3D Viewport > Sidebar > MCM``.
+MCMC creates a Panel named **Mid-Century Modern Colors** under ``3D Viewport > Sidebar > MCMC``.
 
 Select an Object in your view, and click a button to assign that color to it.
 
@@ -41,7 +43,7 @@ Or use them as a starting point, and tweak them into something better. Cut the s
 
 [**The Ugliest Color in the World**](https://www.huffpost.com/entry/ugliest-color-pantone_n_57570df6e4b0ca5c7b504538) is nice for for dirt, cracks, or crevices, you're covered.
 
-The MCM colors are pretty good as-is.
+The MCMC colors are pretty good as-is.
 
 ## Attributions
 
