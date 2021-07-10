@@ -18,12 +18,12 @@
 
 
 bl_info = {
-    "name"       : "MCM (Mid-Century Modern)",
+    "name"       : "MCMCC (Mid-Century Modern Colors)",
     "description": "Sets the Base Color of a Principled BSDF",
     "author"     : "Don Schnitzius",
     "version"    : (0, 1, 0),
     "blender"    : (2, 80, 0),
-    "location"   : "3D Viewport > Sidebar > MCM",
+    "location"   : "3D Viewport > Sidebar > MCMC",
     "warning"    : "WIP",
     "wiki_url"   : "https://github.com/don1138/blender-pcoy",
     "support"    : "COMMUNITY",
@@ -300,7 +300,7 @@ class COBBLESTONE_STREETS(bpy.types.Operator):
 
 
 # BOOLEAN FOR PANEL
-class MCM_SETTINGS(bpy.types.PropertyGroup):
+class MCMC_SETTINGS(bpy.types.PropertyGroup):
     rename_material: bpy.props.BoolProperty(
         name='Rename Material',
         default=False
@@ -309,12 +309,12 @@ class MCM_SETTINGS(bpy.types.PropertyGroup):
 
 
 # PARENT PANEL
-class MCMPanel(bpy.types.Panel):
-    bl_idname = "MCM_PT_Panel"
+class MCMCPanel(bpy.types.Panel):
+    bl_idname = "MCMC_PT_Panel"
     bl_label = "Mid-Century Modern Colors"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MCM"
+    bl_category = "MCMC"
 
     def draw(self, context):
         layout = self.layout
@@ -329,8 +329,8 @@ class YELLOWS(bpy.types.Panel):
     bl_label = "Golden Yellow"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MCM"
-    bl_parent_id = 'MCM_PT_Panel'
+    bl_category = "MCMC"
+    bl_parent_id = 'MCMC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
@@ -350,8 +350,8 @@ class BLUES(bpy.types.Panel):
     bl_label = "Serena Aqua"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MCM"
-    bl_parent_id = 'MCM_PT_Panel'
+    bl_category = "MCMC"
+    bl_parent_id = 'MCMC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
@@ -371,8 +371,8 @@ class GREENS(bpy.types.Panel):
     bl_label = "Olive Green & Wasabi"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MCM"
-    bl_parent_id = 'MCM_PT_Panel'
+    bl_category = "MCMC"
+    bl_parent_id = 'MCMC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
@@ -394,8 +394,8 @@ class REDS(bpy.types.Panel):
     bl_label = "Pops of Red"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MCM"
-    bl_parent_id = 'MCM_PT_Panel'
+    bl_category = "MCMC"
+    bl_parent_id = 'MCMC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
@@ -415,8 +415,8 @@ class ORANGES(bpy.types.Panel):
     bl_label = "Tangerine and Ochre"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MCM"
-    bl_parent_id = 'MCM_PT_Panel'
+    bl_category = "MCMC"
+    bl_parent_id = 'MCMC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
@@ -436,8 +436,8 @@ class GRAYS(bpy.types.Panel):
     bl_label = "Pewter Gray"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MCM"
-    bl_parent_id = 'MCM_PT_Panel'
+    bl_category = "MCMC"
+    bl_parent_id = 'MCMC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
@@ -457,8 +457,8 @@ class BROWNS(bpy.types.Panel):
     bl_label = "Soft and Earthy Brown"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MCM"
-    bl_parent_id = 'MCM_PT_Panel'
+    bl_category = "MCMC"
+    bl_parent_id = 'MCMC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
@@ -474,8 +474,8 @@ class BROWNS(bpy.types.Panel):
 
 
 classes = [
-    MCM_SETTINGS,
-    MCMPanel,
+    MCMC_SETTINGS,
+    MCMCPanel,
     GINGER_ALE,
     PABLO_HONEY,
     MIAMI_PARASOL,
@@ -525,7 +525,7 @@ def register():
     for cls in classes:
 #        addon_updater_ops.make_annotations(cls)  # Avoid blender 2.8 warnings.
         bpy.utils.register_class(cls)
-        bpy.types.Scene.my_bool = bpy.props.PointerProperty(type=MCM_SETTINGS)
+        bpy.types.Scene.my_bool = bpy.props.PointerProperty(type=MCMC_SETTINGS)
 
 
 def unregister():
