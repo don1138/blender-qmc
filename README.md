@@ -12,11 +12,11 @@ Install via ``Edit > Preferences > Add-ons > Install…``.
 
 ## Usage
 
-PCOY creates a panel named **Pantone Color of the Year** under ``3D Viewport > Sidebar > PCOY``.
+PCOY creates a Panel named **Pantone Color of the Year** under ``3D Viewport > Sidebar > PCOY``.
 
-MCM creates a panel named **Mid-Century Modern Colors** under ``3D Viewport > Sidebar > MCM``.
+MCM creates a Panel named **Mid-Century Modern Colors** under ``3D Viewport > Sidebar > MCM``.
 
-Select an object in your view, and click a button to assign that color to it.
+Select an Object in your view, and click a button to assign that color to it.
 
 Set the ``Rename Material`` checkbox to ``True`` to update the material name.
 
@@ -24,11 +24,11 @@ Set the ``Rename Material`` checkbox to ``True`` to update the material name.
 
 **This add-on does one very specific thing:**
 
-It sets the Base Color of the Principled BSDF Shader node specifically named "Principled BSDF" -- which is created by default with all new materials -- to one of the colors that Pantone has named Color of the Year. It also sets the Object's Viewport Display Color to the same color.
+It sets the Base Color of the Principled BSDF Shader node specifically named "Principled BSDF" -- which is created by default with all new materials -- to a custom color. It also sets the Object's Viewport Display Color to the same color.
 
-**This add-on will only affect the Active Material of the Currently Sleected Object.**
+**This add-on will only affect the Active Material of the Currently Selected Object.**
 
-- If no Object is seleceted, the add-on may error out.
+- If no Object is selected, the add-on may error out.
 - If the Active Material does not include a Principled BSDF Shader named "Principled BSDF", the add-on will error out.
 - If the Active Material does include a Principled BSDF Shader named "Principled BSDF", but it is not directly connected to the Material Output, the Object's color may or may not be affected.
 - If the Active Material does include a Principled BSDF Shader named "Principled BSDF", and is directly connected to the Material Output node, but the Base Color Input is connected to the Output of another node, the Object's color will be unaffected.
