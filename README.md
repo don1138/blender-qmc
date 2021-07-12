@@ -37,11 +37,11 @@ The operation will fail if:
 
 ## Notes
 
-The PMOY colors can be too harsh and saturated for large objects, but some of them pop nicely when used for details. Or use them as a starting point, and tweak them into something better. Cut the saturation by 50-75% and see what you get.
+The **PMOY** colors can be too harsh and saturated for large objects, but some of them pop nicely when used for details. Or use them as a starting point, and tweak them into something better. Cut the saturation by 50-75% and see what you get.
 
 I use **Sand Dollar** a lot. [**The Ugliest Color in the World**](https://www.huffpost.com/entry/ugliest-color-pantone_n_57570df6e4b0ca5c7b504538) is nice for for dirt, cracks, or crevices.
 
-The MCMC colors are rather nice just as they are.
+The **MCMC** colors are rather nice just as they are.
 
 ## Attributions
 
