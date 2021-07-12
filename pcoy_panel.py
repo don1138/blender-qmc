@@ -21,7 +21,7 @@ bl_info = {
     "name"       : "PCOY (Pantone Color of the Year)",
     "description": "Sets the Base Color of a Principled BSDF",
     "author"     : "Don Schnitzius",
-    "version"    : (0, 2, 0),
+    "version"    : (0, 2, 1),
     "blender"    : (2, 80, 0),
     "location"   : "3D Viewport > Sidebar > PCOY",
     "warning"    : "WIP",
@@ -33,6 +33,19 @@ bl_info = {
 
 
 import bpy
+
+
+
+# MESSAGE BOX
+
+no_material = "No Compatable Material Found"
+no_bsdf = "No Principled BSDF Shader Found"
+def ShowMessageBox(message = "", title = "", icon = 'INFO'):
+    def draw(self, context):
+        self.layout.label(text=message)
+    bpy.context.window_manager.popup_menu(draw, title = title, icon = icon)
+
+
 
 # HEX TO RGB CALCS
 
@@ -53,12 +66,20 @@ def hex_to_rgb(h,alpha=1):
 
 def set_base_color(hex, mat_name):
     material = bpy.context.object.active_material
-    mat_bool = bpy.context.scene.my_bool.rename_material
-    BSDF = material.node_tree.nodes.get('Principled BSDF')
-    BSDF.inputs[0].default_value = hex_to_rgb(hex)
-    material.diffuse_color = hex_to_rgb(hex)
-    if mat_bool == True:
-        material.name = mat_name
+    if material:
+        mat_bool = bpy.context.scene.my_bool.rename_material
+        BSDF = material.node_tree.nodes.get('Principled BSDF')
+        if BSDF:
+            BSDF.inputs[0].default_value = hex_to_rgb(hex)
+            material.diffuse_color = hex_to_rgb(hex)
+            if mat_bool == True:
+                material.name = mat_name
+        else:
+            ShowMessageBox(no_bsdf, "Unable To Comply")
+            return {'FINISHED'}
+    else:
+        ShowMessageBox(no_material, "Unable To Comply")
+        return {'FINISHED'}
 
 
 

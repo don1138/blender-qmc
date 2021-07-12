@@ -1,5 +1,8 @@
 ## Pantone Color of the Year
 
+### 0.2.1
+- Add Error Detection
+
 ### 0.2.0
 - Add Rename Material boolean
 
@@ -70,6 +73,9 @@
     <!-- #4A412A -->
 
 ## Mid-Century Modern
+
+### 0.1.1
+- Add Error Detection
 
 ### 0.1.0
 - Create Add-on
