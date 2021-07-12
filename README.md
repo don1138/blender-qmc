@@ -30,10 +30,10 @@ It sets the Base Color of the Principled BSDF Shader node specifically named "Pr
 
 **This add-on will only affect the Active Material of the Currently Selected Object.**
 
-- If no Object is selected, the add-on may error out.
-- If the Active Material does not include a Principled BSDF Shader named "Principled BSDF", the add-on will error out.
-- If the Active Material does include a Principled BSDF Shader named "Principled BSDF", but it is not directly connected to the Material Output, the Object's color may or may not be affected.
-- If the Active Material does include a Principled BSDF Shader named "Principled BSDF", and is directly connected to the Material Output node, but the Base Color Input is connected to the Output of another node, the Object's color will be unaffected.
+The operation will fail if:
+- No Object is selected
+- The Active Object has no Material
+- The Active Material does not include a Principled BSDF Shader named "Principled BSDF"
 
 ## Notes
 
@@ -41,7 +41,7 @@ The PMOY colors can be too harsh and saturated for large objects, but some of th
 
 I use **Sand Dollar** a lot. [**The Ugliest Color in the World**](https://www.huffpost.com/entry/ugliest-color-pantone_n_57570df6e4b0ca5c7b504538) is nice for for dirt, cracks, or crevices.
 
-The MCMC colors are pretty good as-is.
+The MCMC colors are rather nice just as they are.
 
 ## Attributions
 
