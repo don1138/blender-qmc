@@ -21,7 +21,7 @@ bl_info = {
     "name"       : "MCMCC (Mid-Century Modern Colors)",
     "description": "Sets the Base Color of a Principled BSDF",
     "author"     : "Don Schnitzius",
-    "version"    : (0, 1, 1),
+    "version"    : (0, 1, 2),
     "blender"    : (2, 80, 0),
     "location"   : "3D Viewport > Sidebar > MCMC",
     "warning"    : "WIP",
@@ -67,7 +67,7 @@ def hex_to_rgb(h,alpha=1):
 def set_base_color(hex, mat_name):
     material = bpy.context.object.active_material
     if material:
-        mat_bool = bpy.context.scene.my_bool.rename_material
+        mat_bool = bpy.context.scene.mcmc_bool.rename_material_mcmc
         BSDF = material.node_tree.nodes.get('Principled BSDF')
         if BSDF:
             BSDF.inputs[0].default_value = hex_to_rgb(hex)
@@ -320,7 +320,7 @@ class COBBLESTONE_STREETS(bpy.types.Operator):
 
 # BOOLEAN FOR PANEL
 class MCMC_SETTINGS(bpy.types.PropertyGroup):
-    rename_material: bpy.props.BoolProperty(
+    rename_material_mcmc: bpy.props.BoolProperty(
         name='Rename Material',
         default=False
     )
@@ -337,10 +337,10 @@ class MCMCPanel(bpy.types.Panel):
 
     def draw(self, context):
         layout = self.layout
-        my_bool = context.scene.my_bool
+        mcmc_bool = context.scene.mcmc_bool
 
         row = layout.row()
-        row.prop(my_bool, "rename_material")
+        row.prop(mcmc_bool, "rename_material_mcmc")
 
 # Golden Yellow
 class YELLOWS(bpy.types.Panel):
@@ -544,13 +544,13 @@ def register():
     for cls in classes:
 #        addon_updater_ops.make_annotations(cls)  # Avoid blender 2.8 warnings.
         bpy.utils.register_class(cls)
-        bpy.types.Scene.my_bool = bpy.props.PointerProperty(type=MCMC_SETTINGS)
+        bpy.types.Scene.mcmc_bool = bpy.props.PointerProperty(type=MCMC_SETTINGS)
 
 
 def unregister():
     # Addon updater unregister.
 #    addon_updater_ops.unregister()
-    del bpy.types.Scene.my_bool
+    del bpy.types.Scene.mcmc_bool
     for cls in reversed(classes):
         bpy.utils.unregister_class(cls)
 
