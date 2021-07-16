@@ -32,6 +32,7 @@ bl_info = {
 
 
 
+from _typeshed import StrOrBytesPath
 import bpy
 
 
@@ -67,7 +68,7 @@ def hex_to_rgb(h,alpha=1):
 def set_base_color(hex, mat_name):
     material = bpy.context.object.active_material
     if material:
-        mat_bool = bpy.context.scene.my_bool.rename_material
+        mat_bool = bpy.context.scene.pms_bool.rename_material_pcoy
         BSDF = material.node_tree.nodes.get('Principled BSDF')
         if BSDF:
             BSDF.inputs[0].default_value = hex_to_rgb(hex)
@@ -337,7 +338,7 @@ class PMS448C(bpy.types.Operator):
 
 # BOOLEAN FOR PANEL
 class PMS_SETTINGS(bpy.types.PropertyGroup):
-    rename_material: bpy.props.BoolProperty(
+    rename_material_pcoy: bpy.props.BoolProperty(
         name='Rename Material',
         default=False
     )
@@ -354,10 +355,10 @@ class PMSPanel(bpy.types.Panel):
 
     def draw(self, context):
         layout = self.layout
-        my_bool = context.scene.my_bool
+        pms_bool = context.scene.pms_bool
 
         row = layout.row()
-        row.prop(my_bool, "rename_material")
+        row.prop(pms_bool, "rename_material_pcoy")
 
 # 2000-09 PANEL
 class PMSPanel2000(bpy.types.Panel):
@@ -474,6 +475,7 @@ class PMSPanelExtras(bpy.types.Panel):
         row.operator("color.pms_448c", text="Ugliest Color in the World (Official)")
 
 
+
 classes = [
     PMS_SETTINGS,
     PMSPanel,
@@ -525,13 +527,13 @@ def register():
     for cls in classes:
 #        addon_updater_ops.make_annotations(cls)  # Avoid blender 2.8 warnings.
         bpy.utils.register_class(cls)
-        bpy.types.Scene.my_bool = bpy.props.PointerProperty(type=PMS_SETTINGS)
+        bpy.types.Scene.pms_bool = bpy.props.PointerProperty(type=PMS_SETTINGS)
 
 
 def unregister():
     # Addon updater unregister.
 #    addon_updater_ops.unregister()
-    del bpy.types.Scene.my_bool
+    del bpy.types.Scene.pms_bool
     for cls in reversed(classes):
         bpy.utils.unregister_class(cls)
 
@@ -568,3 +570,4 @@ if __name__ == "__main__":
 # 20 Normal
 # 21 Clearcoat Normal
 # 22 Tangent
+

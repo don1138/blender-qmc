@@ -1,5 +1,8 @@
 ## Pantone Color of the Year
 
+### 0.2.2
+- Unique class name for checkbox bool
+
 ### 0.2.1
 - Add Error Detection
 
@@ -73,6 +76,9 @@
     <!-- #4A412A -->
 
 ## Mid-Century Modern
+
+### 0.1.2
+- Unique class name for checkbox bool
 
 ### 0.1.1
 - Add Error Detection
