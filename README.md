@@ -8,9 +8,9 @@
 
 ## Installation
 
-Download the latest ZIPs from **Releases** or grab ``pcoy_panel.py`` and ``mcmc_panel.py`` from the repo.
+Grab ``pcoy_panel.py`` and ``mcmc_panel.py`` from the repo, or download the latest ZIP from **Releases** and unzip it in a local folder.
 
-Install via ``Edit > Preferences > Add-ons > Install…``.
+Install each file separately via ``Edit > Preferences > Add-ons > Install…``.
 
 ## Usage
 
