@@ -21,7 +21,7 @@ bl_info = {
     "name"       : "PCOY (Pantone Color of the Year)",
     "description": "Sets the Base Color of a Principled BSDF",
     "author"     : "Don Schnitzius",
-    "version"    : (0, 2, 1),
+    "version"    : (0, 2, 2),
     "blender"    : (2, 80, 0),
     "location"   : "3D Viewport > Sidebar > PCOY",
     "warning"    : "WIP",
@@ -32,7 +32,6 @@ bl_info = {
 
 
 
-from _typeshed import StrOrBytesPath
 import bpy
 
 
