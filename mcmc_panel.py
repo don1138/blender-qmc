@@ -18,7 +18,7 @@
 
 
 bl_info = {
-    "name"       : "MCMCC (Mid-Century Modern Colors)",
+    "name"       : "MCMC (Mid-Century Modern Colors)",
     "description": "Sets the Base Color of a Principled BSDF",
     "author"     : "Don Schnitzius",
     "version"    : (0, 1, 2),
