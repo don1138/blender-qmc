@@ -21,10 +21,10 @@ bl_info = {
     "name"       : "PCOY (Pantone Color of the Year)",
     "description": "Sets the Base Color of a Principled BSDF",
     "author"     : "Don Schnitzius",
-    "version"    : (0, 3, 0),
+    "version"    : (0, 3, 1),
     "blender"    : (2, 80, 0),
     "location"   : "3D Viewport > Sidebar > PCOY",
-    "warning"    : "WIP",
+    # "warning"    : "WIP",
     "wiki_url"   : "https://github.com/don1138/blender-pcoy",
     "support"    : "COMMUNITY",
     "category"   : "Material"
@@ -32,9 +32,9 @@ bl_info = {
 
 
 
+import os
 import bpy
-
-
+import bpy.utils.previews
 
 # MESSAGE BOX
 
@@ -87,7 +87,7 @@ def set_base_color(hex, mat_name):
 
 class PMS2000(bpy.types.Operator):
     """Pantone 15-4020"""
-    bl_label = "2000 Cerulean Blue"
+    bl_label = "Cerulean Blue"
     bl_idname = 'color.pms_2000'
     def execute(self, context):
         set_base_color(0x9BB7D4, self.bl_label)
@@ -95,7 +95,7 @@ class PMS2000(bpy.types.Operator):
 
 class PMS2001(bpy.types.Operator):
     """Pantone 17-2031"""
-    bl_label = "2001 Fuschia Rose"
+    bl_label = "Fuschia Rose"
     bl_idname = 'color.pms_2001'
     def execute(self, context):
         set_base_color(0xC74375, self.bl_label)
@@ -103,7 +103,7 @@ class PMS2001(bpy.types.Operator):
 
 class PMS2002(bpy.types.Operator):
     """Pantone 19-1664"""
-    bl_label = "2002 True Red"
+    bl_label = "True Red"
     bl_idname = 'color.pms_2002'
     def execute(self, context):
         set_base_color(0xBF1932, self.bl_label)
@@ -111,7 +111,7 @@ class PMS2002(bpy.types.Operator):
 
 class PMS2003(bpy.types.Operator):
     """Pantone 14-4811"""
-    bl_label = "2003 Aqua Sky"
+    bl_label = "Aqua Sky"
     bl_idname = 'color.pms_2003'
     def execute(self, context):
         set_base_color(0x7BC4C4, self.bl_label)
@@ -119,7 +119,7 @@ class PMS2003(bpy.types.Operator):
 
 class PMS2004(bpy.types.Operator):
     """Pantone 17-1456"""
-    bl_label = "2004 Tigerlily"
+    bl_label = "Tigerlily"
     bl_idname = 'color.pms_2004'
     def execute(self, context):
         set_base_color(0xE2583E, self.bl_label)
@@ -127,7 +127,7 @@ class PMS2004(bpy.types.Operator):
 
 class PMS2005(bpy.types.Operator):
     """Pantone 15-5217"""
-    bl_label = "2005 Blue Turquoise"
+    bl_label = "Blue Turquoise"
     bl_idname = 'color.pms_2005'
     def execute(self, context):
         set_base_color(0x53B0AE, self.bl_label)
@@ -135,7 +135,7 @@ class PMS2005(bpy.types.Operator):
 
 class PMS2006(bpy.types.Operator):
     """Pantone 13-1106"""
-    bl_label = "2006 Sand Dollar"
+    bl_label = "Sand Dollar"
     bl_idname = 'color.pms_2006'
     def execute(self, context):
         set_base_color(0xDECDBE, self.bl_label)
@@ -143,7 +143,7 @@ class PMS2006(bpy.types.Operator):
 
 class PMS2007(bpy.types.Operator):
     """Pantone 19-1557"""
-    bl_label = "2007 Chili Pepper"
+    bl_label = "Chili Pepper"
     bl_idname = 'color.pms_2007'
     def execute(self, context):
         set_base_color(0x9B1B30, self.bl_label)
@@ -151,7 +151,7 @@ class PMS2007(bpy.types.Operator):
 
 class PMS2008(bpy.types.Operator):
     """Pantone 18-3943"""
-    bl_label = "2008 Blue Iris"
+    bl_label = "Blue Iris"
     bl_idname = 'color.pms_2008'
     def execute(self, context):
         set_base_color(0x5A5B9F, self.bl_label)
@@ -159,7 +159,7 @@ class PMS2008(bpy.types.Operator):
 
 class PMS2009(bpy.types.Operator):
     """Pantone 14-0848"""
-    bl_label = "2009 Mimosa"
+    bl_label = "Mimosa"
     bl_idname = 'color.pms_2009'
     def execute(self, context):
         set_base_color(0xF0C05A, self.bl_label)
@@ -167,7 +167,7 @@ class PMS2009(bpy.types.Operator):
 
 class PMS2010(bpy.types.Operator):
     """Pantone 15-5519"""
-    bl_label = "2010 Turquoise"
+    bl_label = "Turquoise"
     bl_idname = 'color.pms_2010'
     def execute(self, context):
         set_base_color(0x45B5AA, self.bl_label)
@@ -175,7 +175,7 @@ class PMS2010(bpy.types.Operator):
 
 class PMS2011(bpy.types.Operator):
     """Pantone 18-2120"""
-    bl_label = "2011 Honeysuckle"
+    bl_label = "Honeysuckle"
     bl_idname = 'color.pms_2011'
     def execute(self, context):
         set_base_color(0xD94F70, self.bl_label)
@@ -183,7 +183,7 @@ class PMS2011(bpy.types.Operator):
 
 class PMS2012(bpy.types.Operator):
     """Pantone 17-1463"""
-    bl_label = "2012 Tangerine"
+    bl_label = "Tangerine"
     bl_idname = 'color.pms_2012'
     def execute(self, context):
         set_base_color(0xDD4124, self.bl_label)
@@ -191,7 +191,7 @@ class PMS2012(bpy.types.Operator):
 
 class PMS2013(bpy.types.Operator):
     """Pantone 17-5641"""
-    bl_label = "2013 Emerald"
+    bl_label = "Emerald"
     bl_idname = 'color.pms_2013'
     def execute(self, context):
         set_base_color(0x009473, self.bl_label)
@@ -199,7 +199,7 @@ class PMS2013(bpy.types.Operator):
 
 class PMS2014(bpy.types.Operator):
     """Pantone 18-3224"""
-    bl_label = "2014 Radiant Orchid"
+    bl_label = "Radiant Orchid"
     bl_idname = 'color.pms_2014'
     def execute(self, context):
         set_base_color(0xB163A3, self.bl_label)
@@ -207,7 +207,7 @@ class PMS2014(bpy.types.Operator):
 
 class PMS2015(bpy.types.Operator):
     """Pantone 18-1438"""
-    bl_label = "2015 Marsala"
+    bl_label = "Marsala"
     bl_idname = 'color.pms_2015'
     def execute(self, context):
         set_base_color(0x955251, self.bl_label)
@@ -215,7 +215,7 @@ class PMS2015(bpy.types.Operator):
 
 class PMS2016A(bpy.types.Operator):
     """Pantone 13-1520"""
-    bl_label = "2016 Rose Quartz"
+    bl_label = "Rose Quartz"
     bl_idname = 'color.pms_2016_a'
     def execute(self, context):
         set_base_color(0xF7CAC9, self.bl_label)
@@ -223,7 +223,7 @@ class PMS2016A(bpy.types.Operator):
 
 class PMS2016B(bpy.types.Operator):
     """Pantone 15-3919"""
-    bl_label = "2016 Serenity"
+    bl_label = "Serenity"
     bl_idname = 'color.pms_2016_b'
     def execute(self, context):
         set_base_color(0x92A8D1, self.bl_label)
@@ -231,7 +231,7 @@ class PMS2016B(bpy.types.Operator):
 
 class PMS2017(bpy.types.Operator):
     """Pantone 15-0343"""
-    bl_label = "2017 Greenery"
+    bl_label = "Greenery"
     bl_idname = 'color.pms_2017'
     def execute(self, context):
         set_base_color(0x88B04B, self.bl_label)
@@ -239,7 +239,7 @@ class PMS2017(bpy.types.Operator):
 
 class PMS2018(bpy.types.Operator):
     """Pantone 18-3838"""
-    bl_label = "2018 Ultra Violet"
+    bl_label = "Ultra Violet"
     bl_idname = 'color.pms_2018'
     def execute(self, context):
         set_base_color(0x5F4B8B, self.bl_label)
@@ -247,7 +247,7 @@ class PMS2018(bpy.types.Operator):
 
 class PMS2019(bpy.types.Operator):
     """Pantone 16-1546 TCX"""
-    bl_label = "2019 Living Coral"
+    bl_label = "Living Coral"
     bl_idname = 'color.pms_2019'
     def execute(self, context):
         set_base_color(0xFF6F61, self.bl_label)
@@ -255,7 +255,7 @@ class PMS2019(bpy.types.Operator):
 
 class PMS2020(bpy.types.Operator):
     """Pantone 19-4052"""
-    bl_label = "2020 Classic Blue"
+    bl_label = "Classic Blue"
     bl_idname = 'color.pms_2020'
     def execute(self, context):
         set_base_color(0x0F4C81, self.bl_label)
@@ -263,7 +263,7 @@ class PMS2020(bpy.types.Operator):
 
 class PMS2021A(bpy.types.Operator):
     """Pantone 17-5104"""
-    bl_label = "2021 Ultimate Gray"
+    bl_label = "Ultimate Gray"
     bl_idname = 'color.pms_2021_a'
     def execute(self, context):
         set_base_color(0x949597, self.bl_label)
@@ -271,7 +271,7 @@ class PMS2021A(bpy.types.Operator):
 
 class PMS2021B(bpy.types.Operator):
     """Pantone 13-0647"""
-    bl_label = "2021 Illuminating"
+    bl_label = "Illuminating"
     bl_idname = 'color.pms_2021_b'
     def execute(self, context):
         set_base_color(0xF5DF4D, self.bl_label)
@@ -287,7 +287,7 @@ class PMSPrince(bpy.types.Operator):
 
 class PMSConan(bpy.types.Operator):
     """Custom Color selected by Pantone"""
-    bl_label = "Team Coco Orange"
+    bl_label = "Team Coco"
     bl_idname = 'color.pms_conan'
     def execute(self, context):
         set_base_color(0xFE7A0B, self.bl_label)
@@ -303,7 +303,7 @@ class PMSBCoral(bpy.types.Operator):
 
 class PMSSDCoral(bpy.types.Operator):
     """(Community reaction to 2019 Living Coral)"""
-    bl_label = "2043 Dead Coral"
+    bl_label = "Dead Coral"
     bl_idname = 'color.pms_dcoral'
     def execute(self, context):
         set_base_color(0xA7997E, self.bl_label)
@@ -311,7 +311,7 @@ class PMSSDCoral(bpy.types.Operator):
 
 class PMSUnignorable(bpy.types.Operator):
     """Custom Color selected by Pantone"""
-    bl_label = "United Way Unignorable"
+    bl_label = "UW Unignorable"
     bl_idname = 'color.pms_uwign'
     def execute(self, context):
         set_base_color(0xFC502E, self.bl_label)
@@ -319,7 +319,7 @@ class PMSUnignorable(bpy.types.Operator):
 
 class PMS383(bpy.types.Operator):
     """Pantone 383"""
-    bl_label = "A Nice Green"
+    bl_label = "Nice Green"
     bl_idname = 'color.pms_383'
     def execute(self, context):
         set_base_color(0xD0DF68, self.bl_label)
@@ -468,8 +468,8 @@ class PMSPanel(bpy.types.Panel):
         layout = self.layout
         pms_bool = context.scene.pms_bool
 
-        row = layout.row()
-        row.prop(pms_bool, "rename_material_pcoy")
+        col = layout.column(align=True)
+        col.prop(pms_bool, "rename_material_pcoy")
 
 # 2000-09 PANEL
 class PMSPanel2000(bpy.types.Panel):
@@ -482,27 +482,51 @@ class PMSPanel2000(bpy.types.Panel):
     bl_options = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
+        global c_icons
         layout = self.layout
-        row = layout.row()
-        row.operator("color.pms_2000", text="2000  ·  Cerulean Blue")
-        row = layout.row()
-        row.operator("color.pms_2001", text="2001  ·  Fuschia Rose")
-        row = layout.row()
-        row.operator("color.pms_2002", text="2002  ·  True Red")
-        row = layout.row()
-        row.operator("color.pms_2003", text="2003  ·  Aqua Sky")
-        row = layout.row()
-        row.operator("color.pms_2004", text="2004  ·  Tigerlily")
-        row = layout.row()
-        row.operator("color.pms_2005", text="2005  ·  Blue Turquoise")
-        row = layout.row()
-        row.operator("color.pms_2006", text="2006  ·  Sand Dollar")
-        row = layout.row()
-        row.operator("color.pms_2007", text="2007  ·  Chili Pepper")
-        row = layout.row()
-        row.operator("color.pms_2008", text="2008  ·  Blue Iris")
-        row = layout.row()
-        row.operator("color.pms_2009", text="2009  ·  Mimosa")
+
+        srow = layout.row()
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.scale_x = 0.5
+        scol.label(text="2000")
+        scol.label(text="2001")
+        scol.label(text="2002")
+        scol.label(text="2003")
+        scol.label(text="2004")
+        scol.label(text="2005")
+        scol.label(text="2006")
+        scol.label(text="2007")
+        scol.label(text="2008")
+        scol.label(text="2009")
+
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.label(text="", icon_value=c_icons["pcoy_2000"].icon_id)
+        scol.label(text="", icon_value=c_icons["pcoy_2001"].icon_id)
+        scol.label(text="", icon_value=c_icons["pcoy_2002"].icon_id)
+        scol.label(text="", icon_value=c_icons["pcoy_2003"].icon_id)
+        scol.label(text="", icon_value=c_icons["pcoy_2004"].icon_id)
+        scol.label(text="", icon_value=c_icons["pcoy_2005"].icon_id)
+        scol.label(text="", icon_value=c_icons["pcoy_2006"].icon_id)
+        scol.label(text="", icon_value=c_icons["pcoy_2007"].icon_id)
+        scol.label(text="", icon_value=c_icons["pcoy_2008"].icon_id)
+        scol.label(text="", icon_value=c_icons["pcoy_2009"].icon_id)
+
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.scale_x = 2.0
+        scol.operator("color.pms_2000", text="Cerulean Blue")
+        scol.operator("color.pms_2001", text="Fuschia Rose")
+        scol.operator("color.pms_2002", text="True Red")
+        scol.operator("color.pms_2003", text="Aqua Sky")
+        scol.operator("color.pms_2004", text="Tigerlily")
+        scol.operator("color.pms_2005", text="Blue Turquoise")
+        scol.operator("color.pms_2006", text="Sand Dollar")
+        scol.operator("color.pms_2007", text="Chili Pepper")
+        scol.operator("color.pms_2008", text="Blue Iris")
+        scol.operator("color.pms_2009", text="Mimosa")
+
 
 # 2010-19 PANEL
 class PMSPanel2010(bpy.types.Panel):
@@ -515,29 +539,54 @@ class PMSPanel2010(bpy.types.Panel):
     bl_options = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
+        global c_icons
         layout = self.layout
-        row = layout.row()
-        row.operator("color.pms_2010", text="2010  ·  Turquoise")
-        row = layout.row()
-        row.operator("color.pms_2011", text="2011  ·  Honeysuckle")
-        row = layout.row()
-        row.operator("color.pms_2012", text="2012  ·  Tangerine")
-        row = layout.row()
-        row.operator("color.pms_2013", text="2013  ·  Emerald")
-        row = layout.row()
-        row.operator("color.pms_2014", text="2014  ·  Radiant Orchid")
-        row = layout.row()
-        row.operator("color.pms_2015", text="2015  ·  Marsala")
-        row = layout.row()
-        row.operator("color.pms_2016_a", text="2016  ·  Rose Quartz")
-        row = layout.row()
-        row.operator("color.pms_2016_b", text="2016  ·  Serenity")
-        row = layout.row()
-        row.operator("color.pms_2017", text="2017  ·  Greenery")
-        row = layout.row()
-        row.operator("color.pms_2018", text="2018  ·  Ultra Violet")
-        row = layout.row()
-        row.operator("color.pms_2019", text="2019  ·  Living Coral")
+
+        srow = layout.row()
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.scale_x = 0.5
+        scol.label(text="2010")
+        scol.label(text="2011")
+        scol.label(text="2012")
+        scol.label(text="2013")
+        scol.label(text="2014")
+        scol.label(text="2015")
+        scol.label(text="2016")
+        scol.label(text="2016")
+        scol.label(text="2017")
+        scol.label(text="2018")
+        scol.label(text="2019")
+
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.label(text="", icon_value=c_icons["pcoy_2010"].icon_id)
+        scol.label(text="", icon_value=c_icons["pcoy_2011"].icon_id)
+        scol.label(text="", icon_value=c_icons["pcoy_2012"].icon_id)
+        scol.label(text="", icon_value=c_icons["pcoy_2013"].icon_id)
+        scol.label(text="", icon_value=c_icons["pcoy_2014"].icon_id)
+        scol.label(text="", icon_value=c_icons["pcoy_2015"].icon_id)
+        scol.label(text="", icon_value=c_icons["pcoy_2016a"].icon_id)
+        scol.label(text="", icon_value=c_icons["pcoy_2016b"].icon_id)
+        scol.label(text="", icon_value=c_icons["pcoy_2017"].icon_id)
+        scol.label(text="", icon_value=c_icons["pcoy_2018"].icon_id)
+        scol.label(text="", icon_value=c_icons["pcoy_2019"].icon_id)
+
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.scale_x = 2.0
+        scol.operator("color.pms_2010", text="Turquoise")
+        scol.operator("color.pms_2011", text="Honeysuckle")
+        scol.operator("color.pms_2012", text="Tangerine")
+        scol.operator("color.pms_2013", text="Emerald")
+        scol.operator("color.pms_2014", text="Radiant Orchid")
+        scol.operator("color.pms_2015", text="Marsala")
+        scol.operator("color.pms_2016_a", text="Rose Quartz")
+        scol.operator("color.pms_2016_b", text="Serenity")
+        scol.operator("color.pms_2017", text="Greenery")
+        scol.operator("color.pms_2018", text="Ultra Violet")
+        scol.operator("color.pms_2019", text="Living Coral")
+
 
 # 2020+ PANEL
 class PMSPanel2020(bpy.types.Panel):
@@ -550,13 +599,30 @@ class PMSPanel2020(bpy.types.Panel):
     bl_options = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
+        global c_icons
         layout = self.layout
-        row = layout.row()
-        row.operator("color.pms_2020", text="2020  ·  Classic Blue")
-        row = layout.row()
-        row.operator("color.pms_2021_a", text="2021  ·  Ultimate Gray")
-        row = layout.row()
-        row.operator("color.pms_2021_b", text="2021  ·  Illuminating")
+
+        srow = layout.row()
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.scale_x = 0.5
+        scol.label(text="2020")
+        scol.label(text="2021")
+        scol.label(text="2021")
+
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.label(text="", icon_value=c_icons["pcoy_2020"].icon_id)
+        scol.label(text="", icon_value=c_icons["pcoy_2021a"].icon_id)
+        scol.label(text="", icon_value=c_icons["pcoy_2021b"].icon_id)
+
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.scale_x = 2.0
+        scol.operator("color.pms_2020", text="Classic Blue")
+        scol.operator("color.pms_2021_a", text="Ultimate Gray")
+        scol.operator("color.pms_2021_b", text="Illuminating")
+
 
 # Extras & Apocrypha PANEL
 class PMSPanelExtras(bpy.types.Panel):
@@ -569,21 +635,31 @@ class PMSPanelExtras(bpy.types.Panel):
     bl_options = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
+        global c_icons
         layout = self.layout
-        row = layout.row()
-        row.operator("color.pms_bcoral", text="2020  ·  Bleached Coral")
-        row = layout.row()
-        row.operator("color.pms_dcoral", text="2043  ·  Dead Coral")
-        row = layout.row()
-        row.operator("color.pms_prince", text="Prince")
-        row = layout.row()
-        row.operator("color.pms_conan", text="Team Coco Orange")
-        row = layout.row()
-        row.operator("color.pms_uwign", text="United Way Unignorable")
-        row = layout.row()
-        row.operator("color.pms_383", text="A Nice Green")
-        row = layout.row()
-        row.operator("color.pms_448c", text="Ugliest Color in the World (Official)")
+
+        srow = layout.row()
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.label(text="", icon_value=c_icons["pcoy_2020b"].icon_id)
+        scol.label(text="", icon_value=c_icons["pcoy_2043"].icon_id)
+        scol.label(text="", icon_value=c_icons["prince"].icon_id)
+        scol.label(text="", icon_value=c_icons["conan"].icon_id)
+        scol.label(text="", icon_value=c_icons["uw"].icon_id)
+        scol.label(text="", icon_value=c_icons["pms_383"].icon_id)
+        scol.label(text="", icon_value=c_icons["pms_448"].icon_id)
+
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.scale_x = 3.0
+        scol.operator("color.pms_bcoral", text="2020 Bleached Coral")
+        scol.operator("color.pms_dcoral", text="2043 Dead Coral")
+        scol.operator("color.pms_prince", text="Prince")
+        scol.operator("color.pms_conan", text="Team Coco Orange")
+        scol.operator("color.pms_uwign", text="United Way Unignorable")
+        scol.operator("color.pms_383", text="A Nice Green")
+        scol.operator("color.pms_448c", text="Ugliest Color in the World (Official)")
+
 
 # Schnitzius Selects PANEL
 class PMSPanelSchnitzius(bpy.types.Panel):
@@ -597,40 +673,24 @@ class PMSPanelSchnitzius(bpy.types.Panel):
 
     def draw(self, context):
         layout = self.layout
-        row = layout.row()
-        row.operator("color.schnitzius_green", text="Schnitzius Green")
-        row = layout.row()
-        row.operator("color.pms_381_u", text="PMS 381 U")
-
-        row = layout.row()
-        row.operator("color.schnitzius_red", text="Schnitzius Red")
-        row = layout.row()
-        row.operator("color.pms_172_c", text="PMS 172 C")
-
-        row = layout.row()
-        row.operator("color.schnitzius_blue", text="Schnitzius Blue")
-        row = layout.row()
-        row.operator("color.pms_2685_u", text="PMS 2685 U")
-
-        row = layout.row()
-        row.operator("color.schnitzius_yellow", text="Schnitzius Yellow")
-        row = layout.row()
-        row.operator("color.pms_396_u", text="PMS 396 U")
-
-        row = layout.row()
-        row.operator("color.schnitzius_bronze_pale", text="Schnitzius Bronze Pale")
-        row = layout.row()
-        row.operator("color.pms_729_u", text="PMS 729 U")
-
-        row = layout.row()
-        row.operator("color.schnitzius_bronze_rich", text="Schnitzius Bronze Rich")
-        row = layout.row()
-        row.operator("color.pms_7518_u", text="PMS 7518 U")
-
-        row = layout.row()
-        row.operator("color.schnitzius_white", text="Schnitzius White")
-        row = layout.row()
-        row.operator("color.pms_7499_u", text="PMS 7499 U")
+        col = layout.grid_flow(row_major=True,even_columns=True,columns=2,align=True)
+        col.scale_y = 1.25
+        col.label(text="My Color")
+        col.label(text="PMS Match")
+        col.operator("color.schnitzius_green", text="Green")
+        col.operator("color.pms_381_u", text="PMS 381 U")
+        col.operator("color.schnitzius_red", text="Red")
+        col.operator("color.pms_172_c", text="PMS 172 C")
+        col.operator("color.schnitzius_blue", text="Blue")
+        col.operator("color.pms_2685_u", text="PMS 2685 U")
+        col.operator("color.schnitzius_yellow", text="Yellow")
+        col.operator("color.pms_396_u", text="PMS 396 U")
+        col.operator("color.schnitzius_bronze_pale", text="Bronze Pale")
+        col.operator("color.pms_729_u", text="PMS 729 U")
+        col.operator("color.schnitzius_bronze_rich", text="Bronze Rich")
+        col.operator("color.pms_7518_u", text="PMS 7518 U")
+        col.operator("color.schnitzius_white", text="White")
+        col.operator("color.pms_7499_u", text="PMS 7499 U")
 
 
 
@@ -696,6 +756,14 @@ def register():
     # users can revert back to a working version.
 #    addon_updater_ops.register(bl_info)
 
+#   LOAD CUSTOM ICONS
+    global c_icons
+    c_icons = bpy.utils.previews.new()
+    addon_path =  os.path.dirname(__file__)
+    icons_dir = os.path.join(addon_path, "icons")
+    for entry in os.listdir(icons_dir):
+        c_icons.load(os.path.splitext(entry)[0], os.path.join(icons_dir, entry), "IMAGE")
+
     # Register the example panel, to show updater buttons.
     for cls in classes:
 #        addon_updater_ops.make_annotations(cls)  # Avoid blender 2.8 warnings.
@@ -706,12 +774,18 @@ def register():
 def unregister():
     # Addon updater unregister.
 #    addon_updater_ops.unregister()
+#   UNREGISTER ICONS
+    global c_icons
+    bpy.utils.previews.remove(c_icons)
+
     del bpy.types.Scene.pms_bool
     for cls in reversed(classes):
         bpy.utils.unregister_class(cls)
 
 
 if __name__ == "__main__":
+    # The path of this blend file (if saved)
+    __file__ = bpy.data.filepath
     register()
 
 
