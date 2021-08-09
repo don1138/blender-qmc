@@ -21,10 +21,10 @@ bl_info = {
     "name"       : "MCMC (Mid-Century Modern Colors)",
     "description": "Sets the Base Color of a Principled BSDF",
     "author"     : "Don Schnitzius",
-    "version"    : (0, 1, 2),
+    "version"    : (0, 3, 0),
     "blender"    : (2, 80, 0),
     "location"   : "3D Viewport > Sidebar > MCMC",
-    "warning"    : "WIP",
+    # "warning"    : "WIP",
     "wiki_url"   : "https://github.com/don1138/blender-pcoy",
     "support"    : "COMMUNITY",
     "category"   : "Material"
@@ -32,7 +32,9 @@ bl_info = {
 
 
 
+import os
 import bpy
+import bpy.utils.previews
 
 
 
@@ -353,15 +355,24 @@ class YELLOWS(bpy.types.Panel):
     bl_options = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
+        global c_icons
         layout = self.layout
-        row = layout.row()
-        row.operator("color.miami_parasol", text="Miami Parasol")
-        row = layout.row()
-        row.operator("color.ginger_ale", text="Ginger Ale")
-        row = layout.row()
-        row.operator("color.pablo_honey", text="Pablo Honey")
-        row = layout.row()
-        row.operator("color.tanlines", text="Tanlines")
+
+        srow = layout.row()
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.label(text="", icon_value=c_icons["yellow_01"].icon_id)
+        scol.label(text="", icon_value=c_icons["yellow_02"].icon_id)
+        scol.label(text="", icon_value=c_icons["yellow_03"].icon_id)
+        scol.label(text="", icon_value=c_icons["yellow_04"].icon_id)
+
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.scale_x = 3.0
+        scol.operator("color.miami_parasol", text="Miami Parasol")
+        scol.operator("color.ginger_ale", text="Ginger Ale")
+        scol.operator("color.pablo_honey", text="Pablo Honey")
+        scol.operator("color.tanlines", text="Tanlines")
 
 # Serena Aqua
 class BLUES(bpy.types.Panel):
@@ -374,15 +385,24 @@ class BLUES(bpy.types.Panel):
     bl_options = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
+        global c_icons
         layout = self.layout
-        row = layout.row()
-        row.operator("color.blue_seafoam", text="Blue Seafoam")
-        row = layout.row()
-        row.operator("color.novelty_wave", text="Novelty Wave")
-        row = layout.row()
-        row.operator("color.saturday_on_sunday", text="Saturday On Sunday")
-        row = layout.row()
-        row.operator("color.sicily_or_cyprus", text="Sicily Or Cyprus")
+
+        srow = layout.row()
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.label(text="", icon_value=c_icons["blue_01"].icon_id)
+        scol.label(text="", icon_value=c_icons["blue_02"].icon_id)
+        scol.label(text="", icon_value=c_icons["blue_03"].icon_id)
+        scol.label(text="", icon_value=c_icons["blue_04"].icon_id)
+
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.scale_x = 3.0
+        scol.operator("color.blue_seafoam", text="Blue Seafoam")
+        scol.operator("color.novelty_wave", text="Novelty Wave")
+        scol.operator("color.saturday_on_sunday", text="Saturday On Sunday")
+        scol.operator("color.sicily_or_cyprus", text="Sicily Or Cyprus")
 
 # Olive Green and Wasabi
 class GREENS(bpy.types.Panel):
@@ -395,17 +415,26 @@ class GREENS(bpy.types.Panel):
     bl_options = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
+        global c_icons
         layout = self.layout
-        row = layout.row()
-        row.operator("color.natural_habitat", text="Natural Habitat")
-        row = layout.row()
-        row.operator("color.saged", text="Saged")
-        row = layout.row()
-        row.operator("color.drive_thru_safari", text="Drive-Thru Safari")
-        row = layout.row()
-        row.operator("color.green_root", text="Green Root")
-        row = layout.row()
-        row.operator("color.relentless_olive", text="Relentless Olive")
+
+        srow = layout.row()
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.label(text="", icon_value=c_icons["green_01"].icon_id)
+        scol.label(text="", icon_value=c_icons["green_02"].icon_id)
+        scol.label(text="", icon_value=c_icons["green_03"].icon_id)
+        scol.label(text="", icon_value=c_icons["green_04"].icon_id)
+        scol.label(text="", icon_value=c_icons["green_05"].icon_id)
+
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.scale_x = 3.0
+        scol.operator("color.natural_habitat", text="Natural Habitat")
+        scol.operator("color.saged", text="Saged")
+        scol.operator("color.drive_thru_safari", text="Drive-Thru Safari")
+        scol.operator("color.green_root", text="Green Root")
+        scol.operator("color.relentless_olive", text="Relentless Olive")
 
 # Pops of Red
 class REDS(bpy.types.Panel):
@@ -418,15 +447,24 @@ class REDS(bpy.types.Panel):
     bl_options = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
+        global c_icons
         layout = self.layout
-        row = layout.row()
-        row.operator("color.cherokee_red", text="Cherokee Red")
-        row = layout.row()
-        row.operator("color.self_portrait", text="Self-Portrait")
-        row = layout.row()
-        row.operator("color.negroni", text="Negroni")
-        row = layout.row()
-        row.operator("color.lipstick_on_the_mirror", text="Lipstick on the Mirror")
+
+        srow = layout.row()
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.label(text="", icon_value=c_icons["red_01"].icon_id)
+        scol.label(text="", icon_value=c_icons["red_02"].icon_id)
+        scol.label(text="", icon_value=c_icons["red_03"].icon_id)
+        scol.label(text="", icon_value=c_icons["red_04"].icon_id)
+
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.scale_x = 3.0
+        scol.operator("color.cherokee_red", text="Cherokee Red")
+        scol.operator("color.self_portrait", text="Self-Portrait")
+        scol.operator("color.negroni", text="Negroni")
+        scol.operator("color.lipstick_on_the_mirror", text="Lipstick on the Mirror")
 
 # Tangerine and Ochre
 class ORANGES(bpy.types.Panel):
@@ -439,15 +477,24 @@ class ORANGES(bpy.types.Panel):
     bl_options = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
+        global c_icons
         layout = self.layout
-        row = layout.row()
-        row.operator("color.aperitivo_hour", text="Aperitivo Hour")
-        row = layout.row()
-        row.operator("color.bright_marigold", text="Bright Marigold")
-        row = layout.row()
-        row.operator("color.autumn_glimmer", text="Autumn Glimmer")
-        row = layout.row()
-        row.operator("color.orange_fruit", text="Orange Fruit")
+
+        srow = layout.row()
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.label(text="", icon_value=c_icons["orange_01"].icon_id)
+        scol.label(text="", icon_value=c_icons["orange_02"].icon_id)
+        scol.label(text="", icon_value=c_icons["orange_03"].icon_id)
+        scol.label(text="", icon_value=c_icons["orange_04"].icon_id)
+
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.scale_x = 3.0
+        scol.operator("color.aperitivo_hour", text="Aperitivo Hour")
+        scol.operator("color.bright_marigold", text="Bright Marigold")
+        scol.operator("color.autumn_glimmer", text="Autumn Glimmer")
+        scol.operator("color.orange_fruit", text="Orange Fruit")
 
 # Pewter Gray
 class GRAYS(bpy.types.Panel):
@@ -460,15 +507,24 @@ class GRAYS(bpy.types.Panel):
     bl_options = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
+        global c_icons
         layout = self.layout
-        row = layout.row()
-        row.operator("color.wright_soft_gray", text="Wright Soft Gray")
-        row = layout.row()
-        row.operator("color.no_curfew", text="No Curfew")
-        row = layout.row()
-        row.operator("color.motor_gray", text="Motor Gray")
-        row = layout.row()
-        row.operator("color.after_hours", text="After Hours")
+
+        srow = layout.row()
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.label(text="", icon_value=c_icons["gray_01"].icon_id)
+        scol.label(text="", icon_value=c_icons["gray_02"].icon_id)
+        scol.label(text="", icon_value=c_icons["gray_03"].icon_id)
+        scol.label(text="", icon_value=c_icons["gray_04"].icon_id)
+
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.scale_x = 3.0
+        scol.operator("color.wright_soft_gray", text="Wright Soft Gray")
+        scol.operator("color.no_curfew", text="No Curfew")
+        scol.operator("color.motor_gray", text="Motor Gray")
+        scol.operator("color.after_hours", text="After Hours")
 
 # Soft and Earthy Brown
 class BROWNS(bpy.types.Panel):
@@ -481,15 +537,24 @@ class BROWNS(bpy.types.Panel):
     bl_options = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
+        global c_icons
         layout = self.layout
-        row = layout.row()
-        row.operator("color.fawn_doe", text="Fawn Doe")
-        row = layout.row()
-        row.operator("color.sentimental_reasons", text="Sentimental Reasons")
-        row = layout.row()
-        row.operator("color.cobblestone_streets", text="Cobblestone Streets")
-        row = layout.row()
-        row.operator("color.cocoa_shell", text="Cocoa Shell")
+
+        srow = layout.row()
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.label(text="", icon_value=c_icons["brown_01"].icon_id)
+        scol.label(text="", icon_value=c_icons["brown_02"].icon_id)
+        scol.label(text="", icon_value=c_icons["brown_03"].icon_id)
+        scol.label(text="", icon_value=c_icons["brown_04"].icon_id)
+
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.scale_x = 3.0
+        scol.operator("color.fawn_doe", text="Fawn Doe")
+        scol.operator("color.sentimental_reasons", text="Sentimental Reasons")
+        scol.operator("color.cobblestone_streets", text="Cobblestone Streets")
+        scol.operator("color.cocoa_shell", text="Cocoa Shell")
 
 
 classes = [
@@ -540,6 +605,15 @@ def register():
     # users can revert back to a working version.
 #    addon_updater_ops.register(bl_info)
 
+#   LOAD CUSTOM ICONS
+    global c_icons
+    c_icons = bpy.utils.previews.new()
+    addon_path =  os.path.dirname(__file__)
+    icons_dir = os.path.join(addon_path, "icons")
+    for entry in os.listdir(icons_dir):
+        c_icons.load(os.path.splitext(entry)[0], os.path.join(icons_dir, entry), "IMAGE")
+
+
     # Register the example panel, to show updater buttons.
     for cls in classes:
 #        addon_updater_ops.make_annotations(cls)  # Avoid blender 2.8 warnings.
@@ -550,58 +624,16 @@ def register():
 def unregister():
     # Addon updater unregister.
 #    addon_updater_ops.unregister()
+#   UNREGISTER ICONS
+    global c_icons
+    bpy.utils.previews.remove(c_icons)
+
     del bpy.types.Scene.mcmc_bool
     for cls in reversed(classes):
         bpy.utils.unregister_class(cls)
 
 
 if __name__ == "__main__":
+    # The path of this blend file (if saved)
+    __file__ = bpy.data.filepath
     register()
-
-
-# Dwell's Mid-Century Modern
-# https://www.dwell.com/article/best-midcentury-modern-paint-colors-111e82a1
-
-# Golden Yellow
-# Ginger Ale   : efd079
-# Pablo Honey   : eac164
-# Miami Parasol : f0d3a4
-# Tanlines  : c48c3f
-
-# Serena Aqua
-# Blue Seafoam  : afe3e9
-# Saturday On Sunday    : 567475
-# Sicily Or Cyprus  : 488182
-# Novelty Wave  : 73969f
-
-# Olive Green and Wasabi
-# Relentless Olive  : 71713e
-# Green Root    : 848551
-# Saged   : 969684
-# Drive-Thru Safari : 8b9d82
-# Natural Habitat   : c4c2a3
-
-# Pops of Red
-# Cherokee Red  : 764139
-# Lipstick on the Mirror    : ac2c3e
-# Self-Portrait : 642c2f
-# Negroni   : a53b33
-
-# Tangerine and Ochre
-# Autumn Glimmer  : E97F4E
-# Orange Fruit  : f88f21
-# Aperitivo Hour    : e7a885
-# Bright Marigold   : d78754
-# Tanlines  : c78c40
-
-# Pewter Gray
-# Wright Soft Gray  : 8e8fbf
-# After Hours   : 3c3b3e
-# Motor Gray    : 5c5d5f
-# No Curfew : 626669
-
-# Soft and Earthy Brown
-# Cocoa Shell   : 7e6657
-# Fawn Doe  b5a99d
-# Sentimental Reasons   : a29790
-# Cobblestone Streets   : 918475

@@ -1,17 +1,22 @@
 ## Pantone Color of the Year
 
+### 0.3.0
+- UILayout updated
+- Added Custom Icons of color chips
+- Renaming updated. Year no longer added to Material name
+
 ### 0.2.2
 - Unique class name for checkbox bool
 
 ### 0.2.1
-- Add Error Detection
+- Added Error Detection
 
 ### 0.2.0
-- Add Rename Material boolean
+- Added Rename Material boolean
 
 ### 0.1.0
-- Create Add-on
-- Assign Colors
+- Created Add-on
+- Added Colors
   - **Pantone Color of the Year**
     - 2000  Cerulean Blue
     <!-- #9BB7D4 -->
@@ -77,16 +82,20 @@
 
 ## Mid-Century Modern
 
+### 0.3.0
+- UILayout updated
+- Added Custom Icons of color chips
+
 ### 0.1.2
 - Unique class name for checkbox bool
 
 ### 0.1.1
-- Add Error Detection
+- Added Error Detection
 
 ### 0.1.0
-- Create Add-on
-- Add Rename Material boolean
-- Assign Colors
+- Created Add-on
+- Added Rename Material boolean
+- Created Colors
   - **Golden Yellow**
     - Ginger Ale
     <!-- #efd079 -->
