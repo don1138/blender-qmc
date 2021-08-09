@@ -43,7 +43,7 @@ I use **Sand Dollar** a lot. [**The Ugliest Color in the World**](https://www.hu
 
 The **MCMC** colors are rather nice just as they are.
 
-**Quick Tip** - To keep my Sidebar from getting overrun with Tabs, I use [**Simple Tabs**](https://chippwalters.gumroad.com/l/simpletabs) to collect all my Materials-related panels into one Tab labeled **MAT**. 
+**Quick Tip** - To keep my Sidebar from getting overrun with Tabs, I use [**Simple Tabs**](https://chippwalters.gumroad.com/l/simpletabs) to collect all my Materials-related panels under one Tab labeled **MAT**. 
 
 ## Attributions
 
