@@ -39,9 +39,9 @@ The operation will fail if:
 
 The **PMOY** colors can be too harsh and saturated for large objects, but some of them pop nicely when used for details. Or use them as a starting point, and tweak them into something better. Cut the saturation by 50-75% and see what you get.
 
-I use **Sand Dollar** a lot. [**The Ugliest Color in the World**](https://www.huffpost.com/entry/ugliest-color-pantone_n_57570df6e4b0ca5c7b504538) is nice for for dirt, cracks, or crevices.
+I use **Sand Dollar**, **2020 Bleached Coral**, and **2043 Dead Coral** a lot. [**The Ugliest Color in the World**](https://www.huffpost.com/entry/ugliest-color-pantone_n_57570df6e4b0ca5c7b504538) is nice for for dirt, cracks, or crevices.
 
-The **MCMC** colors are rather nice just as they are.
+The **MCMC** colors are rather nice just as they are. The blues, greens, reds, and browns are great starters for terrains.
 
 **Quick Tip** - To keep my Sidebar from getting overrun with Tabs, I use [**Simple Tabs**](https://chippwalters.gumroad.com/l/simpletabs) to collect all my Materials-related panels under one Tab labeled **MAT**. 
 
