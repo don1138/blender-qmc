@@ -8,7 +8,7 @@
 
 ## Installation
 
-Download the latest ZIPs from **Releases**, or grab ``pcoy_panel.py`` and ``mcmc_panel.py`` from the repo.
+Download the latest ZIPs from **Releases**.
 
 Install them **individually** via ``Edit > Preferences > Add-ons > Install…``.
 
@@ -42,6 +42,8 @@ The **PMOY** colors can be too harsh and saturated for large objects, but some o
 I use **Sand Dollar** a lot. [**The Ugliest Color in the World**](https://www.huffpost.com/entry/ugliest-color-pantone_n_57570df6e4b0ca5c7b504538) is nice for for dirt, cracks, or crevices.
 
 The **MCMC** colors are rather nice just as they are.
+
+**Quick Tip** - To keep my Sidebar from getting overrun with Tabs, I use [**Simple Tabs**](https://chippwalters.gumroad.com/l/simpletabs) to collect all my Materials-related panels into one Tab labeled **MAT**. 
 
 ## Attributions
 
