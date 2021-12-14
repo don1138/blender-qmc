@@ -21,7 +21,7 @@ bl_info = {
     "name"       : "PCOY (Pantone Color of the Year)",
     "description": "Sets the Base Color of a Principled BSDF",
     "author"     : "Don Schnitzius",
-    "version"    : (0, 3, 0),
+    "version"    : (0, 4, 0),
     "blender"    : (2, 80, 0),
     "location"   : "3D Viewport > Sidebar > PCOY",
     # "warning"    : "WIP",
@@ -86,6 +86,8 @@ def set_base_color(hex, mat_name):
 
 
 # COLOR CLASSES
+
+# 2000-2009
 
 class PMS2000(bpy.types.Operator):
     """Pantone 15-4020"""
@@ -166,6 +168,8 @@ class PMS2009(bpy.types.Operator):
     def execute(self, context):
         set_base_color(0xF0C05A, self.bl_label)
         return {'FINISHED'}
+
+# 2010-2019
 
 class PMS2010(bpy.types.Operator):
     """Pantone 15-5519"""
@@ -255,6 +259,8 @@ class PMS2019(bpy.types.Operator):
         set_base_color(0xFF6F61, self.bl_label)
         return {'FINISHED'}
 
+# 2020-2029
+
 class PMS2020(bpy.types.Operator):
     """Pantone 19-4052"""
     bl_label = "Classic Blue"
@@ -278,6 +284,16 @@ class PMS2021B(bpy.types.Operator):
     def execute(self, context):
         set_base_color(0xF5DF4D, self.bl_label)
         return {'FINISHED'}
+
+class PMS2022(bpy.types.Operator):
+    """Pantone 17-3938"""
+    bl_label = "Very Peri"
+    bl_idname = 'color.pms_2022'
+    def execute(self, context):
+        set_base_color(0x6567aa, self.bl_label)
+        return {'FINISHED'}
+
+# EXTRAS & APOCRYPHA
 
 class PMSPrince(bpy.types.Operator):
     """Custom Color selected by Pantone"""
@@ -499,12 +515,14 @@ class PMSPanel2020(bpy.types.Panel):
         scol.label(text="2020")
         scol.label(text="2021")
         scol.label(text="2021")
+        scol.label(text="2022")
 
         scol = srow.column(align=True)
         scol.scale_y = 1.25
         scol.label(text="", icon_value=c_icons["pcoy_2020"].icon_id)
         scol.label(text="", icon_value=c_icons["pcoy_2021a"].icon_id)
         scol.label(text="", icon_value=c_icons["pcoy_2021b"].icon_id)
+        scol.label(text="", icon_value=c_icons["pcoy_2022"].icon_id)
 
         scol = srow.column(align=True)
         scol.scale_y = 1.25
@@ -512,6 +530,7 @@ class PMSPanel2020(bpy.types.Panel):
         scol.operator("color.pms_2020", text="Classic Blue")
         scol.operator("color.pms_2021_a", text="Ultimate Gray")
         scol.operator("color.pms_2021_b", text="Illuminating")
+        scol.operator("color.pms_2022", text="Very Peri")
 
 
 # Extras & Apocrypha PANEL
@@ -583,6 +602,7 @@ classes = [
     PMS2020,
     PMS2021A,
     PMS2021B,
+    PMS2022,
     PMSPrince,
     PMSConan,
     PMSBCoral,

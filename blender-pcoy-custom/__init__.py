@@ -18,10 +18,10 @@
 
 
 bl_info = {
-    "name"       : "PCOY (Pantone Color of the Year)",
+    "name"       : "PCOY (Pantone Color of the Year) — Custom",
     "description": "Sets the Base Color of a Principled BSDF",
     "author"     : "Don Schnitzius",
-    "version"    : (0, 3, 1),
+    "version"    : (0, 4, 1),
     "blender"    : (2, 80, 0),
     "location"   : "3D Viewport > Sidebar > PCOY",
     # "warning"    : "WIP",
@@ -86,6 +86,8 @@ def set_base_color(hex, mat_name):
 
 
 # COLOR CLASSES
+
+# 2000-2009
 
 class PMS2000(bpy.types.Operator):
     """Pantone 15-4020"""
@@ -166,6 +168,8 @@ class PMS2009(bpy.types.Operator):
     def execute(self, context):
         set_base_color(0xF0C05A, self.bl_label)
         return {'FINISHED'}
+
+# 2010-2019
 
 class PMS2010(bpy.types.Operator):
     """Pantone 15-5519"""
@@ -255,6 +259,8 @@ class PMS2019(bpy.types.Operator):
         set_base_color(0xFF6F61, self.bl_label)
         return {'FINISHED'}
 
+# 2020-2029
+
 class PMS2020(bpy.types.Operator):
     """Pantone 19-4052"""
     bl_label = "Classic Blue"
@@ -278,6 +284,16 @@ class PMS2021B(bpy.types.Operator):
     def execute(self, context):
         set_base_color(0xF5DF4D, self.bl_label)
         return {'FINISHED'}
+
+class PMS2022(bpy.types.Operator):
+    """Pantone 17-3938"""
+    bl_label = "Very Peri"
+    bl_idname = 'color.pms_2022'
+    def execute(self, context):
+        set_base_color(0x6567aa, self.bl_label)
+        return {'FINISHED'}
+
+# EXTRAS & APOCRYPHA
 
 class PMSPrince(bpy.types.Operator):
     """Custom Color selected by Pantone"""
@@ -334,6 +350,8 @@ class PMS448C(bpy.types.Operator):
     def execute(self, context):
         set_base_color(0x4A412A, self.bl_label)
         return {'FINISHED'}
+
+# SCHNITZIUS SELECTS
 
 class SCHNITZIUS_GREEN(bpy.types.Operator):
     """Schnitzius Green"""
@@ -447,6 +465,170 @@ class PMS_7499U(bpy.types.Operator):
         set_base_color(0xf6edca, self.bl_label)
         return {'FINISHED'}
 
+# SS2022 LONDON
+
+class PMS12_4401(bpy.types.Operator):
+    """Pantone 12_4401"""
+    bl_label = "Spun Sugar"
+    bl_idname = 'color.pms_12_4401'
+    def execute(self, context):
+        set_base_color(0xc0e3ee, self.bl_label)
+        return {'FINISHED'}
+
+class PMS13_1513(bpy.types.Operator):
+    """Pantone 13_1513"""
+    bl_label = "Gossamer Pink"
+    bl_idname = 'color.pms_13_1513'
+    def execute(self, context):
+        set_base_color(0xfcd3ce, self.bl_label)
+        return {'FINISHED'}
+
+class PMS18_2042(bpy.types.Operator):
+    """Pantone 18_2042"""
+    bl_label = "Innuendo"
+    bl_idname = 'color.pms_18_2042'
+    def execute(self, context):
+        set_base_color(0xd14b75, self.bl_label)
+        return {'FINISHED'}
+
+class PMS19_4151(bpy.types.Operator):
+    """Pantone 19_4151"""
+    bl_label = "Skydiver"
+    bl_idname = 'color.pms_19_4151'
+    def execute(self, context):
+        set_base_color(0x006dab, self.bl_label)
+        return {'FINISHED'}
+
+class PMS14_0850(bpy.types.Operator):
+    """Pantone 14_0850"""
+    bl_label = "Daffodil"
+    bl_idname = 'color.pms_14_0850'
+    def execute(self, context):
+        set_base_color(0xfeca60, self.bl_label)
+        return {'FINISHED'}
+
+class PMS16_4118(bpy.types.Operator):
+    """Pantone 16_4118"""
+    bl_label = "Glacier Lake"
+    bl_idname = 'color.pms_16_4118'
+    def execute(self, context):
+        set_base_color(0x93b0c6, self.bl_label)
+        return {'FINISHED'}
+
+class PMS18_4728(bpy.types.Operator):
+    """Pantone 18_4728"""
+    bl_label = "Harbor Blue"
+    bl_idname = 'color.pms_18_4728'
+    def execute(self, context):
+        set_base_color(0x007781, self.bl_label)
+        return {'FINISHED'}
+
+class PMS18_1019(bpy.types.Operator):
+    """Pantone 18_1019"""
+    bl_label = "Coca Mocha"
+    bl_idname = 'color.pms_18_1019'
+    def execute(self, context):
+        set_base_color(0x987d6a, self.bl_label)
+        return {'FINISHED'}
+
+class PMS18_3324(bpy.types.Operator):
+    """Pantone 18_3324"""
+    bl_label = "Dahlia"
+    bl_idname = 'color.pms_18_3324'
+    def execute(self, context):
+        set_base_color(0x985696, self.bl_label)
+        return {'FINISHED'}
+
+class PMS18_1564(bpy.types.Operator):
+    """Pantone 18_1564"""
+    bl_label = "Poinciana"
+    bl_idname = 'color.pms_18_1564'
+    def execute(self, context):
+        set_base_color(0xd64a2c, self.bl_label)
+        return {'FINISHED'}
+
+# PMS SS2022 NY
+
+class PMS14_5713(bpy.types.Operator):
+    """Pantone 14_5713"""
+    bl_label = "Cascade"
+    bl_idname = 'color.pms_14_5713'
+    def execute(self, context):
+        set_base_color(0x87cbbf, self.bl_label)
+        return {'FINISHED'}
+
+class PMS16_1349(bpy.types.Operator):
+    """Pantone 16_1349"""
+    bl_label = "Coral Rose"
+    bl_idname = 'color.pms_16_1349'
+    def execute(self, context):
+        set_base_color(0xf78c5f, self.bl_label)
+        return {'FINISHED'}
+
+class PMS18_4143(bpy.types.Operator):
+    """Pantone 18_4143"""
+    bl_label = "Super Sonic"
+    bl_idname = 'color.pms_18_4143'
+    def execute(self, context):
+        set_base_color(0x3c88c4, self.bl_label)
+        return {'FINISHED'}
+
+class PMS12_0825(bpy.types.Operator):
+    """Pantone 12_0825"""
+    bl_label = "Popcorn"
+    bl_idname = 'color.pms_12_0825'
+    def execute(self, context):
+        set_base_color(0xfae39e, self.bl_label)
+        return {'FINISHED'}
+
+class PMS13_2004(bpy.types.Operator):
+    """Pantone 13_2004"""
+    bl_label = "Potpourri"
+    bl_idname = 'color.pms_13_2004'
+    def execute(self, context):
+        set_base_color(0xecd4d4, self.bl_label)
+        return {'FINISHED'}
+
+class PMS17_1928(bpy.types.Operator):
+    """Pantone 17_1928"""
+    bl_label = "Bubblegum"
+    bl_idname = 'color.pms_17_1928'
+    def execute(self, context):
+        set_base_color(0xef8a9e, self.bl_label)
+        return {'FINISHED'}
+
+class PMS18_1160(bpy.types.Operator):
+    """Pantone 18_1160"""
+    bl_label = "Sudan Brown"
+    bl_idname = 'color.pms_18_1160'
+    def execute(self, context):
+        set_base_color(0xbb7f35, self.bl_label)
+        return {'FINISHED'}
+
+class PMS15_0549(bpy.types.Operator):
+    """Pantone 15_0549"""
+    bl_label = "Fragile Sprou"
+    bl_idname = 'color.pms_15_0549'
+    def execute(self, context):
+        set_base_color(0xc5c637, self.bl_label)
+        return {'FINISHED'}
+
+class PMS14_3612(bpy.types.Operator):
+    """Pantone 14_3612"""
+    bl_label = "Orchid Bloo"
+    bl_idname = 'color.pms_14_3612'
+    def execute(self, context):
+        set_base_color(0xd0bdd8, self.bl_label)
+        return {'FINISHED'}
+
+class PMS18_1307(bpy.types.Operator):
+    """Pantone 18_1307"""
+    bl_label = "Coffee Quartz"
+    bl_idname = 'color.pms_18_1307'
+    def execute(self, context):
+        set_base_color(0x7d6963, self.bl_label)
+        return {'FINISHED'}
+
 
 
 # BOOLEAN FOR PANEL
@@ -464,7 +646,7 @@ class PMSPanel(bpy.types.Panel):
     bl_label = "Pantone Color of the Year"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "PCOY"
+    bl_category = "MAT"
 
     def draw(self, context):
         layout = self.layout
@@ -479,7 +661,7 @@ class PMSPanel2000(bpy.types.Panel):
     bl_label = "2000-09"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "PMS"
+    bl_category = "MAT"
     bl_parent_id = 'PMS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -536,7 +718,7 @@ class PMSPanel2010(bpy.types.Panel):
     bl_label = "2010-19"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "PMS"
+    bl_category = "MAT"
     bl_parent_id = 'PMS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -596,7 +778,7 @@ class PMSPanel2020(bpy.types.Panel):
     bl_label = "2020-29"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "PMS"
+    bl_category = "MAT"
     bl_parent_id = 'PMS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -611,12 +793,14 @@ class PMSPanel2020(bpy.types.Panel):
         scol.label(text="2020")
         scol.label(text="2021")
         scol.label(text="2021")
+        scol.label(text="2022")
 
         scol = srow.column(align=True)
         scol.scale_y = 1.25
         scol.label(text="", icon_value=c_icons["pcoy_2020"].icon_id)
         scol.label(text="", icon_value=c_icons["pcoy_2021a"].icon_id)
         scol.label(text="", icon_value=c_icons["pcoy_2021b"].icon_id)
+        scol.label(text="", icon_value=c_icons["pcoy_2022"].icon_id)
 
         scol = srow.column(align=True)
         scol.scale_y = 1.25
@@ -624,6 +808,7 @@ class PMSPanel2020(bpy.types.Panel):
         scol.operator("color.pms_2020", text="Classic Blue")
         scol.operator("color.pms_2021_a", text="Ultimate Gray")
         scol.operator("color.pms_2021_b", text="Illuminating")
+        scol.operator("color.pms_2022", text="Very Peri")
 
 
 # Extras & Apocrypha PANEL
@@ -632,7 +817,7 @@ class PMSPanelExtras(bpy.types.Panel):
     bl_label = "Extras & Apocrypha"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "PMS"
+    bl_category = "MAT"
     bl_parent_id = 'PMS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -669,7 +854,7 @@ class PMSPanelSchnitzius(bpy.types.Panel):
     bl_label = "Schnitzius Select"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "PMS"
+    bl_category = "MAT"
     bl_parent_id = 'PMS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -680,19 +865,105 @@ class PMSPanelSchnitzius(bpy.types.Panel):
         col.label(text="My Color")
         col.label(text="PMS Match")
         col.operator("color.schnitzius_green", text="Green")
-        col.operator("color.pms_381_u", text="PMS 381 U")
+        col.operator("color.pms_381_u", text="381 U")
         col.operator("color.schnitzius_red", text="Red")
-        col.operator("color.pms_172_c", text="PMS 172 C")
+        col.operator("color.pms_172_c", text="172 C")
         col.operator("color.schnitzius_blue", text="Blue")
-        col.operator("color.pms_2685_u", text="PMS 2685 U")
+        col.operator("color.pms_2685_u", text="2685 U")
         col.operator("color.schnitzius_yellow", text="Yellow")
-        col.operator("color.pms_396_u", text="PMS 396 U")
+        col.operator("color.pms_396_u", text="396 U")
         col.operator("color.schnitzius_bronze_pale", text="Bronze Pale")
-        col.operator("color.pms_729_u", text="PMS 729 U")
+        col.operator("color.pms_729_u", text="729 U")
         col.operator("color.schnitzius_bronze_rich", text="Bronze Rich")
-        col.operator("color.pms_7518_u", text="PMS 7518 U")
+        col.operator("color.pms_7518_u", text="7518 U")
         col.operator("color.schnitzius_white", text="White")
-        col.operator("color.pms_7499_u", text="PMS 7499 U")
+        col.operator("color.pms_7499_u", text="7499 U")
+
+
+# SS2022 LONDON PANEL
+class PMSPanelSS2022London(bpy.types.Panel):
+    bl_idname = "PMS_PT_Panel_SS2022London"
+    bl_label = "SS2022 London"
+    bl_space_type = "VIEW_3D"
+    bl_region_type = "UI"
+    bl_category = "MAT"
+    bl_parent_id = 'PMS_PT_Panel'
+    bl_options = {'DEFAULT_CLOSED'}
+
+    def draw(self, context):
+        global c_icons
+        layout = self.layout
+
+        srow = layout.row()
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.label(text="", icon_value=c_icons["pms_12_4401"].icon_id)
+        scol.label(text="", icon_value=c_icons["pms_13_1513"].icon_id)
+        scol.label(text="", icon_value=c_icons["pms_18_2042"].icon_id)
+        scol.label(text="", icon_value=c_icons["pms_19_4151"].icon_id)
+        scol.label(text="", icon_value=c_icons["pms_14_0850"].icon_id)
+        scol.label(text="", icon_value=c_icons["pms_16_4118"].icon_id)
+        scol.label(text="", icon_value=c_icons["pms_18_4728"].icon_id)
+        scol.label(text="", icon_value=c_icons["pms_18_1019"].icon_id)
+        scol.label(text="", icon_value=c_icons["pms_18_3324"].icon_id)
+        scol.label(text="", icon_value=c_icons["pms_18_1564"].icon_id)
+
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.scale_x = 3.0
+        scol.operator("color.pms_12_4401", text="Spun Sugar")
+        scol.operator("color.pms_13_1513", text="Gossamer Pink")
+        scol.operator("color.pms_18_2042", text="Innuendo")
+        scol.operator("color.pms_19_4151", text="Skydiver")
+        scol.operator("color.pms_14_0850", text="Daffodil")
+        scol.operator("color.pms_16_4118", text="Glacier Lake")
+        scol.operator("color.pms_18_4728", text="Harbor Blue")
+        scol.operator("color.pms_18_1019", text="Coca Mocha")
+        scol.operator("color.pms_18_3324", text="Dahlia")
+        scol.operator("color.pms_18_1564", text="Poinciana")
+
+
+# SS2022 NY PANEL
+class PMSPanelSS2022NY(bpy.types.Panel):
+    bl_idname = "PMS_PT_Panel_SS2022NY"
+    bl_label = "SS2022 New York"
+    bl_space_type = "VIEW_3D"
+    bl_region_type = "UI"
+    bl_category = "MAT"
+    bl_parent_id = 'PMS_PT_Panel'
+    bl_options = {'DEFAULT_CLOSED'}
+
+    def draw(self, context):
+        global c_icons
+        layout = self.layout
+
+        srow = layout.row()
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.label(text="", icon_value=c_icons["pms_14_5713"].icon_id)
+        scol.label(text="", icon_value=c_icons["pms_16_1349"].icon_id)
+        scol.label(text="", icon_value=c_icons["pms_18_4143"].icon_id)
+        scol.label(text="", icon_value=c_icons["pms_12_0825"].icon_id)
+        scol.label(text="", icon_value=c_icons["pms_13_2004"].icon_id)
+        scol.label(text="", icon_value=c_icons["pms_17_1928"].icon_id)
+        scol.label(text="", icon_value=c_icons["pms_18_1160"].icon_id)
+        scol.label(text="", icon_value=c_icons["pms_15_0549"].icon_id)
+        scol.label(text="", icon_value=c_icons["pms_14_3612"].icon_id)
+        scol.label(text="", icon_value=c_icons["pms_18_1307"].icon_id)
+
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.scale_x = 3.0
+        scol.operator("color.pms_14_5713", text="Cascade")
+        scol.operator("color.pms_16_1349", text="Coral Rose")
+        scol.operator("color.pms_18_4143", text="Super Sonic")
+        scol.operator("color.pms_12_0825", text="Popcorn")
+        scol.operator("color.pms_13_2004", text="Potpourri")
+        scol.operator("color.pms_17_1928", text="Bubblegum")
+        scol.operator("color.pms_18_1160", text="Sudan Brown")
+        scol.operator("color.pms_15_0549", text="Fragile Sprou")
+        scol.operator("color.pms_14_3612", text="Orchid Bloo")
+        scol.operator("color.pms_18_1307", text="Coffee Quartz")
 
 
 
@@ -704,6 +975,8 @@ classes = [
     PMSPanel2020,
     PMSPanelExtras,
     PMSPanelSchnitzius,
+    PMSPanelSS2022London,
+    PMSPanelSS2022NY,
     PMS2000,
     PMS2001,
     PMS2002,
@@ -728,6 +1001,7 @@ classes = [
     PMS2020,
     PMS2021A,
     PMS2021B,
+    PMS2022,
     PMSPrince,
     PMSConan,
     PMSBCoral,
@@ -749,6 +1023,26 @@ classes = [
     PMS_7518U,
     SCHNITZIUS_WHITE,
     PMS_7499U,
+    PMS12_4401,
+    PMS13_1513,
+    PMS18_2042,
+    PMS19_4151,
+    PMS14_0850,
+    PMS16_4118,
+    PMS18_4728,
+    PMS18_1019,
+    PMS18_3324,
+    PMS18_1564,
+    PMS14_5713,
+    PMS16_1349,
+    PMS18_4143,
+    PMS12_0825,
+    PMS13_2004,
+    PMS17_1928,
+    PMS18_1160,
+    PMS15_0549,
+    PMS14_3612,
+    PMS18_1307,
 ]
 
 
