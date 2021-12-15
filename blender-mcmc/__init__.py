@@ -21,9 +21,9 @@ bl_info = {
     "name"       : "MCMC (Mid-Century Modern Colors)",
     "description": "Sets the Base Color of a Principled BSDF",
     "author"     : "Don Schnitzius",
-    "version"    : (0, 3, 0),
+    "version"    : (0, 4, 0),
     "blender"    : (2, 80, 0),
-    "location"   : "3D Viewport > Sidebar > MCMC",
+    "location"   : "3D Viewport > Sidebar > MAT > Mid-Century Modern Colors",
     # "warning"    : "WIP",
     "wiki_url"   : "https://github.com/don1138/blender-pcoy",
     "support"    : "COMMUNITY",
@@ -335,7 +335,7 @@ class MCMCPanel(bpy.types.Panel):
     bl_label = "Mid-Century Modern Colors"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MCMC"
+    bl_category = "MAT"
 
     def draw(self, context):
         layout = self.layout
@@ -350,7 +350,7 @@ class YELLOWS(bpy.types.Panel):
     bl_label = "Golden Yellow"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MCMC"
+    bl_category = "MAT"
     bl_parent_id = 'MCMC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -380,7 +380,7 @@ class BLUES(bpy.types.Panel):
     bl_label = "Serena Aqua"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MCMC"
+    bl_category = "MAT"
     bl_parent_id = 'MCMC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -410,7 +410,7 @@ class GREENS(bpy.types.Panel):
     bl_label = "Olive Green & Wasabi"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MCMC"
+    bl_category = "MAT"
     bl_parent_id = 'MCMC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -442,7 +442,7 @@ class REDS(bpy.types.Panel):
     bl_label = "Pops of Red"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MCMC"
+    bl_category = "MAT"
     bl_parent_id = 'MCMC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -472,7 +472,7 @@ class ORANGES(bpy.types.Panel):
     bl_label = "Tangerine and Ochre"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MCMC"
+    bl_category = "MAT"
     bl_parent_id = 'MCMC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -502,7 +502,7 @@ class GRAYS(bpy.types.Panel):
     bl_label = "Pewter Gray"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MCMC"
+    bl_category = "MAT"
     bl_parent_id = 'MCMC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -532,7 +532,7 @@ class BROWNS(bpy.types.Panel):
     bl_label = "Soft and Earthy Brown"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MCMC"
+    bl_category = "MAT"
     bl_parent_id = 'MCMC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
