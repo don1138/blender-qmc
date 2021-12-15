@@ -1,7 +1,13 @@
 ## Pantone Color of the Year
 
+### 0.4.0
+- Added Colors
+  - **Pantone Color of the Year**
+    - 2022 Very Peri
+- Changed `bl_category` to **MAT**
+
 ### 0.3.0
-- UILayout updated
+- `UILayout` updated
 - Added Custom Icons of color chips
 - Renaming updated. Year no longer added to Material name
 
