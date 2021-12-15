@@ -23,7 +23,7 @@ bl_info = {
     "author"     : "Don Schnitzius",
     "version"    : (0, 4, 1),
     "blender"    : (2, 80, 0),
-    "location"   : "3D Viewport > Sidebar > PCOY",
+    "location"   : "3D Viewport > Sidebar > MAT > Pantone Color of the Year",
     # "warning"    : "WIP",
     "wiki_url"   : "https://github.com/don1138/blender-pcoy",
     "support"    : "COMMUNITY",
