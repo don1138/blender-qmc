@@ -21,7 +21,7 @@ bl_info = {
     "name"       : "HG71 (House & Garden 1971)",
     "description": "Sets the Base Color of a Principled BSDF",
     "author"     : "Don Schnitzius",
-    "version"    : (0, 1, 0),
+    "version"    : (0, 4, 0),
     "blender"    : (2, 80, 0),
     "location"   : "3D Viewport > Sidebar > MAT > House & Garden 1971",
     # "warning"    : "WIP",
