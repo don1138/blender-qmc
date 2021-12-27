@@ -170,3 +170,87 @@
     - Cobblestone Streets
     <!-- #918475 -->
 
+## House & Gardern Colors 1971
+
+### 0.1.0
+- Created Add-on
+- Created Colors
+  - Yellows
+    - Pineapple
+    <!-- #faf076 -->
+    - Sun Yellow
+    <!-- #fce612 -->
+    - Kumquat
+    <!-- #f2ac18 -->
+    - Goldenrod
+    <!-- #d1ab4e -->
+    - Antique Gold
+    <!-- #b39859 -->
+    - Maple Sugar
+    <!-- #b3a67f -->
+    - Pongee
+    <!-- #d3c995 -->
+  - Greens
+    - Moss Green
+    <!-- #687d37 -->
+    - Lacquer Green
+    <!-- #26572e -->
+    - Green Mint
+    <!-- #42ab52 -->
+    - Parrot Green
+    <!-- #a9ca5a -->
+    - Lettuce
+    <!-- #dceb71 -->
+    - Celery
+    <!-- #e8e9ce -->
+  - Blues
+    - Midnight Blue
+    <!-- #17195c -->
+    - Ultramarine Blue
+    <!-- #1648a6 -->
+    - Space Blue
+    <!-- #1973cf -->
+    - Blue Opaline
+    <!-- #3a66a2 -->
+    - Blue Sky
+    <!-- #9ec4ef -->
+    - Aquamarine Blue
+    <!-- #cad1d3 -->
+  - Oranges
+    - Bittersweet
+    <!-- #fd4f1c -->
+    - Tangerine
+    <!-- #ec4c53 -->
+    - Pompeiian Red
+    <!-- #b34848 -->
+    - Zinnia
+    <!-- #db7543 -->
+    - Creamy Apricot
+    <!-- #f5caab -->
+    - Velvet Brown
+    <!-- #4a3439 -->
+  - Reds
+    - Flag Red
+    <!-- #d21b5c -->
+    - Pink Coral
+    <!-- #ec939f -->
+    - Pink Pink
+    <!-- #e9c7e9 -->
+    - Azalea
+    <!-- #e586b9 -->
+  - Purples
+    - Beach Plum
+    <!-- #49134c -->
+    - African Violet
+    <!-- #ce90cf -->
+    - Lavender
+    <!-- #d1bce0 -->
+  - Greys
+    - Oyster White
+    <!-- #e2dddb -->
+    - Mercury
+    <!-- #b2b0b5 -->
+    - Mushroom
+    <!-- #8b8484 -->
+    - Black Pearl
+    <!-- #0a0a13 -->
