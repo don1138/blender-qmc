@@ -1,6 +1,7 @@
 <h1>Blender PCOY (Pantone Color of the Year)<br>
 MCMC (Mid-Century Modern Colors)<br>
-HG71 (House & Garden Colors 1971)</h1>
+HG71 (House & Garden Colors 1971)<br>
+F58 (Ford Colors 1658)</h1>
 
 ### Blender Add-ons That Assign a Custom Color to a Principled BSDF's Base Color.
 
@@ -9,6 +10,8 @@ HG71 (House & Garden Colors 1971)</h1>
 ![Blender MCMC Screenshot](https://github.com/don1138/blender-pcoy/blob/main/blender-mcmc.jpg)
 
 ![Blender HG71 Screenshot](https://github.com/don1138/blender-pcoy/blob/main/blender-hg71.jpg)
+
+![Blender F58 Screenshot](https://github.com/don1138/blender-pcoy/blob/main/blender-f58.jpg)
 
 ## Installation
 
@@ -23,6 +26,8 @@ Install them **individually** via ``Edit > Preferences > Add-ons > Install…``.
 **MCMC** creates a Panel named **Mid-Century Modern Colors** under ``3D Viewport > Sidebar > MAT``.
 
 **HG71** creates a Panel named **House & Garden 1971** under ``3D Viewport > Sidebar > MAT``.
+
+**F58** creates a Panel named **Ford Colors** under ``3D Viewport > Sidebar > MAT``.
 
 Select an Object in your view, and click a button to assign that color to it.
 
@@ -49,6 +54,8 @@ I use **Sand Dollar**, **2020 Bleached Coral**, and **2043 Dead Coral** a lot. [
 
 The **MCMC** and **HG71** colors are rather nice just as they are. **MCMC's** blues, greens, reds, and browns are great starters for terrains.
 
+**F58** is good for vintage cars and machinery.
+
 ## Attributions
 
 **Pantone Color of the Year** is sourced from the Pantone website.
@@ -56,6 +63,8 @@ The **MCMC** and **HG71** colors are rather nice just as they are. **MCMC's** bl
 **Mid-Century Modern Colors** is sourced from [**7 Paint Colors That Nail the Midcentury Modern Look**](https://www.dwell.com/article/best-midcentury-modern-paint-colors-111e82a1) on **Dwell.com**.
 
 **House & Garden Colors 1971** is sourced from a scan of a vintage magazine cover found online.
+
+**Ford Colors 1958** is sourced from a scan of vintage promotional material found online.
 
 <br><br>
 
