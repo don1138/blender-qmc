@@ -57,8 +57,11 @@ The **MCMC** and **HG71** colors are rather nice just as they are. **MCMC's** bl
 
 **House & Garden Colors 1971** is sourced from a scan of a vintage magazine cover found online.
 
+<br><br>
+
 <p align="center">
   <img align="center" src="https://badges.pufler.dev/created/don1138/blender-pcoy?style=for-the-badge&colorA=222&colorB=48684b" alt="Repo Created">
   <img align="center" src="https://badges.pufler.dev/updated/don1138/blender-pcoy?style=for-the-badge&colorA=222&colorB=48684b" alt="Repo Updated">
 </p>
 
+![Alt](https://repobeats.axiom.co/api/embed/8994807a0f77b114d51c66e558162c3b2295afeb.svg "Repobeats analytics image")
