@@ -21,7 +21,7 @@ bl_info = {
     "name"       : "PCOY (Pantone Color of the Year)",
     "description": "Sets the Base Color of a Principled BSDF",
     "author"     : "Don Schnitzius",
-    "version"    : (0, 4, 0),
+    "version"    : (0, 4, 2),
     "blender"    : (2, 80, 0),
     "location"   : "3D Viewport > Sidebar > MAT > Pantone Color of the Year",
     # "warning"    : "WIP",
@@ -351,6 +351,22 @@ class PMS448C(bpy.types.Operator):
         set_base_color(0x4A412A, self.bl_label)
         return {'FINISHED'}
 
+class PMSFreedomBlue(bpy.types.Operator):
+    """Pantone Freedom Blue for Ukraine"""
+    bl_label = "Freedom Blue"
+    bl_idname = 'color.pms_freedom_blue'
+    def execute(self, context):
+        set_base_color(0x005eb8, self.bl_label)
+        return {'FINISHED'}
+
+class PMSEnergizingYellow(bpy.types.Operator):
+    """Pantone Energizing Yellow for Ukraine"""
+    bl_label = "Energizing Yellow"
+    bl_idname = 'color.pms_energizing_yellow'
+    def execute(self, context):
+        set_base_color(0xffd101, self.bl_label)
+        return {'FINISHED'}
+
 
 
 # BOOLEAN FOR PANEL
@@ -557,6 +573,8 @@ class PMSPanelExtras(bpy.types.Panel):
         scol.label(text="", icon_value=c_icons["uw"].icon_id)
         scol.label(text="", icon_value=c_icons["pms_383"].icon_id)
         scol.label(text="", icon_value=c_icons["pms_448"].icon_id)
+        scol.label(text="", icon_value=c_icons["pms_freedom_blue"].icon_id)
+        scol.label(text="", icon_value=c_icons["pms_energizing_yellow"].icon_id)
 
         scol = srow.column(align=True)
         scol.scale_y = 1.25
@@ -568,6 +586,8 @@ class PMSPanelExtras(bpy.types.Panel):
         scol.operator("color.pms_uwign", text="United Way Unignorable")
         scol.operator("color.pms_383", text="A Nice Green")
         scol.operator("color.pms_448c", text="Ugliest Color in the World (Official)")
+        scol.operator("color.pms_freedom_blue", text="Freedom Blue")
+        scol.operator("color.pms_energizing_yellow", text="Energizing Yellow")
 
 
 
@@ -609,7 +629,9 @@ classes = [
     PMSSDCoral,
     PMSUnignorable,
     PMS383,
-    PMS448C
+    PMS448C,
+    PMSFreedomBlue,
+    PMSEnergizingYellow,
 ]
 
 
