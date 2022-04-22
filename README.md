@@ -4,19 +4,19 @@ Blender Add-ons That Assign a Custom Color to a Principled BSDF's Base Color
 
 ## PCOY (Pantone Color of the Year)
 
-![Blender PCOY Screenshot](https://github.com/don1138/blender-pcoy/blob/main/blender-pcoy.jpg)
+![Blender PCOY Screenshot](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-pcoy.jpg)
 
 ## MCMC (Mid-Century Modern Colors)
  
-![Blender MCMC Screenshot](https://github.com/don1138/blender-pcoy/blob/main/blender-mcmc.jpg)
+![Blender MCMC Screenshot](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-mcmc.jpg)
 
 ## HG71 (House & Garden Colors 1971)
  
-![Blender HG71 Screenshot](https://github.com/don1138/blender-pcoy/blob/main/blender-hg71.jpg)
+![Blender HG71 Screenshot](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-hg71.jpg)
 
 ## F58 (Ford Colors 1958)
  
-![Blender F58 Screenshot](https://github.com/don1138/blender-pcoy/blob/main/blender-f58.jpg)
+![Blender F58 Screenshot](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-f58.jpg)
 
 ## Installation
 
