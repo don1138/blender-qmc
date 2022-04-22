@@ -21,7 +21,7 @@ bl_info = {
     "name"       : "PCOY (Pantone Color of the Year) — Custom",
     "description": "Sets the Base Color of a Principled BSDF",
     "author"     : "Don Schnitzius",
-    "version"    : (0, 4, 3),
+    "version"    : (0, 5, 1),
     "blender"    : (2, 80, 0),
     "location"   : "3D Viewport > Sidebar > MAT > Pantone Color of the Year",
     # "warning"    : "WIP",
@@ -70,8 +70,17 @@ def set_base_color(hex, mat_name):
     material = bpy.context.object.active_material
     if material:
         mat_bool = bpy.context.scene.pms_bool.rename_material_pcoy
+        plaster = bpy.data.materials.get('QMM Plaster')
         BSDF = material.node_tree.nodes.get('Principled BSDF')
-        if BSDF:
+        RGB = material.node_tree.nodes.get('RGB')
+        ColorRamp = material.node_tree.nodes.get('ColorRamp')
+
+        if material == plaster:
+            ColorRamp.color_ramp.elements[0].color = hex_to_rgb(hex)
+            BSDF.inputs[3].default_value = hex_to_rgb(hex)
+            RGB.outputs[0].default_value = hex_to_rgb(hex)
+            material.diffuse_color = hex_to_rgb(hex)
+        elif BSDF:
             BSDF.inputs[0].default_value = hex_to_rgb(hex)
             material.diffuse_color = hex_to_rgb(hex)
             if mat_bool == True:

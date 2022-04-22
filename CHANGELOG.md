@@ -1,5 +1,8 @@
 ## Pantone Color of the Year
 
+### 0.5.0
+- Added ability to change **QMM Plaster** material
+
 ### 0.4.0
 - Added Colors
   - **Pantone Color of the Year**
@@ -88,6 +91,9 @@
 
 ## Mid-Century Modern
 
+### 0.5.0
+- Added ability to change **QMM Plaster** material
+
 ### 0.3.0
 - UILayout updated
 - Added Custom Icons of color chips
@@ -172,6 +178,9 @@
 
 ## House & Gardern Colors 1971
 
+### 0.5.0
+- Added ability to change **QMM Plaster** material
+
 ### 0.1.0
 - Created Add-on
 - Created Colors
@@ -254,3 +263,38 @@
     <!-- #8b8484 -->
     - Black Pearl
     <!-- #0a0a13 -->
+
+## Ford Colors 1958
+
+### 0.5.0
+- Added ability to change **QMM Plaster** material
+
+### 0.4.0
+- Created Add-on
+- Created Colors
+  - A Raven Black
+  <!-- #010303 -->
+  - C Desert Beige
+  <!-- #c0ab83 -->
+  - D Palamino Tan
+  <!-- #ab7832 -->
+  - E Colonial White
+  <!-- #e7e4c1 -->
+  - F Silvertone Green
+  <!-- #1e3226 -->
+  - G Sun Gold
+  <!-- #e7d74a -->
+  - H Gunmetal Gray
+  <!-- #4c4f50 -->
+  - J Bali Bronze
+  <!-- #654935 -->
+  - L Azure Blue
+  <!-- #7aafd5 -->
+  - M Gulfstream Blue
+  <!-- #2b758c -->
+  - N Seaspray Green
+  <!-- #a0c78e -->
+  - R Torch Red
+  <!-- #620800 -->
+  - T Silvetone Blue
+  <!-- #243b59 -->
