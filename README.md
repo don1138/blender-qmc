@@ -1,4 +1,4 @@
-<h1>Blender Groovy Colors Collection</h1>
+<h1>Blender Quick Material Colors</h1>
 
 Blender Add-ons That Assign a Custom Color to a Principled BSDF's Base Color
 
