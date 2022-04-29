@@ -1,29 +1,36 @@
 ## Pantone Color of the Year
 
 ### 0.5.0
+<!-- 4/22/22 -->
 - Added ability to change **QMM Plaster** material
 
 ### 0.4.0
+<!-- 3/9/22 -->
 - Added Colors
   - **Pantone Color of the Year**
     - 2022 Very Peri
 - Changed `bl_category` to **MAT**
 
 ### 0.3.0
+<!-- 8/9/21 -->
 - `UILayout` updated
 - Added Custom Icons of color chips
 - Renaming updated. Year no longer added to Material name
 
 ### 0.2.2
+<!-- 7/18/21 -->
 - Unique class name for checkbox bool
 
 ### 0.2.1
+<!-- 7/11/21 -->
 - Added Error Detection
 
 ### 0.2.0
+<!-- 7/10/21 -->
 - Added Rename Material boolean
 
 ### 0.1.0
+<!-- 6/22/21 -->
 - Created Add-on
 - Added Colors
   - **Pantone Color of the Year**
@@ -90,6 +97,10 @@
     <!-- #4A412A -->
 
 ## Mid-Century Modern
+
+### 0.5.1
+<!-- 4/28/22 -->
+- Fixed conflicting property names for renaming material in **MCMC**, **HG71**, and **F58**
 
 ### 0.5.0
 - Added ability to change **QMM Plaster** material
@@ -178,6 +189,10 @@
 
 ## House & Gardern Colors 1971
 
+### 0.5.1
+<!-- 4/28/22 -->
+- Fixed conflicting property names for renaming material in **MCMC**, **HG71**, and **F58**
+
 ### 0.5.0
 - Added ability to change **QMM Plaster** material
 
@@ -265,6 +280,10 @@
     <!-- #0a0a13 -->
 
 ## Ford Colors 1958
+
+### 0.5.1
+<!-- 4/28/22 -->
+- Fixed conflicting property names for renaming material in **MCMC**, **HG71**, and **F58**
 
 ### 0.5.0
 - Added ability to change **QMM Plaster** material
