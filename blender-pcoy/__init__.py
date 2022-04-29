@@ -69,7 +69,7 @@ def hex_to_rgb(h,alpha=1):
 def set_base_color(hex, mat_name):
     material = bpy.context.object.active_material
     if material:
-        mat_bool = bpy.context.scene.pms_bool.rename_material_pcoy
+        mat_bool = bpy.context.scene.pcoy_bool.rename_material_pcoy
         plaster = bpy.data.materials.get('QMM Plaster')
         BSDF = material.node_tree.nodes.get('Principled BSDF')
         RGB = material.node_tree.nodes.get('RGB')
@@ -397,10 +397,10 @@ class PMSPanel(bpy.types.Panel):
 
     def draw(self, context):
         layout = self.layout
-        pms_bool = context.scene.pms_bool
+        pcoy_bool = context.scene.pcoy_bool
 
         col = layout.column(align=True)
-        col.prop(pms_bool, "rename_material_pcoy")
+        col.prop(pcoy_bool, "rename_material_pcoy")
 
 # 2000-09 PANEL
 class PMSPanel2000(bpy.types.Panel):
@@ -662,7 +662,7 @@ def register():
     for cls in classes:
 #        addon_updater_ops.make_annotations(cls)  # Avoid blender 2.8 warnings.
         bpy.utils.register_class(cls)
-        bpy.types.Scene.pms_bool = bpy.props.PointerProperty(type=PMS_SETTINGS)
+        bpy.types.Scene.pcoy_bool = bpy.props.PointerProperty(type=PMS_SETTINGS)
 
 
 def unregister():
@@ -672,7 +672,7 @@ def unregister():
     global c_icons
     bpy.utils.previews.remove(c_icons)
 
-    del bpy.types.Scene.pms_bool
+    del bpy.types.Scene.pcoy_bool
     for cls in reversed(classes):
         bpy.utils.unregister_class(cls)
 
