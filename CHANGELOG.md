@@ -1,4 +1,4 @@
-## Pantone Color of the Year
+# Pantone Color of the Year
 
 ### 0.5.0
 <!-- 4/22/22 -->
@@ -96,7 +96,7 @@
     - Pantone 448 C The Ugliest Color in the World (Official)
     <!-- #4A412A -->
 
-## Mid-Century Modern
+# Mid-Century Modern
 
 ### 0.5.1
 <!-- 4/28/22 -->
@@ -187,7 +187,7 @@
     - Cobblestone Streets
     <!-- #918475 -->
 
-## House & Gardern Colors 1971
+# House & Gardern Colors 1971
 
 ### 0.5.1
 <!-- 4/28/22 -->
@@ -279,7 +279,7 @@
     - Black Pearl
     <!-- #0a0a13 -->
 
-## Ford Colors 1958
+# Ford Colors 1958
 
 ### 0.5.1
 <!-- 4/28/22 -->
