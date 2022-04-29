@@ -39,9 +39,9 @@ Set the ``Rename Material`` checkbox to ``True`` to change the material name.
 
 ## Caveats & Warnings
 
-**This add-on does one very specific thing:**
+**These add-ons do one very specific thing:**
 
-It sets the Base Color of the Principled BSDF Shader node specifically named "Principled BSDF" -- which is created by default with all new materials -- to a custom color. It also sets the object's `Viewport Display > Color` to the same color.
+They set the Base Color of the Principled BSDF Shader node specifically named "Principled BSDF" -- which is created by default with all new materials -- to a custom color. It also sets the object's `Viewport Display > Color` to the same color.
 
 **This add-on will only affect the Active Material of the Currently Selected Object.**
 
