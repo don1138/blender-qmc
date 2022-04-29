@@ -69,7 +69,7 @@ def hex_to_rgb(h,alpha=1):
 def set_base_color(hex, mat_name):
     material = bpy.context.object.active_material
     if material:
-        mat_bool = bpy.context.scene.pms_bool.rename_material_pcoy
+        mat_bool = bpy.context.scene.pcoy_bool.rename_material_pcoy
         plaster = bpy.data.materials.get('QMM Plaster')
         BSDF = material.node_tree.nodes.get('Principled BSDF')
         RGB = material.node_tree.nodes.get('RGB')
@@ -677,10 +677,10 @@ class PMSPanel(bpy.types.Panel):
 
     def draw(self, context):
         layout = self.layout
-        pms_bool = context.scene.pms_bool
+        pcoy_bool = context.scene.pcoy_bool
 
         col = layout.column(align=True)
-        col.prop(pms_bool, "rename_material_pcoy")
+        col.prop(pcoy_bool, "rename_material_pcoy")
 
 # 2000-09 PANEL
 class PMSPanel2000(bpy.types.Panel):
@@ -1097,7 +1097,7 @@ def register():
     for cls in classes:
 #        addon_updater_ops.make_annotations(cls)  # Avoid blender 2.8 warnings.
         bpy.utils.register_class(cls)
-        bpy.types.Scene.pms_bool = bpy.props.PointerProperty(type=PMS_SETTINGS)
+        bpy.types.Scene.pcoy_bool = bpy.props.PointerProperty(type=PMS_SETTINGS)
 
 
 def unregister():
@@ -1107,7 +1107,7 @@ def unregister():
     global c_icons
     bpy.utils.previews.remove(c_icons)
 
-    del bpy.types.Scene.pms_bool
+    del bpy.types.Scene.pcoy_bool
     for cls in reversed(classes):
         bpy.utils.unregister_class(cls)
 
@@ -1116,34 +1116,3 @@ if __name__ == "__main__":
     # The path of this blend file (if saved)
     __file__ = bpy.data.filepath
     register()
-
-
-
-
-#LIST NODE OUTPUTS
-#for i, o in enumerate(BSDF.inputs):
-#    print(i, o.name)
-# 0 Base Color
-# 1 Subsurface
-# 2 Subsurface Radius
-# 3 Subsurface Color
-# 4 Metallic
-# 5 Specular
-# 6 Specular Tint
-# 7 Roughness
-# 8 Anisotropic
-# 9 Anisotropic Rotation
-# 10 Sheen
-# 11 Sheen Tint
-# 12 Clearcoat
-# 13 Clearcoat Roughness
-# 14 IOR
-# 15 Transmission
-# 16 Transmission Roughness
-# 17 Emission
-# 18 Emission Strength
-# 19 Alpha
-# 20 Normal
-# 21 Clearcoat Normal
-# 22 Tangent
-
