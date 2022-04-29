@@ -21,7 +21,7 @@ bl_info = {
     "name"       : "MCMC (Mid-Century Modern Colors)",
     "description": "Sets the Base Color of a Principled BSDF",
     "author"     : "Don Schnitzius",
-    "version"    : (0, 5, 0),
+    "version"    : (0, 5, 1),
     "blender"    : (2, 80, 0),
     "location"   : "3D Viewport > Sidebar > MAT > Mid-Century Modern Colors",
     # "warning"    : "WIP",
@@ -69,7 +69,7 @@ def hex_to_rgb(h,alpha=1):
 def set_base_color(hex, mat_name):
     material = bpy.context.object.active_material
     if material:
-        mat_bool = bpy.context.scene.pms_bool.rename_material_pcoy
+        mat_bool = bpy.context.scene.mcmc_bool.rename_material_mcmc
         plaster = bpy.data.materials.get('QMM Plaster')
         BSDF = material.node_tree.nodes.get('Principled BSDF')
         RGB = material.node_tree.nodes.get('RGB')

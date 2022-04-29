@@ -21,7 +21,7 @@ bl_info = {
     "name"       : "HG71 (House & Garden 1971)",
     "description": "Sets the Base Color of a Principled BSDF",
     "author"     : "Don Schnitzius",
-    "version"    : (0, 5, 0),
+    "version"    : (0, 5, 1),
     "blender"    : (2, 80, 0),
     "location"   : "3D Viewport > Sidebar > MAT > House & Garden 1971",
     # "warning"    : "WIP",
@@ -69,7 +69,7 @@ def hex_to_rgb(h,alpha=1):
 def set_base_color(hex, mat_name):
     material = bpy.context.object.active_material
     if material:
-        mat_bool = bpy.context.scene.pms_bool.rename_material_pcoy
+        mat_bool = bpy.context.scene.hg_bool.rename_material_hg
         plaster = bpy.data.materials.get('QMM Plaster')
         BSDF = material.node_tree.nodes.get('Principled BSDF')
         RGB = material.node_tree.nodes.get('RGB')
@@ -389,7 +389,7 @@ class HG71AquamarineBlue(bpy.types.Operator):
 
 # BOOLEAN FOR PANEL
 class HG71_SETTINGS(bpy.types.PropertyGroup):
-    rename_material_pcoy: bpy.props.BoolProperty(
+    rename_material_hg: bpy.props.BoolProperty(
         name='Rename Material',
         default=False
     )
@@ -406,10 +406,10 @@ class HG71Panel(bpy.types.Panel):
 
     def draw(self, context):
         layout = self.layout
-        pms_bool = context.scene.pms_bool
+        hg_bool = context.scene.hg_bool
 
         col = layout.column(align=True)
-        col.prop(pms_bool, "rename_material_pcoy")
+        col.prop(hg_bool, "rename_material_hg")
 
 
 # YELLOWS
@@ -712,7 +712,7 @@ def register():
     for cls in classes:
 #        addon_updater_ops.make_annotations(cls)  # Avoid blender 2.8 warnings.
         bpy.utils.register_class(cls)
-        bpy.types.Scene.pms_bool = bpy.props.PointerProperty(type=HG71_SETTINGS)
+        bpy.types.Scene.hg_bool = bpy.props.PointerProperty(type=HG71_SETTINGS)
 
 
 def unregister():
@@ -722,7 +722,7 @@ def unregister():
     global c_icons
     bpy.utils.previews.remove(c_icons)
 
-    del bpy.types.Scene.pms_bool
+    del bpy.types.Scene.hg_bool
     for cls in reversed(classes):
         bpy.utils.unregister_class(cls)
 

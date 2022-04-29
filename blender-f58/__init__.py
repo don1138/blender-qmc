@@ -21,7 +21,7 @@ bl_info = {
     "name"       : "F58 (Ford Colors 1958)",
     "description": "Sets the Base Color of a Principled BSDF",
     "author"     : "Don Schnitzius",
-    "version"    : (0, 5, 0),
+    "version"    : (0, 5, 1),
     "blender"    : (2, 80, 0),
     "location"   : "3D Viewport > Sidebar > MAT > Ford Colors 1958",
     # "warning"    : "WIP",
@@ -69,7 +69,7 @@ def hex_to_rgb(h,alpha=1):
 def set_base_color(hex, mat_name):
     material = bpy.context.object.active_material
     if material:
-        mat_bool = bpy.context.scene.pms_bool.rename_material_pcoy
+        mat_bool = bpy.context.scene.f_bool.rename_material_f
         plaster = bpy.data.materials.get('QMM Plaster')
         BSDF = material.node_tree.nodes.get('Principled BSDF')
         RGB = material.node_tree.nodes.get('RGB')
@@ -205,7 +205,7 @@ class F58TSilvetoneBlue(bpy.types.Operator):
 
 # BOOLEAN FOR PANEL
 class F58_SETTINGS(bpy.types.PropertyGroup):
-    rename_material_pcoy: bpy.props.BoolProperty(
+    rename_material_f: bpy.props.BoolProperty(
         name='Rename Material',
         default=False
     )
@@ -222,10 +222,10 @@ class F58Panel(bpy.types.Panel):
 
     def draw(self, context):
         layout = self.layout
-        pms_bool = context.scene.pms_bool
+        f_bool = context.scene.f_bool
 
         col = layout.column(align=True)
-        col.prop(pms_bool, "rename_material_pcoy")
+        col.prop(f_bool, "rename_material_f")
 
 
 
@@ -316,7 +316,7 @@ def register():
     for cls in classes:
 #        addon_updater_ops.make_annotations(cls)  # Avoid blender 2.8 warnings.
         bpy.utils.register_class(cls)
-        bpy.types.Scene.pms_bool = bpy.props.PointerProperty(type=F58_SETTINGS)
+        bpy.types.Scene.f_bool = bpy.props.PointerProperty(type=F58_SETTINGS)
 
 
 def unregister():
@@ -326,7 +326,7 @@ def unregister():
     global c_icons
     bpy.utils.previews.remove(c_icons)
 
-    del bpy.types.Scene.pms_bool
+    del bpy.types.Scene.f_bool
     for cls in reversed(classes):
         bpy.utils.unregister_class(cls)
 
