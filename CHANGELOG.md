@@ -4,6 +4,12 @@
 <!-- 4/22/22 -->
 - Added ability to change **QMM Plaster** material
 
+### 0.4.2
+<!-- 3/9/22 -->
+- Added Colors
+  - **Pantone Freedom Blue** (for Ukraine)
+  - **Pantone Energizing Yellow** (for Ukraine)
+
 ### 0.4.0
 <!-- 3/9/22 -->
 - Added Colors
