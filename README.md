@@ -71,9 +71,9 @@ The **MCMC** and **HG71** colors are rather nice just as they are. **MCMC's** bl
 
 - **Pantone Color of the Year** is sourced from the Pantone website.
 - **Mid-Century Modern Colors** is sourced from [**7 Paint Colors That Nail the Midcentury Modern Look**](https://www.dwell.com/article/best-midcentury-modern-paint-colors-111e82a1) on **Dwell.com**.
-- **More Colors** is sourced from [Sherwin Williams Historic Paint Colors](https://www.sherwin-williams.com/en-us/color/color-collections/historic-paint-colors), [Sherwin Williams Exterior Color Schemes](https://www.sherwin-williams.com/homeowners/color/find-and-explore-colors/paint-colors-by-collection/exterior-color-schemes/suburban-modern). and  [Paintref.com General Electric Paint Cross-Reference](https://paintref.com/cgi-bin/colorcodedisplay.cgi?model=General%20Electric)
 - **House & Garden Colors 1971** is sourced from a scan of a vintage magazine cover found online.
 - **Ford Colors 1958** is sourced from a scan of vintage promotional material found online.
+- **More Colors** is sourced from [Sherwin Williams Historic Paint Colors](https://www.sherwin-williams.com/en-us/color/color-collections/historic-paint-colors), [Sherwin Williams Exterior Color Schemes](https://www.sherwin-williams.com/homeowners/color/find-and-explore-colors/paint-colors-by-collection/exterior-color-schemes/suburban-modern). and  [Paintref.com General Electric Paint Cross-Reference](https://paintref.com/cgi-bin/colorcodedisplay.cgi?model=General%20Electric)
 
 <br><br>
 
