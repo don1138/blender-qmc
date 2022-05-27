@@ -7,15 +7,15 @@ Blender Add-ons That Assign a Custom Color to a Principled BSDF's Base Color
 ![Blender PCOY Screenshot](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-pcoy.jpg)
 
 ## MCMC (Mid-Century Modern Colors)
- 
+
 ![Blender MCMC Screenshot](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-mcmc.jpg)
 
 ## HG71 (House & Garden Colors 1971)
- 
+
 ![Blender HG71 Screenshot](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-hg71.jpg)
 
 ## F58 (Ford Colors 1958)
- 
+
 ![Blender F58 Screenshot](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-f58.jpg)
 
 ## Installation
@@ -26,6 +26,7 @@ Install them **individually** via ``Edit > Preferences > Add-ons > Install…``.
 
 Once activated, a new tab named **MAT** will appear in the 3D viewport sidebar.
 - **PCOY** creates a panel named **Pantone Color of the Year**
+- **MC** creates a panel named **More Colors**
 - **MCMC** creates a panel named **Mid-Century Modern Colors**
 - **HG71** creates a panel named **House & Garden 1971**
 - **F58** creates a panel named **Ford Colors**
@@ -41,14 +42,14 @@ Set the ``Rename Material`` checkbox to ``True`` to change the material name.
 
 **These add-ons do one very specific thing:**
 
-They set the Base Color of the Principled BSDF Shader node specifically named "Principled BSDF" -- which is created by default with all new materials -- to a custom color. It also sets the object's `Viewport Display > Color` to the same color.
+They set the Base Color of the Principled BSDF Shader node specifically named "Principled BSDF" -- which is created by default with all new materials -- to a custom color. It will also change the Base Color of a Diffuse BSDF material as well as the **Plaster** material. It also sets the object's `Viewport Display > Color` to the same color.
 
 **This add-on will only affect the Active Material of the Currently Selected Object.**
 
 The operation will fail if:
 - No object is selected
 - The active object has no material
-- The active material does not include a Principled BSDF Shader named "Principled BSDF"
+- The active material does not include a Principled BSDF Shader named "Principled BSDF" or a Diffuse BSDF Shader named "Diffuse BSDF"
 
 ## Notes
 
@@ -60,10 +61,13 @@ The **MCMC** and **HG71** colors are rather nice just as they are. **MCMC's** bl
 
 **F58** is good for vintage cars and machinery.
 
+**MC** has the era-correct **Avacado** greens and **Harvest** yellows for your 70s retro scenes and models.
+
 ## Attributions
 
 - **Pantone Color of the Year** is sourced from the Pantone website.
 - **Mid-Century Modern Colors** is sourced from [**7 Paint Colors That Nail the Midcentury Modern Look**](https://www.dwell.com/article/best-midcentury-modern-paint-colors-111e82a1) on **Dwell.com**.
+- **More Colors** is sourced from [Sherwin Williams Historic Paint Colors](https://www.sherwin-williams.com/en-us/color/color-collections/historic-paint-colors), [Sherwin Williams Exterior Color Schemes](https://www.sherwin-williams.com/homeowners/color/find-and-explore-colors/paint-colors-by-collection/exterior-color-schemes/suburban-modern). and  [Paintref.com General Electric Paint Cross-Reference](https://paintref.com/cgi-bin/colorcodedisplay.cgi?model=General%20Electric)
 - **House & Garden Colors 1971** is sourced from a scan of a vintage magazine cover found online.
 - **Ford Colors 1958** is sourced from a scan of vintage promotional material found online.
 

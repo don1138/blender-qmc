@@ -1,5 +1,9 @@
 # Pantone Color of the Year
 
+### 0.6.0
+<!-- 5/27/22 -->
+- Added ability to change **Diffuse BSDF** material
+
 ### 0.5.0
 <!-- 4/22/22 -->
 - Added ability to change **QMM Plaster** material
@@ -104,6 +108,10 @@
 
 # Mid-Century Modern
 
+### 0.6.0
+<!-- 5/27/22 -->
+- Added ability to change **Diffuse BSDF** material
+
 ### 0.5.1
 <!-- 4/28/22 -->
 - Fixed conflicting property names for renaming material in **MCMC**, **HG71**, and **F58**
@@ -193,7 +201,22 @@
     - Cobblestone Streets
     <!-- #918475 -->
 
+# More Colors
+
+### 0.6.0
+<!-- 5/27/22 -->
+- Created Add-on
+- Created Colors
+  - Suburban Modern Interior
+  - Suburban Modern Exterior
+  - The Jazz Age
+  - General Electric
+
 # House & Gardern Colors 1971
+
+### 0.6.0
+<!-- 5/27/22 -->
+- Added ability to change **Diffuse BSDF** material
 
 ### 0.5.1
 <!-- 4/28/22 -->
@@ -286,6 +309,10 @@
     <!-- #0a0a13 -->
 
 # Ford Colors 1958
+
+### 0.6.0
+<!-- 5/27/22 -->
+- Added ability to change **Diffuse BSDF** material
 
 ### 0.5.1
 <!-- 4/28/22 -->
