@@ -18,6 +18,10 @@ Blender Add-ons That Assign a Custom Color to a Principled BSDF's Base Color
 
 ![Blender F58 Screenshot](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-f58.jpg)
 
+## MC (More Colors)
+
+![Blender MCMC Screenshot](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-mc.jpg)
+
 ## Installation
 
 Download the latest ZIPs from **Releases**.
@@ -26,10 +30,10 @@ Install them **individually** via ``Edit > Preferences > Add-ons > Install…``.
 
 Once activated, a new tab named **MAT** will appear in the 3D viewport sidebar.
 - **PCOY** creates a panel named **Pantone Color of the Year**
-- **MC** creates a panel named **More Colors**
 - **MCMC** creates a panel named **Mid-Century Modern Colors**
 - **HG71** creates a panel named **House & Garden 1971**
 - **F58** creates a panel named **Ford Colors**
+- **MC** creates a panel named **More Colors**
 
 ## Usage
 
