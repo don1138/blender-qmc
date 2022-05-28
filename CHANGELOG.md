@@ -203,6 +203,12 @@
 
 # More Colors
 
+### 0.7.0
+<!-- 5/27/22 -->
+- Reorganize colors by hue
+- Rename color set **Suburban Modern Interior** to **Suburban Modern**
+- Remove color set **Suburban Modern Exterior**
+
 ### 0.6.0
 <!-- 5/27/22 -->
 - Created Add-on
