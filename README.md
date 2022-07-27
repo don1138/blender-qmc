@@ -77,9 +77,9 @@ The **MCMC** and **HG71** colors are rather nice just as they are. **MCMC's** bl
 
 <br><br>
 <p align="center">
-  <img alt="GitHub latest commit" src="https://img.shields.io/github/last-commit/don1138/blender-pcoy">
-  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/don1138/blender-pcoy">
-  <img alt="Github all releases" src="https://img.shields.io/github/downloads/don1138/blender-pcoy/total.svg"><br>
-  <img src="[https://repobeats.axiom.co/api/embed/6dfa43ed9f8d84a8d280e01482bcec74e5f515af.svg](https://repobeats.axiom.co/api/embed/8994807a0f77b114d51c66e558162c3b2295afeb.svg)" alt="Repobeats analytics image">
+  <img alt="GitHub latest commit" src="https://img.shields.io/github/last-commit/don1138/blender-qmc">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/don1138/blender-qmc">
+  <img alt="Github all releases" src="https://img.shields.io/github/downloads/don1138/blender-qmc/total.svg"><br>
+  <img src="https://repobeats.axiom.co/api/embed/52e50c70eb6c2d9d025cc8b7bf8f3c40ddf5b214.svg" alt="Repobeats analytics image">
 </p>
 
