@@ -73,13 +73,12 @@ The **MCMC** and **HG71** colors are rather nice just as they are. **MCMC's** bl
 - **Mid-Century Modern Colors** is sourced from [**7 Paint Colors That Nail the Midcentury Modern Look**](https://www.dwell.com/article/best-midcentury-modern-paint-colors-111e82a1) on **Dwell.com**.
 - **House & Garden Colors 1971** is sourced from a scan of a vintage magazine cover found online.
 - **Ford Colors 1958** is sourced from a scan of vintage promotional material found online.
-- **More Colors** is sourced from [Sherwin Williams Historic Paint Colors](https://www.sherwin-williams.com/en-us/color/color-collections/historic-paint-colors), [Sherwin Williams Exterior Color Schemes](https://www.sherwin-williams.com/homeowners/color/find-and-explore-colors/paint-colors-by-collection/exterior-color-schemes/suburban-modern). and  [Paintref.com General Electric Paint Cross-Reference](https://paintref.com/cgi-bin/colorcodedisplay.cgi?model=General%20Electric)
+- **More Colors** is sourced from [Sherwin Williams Historic Paint Colors](https://www.sherwin-williams.com/en-us/color/color-collections/historic-paint-colors), [Sherwin Williams Exterior Color Schemes](https://www.sherwin-williams.com/homeowners/color/find-and-explore-colors/paint-colors-by-collection/exterior-color-schemes/suburban-modern),  [Paintref.com General Electric Paint Cross-Reference](https://paintref.com/cgi-bin/colorcodedisplay.cgi?model=General%20Electric), and [Paint Colors For Every Mood](https://www.domino.com/content/paint-colors-for-every-mood)
 
 <br><br>
 
 <p align="center">
-  <img align="center" src="https://badges.pufler.dev/created/don1138/blender-pcoy?style=for-the-badge&colorA=222&colorB=48684b" alt="Repo Created">
-  <img align="center" src="https://badges.pufler.dev/updated/don1138/blender-pcoy?style=for-the-badge&colorA=222&colorB=48684b" alt="Repo Updated">
+  <img align="center" src="https://img.shields.io/github/last-commit/don1138/blender-pcoy" alt="Repo Updated">
 </p>
 
 ![Alt](https://repobeats.axiom.co/api/embed/8994807a0f77b114d51c66e558162c3b2295afeb.svg "Repobeats analytics image")
