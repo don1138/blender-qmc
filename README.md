@@ -76,9 +76,10 @@ The **MCMC** and **HG71** colors are rather nice just as they are. **MCMC's** bl
 - **More Colors** is sourced from [**Historic Paint Colors** (Sherwin Williams)](https://www.sherwin-williams.com/en-us/color/color-collections/historic-paint-colors), [**Exterior Color Schemes** (Sherwin Williams)](https://www.sherwin-williams.com/homeowners/color/find-and-explore-colors/paint-colors-by-collection/exterior-color-schemes/suburban-modern),  [**General Electric Paint Cross-Reference** (paintref.com)](https://paintref.com/cgi-bin/colorcodedisplay.cgi?model=General%20Electric), and [**Paint Colors For Every Mood** (domino.com)](https://www.domino.com/content/paint-colors-for-every-mood).
 
 <br><br>
-
 <p align="center">
-  <img align="center" src="https://img.shields.io/github/last-commit/don1138/blender-pcoy" alt="Repo Updated">
+  <img alt="GitHub latest commit" src="https://img.shields.io/github/last-commit/don1138/blender-pcoy">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/don1138/blender-pcoy">
+  <img alt="Github all releases" src="https://img.shields.io/github/downloads/don1138/blender-pcoy/total.svg"><br>
+  <img src="[https://repobeats.axiom.co/api/embed/6dfa43ed9f8d84a8d280e01482bcec74e5f515af.svg](https://repobeats.axiom.co/api/embed/8994807a0f77b114d51c66e558162c3b2295afeb.svg)" alt="Repobeats analytics image">
 </p>
 
-![Alt](https://repobeats.axiom.co/api/embed/8994807a0f77b114d51c66e558162c3b2295afeb.svg "Repobeats analytics image")
