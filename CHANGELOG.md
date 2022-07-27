@@ -204,8 +204,8 @@
 # More Colors
 
 ### 0.8.0
-<!-- 5/27/22 -->
-- Created Colors
+<!-- 7/27/22 -->
+- Added color set **Moods**
   - Moods > Relaxed
     - Blue 02
     - Blue 08
