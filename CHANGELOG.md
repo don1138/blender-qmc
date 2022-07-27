@@ -203,6 +203,40 @@
 
 # More Colors
 
+### 0.8.0
+<!-- 5/27/22 -->
+- Created Colors
+  - Moods > Relaxed
+    - Blue 02
+    - Blue 08
+    - Green 02
+    - Pink 04
+  - Moods > Energy
+    - Green 07
+    - Green 08
+    - Green 13
+    - Yellow 06
+  - Moods > Cozy
+    - Beige 02
+    - Beige 03
+    - Pink 07
+    - Pink 08
+  - Moods > Focus
+    - Blue 06
+    - Blue 07
+    - Blue 17
+    - Blue 111
+  - Moods > Moody
+    - Black 01
+    - Purple 03
+    - Red 03
+    - Teal 03
+  - Moods > Whites
+    - White 01
+    - White 02
+    - White 03
+    - White 04
+
 ### 0.7.0
 <!-- 5/27/22 -->
 - Reorganize colors by hue
