@@ -73,7 +73,7 @@ The **MCMC** and **HG71** colors are rather nice just as they are. **MCMC's** bl
 - **Mid-Century Modern Colors** is sourced from [**7 Paint Colors That Nail the Midcentury Modern Look**](https://www.dwell.com/article/best-midcentury-modern-paint-colors-111e82a1) on **Dwell.com**.
 - **House & Garden Colors 1971** is sourced from a scan of a vintage magazine cover found online.
 - **Ford Colors 1958** is sourced from a scan of vintage promotional material found online.
-- **More Colors** is sourced from [Sherwin Williams Historic Paint Colors](https://www.sherwin-williams.com/en-us/color/color-collections/historic-paint-colors), [Sherwin Williams Exterior Color Schemes](https://www.sherwin-williams.com/homeowners/color/find-and-explore-colors/paint-colors-by-collection/exterior-color-schemes/suburban-modern),  [Paintref.com General Electric Paint Cross-Reference](https://paintref.com/cgi-bin/colorcodedisplay.cgi?model=General%20Electric), and [Paint Colors For Every Mood](https://www.domino.com/content/paint-colors-for-every-mood).
+- **More Colors** is sourced from [Sherwin Williams Historic Paint Colors](https://www.sherwin-williams.com/en-us/color/color-collections/historic-paint-colors), [Sherwin Williams Exterior Color Schemes](https://www.sherwin-williams.com/homeowners/color/find-and-explore-colors/paint-colors-by-collection/exterior-color-schemes/suburban-modern),  [General Electric Paint Cross-Reference (paintref.com)](https://paintref.com/cgi-bin/colorcodedisplay.cgi?model=General%20Electric), and [Paint Colors For Every Mood (domino.com)](https://www.domino.com/content/paint-colors-for-every-mood).
 
 <br><br>
 
