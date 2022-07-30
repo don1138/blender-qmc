@@ -1,3 +1,299 @@
+# Ford Colors 1958
+
+*Deprecated - Color set moved to **More Colors** add-on*
+
+### 0.6.0
+<!-- 5/27/22 -->
+- Added ability to change **Diffuse BSDF** material
+
+### 0.5.1
+<!-- 4/28/22 -->
+- Fixed conflicting property names for renaming material in **MCMC**, **HG71**, and **F58**
+
+### 0.5.0
+- Added ability to change **QMM Plaster** material
+
+### 0.4.0
+- Created Add-on
+- Created Colors
+  - A Raven Black
+  <!-- #010303 -->
+  - C Desert Beige
+  <!-- #c0ab83 -->
+  - D Palamino Tan
+  <!-- #ab7832 -->
+  - E Colonial White
+  <!-- #e7e4c1 -->
+  - F Silvertone Green
+  <!-- #1e3226 -->
+  - G Sun Gold
+  <!-- #e7d74a -->
+  - H Gunmetal Gray
+  <!-- #4c4f50 -->
+  - J Bali Bronze
+  <!-- #654935 -->
+  - L Azure Blue
+  <!-- #7aafd5 -->
+  - M Gulfstream Blue
+  <!-- #2b758c -->
+  - N Seaspray Green
+  <!-- #a0c78e -->
+  - R Torch Red
+  <!-- #620800 -->
+  - T Silvetone Blue
+  <!-- #243b59 -->
+
+
+  # House & Gardern Colors 1971
+
+### 0.6.0
+<!-- 5/27/22 -->
+- Added ability to change **Diffuse BSDF** material
+
+### 0.5.1
+<!-- 4/28/22 -->
+- Fixed conflicting property names for renaming material in **MCMC**, **HG71**, and **F58**
+
+### 0.5.0
+- Added ability to change **QMM Plaster** material
+
+### 0.1.0
+- Created Add-on
+- Created Colors
+  - Yellows
+    - Pineapple
+    <!-- #faf076 -->
+    - Sun Yellow
+    <!-- #fce612 -->
+    - Kumquat
+    <!-- #f2ac18 -->
+    - Goldenrod
+    <!-- #d1ab4e -->
+    - Antique Gold
+    <!-- #b39859 -->
+    - Maple Sugar
+    <!-- #b3a67f -->
+    - Pongee
+    <!-- #d3c995 -->
+  - Greens
+    - Moss Green
+    <!-- #687d37 -->
+    - Lacquer Green
+    <!-- #26572e -->
+    - Green Mint
+    <!-- #42ab52 -->
+    - Parrot Green
+    <!-- #a9ca5a -->
+    - Lettuce
+    <!-- #dceb71 -->
+    - Celery
+    <!-- #e8e9ce -->
+  - Blues
+    - Midnight Blue
+    <!-- #17195c -->
+    - Ultramarine Blue
+    <!-- #1648a6 -->
+    - Space Blue
+    <!-- #1973cf -->
+    - Blue Opaline
+    <!-- #3a66a2 -->
+    - Blue Sky
+    <!-- #9ec4ef -->
+    - Aquamarine Blue
+    <!-- #cad1d3 -->
+  - Oranges
+    - Bittersweet
+    <!-- #fd4f1c -->
+    - Tangerine
+    <!-- #ec4c53 -->
+    - Pompeiian Red
+    <!-- #b34848 -->
+    - Zinnia
+    <!-- #db7543 -->
+    - Creamy Apricot
+    <!-- #f5caab -->
+    - Velvet Brown
+    <!-- #4a3439 -->
+  - Reds
+    - Flag Red
+    <!-- #d21b5c -->
+    - Pink Coral
+    <!-- #ec939f -->
+    - Pink Pink
+    <!-- #e9c7e9 -->
+    - Azalea
+    <!-- #e586b9 -->
+  - Purples
+    - Beach Plum
+    <!-- #49134c -->
+    - African Violet
+    <!-- #ce90cf -->
+    - Lavender
+    <!-- #d1bce0 -->
+  - Greys
+    - Oyster White
+    <!-- #e2dddb -->
+    - Mercury
+    <!-- #b2b0b5 -->
+    - Mushroom
+    <!-- #8b8484 -->
+    - Black Pearl
+    <!-- #0a0a13 -->
+
+
+
+# Mid-Century Modern
+
+### 0.6.0
+<!-- 5/27/22 -->
+- Added ability to change **Diffuse BSDF** material
+
+### 0.5.1
+<!-- 4/28/22 -->
+- Fixed conflicting property names for renaming material in **MCMC**, **HG71**, and **F58**
+
+### 0.5.0
+- Added ability to change **QMM Plaster** material
+
+### 0.3.0
+- UILayout updated
+- Added Custom Icons of color chips
+
+### 0.1.2
+- Unique class name for checkbox bool
+
+### 0.1.1
+- Added Error Detection
+
+### 0.1.0
+- Created Add-on
+- Added Rename Material boolean
+- Created Colors
+  - **Golden Yellow**
+    - Ginger Ale
+    <!-- #efd079 -->
+    - Pablo Honey
+    <!-- #eac164 -->
+    - Miami Parasol
+    <!-- #F0D3A4 -->
+    - Tanlines
+    <!-- #c48c3f -->
+  - **Serena Aqua**
+    - Blue Seafoam
+    <!-- #afe3e9 -->
+    - Saturday On Sunday
+    <!-- #567475 -->
+    - Sicily Or Cyprus
+    <!-- #488182 -->
+    - Novelty Wave
+    <!-- #73969f -->
+  - **Olive Green and Wasabi**
+    - Relentless Olive
+    <!-- #71713e -->
+    - Green Root
+    <!-- #848551 -->
+    - Saged
+    <!-- #969684 -->
+    - Drive-Thru Safari
+    <!-- #8b9d82 -->
+    - Natural Habitat
+    <!-- #c4c2a3 -->
+  - **Pops of Red**
+    - Cherokee Red
+    <!-- #764139 -->
+    - Lipstick on the Mirror
+    <!-- #ac2c3e -->
+    - Self-Portrait
+    <!-- #642c2f -->
+    - Negroni
+    <!-- #a53b33 -->
+  - **Tangerine and Ochre**
+    - Autumn Glimmer
+    <!-- #E97F4E -->
+    - Orange Fruit
+    <!-- #f88f21 -->
+    - Aperitivo Hour
+    <!-- #e7a885 -->
+    - Bright Marigold
+    <!-- #d78754 -->
+    - Tanlines
+    <!-- #c78c40 -->
+  - **Pewter Gray**
+    - Wright Soft Gray
+    <!-- #8e8fbf -->
+    - After Hours
+    <!-- #3c3b3e -->
+    - Motor Gray
+    <!-- #5c5d5f -->
+    - No Curfew
+    <!-- #626669 -->
+  - **Soft and Earthy Brown**
+    - Cocoa Shell
+    <!-- #7e6657 -->
+    - Fawn Doe
+    <!-- #b5a99d -->
+    - Sentimental Reasons
+    <!-- #a29790 -->
+    - Cobblestone Streets
+    <!-- #918475 -->
+
+# More Colors
+
+### 0.8.0
+<!-- 7/30/22 -->
+- Moved **Ford 1958** color set inside **More Colors**
+
+### 0.8.0
+<!-- 7/27/22 -->
+- Added color set **Moods**
+  - Moods > Relaxed
+    - Blue 02
+    - Blue 08
+    - Green 02
+    - Pink 04
+  - Moods > Energy
+    - Green 07
+    - Green 08
+    - Green 13
+    - Yellow 06
+  - Moods > Cozy
+    - Beige 02
+    - Beige 03
+    - Pink 07
+    - Pink 08
+  - Moods > Focus
+    - Blue 06
+    - Blue 07
+    - Blue 17
+    - Blue 111
+  - Moods > Moody
+    - Black 01
+    - Purple 03
+    - Red 03
+    - Teal 03
+  - Moods > Whites
+    - White 01
+    - White 02
+    - White 03
+    - White 04
+
+### 0.7.0
+<!-- 5/27/22 -->
+- Reorganize colors by hue
+- Rename color set **Suburban Modern Interior** to **Suburban Modern**
+- Remove color set **Suburban Modern Exterior**
+
+### 0.6.0
+<!-- 5/27/22 -->
+- Created Add-on
+- Created Colors
+  - Suburban Modern Interior
+  - Suburban Modern Exterior
+  - The Jazz Age
+  - General Electric
+
+
+
 # Pantone Color of the Year
 
 ### 0.6.0
@@ -106,287 +402,3 @@
     - Pantone 448 C The Ugliest Color in the World (Official)
     <!-- #4A412A -->
 
-# Mid-Century Modern
-
-### 0.6.0
-<!-- 5/27/22 -->
-- Added ability to change **Diffuse BSDF** material
-
-### 0.5.1
-<!-- 4/28/22 -->
-- Fixed conflicting property names for renaming material in **MCMC**, **HG71**, and **F58**
-
-### 0.5.0
-- Added ability to change **QMM Plaster** material
-
-### 0.3.0
-- UILayout updated
-- Added Custom Icons of color chips
-
-### 0.1.2
-- Unique class name for checkbox bool
-
-### 0.1.1
-- Added Error Detection
-
-### 0.1.0
-- Created Add-on
-- Added Rename Material boolean
-- Created Colors
-  - **Golden Yellow**
-    - Ginger Ale
-    <!-- #efd079 -->
-    - Pablo Honey
-    <!-- #eac164 -->
-    - Miami Parasol
-    <!-- #F0D3A4 -->
-    - Tanlines
-    <!-- #c48c3f -->
-  - **Serena Aqua**
-    - Blue Seafoam
-    <!-- #afe3e9 -->
-    - Saturday On Sunday
-    <!-- #567475 -->
-    - Sicily Or Cyprus
-    <!-- #488182 -->
-    - Novelty Wave
-    <!-- #73969f -->
-  - **Olive Green and Wasabi**
-    - Relentless Olive
-    <!-- #71713e -->
-    - Green Root
-    <!-- #848551 -->
-    - Saged
-    <!-- #969684 -->
-    - Drive-Thru Safari
-    <!-- #8b9d82 -->
-    - Natural Habitat
-    <!-- #c4c2a3 -->
-  - **Pops of Red**
-    - Cherokee Red
-    <!-- #764139 -->
-    - Lipstick on the Mirror
-    <!-- #ac2c3e -->
-    - Self-Portrait
-    <!-- #642c2f -->
-    - Negroni
-    <!-- #a53b33 -->
-  - **Tangerine and Ochre**
-    - Autumn Glimmer
-    <!-- #E97F4E -->
-    - Orange Fruit
-    <!-- #f88f21 -->
-    - Aperitivo Hour
-    <!-- #e7a885 -->
-    - Bright Marigold
-    <!-- #d78754 -->
-    - Tanlines
-    <!-- #c78c40 -->
-  - **Pewter Gray**
-    - Wright Soft Gray
-    <!-- #8e8fbf -->
-    - After Hours
-    <!-- #3c3b3e -->
-    - Motor Gray
-    <!-- #5c5d5f -->
-    - No Curfew
-    <!-- #626669 -->
-  - **Soft and Earthy Brown**
-    - Cocoa Shell
-    <!-- #7e6657 -->
-    - Fawn Doe
-    <!-- #b5a99d -->
-    - Sentimental Reasons
-    <!-- #a29790 -->
-    - Cobblestone Streets
-    <!-- #918475 -->
-
-# More Colors
-
-### 0.8.0
-<!-- 7/27/22 -->
-- Added color set **Moods**
-  - Moods > Relaxed
-    - Blue 02
-    - Blue 08
-    - Green 02
-    - Pink 04
-  - Moods > Energy
-    - Green 07
-    - Green 08
-    - Green 13
-    - Yellow 06
-  - Moods > Cozy
-    - Beige 02
-    - Beige 03
-    - Pink 07
-    - Pink 08
-  - Moods > Focus
-    - Blue 06
-    - Blue 07
-    - Blue 17
-    - Blue 111
-  - Moods > Moody
-    - Black 01
-    - Purple 03
-    - Red 03
-    - Teal 03
-  - Moods > Whites
-    - White 01
-    - White 02
-    - White 03
-    - White 04
-
-### 0.7.0
-<!-- 5/27/22 -->
-- Reorganize colors by hue
-- Rename color set **Suburban Modern Interior** to **Suburban Modern**
-- Remove color set **Suburban Modern Exterior**
-
-### 0.6.0
-<!-- 5/27/22 -->
-- Created Add-on
-- Created Colors
-  - Suburban Modern Interior
-  - Suburban Modern Exterior
-  - The Jazz Age
-  - General Electric
-
-# House & Gardern Colors 1971
-
-### 0.6.0
-<!-- 5/27/22 -->
-- Added ability to change **Diffuse BSDF** material
-
-### 0.5.1
-<!-- 4/28/22 -->
-- Fixed conflicting property names for renaming material in **MCMC**, **HG71**, and **F58**
-
-### 0.5.0
-- Added ability to change **QMM Plaster** material
-
-### 0.1.0
-- Created Add-on
-- Created Colors
-  - Yellows
-    - Pineapple
-    <!-- #faf076 -->
-    - Sun Yellow
-    <!-- #fce612 -->
-    - Kumquat
-    <!-- #f2ac18 -->
-    - Goldenrod
-    <!-- #d1ab4e -->
-    - Antique Gold
-    <!-- #b39859 -->
-    - Maple Sugar
-    <!-- #b3a67f -->
-    - Pongee
-    <!-- #d3c995 -->
-  - Greens
-    - Moss Green
-    <!-- #687d37 -->
-    - Lacquer Green
-    <!-- #26572e -->
-    - Green Mint
-    <!-- #42ab52 -->
-    - Parrot Green
-    <!-- #a9ca5a -->
-    - Lettuce
-    <!-- #dceb71 -->
-    - Celery
-    <!-- #e8e9ce -->
-  - Blues
-    - Midnight Blue
-    <!-- #17195c -->
-    - Ultramarine Blue
-    <!-- #1648a6 -->
-    - Space Blue
-    <!-- #1973cf -->
-    - Blue Opaline
-    <!-- #3a66a2 -->
-    - Blue Sky
-    <!-- #9ec4ef -->
-    - Aquamarine Blue
-    <!-- #cad1d3 -->
-  - Oranges
-    - Bittersweet
-    <!-- #fd4f1c -->
-    - Tangerine
-    <!-- #ec4c53 -->
-    - Pompeiian Red
-    <!-- #b34848 -->
-    - Zinnia
-    <!-- #db7543 -->
-    - Creamy Apricot
-    <!-- #f5caab -->
-    - Velvet Brown
-    <!-- #4a3439 -->
-  - Reds
-    - Flag Red
-    <!-- #d21b5c -->
-    - Pink Coral
-    <!-- #ec939f -->
-    - Pink Pink
-    <!-- #e9c7e9 -->
-    - Azalea
-    <!-- #e586b9 -->
-  - Purples
-    - Beach Plum
-    <!-- #49134c -->
-    - African Violet
-    <!-- #ce90cf -->
-    - Lavender
-    <!-- #d1bce0 -->
-  - Greys
-    - Oyster White
-    <!-- #e2dddb -->
-    - Mercury
-    <!-- #b2b0b5 -->
-    - Mushroom
-    <!-- #8b8484 -->
-    - Black Pearl
-    <!-- #0a0a13 -->
-
-# Ford Colors 1958
-
-### 0.6.0
-<!-- 5/27/22 -->
-- Added ability to change **Diffuse BSDF** material
-
-### 0.5.1
-<!-- 4/28/22 -->
-- Fixed conflicting property names for renaming material in **MCMC**, **HG71**, and **F58**
-
-### 0.5.0
-- Added ability to change **QMM Plaster** material
-
-### 0.4.0
-- Created Add-on
-- Created Colors
-  - A Raven Black
-  <!-- #010303 -->
-  - C Desert Beige
-  <!-- #c0ab83 -->
-  - D Palamino Tan
-  <!-- #ab7832 -->
-  - E Colonial White
-  <!-- #e7e4c1 -->
-  - F Silvertone Green
-  <!-- #1e3226 -->
-  - G Sun Gold
-  <!-- #e7d74a -->
-  - H Gunmetal Gray
-  <!-- #4c4f50 -->
-  - J Bali Bronze
-  <!-- #654935 -->
-  - L Azure Blue
-  <!-- #7aafd5 -->
-  - M Gulfstream Blue
-  <!-- #2b758c -->
-  - N Seaspray Green
-  <!-- #a0c78e -->
-  - R Torch Red
-  <!-- #620800 -->
-  - T Silvetone Blue
-  <!-- #243b59 -->
