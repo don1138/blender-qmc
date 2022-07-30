@@ -62,19 +62,17 @@ The operation will fail if:
 ## Usage Notes
 
 ### House & Garden 1971 & Mid-Century Modern Colors
-These colors were calculated for best use on interior walls. The **MCMC** blues, greens, reds, and browns are also great starters for terrains.
+- These colors were calculated for best use on interior walls.
+- The **MCMC** blues, greens, reds, and browns are also great starters for terrains.
 
 ### More Colors
-**Ford 1958** colors were calculated for best use on automobiles
-
-**General Electric** colors were calculated for best use on home appliances. **Avacado** greens and **Harvest** yellows are as close to 60s and 70s era-correct as I've yet found.
-
-**Moods**, **Suburban Modern**, and **The Jazz Age** colors were calculated for best use on interior walls. IMO, the **Moods** colors also work well as `World` colors.
+- **Ford 1958** colors were calculated for best use on automobiles
+- **General Electric** colors were calculated for best use on home appliances. **Avacado** greens and **Harvest** yellows are as close to 60s and 70s era-correct as I've yet found.
+- **Moods**, **Suburban Modern**, and **The Jazz Age** colors were calculated for best use on interior walls. IMO, the **Moods** colors also work well as `World` colors.
 
 ### Pantone Color of the Year
-These colors are calculated for use in print and digital design. They might look over-saturated and garish on large objects, but can pop nicely on small objects and details.
-
-I use **Sand Dollar**, **2020 Bleached Coral**, and **2043 Dead Coral** a lot. [**The Ugliest Color in the World**](https://www.huffpost.com/entry/ugliest-color-pantone_n_57570df6e4b0ca5c7b504538) is nice for for dirt, cracks, or crevices.
+- These colors are calculated for use in print and digital design. They might look over-saturated and garish on large objects, but can pop nicely on small objects and details.
+- I use **Sand Dollar**, **2020 Bleached Coral**, and **2043 Dead Coral** a lot. [**The Ugliest Color in the World**](https://www.huffpost.com/entry/ugliest-color-pantone_n_57570df6e4b0ca5c7b504538) is nice for for dirt, cracks, or crevices.
 
 ## Attributions
 
