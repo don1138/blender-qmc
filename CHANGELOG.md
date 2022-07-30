@@ -44,7 +44,7 @@
   <!-- #243b59 -->
 
 
-  # House & Gardern Colors 1971
+# House & Gardern Colors 1971
 
 ### 0.6.0
 <!-- 5/27/22 -->
