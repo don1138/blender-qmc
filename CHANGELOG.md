@@ -239,39 +239,41 @@
 
 # More Colors
 
-### 0.8.0
+### 0.9.0
 <!-- 7/30/22 -->
-- Moved **Ford 1958** color set inside **More Colors**
+- Alphabetize menu order
+- Move **F58** color set inside **MC**
+- **F58 (Ford 1958)** add-on deprecated
 
 ### 0.8.0
 <!-- 7/27/22 -->
-- Added color set **Moods**
-  - Moods > Relaxed
+- Add color set **Moods**
+  - **Relaxed**
     - Blue 02
     - Blue 08
     - Green 02
     - Pink 04
-  - Moods > Energy
+  - **Energy**
     - Green 07
     - Green 08
     - Green 13
     - Yellow 06
-  - Moods > Cozy
+  - **Cozy**
     - Beige 02
     - Beige 03
     - Pink 07
     - Pink 08
-  - Moods > Focus
+  - **Focus**
     - Blue 06
     - Blue 07
     - Blue 17
     - Blue 111
-  - Moods > Moody
+  - **Moody**
     - Black 01
     - Purple 03
     - Red 03
     - Teal 03
-  - Moods > Whites
+  - **Whites**
     - White 01
     - White 02
     - White 03
