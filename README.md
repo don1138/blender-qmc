@@ -32,7 +32,12 @@ Once activated, a new tab named **MAT** will appear in the 3D viewport sidebar.
 <!-- - **F58** creates a panel named **Ford Colors** -->
 - **HG71** creates a panel named **House & Garden 1971**
 - **MCMC** creates a panel named **Mid-Century Modern Colors**
-- **MC** creates a panel named **More Colors**
+- **MC** creates a panel named **More Colors** contianing these color sets:
+  - **Ford 1958**
+  - **General Electric**
+  - **Moods**
+  - **Suburban Modern**
+  - **The Jazz Age**
 - **PCOY** creates a panel named **Pantone Color of the Year**
 
 ## Usage
