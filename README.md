@@ -2,25 +2,26 @@
 
 Blender Add-ons That Assign a Custom Color to a Principled BSDF's Base Color
 
-<!-- ## F58 (Ford Colors 1958)
+## PCOY (Pantone Color of the Year)
 
-![Blender F58 Screenshot](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-f58.jpg)
- -->
-## HG71 (House & Garden Colors 1971)
-
-![Blender HG71 Screenshot](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-hg71.jpg)
+![Blender PCOY Screenshot](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-pcoy.jpg)
 
 ## MCMC (Mid-Century Modern Colors)
 
 ![Blender MCMC Screenshot](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-mcmc.jpg)
 
+## HG71 (House & Garden Colors 1971)
+
+![Blender HG71 Screenshot](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-hg71.jpg)
+
+<!-- ## F58 (Ford Colors 1958)
+
+![Blender F58 Screenshot](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-f58.jpg)
+ -->
+
 ## MC (More Colors)
 
 ![Blender MCMC Screenshot](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-mc.jpg)
-
-## PCOY (Pantone Color of the Year)
-
-![Blender PCOY Screenshot](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-pcoy.jpg)
 
 ## Installation
 
@@ -29,7 +30,6 @@ Download the latest ZIPs from **Releases**.
 Install them **individually** via ``Edit > Preferences > Add-ons > Install…``.
 
 Once activated, a new tab named **MAT** will appear in the 3D viewport sidebar.
-<!-- - **F58** creates a panel named **Ford Colors** -->
 - **HG71** creates a panel named **House & Garden 1971**
 - **MCMC** creates a panel named **Mid-Century Modern Colors**
 - **MC** creates a panel named **More Colors** contianing these color sets:
