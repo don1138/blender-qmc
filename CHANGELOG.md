@@ -239,6 +239,11 @@
 
 # More Colors
 
+### 0.10.0
+<!-- 7/31/22 -->
+- Move color set classes and color functions to seperate files
+- Add **World Background** bool that changes target to `World > Background Shader > Color`
+
 ### 0.9.0
 <!-- 7/30/22 -->
 - Alphabetize menu order
