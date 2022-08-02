@@ -2,25 +2,26 @@
 
 Blender Add-ons That Assign a Custom Color to a Principled BSDF's Base Color
 
-<!-- ## F58 (Ford Colors 1958)
+## PCOY (Pantone Color of the Year)
 
-![Blender F58 Screenshot](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-f58.jpg)
- -->
-## HG71 (House & Garden Colors 1971)
-
-![Blender HG71 Screenshot](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-hg71.jpg)
+![Blender PCOY Screenshot](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-pcoy.jpg)
 
 ## MCMC (Mid-Century Modern Colors)
 
 ![Blender MCMC Screenshot](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-mcmc.jpg)
 
+## HG71 (House & Garden Colors 1971)
+
+![Blender HG71 Screenshot](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-hg71.jpg)
+
+<!-- ## F58 (Ford Colors 1958)
+
+![Blender F58 Screenshot](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-f58.jpg)
+ -->
+
 ## MC (More Colors)
 
 ![Blender MCMC Screenshot](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-mc.jpg)
-
-## PCOY (Pantone Color of the Year)
-
-![Blender PCOY Screenshot](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-pcoy.jpg)
 
 ## Installation
 
@@ -29,7 +30,6 @@ Download the latest ZIPs from **Releases**.
 Install them **individually** via ``Edit > Preferences > Add-ons > Install…``.
 
 Once activated, a new tab named **MAT** will appear in the 3D viewport sidebar.
-<!-- - **F58** creates a panel named **Ford Colors** -->
 - **HG71** creates a panel named **House & Garden 1971**
 - **MCMC** creates a panel named **Mid-Century Modern Colors**
 - **MC** creates a panel named **More Colors** contianing these color sets:
@@ -76,11 +76,11 @@ The operation will fail if:
 
 ## Attributions
 
-- **Pantone Color of the Year** is sourced from [the Pantone website](https://www.pantone.com/articles/past-colors-of-the-year).
-- **Mid-Century Modern Colors** is sourced from [**7 Paint Colors That Nail the Midcentury Modern Look**](https://www.dwell.com/article/best-midcentury-modern-paint-colors-111e82a1) on **Dwell.com**.
+- **Pantone Color of the Year** is sourced from the [**Pantone**](https://www.pantone.com/articles/past-colors-of-the-year) website.
+- **Mid-Century Modern Colors** is sourced from [**7 Paint Colors That Nail the Midcentury Modern Look** (dwell.com)](https://www.dwell.com/article/best-midcentury-modern-paint-colors-111e82a1).
 - **House & Garden Colors 1971** is sourced from a scan of a vintage magazine cover found online.
 - **Ford Colors 1958** is sourced from a scan of vintage promotional material found online.
-- **More Colors** is sourced from [Sherwin Williams Historic Paint Colors](https://www.sherwin-williams.com/en-us/color/color-collections/historic-paint-colors), [Sherwin Williams Exterior Color Schemes](https://www.sherwin-williams.com/homeowners/color/find-and-explore-colors/paint-colors-by-collection/exterior-color-schemes/suburban-modern),  [Paintref.com General Electric Paint Cross-Reference](https://paintref.com/cgi-bin/colorcodedisplay.cgi?model=General%20Electric), and [Paint Colors For Every Mood](https://www.domino.com/content/paint-colors-for-every-mood).
+- **More Colors** is sourced from [**Historic Paint Colors** (sherwin-williams.com)](https://www.sherwin-williams.com/en-us/color/color-collections/historic-paint-colors), [**Exterior Color Schemes** (sherwin-williams.com)](https://www.sherwin-williams.com/homeowners/color/find-and-explore-colors/paint-colors-by-collection/exterior-color-schemes/suburban-modern),  [**General Electric Paint Cross-Reference** (paintref.com)](https://paintref.com/cgi-bin/colorcodedisplay.cgi?model=General%20Electric), and [**Paint Colors For Every Mood** (domino.com)](https://www.domino.com/content/paint-colors-for-every-mood).
 
 <br><br>
 <p align="center">
