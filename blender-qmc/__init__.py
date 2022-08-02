@@ -21,7 +21,7 @@ bl_info = {
     "name"       : "QMC (Quick Material Colors)",
     "description": "Sets the Base Color of a Principled BSDF",
     "author"     : "Don Schnitzius",
-    "version"    : (1, 0, 1),
+    "version"    : (1, 0, 0),
     "blender"    : (2, 80, 0),
     "location"   : "3D Viewport > Sidebar > MAT > Quick Material Colors",
     "warning"    : "",
@@ -43,7 +43,7 @@ from .color_sets.colors_hg71 import *
 from .color_sets.colors_moods import *
 from .color_sets.colors_mcmc import *
 from .color_sets.colors_pcoy import *
-from .color_sets.colors_ss import *
+# from .color_sets.colors_ss import *
 from .color_sets.colors_sw_ext import *
 from .color_sets.colors_sw_int import *
 from .color_sets.colors_sw_ja import *
@@ -92,7 +92,7 @@ from .panels.panel_hg71 import *
 from .panels.panel_moods import *
 from .panels.panel_mcmc import *
 from .panels.panel_pcoy import *
-from .panels.panel_ss import *
+# from .panels.panel_ss import *
 from .panels.panel_sw_ext import *
 from .panels.panel_sw_int import *
 from .panels.panel_sw_ja import *
@@ -120,7 +120,7 @@ classes = [
     PMSPanelSS2022London,
     PMSPanelSS2022NY,
     PMSPanelExtras,
-    PMSPanelSchnitzius,
+    # PMSPanelSchnitzius,
     SMEPanel,
     SME_APanel,
     SME_BPanel,
@@ -264,20 +264,20 @@ classes = [
     PMSFreedomBlue,
     PMSEnergizingYellow,
 # SCHNITZIUS SELECTS COLORS
-    SCHNITZIUS_GREEN,
-    PMS_381U,
-    SCHNITZIUS_RED,
-    PMS_172_C,
-    SCHNITZIUS_BLUE,
-    PMS_2685U,
-    SCHNITZIUS_YELLOW,
-    PMS_396U,
-    SCHNITZIUS_BRONZE_PALE,
-    PMS_729U,
-    SCHNITZIUS_BRONZE_RICH,
-    PMS_7518U,
-    SCHNITZIUS_WHITE,
-    PMS_7499U,
+    # SCHNITZIUS_GREEN,
+    # PMS_381U,
+    # SCHNITZIUS_RED,
+    # PMS_172_C,
+    # SCHNITZIUS_BLUE,
+    # PMS_2685U,
+    # SCHNITZIUS_YELLOW,
+    # PMS_396U,
+    # SCHNITZIUS_BRONZE_PALE,
+    # PMS_729U,
+    # SCHNITZIUS_BRONZE_RICH,
+    # PMS_7518U,
+    # SCHNITZIUS_WHITE,
+    # PMS_7499U,
     PMS12_4401,
     PMS13_1513,
     PMS18_2042,
