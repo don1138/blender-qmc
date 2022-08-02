@@ -283,7 +283,7 @@ class PMSEnergizingYellow(bpy.types.Operator):
         set_base_color(0xffd101, self.bl_label)
         return {'FINISHED'}
 
-# SS2022 LONDON
+# SS2022 NY
 
 class PMS12_4401(bpy.types.Operator):
     """Pantone 12_4401"""
@@ -365,7 +365,7 @@ class PMS18_1564(bpy.types.Operator):
         set_base_color(0xd64a2c, self.bl_label)
         return {'FINISHED'}
 
-# PMS SS2022 NY
+# PMS SS2022 LONDON
 
 class PMS14_5713(bpy.types.Operator):
     """Pantone 14_5713"""
@@ -433,7 +433,7 @@ class PMS15_0549(bpy.types.Operator):
 
 class PMS14_3612(bpy.types.Operator):
     """Pantone 14_3612"""
-    bl_label = "Orchid Bloo"
+    bl_label = "Orchid Bloom"
     bl_idname = 'color.pms_14_3612'
     def execute(self, context):
         set_base_color(0xd0bdd8, self.bl_label)

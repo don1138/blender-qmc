@@ -172,10 +172,53 @@ class PMSPanel2020(bpy.types.Panel):
         scol.operator("color.pms_2022", text="Very Peri")
 
 
-# SS2022 LONDON PANEL
+# SS2022 NY PANEL
 class PMSPanelSS2022London(bpy.types.Panel):
     bl_idname = "PMS_PT_Panel_SS2022London"
     bl_label = "SS2022 London"
+    bl_space_type = "VIEW_3D"
+    bl_region_type = "UI"
+    bl_category = "MAT"
+    bl_parent_id = 'PMS_PT_Panel'
+    bl_options = {'DEFAULT_CLOSED'}
+
+    def draw(self, context):
+        g.c_icons
+        layout = self.layout
+
+        srow = layout.row()
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.label(text="", icon_value=g.c_icons["pms_14_5713"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["pms_16_1349"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["pms_18_4143"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["pms_12_0825"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["pms_13_2004"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["pms_17_1928"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["pms_18_1160"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["pms_15_0549"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["pms_14_3612"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["pms_18_1307"].icon_id)
+
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.scale_x = 3.0
+        scol.operator("color.pms_14_5713", text="Cascade")
+        scol.operator("color.pms_16_1349", text="Coral Rose")
+        scol.operator("color.pms_18_4143", text="Super Sonic")
+        scol.operator("color.pms_12_0825", text="Popcorn")
+        scol.operator("color.pms_13_2004", text="Potpourri")
+        scol.operator("color.pms_17_1928", text="Bubblegum")
+        scol.operator("color.pms_18_1160", text="Sudan Brown")
+        scol.operator("color.pms_15_0549", text="Fragile Sprou")
+        scol.operator("color.pms_14_3612", text="Orchid Bloom")
+        scol.operator("color.pms_18_1307", text="Coffee Quartz")
+
+
+# SS2022 NY PANEL
+class PMSPanelSS2022NY(bpy.types.Panel):
+    bl_idname = "PMS_PT_Panel_SS2022NY"
+    bl_label = "SS2022 New York"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -213,49 +256,6 @@ class PMSPanelSS2022London(bpy.types.Panel):
         scol.operator("color.pms_18_1019", text="Coca Mocha")
         scol.operator("color.pms_18_3324", text="Dahlia")
         scol.operator("color.pms_18_1564", text="Poinciana")
-
-
-# SS2022 NY PANEL
-class PMSPanelSS2022NY(bpy.types.Panel):
-    bl_idname = "PMS_PT_Panel_SS2022NY"
-    bl_label = "SS2022 New York"
-    bl_space_type = "VIEW_3D"
-    bl_region_type = "UI"
-    bl_category = "MAT"
-    bl_parent_id = 'PMS_PT_Panel'
-    bl_options = {'DEFAULT_CLOSED'}
-
-    def draw(self, context):
-        g.c_icons
-        layout = self.layout
-
-        srow = layout.row()
-        scol = srow.column(align=True)
-        scol.scale_y = 1.25
-        scol.label(text="", icon_value=g.c_icons["pms_14_5713"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["pms_16_1349"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["pms_18_4143"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["pms_12_0825"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["pms_13_2004"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["pms_17_1928"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["pms_18_1160"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["pms_15_0549"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["pms_14_3612"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["pms_18_1307"].icon_id)
-
-        scol = srow.column(align=True)
-        scol.scale_y = 1.25
-        scol.scale_x = 3.0
-        scol.operator("color.pms_14_5713", text="Cascade")
-        scol.operator("color.pms_16_1349", text="Coral Rose")
-        scol.operator("color.pms_18_4143", text="Super Sonic")
-        scol.operator("color.pms_12_0825", text="Popcorn")
-        scol.operator("color.pms_13_2004", text="Potpourri")
-        scol.operator("color.pms_17_1928", text="Bubblegum")
-        scol.operator("color.pms_18_1160", text="Sudan Brown")
-        scol.operator("color.pms_15_0549", text="Fragile Sprou")
-        scol.operator("color.pms_14_3612", text="Orchid Bloo")
-        scol.operator("color.pms_18_1307", text="Coffee Quartz")
 
 
 # Extras & Apocrypha PANEL
