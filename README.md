@@ -6,9 +6,8 @@ Blender Add-on That Assign a Custom Color to a Material
 
 ## Installation
 
-Download the latest ZIP from **Releases**.
-
-Install  via ``Edit > Preferences > Add-ons > Install…``.
+- Download the latest ZIP from **Releases**.
+- Install  via ``Edit > Preferences > Add-ons > Install…``.
 
 Once activated, a panel named **Quick Material Colors** will appear in the **MAT** tab in the 3D viewport sidebar.
 
