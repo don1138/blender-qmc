@@ -42,7 +42,7 @@ The operation will fail if:
 
 And if no `World` is set, changing the **World Background** will cause an error.
 
-## Swatches
+## Swatches (219 Colors)
 
 ### Ford 1958 (13 Colors)
 
@@ -291,6 +291,13 @@ And if no `World` is set, changing the **World Background** will cause an error.
   - Cork Wedge
   - Smokehouse
   - Rustic Red
+```
+N.B. These sets are designed to be used as follows:
+```
+- Set
+  - Body / Wall
+  - Trim
+  - Accent
 ```
 ### Suburban Modern Interior (21 Colors)
 
