@@ -14,11 +14,9 @@ Once activated, a panel named **Quick Material Colors** will appear in the **MAT
 
 ## Usage
 
-Select an object in your view, and click one of the buttons to assign that color to it.
-
-Set the **World Background** checkbox to `True` and the button will assign that color to the `World > Background Shader > Color`.
-
-Set the **Rename Material** checkbox to `True` to change the material or world name.
+- Select an object in your view, and click one of the buttons to assign that color to it.
+- Set the **World Background** checkbox to `True` and the button will assign that color to the `World > Background Shader > Color`.
+- Set the **Rename Material** checkbox to `True` to change the material or world name.
 
 ## Caveats & Warnings
 
