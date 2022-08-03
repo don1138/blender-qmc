@@ -86,7 +86,7 @@ from .color_sets.sw_int import *
 from .color_sets.sw_ja import *
 
 
-# INTRENAL CLASSES
+# INTERNAL CLASSES
 array_int = [
     QMC_SETTINGS,
     QMCPanel,
