@@ -1,6 +1,6 @@
 <h1>Blender QMC (Quick Material Colors)</h1>
 
-Blender Add-ons That Assign a Custom Color to a Principled BSDF's Base Color
+Blender Add-on That Assign a Custom Color to a Material
 
 ![Blender QMC](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-qmc.png)
 
