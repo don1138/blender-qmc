@@ -1,5 +1,8 @@
 import bpy
-from .colors_functions import *
+
+from .globals import *
+from .color_functions import *
+
 
 # SCHNITZIUS SELECTS
 
@@ -114,3 +117,54 @@ class PMS_7499U(bpy.types.Operator):
     def execute(self, context):
         set_base_color(0xf6edca, self.bl_label)
         return {'FINISHED'}
+
+
+# Schnitzius Selects PANEL
+class SSPanel(bpy.types.Panel):
+    bl_idname = "SS_PT_Panel"
+    bl_label = "Schnitzius Select"
+    bl_space_type = "VIEW_3D"
+    bl_region_type = "UI"
+    bl_category = "MAT"
+    bl_parent_id = 'QMC_PT_Panel'
+    bl_options = {'DEFAULT_CLOSED'}
+
+    def draw(self, context):
+        layout = self.layout
+        col = layout.grid_flow(row_major=True,even_columns=True,columns=2,align=True)
+        col.scale_y = 1.25
+        col.label(text="My Color")
+        col.label(text="PMS Match")
+        col.operator("color.schnitzius_green", text="Green")
+        col.operator("color.pms_381_u", text="381 U")
+        col.operator("color.schnitzius_red", text="Red")
+        col.operator("color.pms_172_c", text="172 C")
+        col.operator("color.schnitzius_blue", text="Blue")
+        col.operator("color.pms_2685_u", text="2685 U")
+        col.operator("color.schnitzius_yellow", text="Yellow")
+        col.operator("color.pms_396_u", text="396 U")
+        col.operator("color.schnitzius_bronze_pale", text="Bronze Pale")
+        col.operator("color.pms_729_u", text="729 U")
+        col.operator("color.schnitzius_bronze_rich", text="Bronze Rich")
+        col.operator("color.pms_7518_u", text="7518 U")
+        col.operator("color.schnitzius_white", text="White")
+        col.operator("color.pms_7499_u", text="7499 U")
+
+
+array_ss = [
+    SSPanel,
+    SCHNITZIUS_GREEN,
+    PMS_381U,
+    SCHNITZIUS_RED,
+    PMS_172_C,
+    SCHNITZIUS_BLUE,
+    PMS_2685U,
+    SCHNITZIUS_YELLOW,
+    PMS_396U,
+    SCHNITZIUS_BRONZE_PALE,
+    PMS_729U,
+    SCHNITZIUS_BRONZE_RICH,
+    PMS_7518U,
+    SCHNITZIUS_WHITE,
+    PMS_7499U,
+]
