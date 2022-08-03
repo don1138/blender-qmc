@@ -21,7 +21,7 @@ bl_info = {
     "name"       : "QMC (Quick Material Colors)",
     "description": "Sets the Base Color of a Principled BSDF",
     "author"     : "Don Schnitzius",
-    "version"    : (1, 0, 2),
+    "version"    : (1, 0, 1),
     "blender"    : (2, 80, 0),
     "location"   : "3D Viewport > Sidebar > MAT > Quick Material Colors",
     "warning"    : "",
@@ -80,7 +80,6 @@ from .color_sets.hg71 import *
 from .color_sets.mcmc import *
 from .color_sets.moods import *
 from .color_sets.pcoy import *
-# from .color_sets.ss import *
 from .color_sets.sw_ext import *
 from .color_sets.sw_int import *
 from .color_sets.sw_ja import *
@@ -102,7 +101,6 @@ classes = [
    *array_mcmc,
    *array_moods,
    *array_pcoy,
-  #  *array_ss,
    *array_sw_ext,
    *array_sw_int,
    *array_sw_ja,
