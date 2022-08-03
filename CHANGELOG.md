@@ -1,6 +1,6 @@
 ### 1.0.1 <!-- 8/02/22 -->
 
-- Merge **colors** and **panels** files into one **color_sets** file
+- Merge **colors** and **panels** files into unified **color_sets** files
 
 ### 1.0.0 <!-- 8/01/22 -->
 
