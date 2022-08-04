@@ -6,6 +6,7 @@ import bpy
 
 no_material = "No Compatable Material Found"
 no_bsdf = "No Principled BSDF Shader Found"
+no_world = "No World Found"
 no_world_bg = "World Background Shader Named \"Background\" Required"
 def ShowMessageBox(message = "", title = "", icon = 'INFO'):
     def draw(self, context):
@@ -40,20 +41,24 @@ def hex_to_rgb_sm(h):
 def set_base_color(hex, mat_name):
     material = bpy.context.object.active_material
     world = bpy.context.scene.world
-    world_name = world.name
     mat_bool = bpy.context.scene.more_bool.rename_material_more
     wor_bool = bpy.context.scene.world_bool.world_color_more
 
     if wor_bool == True:
-        curr_world = bpy.data.worlds.get(world_name)
-        world_bg = curr_world.node_tree.nodes.get("Background")
-        if world_bg:
-            world_bg.inputs[0].default_value = hex_to_rgb(hex)
-            bpy.context.scene.world.color = hex_to_rgb_sm(hex)
-            if mat_bool == True:
-                world.name = mat_name
+        if world:
+            world_name = world.name
+            curr_world = bpy.data.worlds.get(world_name)
+            world_bg = curr_world.node_tree.nodes.get("Background")
+            if world_bg:
+                world_bg.inputs[0].default_value = hex_to_rgb(hex)
+                bpy.context.scene.world.color = hex_to_rgb_sm(hex)
+                if mat_bool == True:
+                    world.name = mat_name
+            else:
+                ShowMessageBox(no_world_bg, "Unable To Comply")
+                return {'FINISHED'}
         else:
-            ShowMessageBox(no_world_bg, "Unable To Comply")
+            ShowMessageBox(no_world, "Unable To Comply")
             return {'FINISHED'}
     else:
         if material:

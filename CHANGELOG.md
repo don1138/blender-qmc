@@ -1,3 +1,7 @@
+### 1.0.2 <!-- 8/03/22 -->
+
+- Add errror detection for missing `World`
+
 ### 1.0.1 <!-- 8/02/22 -->
 
 - Merge **colors** and **panels** files into unified **color_sets** files
