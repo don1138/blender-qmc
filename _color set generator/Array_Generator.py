@@ -1,7 +1,7 @@
 # ARRAY GENERATOR
 
 # WRITE THIS SCRIPT TO FILE WITH:
-# python Array_Generator.py > ral.py
+# python Array_Generator.py > ral_vars.py
 
 set_name = "RAL"
 
