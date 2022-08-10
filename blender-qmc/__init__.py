@@ -21,7 +21,7 @@ bl_info = {
     "name"       : "QMC (Quick Material Colors)",
     "description": "Sets the Base Color of a Principled BSDF",
     "author"     : "Don Schnitzius",
-    "version"    : (1, 0, 2),
+    "version"    : (1, 0, 3),
     "blender"    : (2, 80, 0),
     "location"   : "3D Viewport > Sidebar > MAT > Quick Material Colors",
     "warning"    : "",
@@ -77,7 +77,7 @@ class QMCPanel(bpy.types.Panel):
 from .color_sets.f58 import *
 from .color_sets.ge import *
 from .color_sets.hg71 import *
-from .color_sets.mcmc import *
+from .color_sets.mcm import *
 from .color_sets.moods import *
 from .color_sets.pcoy import *
 from .color_sets.sw_ext import *
@@ -98,7 +98,7 @@ classes = [
    *array_f58,
    *array_ge,
    *array_hg71,
-   *array_mcmc,
+   *array_mcm,
    *array_moods,
    *array_pcoy,
    *array_sw_ext,

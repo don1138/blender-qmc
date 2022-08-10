@@ -2,7 +2,7 @@
 
 Blender Add-on That Assign a Custom Color to a Material
 
-![Blender QMC](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-qmc.png)
+![Blender QMC](https://github.com/don1138/blender-qmc/blob/main/imx/blender-qmc.png)
 
 ## Installation
 
@@ -43,7 +43,7 @@ And if no `World` is set, changing the **World Background** will cause an error.
 
 ### Ford 1958 (13 Colors)
 
-![Blender QMC](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-qmc-f58.jpg)
+![Blender QMC](https://github.com/don1138/blender-qmc/blob/main/imx/blender-qmc-f58.jpg)
 ```
 - A Raven Black
 - B Desert Beige
@@ -61,7 +61,7 @@ And if no `World` is set, changing the **World Background** will cause an error.
 ```
 ### General Electric (11 Colors)
 
-![Blender QMC](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-qmc-ge.jpg)
+![Blender QMC](https://github.com/don1138/blender-qmc/blob/main/imx/blender-qmc-ge.jpg)
 ```
 - Avacado
 - Awacado Light
@@ -76,7 +76,7 @@ And if no `World` is set, changing the **World Background** will cause an error.
 ```
 ### House & Garden 1971 (36 Colors)
 
-![Blender QMC](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-qmc-hg71.jpg)
+![Blender QMC](https://github.com/don1138/blender-qmc/blob/main/imx/blender-qmc-hg71.jpg)
 ```
 - Yellows
   - Pineapple
@@ -122,9 +122,9 @@ And if no `World` is set, changing the **World Background** will cause an error.
   - Mushroom
   - Black Pearl
 ```
-### Mid-Century Modern Colors (29 Colors)
+### Mid-Century Modern (29 Colors)
 
-![Blender QMC](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-qmc-mcmc.jpg)
+![Blender QMC](https://github.com/don1138/blender-qmc/blob/main/imx/blender-qmc-mcm.jpg)
 ```
 - Golden Yellow
   - Miami Parasol
@@ -165,7 +165,7 @@ And if no `World` is set, changing the **World Background** will cause an error.
 ```
 ### Moods (20 Colors)
 
-![Blender QMC](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-qmc-moods.jpg)
+![Blender QMC](https://github.com/don1138/blender-qmc/blob/main/imx/blender-qmc-moods.jpg)
 ```
 - Relaxed
   - Blue 02
@@ -195,7 +195,7 @@ And if no `World` is set, changing the **World Background** will cause an error.
 ```
 ### Pantone Color of the Year (54 Colors)
 
-![Blender QMC](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-qmc-pcoy.jpg)
+![Blender QMC](https://github.com/don1138/blender-qmc/blob/main/imx/blender-qmc-pcoy.jpg)
 ```
 - 2000-09
   - Cerulean Blue
@@ -250,7 +250,7 @@ And if no `World` is set, changing the **World Background** will cause an error.
 ```
 ### Suburban Modern Exterior (27 Colors)
 
-![Blender QMC](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-qmc-sme.jpg)
+![Blender QMC](https://github.com/don1138/blender-qmc/blob/main/imx/blender-qmc-sme.jpg)
 ```
 - Set A
   - Birdseye Maple
@@ -298,7 +298,7 @@ N.B. These sets are designed to be used as follows:
 ```
 ### Suburban Modern Interior (21 Colors)
 
-![Blender QMC](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-qmc-smi.jpg)
+![Blender QMC](https://github.com/don1138/blender-qmc/blob/main/imx/blender-qmc-smi.jpg)
 ```
 - Pink Flamingo
 - Apple Blossom
@@ -324,7 +324,7 @@ N.B. These sets are designed to be used as follows:
 ```
 ### The Jazz Age (8 Colors)
 
-![Blender QMC](https://github.com/don1138/blender-pcoy/blob/main/imx/blender-qmc-ja.jpg)
+![Blender QMC](https://github.com/don1138/blender-qmc/blob/main/imx/blender-qmc-ja.jpg)
 ```
 - Salon Rose
 - Chinese Red
@@ -345,9 +345,9 @@ N.B. These sets are designed to be used as follows:
 - These colors were calculated for best use on home appliances.
 - **Avacado** greens and **Harvest** yellows are as close to 60s and 70s era-correct as I've yet found.
 
-### House & Garden 1971, Mid-Century Modern Colors
+### House & Garden 1971, Mid-Century Modern
 - These colors were calculated for best use on interior walls.
-- The **MCMC** blues, greens, reds, and browns are also great starters for terrains.
+- The **MCM** blues, greens, reds, and browns are also great starters for terrains.
 
 ### Moods, Suburban Modern Interior, The Jazz Age
 - These colors were calculated for best use on interior walls.
@@ -367,7 +367,7 @@ N.B. These sets are designed to be used as follows:
 
 - **Ford Colors 1958** is sourced from a scan of vintage promotional material found online.
 - **General Electric** is sourced from [**General Electric Paint Cross-Reference** (paintref.com)](https://paintref.com/cgi-bin/colorcodedisplay.cgi?model=General%20Electric).
-- **Mid-Century Modern Colors** is sourced from [**7 Paint Colors That Nail the Midcentury Modern Look** (dwell.com)](https://www.dwell.com/article/best-midcentury-modern-paint-colors-111e82a1).
+- **Mid-Century Modern** is sourced from [**7 Paint Colors That Nail the Midcentury Modern Look** (dwell.com)](https://www.dwell.com/article/best-midcentury-modern-paint-colors-111e82a1).
 - **House & Garden Colors 1971** is sourced from a scan of a vintage magazine cover found online.
 - **Moods** is sourced from [**Paint Colors For Every Mood** (domino.com)](https://www.domino.com/content/paint-colors-for-every-mood).
 - **Pantone Color of the Year** is sourced from the [**Pantone**](https://www.pantone.com/articles/past-colors-of-the-year) website.

@@ -6,7 +6,7 @@ from .color_functions import *
 
 # MID-CENTURY MODERN COLORS
 
-class MCMCGINGER_ALE(bpy.types.Operator):
+class MCMGINGER_ALE(bpy.types.Operator):
     """Apply Color Ginger Ale"""
     bl_label = "Ginger Ale"
     bl_idname = 'color.ginger_ale'
@@ -14,7 +14,7 @@ class MCMCGINGER_ALE(bpy.types.Operator):
         set_base_color(0xefd079, self.bl_label)
         return {'FINISHED'}
 
-class MCMCPABLO_HONEY(bpy.types.Operator):
+class MCMPABLO_HONEY(bpy.types.Operator):
     """Apply Color Pablo Honey"""
     bl_label = "Pablo Honey"
     bl_idname = 'color.pablo_honey'
@@ -22,7 +22,7 @@ class MCMCPABLO_HONEY(bpy.types.Operator):
         set_base_color(0xeac164, self.bl_label)
         return {'FINISHED'}
 
-class MCMCMIAMI_PARASOL(bpy.types.Operator):
+class MCMMIAMI_PARASOL(bpy.types.Operator):
     """Apply Color Miami Parasol"""
     bl_label = "Miami Parasol"
     bl_idname = 'color.miami_parasol'
@@ -30,7 +30,7 @@ class MCMCMIAMI_PARASOL(bpy.types.Operator):
         set_base_color(0xf0d3a4, self.bl_label)
         return {'FINISHED'}
 
-class MCMCTANLINES(bpy.types.Operator):
+class MCMTANLINES(bpy.types.Operator):
     """Apply Color Tanlines"""
     bl_label = "Tanlines"
     bl_idname = 'color.tanlines'
@@ -38,7 +38,7 @@ class MCMCTANLINES(bpy.types.Operator):
         set_base_color(0xc48c3f, self.bl_label)
         return {'FINISHED'}
 
-class MCMCBLUE_SEAFOAM(bpy.types.Operator):
+class MCMBLUE_SEAFOAM(bpy.types.Operator):
     """Apply Color Blue Seafoam"""
     bl_label = "Blue Seafoam"
     bl_idname = 'color.blue_seafoam'
@@ -46,7 +46,7 @@ class MCMCBLUE_SEAFOAM(bpy.types.Operator):
         set_base_color(0xafe3e9, self.bl_label)
         return {'FINISHED'}
 
-class MCMCSATURDAY_ON_SUNDAY(bpy.types.Operator):
+class MCMSATURDAY_ON_SUNDAY(bpy.types.Operator):
     """Apply Color Saturday On Sunday"""
     bl_label = "Saturday On Sunday"
     bl_idname = 'color.saturday_on_sunday'
@@ -54,7 +54,7 @@ class MCMCSATURDAY_ON_SUNDAY(bpy.types.Operator):
         set_base_color(0x567475, self.bl_label)
         return {'FINISHED'}
 
-class MCMCSICILY_OR_CYPRUS(bpy.types.Operator):
+class MCMSICILY_OR_CYPRUS(bpy.types.Operator):
     """Apply Color Sicily Or Cyprus"""
     bl_label = "Sicily Or Cyprus"
     bl_idname = 'color.sicily_or_cyprus'
@@ -62,7 +62,7 @@ class MCMCSICILY_OR_CYPRUS(bpy.types.Operator):
         set_base_color(0x488182, self.bl_label)
         return {'FINISHED'}
 
-class MCMCNOVELTY_WAVE(bpy.types.Operator):
+class MCMNOVELTY_WAVE(bpy.types.Operator):
     """Apply Color Novelty Wave"""
     bl_label = "Novelty Wave"
     bl_idname = 'color.novelty_wave'
@@ -70,7 +70,7 @@ class MCMCNOVELTY_WAVE(bpy.types.Operator):
         set_base_color(0x73969f, self.bl_label)
         return {'FINISHED'}
 
-class MCMCRELENTLESS_OLIVE(bpy.types.Operator):
+class MCMRELENTLESS_OLIVE(bpy.types.Operator):
     """Apply Color Relentless Olive"""
     bl_label = "Relentless Olive"
     bl_idname = 'color.relentless_olive'
@@ -78,7 +78,7 @@ class MCMCRELENTLESS_OLIVE(bpy.types.Operator):
         set_base_color(0x71713e, self.bl_label)
         return {'FINISHED'}
 
-class MCMCGREEN_ROOT(bpy.types.Operator):
+class MCMGREEN_ROOT(bpy.types.Operator):
     """Apply Color Green Root"""
     bl_label = "Green Root"
     bl_idname = 'color.green_root'
@@ -86,7 +86,7 @@ class MCMCGREEN_ROOT(bpy.types.Operator):
         set_base_color(0x848551, self.bl_label)
         return {'FINISHED'}
 
-class MCMCSAGED(bpy.types.Operator):
+class MCMSAGED(bpy.types.Operator):
     """Apply Color Saged"""
     bl_label = "Saged"
     bl_idname = 'color.saged'
@@ -94,7 +94,7 @@ class MCMCSAGED(bpy.types.Operator):
         set_base_color(0x969684, self.bl_label)
         return {'FINISHED'}
 
-class MCMCDRIVE_THRU_SAFARI(bpy.types.Operator):
+class MCMDRIVE_THRU_SAFARI(bpy.types.Operator):
     """Apply Color Drive-Thru Safari"""
     bl_label = "Drive-Thru Safari"
     bl_idname = 'color.drive_thru_safari'
@@ -102,7 +102,7 @@ class MCMCDRIVE_THRU_SAFARI(bpy.types.Operator):
         set_base_color(0x8b9d82, self.bl_label)
         return {'FINISHED'}
 
-class MCMCNATURAL_HABITAT(bpy.types.Operator):
+class MCMNATURAL_HABITAT(bpy.types.Operator):
     """Apply Color Natural Habitat"""
     bl_label = "Natural Habitat"
     bl_idname = 'color.natural_habitat'
@@ -110,7 +110,7 @@ class MCMCNATURAL_HABITAT(bpy.types.Operator):
         set_base_color(0xc4c2a3, self.bl_label)
         return {'FINISHED'}
 
-class MCMCCHEROKEE_RED(bpy.types.Operator):
+class MCMCHEROKEE_RED(bpy.types.Operator):
     """Apply Color Cherokee Red"""
     bl_label = "Cherokee Red"
     bl_idname = 'color.cherokee_red'
@@ -118,7 +118,7 @@ class MCMCCHEROKEE_RED(bpy.types.Operator):
         set_base_color(0x764139, self.bl_label)
         return {'FINISHED'}
 
-class MCMCLIPSTICK_ON_THE_MIRROR(bpy.types.Operator):
+class MCMLIPSTICK_ON_THE_MIRROR(bpy.types.Operator):
     """Apply Color Lipstick on the Mirror"""
     bl_label = "Lipstick on the Mirror"
     bl_idname = 'color.lipstick_on_the_mirror'
@@ -126,7 +126,7 @@ class MCMCLIPSTICK_ON_THE_MIRROR(bpy.types.Operator):
         set_base_color(0xac2c3e, self.bl_label)
         return {'FINISHED'}
 
-class MCMCSELF_PORTRAIT(bpy.types.Operator):
+class MCMSELF_PORTRAIT(bpy.types.Operator):
     """Apply Color Self-Portrait"""
     bl_label = "Self-Portrait"
     bl_idname = 'color.self_portrait'
@@ -134,7 +134,7 @@ class MCMCSELF_PORTRAIT(bpy.types.Operator):
         set_base_color(0x642c2f, self.bl_label)
         return {'FINISHED'}
 
-class MCMCNEGRONI(bpy.types.Operator):
+class MCMNEGRONI(bpy.types.Operator):
     """Apply Color Negroni"""
     bl_label = "Negroni"
     bl_idname = 'color.negroni'
@@ -142,7 +142,7 @@ class MCMCNEGRONI(bpy.types.Operator):
         set_base_color(0xa53b33, self.bl_label)
         return {'FINISHED'}
 
-class MCMCAUTUMN_GLIMMER(bpy.types.Operator):
+class MCMAUTUMN_GLIMMER(bpy.types.Operator):
     """Apply Color Autumn Glimmer"""
     bl_label = "Autumn Glimmer"
     bl_idname = 'color.autumn_glimmer'
@@ -150,7 +150,7 @@ class MCMCAUTUMN_GLIMMER(bpy.types.Operator):
         set_base_color(0xE97F4E, self.bl_label)
         return {'FINISHED'}
 
-class MCMCORANGE_FRUIT(bpy.types.Operator):
+class MCMORANGE_FRUIT(bpy.types.Operator):
     """Apply Color Orange Fruit"""
     bl_label = "Orange Fruit"
     bl_idname = 'color.orange_fruit'
@@ -158,7 +158,7 @@ class MCMCORANGE_FRUIT(bpy.types.Operator):
         set_base_color(0xf88f21, self.bl_label)
         return {'FINISHED'}
 
-class MCMCAPERITIVO_HOUR(bpy.types.Operator):
+class MCMAPERITIVO_HOUR(bpy.types.Operator):
     """Apply Color Aperitivo Hour"""
     bl_label = "Aperitivo Hour"
     bl_idname = 'color.aperitivo_hour'
@@ -166,7 +166,7 @@ class MCMCAPERITIVO_HOUR(bpy.types.Operator):
         set_base_color(0xe7a885, self.bl_label)
         return {'FINISHED'}
 
-class MCMCBRIGHT_MARIGOLD(bpy.types.Operator):
+class MCMBRIGHT_MARIGOLD(bpy.types.Operator):
     """Apply Color Bright Marigold"""
     bl_label = "Bright Marigold"
     bl_idname = 'color.bright_marigold'
@@ -174,7 +174,7 @@ class MCMCBRIGHT_MARIGOLD(bpy.types.Operator):
         set_base_color(0xd78754, self.bl_label)
         return {'FINISHED'}
 
-class MCMCWRIGHT_SOFT_GRAY(bpy.types.Operator):
+class MCMWRIGHT_SOFT_GRAY(bpy.types.Operator):
     """Apply Color Wright Soft Gray"""
     bl_label = "Wright Soft Gray"
     bl_idname = 'color.wright_soft_gray'
@@ -182,7 +182,7 @@ class MCMCWRIGHT_SOFT_GRAY(bpy.types.Operator):
         set_base_color(0x8e8fbf, self.bl_label)
         return {'FINISHED'}
 
-class MCMCAFTER_HOURS(bpy.types.Operator):
+class MCMAFTER_HOURS(bpy.types.Operator):
     """Apply Color After Hours"""
     bl_label = "After Hours"
     bl_idname = 'color.after_hours'
@@ -190,7 +190,7 @@ class MCMCAFTER_HOURS(bpy.types.Operator):
         set_base_color(0x3c3b3e, self.bl_label)
         return {'FINISHED'}
 
-class MCMCMOTOR_GRAY(bpy.types.Operator):
+class MCMMOTOR_GRAY(bpy.types.Operator):
     """Apply Color Motor Gray"""
     bl_label = "Motor Gray"
     bl_idname = 'color.motor_gray'
@@ -198,7 +198,7 @@ class MCMCMOTOR_GRAY(bpy.types.Operator):
         set_base_color(0x5c5d5f, self.bl_label)
         return {'FINISHED'}
 
-class MCMCNO_CURFEW(bpy.types.Operator):
+class MCMNO_CURFEW(bpy.types.Operator):
     """Apply Color No Curfew"""
     bl_label = "No Curfew"
     bl_idname = 'color.no_curfew'
@@ -206,7 +206,7 @@ class MCMCNO_CURFEW(bpy.types.Operator):
         set_base_color(0x626669, self.bl_label)
         return {'FINISHED'}
 
-class MCMCCOCOA_SHELL(bpy.types.Operator):
+class MCMCOCOA_SHELL(bpy.types.Operator):
     """Apply Color Cocoa Shell"""
     bl_label = "Cocoa Shell"
     bl_idname = 'color.cocoa_shell'
@@ -214,7 +214,7 @@ class MCMCCOCOA_SHELL(bpy.types.Operator):
         set_base_color(0x7e6657, self.bl_label)
         return {'FINISHED'}
 
-class MCMCFAWN_DOE(bpy.types.Operator):
+class MCMFAWN_DOE(bpy.types.Operator):
     """Apply Color Fawn Doe"""
     bl_label = "Fawn Doe"
     bl_idname = 'color.fawn_doe'
@@ -222,7 +222,7 @@ class MCMCFAWN_DOE(bpy.types.Operator):
         set_base_color(0xb5a99d, self.bl_label)
         return {'FINISHED'}
 
-class MCMCSENTIMENTAL_REASONS(bpy.types.Operator):
+class MCMSENTIMENTAL_REASONS(bpy.types.Operator):
     """Apply Color Sentimental Reasons"""
     bl_label = "Sentimental Reasons"
     bl_idname = 'color.sentimental_reasons'
@@ -230,7 +230,7 @@ class MCMCSENTIMENTAL_REASONS(bpy.types.Operator):
         set_base_color(0xa29790, self.bl_label)
         return {'FINISHED'}
 
-class MCMCCOBBLESTONE_STREETS(bpy.types.Operator):
+class MCMCOBBLESTONE_STREETS(bpy.types.Operator):
     """Apply Color Cobblestone Streets"""
     bl_label = "Cobblestone Streets"
     bl_idname = 'color.cobblestone_streets'
@@ -241,9 +241,9 @@ class MCMCCOBBLESTONE_STREETS(bpy.types.Operator):
 
 # MID-CENTURY MODERN COLORS PANEL
 
-class MCMCPanel(bpy.types.Panel):
-    bl_idname = "MCMC_PT_Panel"
-    bl_label = "Mid-Century Modern Colors"
+class MCMPanel(bpy.types.Panel):
+    bl_idname = "MCM_PT_Panel"
+    bl_label = "Mid-Century Modern"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -255,13 +255,13 @@ class MCMCPanel(bpy.types.Panel):
 
 
 # Golden Yellow
-class MCMCYELLOWS(bpy.types.Panel):
+class MCMYELLOWS(bpy.types.Panel):
     bl_idname = "YELLOWS_PT_Panel"
     bl_label = "Golden Yellow"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
-    bl_parent_id = 'MCMC_PT_Panel'
+    bl_parent_id = 'MCM_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
@@ -271,10 +271,10 @@ class MCMCYELLOWS(bpy.types.Panel):
         srow = layout.row()
         scol = srow.column(align=True)
         scol.scale_y = 1.25
-        scol.label(text="", icon_value=g.c_icons["mcmc_yellow_01"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["mcmc_yellow_02"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["mcmc_yellow_03"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["mcmc_yellow_04"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mcm_yellow_01"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mcm_yellow_02"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mcm_yellow_03"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mcm_yellow_04"].icon_id)
 
         scol = srow.column(align=True)
         scol.scale_y = 1.25
@@ -285,13 +285,13 @@ class MCMCYELLOWS(bpy.types.Panel):
         scol.operator("color.tanlines", text="Tanlines")
 
 # Serena Aqua
-class MCMCBLUES(bpy.types.Panel):
+class MCMBLUES(bpy.types.Panel):
     bl_idname = "BLUES_PT_Panel"
     bl_label = "Serena Aqua"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
-    bl_parent_id = 'MCMC_PT_Panel'
+    bl_parent_id = 'MCM_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
@@ -301,10 +301,10 @@ class MCMCBLUES(bpy.types.Panel):
         srow = layout.row()
         scol = srow.column(align=True)
         scol.scale_y = 1.25
-        scol.label(text="", icon_value=g.c_icons["mcmc_blue_01"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["mcmc_blue_02"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["mcmc_blue_03"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["mcmc_blue_04"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mcm_blue_01"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mcm_blue_02"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mcm_blue_03"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mcm_blue_04"].icon_id)
 
         scol = srow.column(align=True)
         scol.scale_y = 1.25
@@ -315,13 +315,13 @@ class MCMCBLUES(bpy.types.Panel):
         scol.operator("color.sicily_or_cyprus", text="Sicily Or Cyprus")
 
 # Olive Green and Wasabi
-class MCMCGREENS(bpy.types.Panel):
+class MCMGREENS(bpy.types.Panel):
     bl_idname = "GREENS_PT_Panel"
     bl_label = "Olive Green & Wasabi"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
-    bl_parent_id = 'MCMC_PT_Panel'
+    bl_parent_id = 'MCM_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
@@ -331,11 +331,11 @@ class MCMCGREENS(bpy.types.Panel):
         srow = layout.row()
         scol = srow.column(align=True)
         scol.scale_y = 1.25
-        scol.label(text="", icon_value=g.c_icons["mcmc_green_01"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["mcmc_green_02"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["mcmc_green_03"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["mcmc_green_04"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["mcmc_green_05"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mcm_green_01"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mcm_green_02"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mcm_green_03"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mcm_green_04"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mcm_green_05"].icon_id)
 
         scol = srow.column(align=True)
         scol.scale_y = 1.25
@@ -347,13 +347,13 @@ class MCMCGREENS(bpy.types.Panel):
         scol.operator("color.relentless_olive", text="Relentless Olive")
 
 # Pops of Red
-class MCMCREDS(bpy.types.Panel):
+class MCMREDS(bpy.types.Panel):
     bl_idname = "REDS_PT_Panel"
     bl_label = "Pops of Red"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
-    bl_parent_id = 'MCMC_PT_Panel'
+    bl_parent_id = 'MCM_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
@@ -363,10 +363,10 @@ class MCMCREDS(bpy.types.Panel):
         srow = layout.row()
         scol = srow.column(align=True)
         scol.scale_y = 1.25
-        scol.label(text="", icon_value=g.c_icons["mcmc_red_01"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["mcmc_red_02"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["mcmc_red_03"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["mcmc_red_04"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mcm_red_01"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mcm_red_02"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mcm_red_03"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mcm_red_04"].icon_id)
 
         scol = srow.column(align=True)
         scol.scale_y = 1.25
@@ -377,13 +377,13 @@ class MCMCREDS(bpy.types.Panel):
         scol.operator("color.lipstick_on_the_mirror", text="Lipstick on the Mirror")
 
 # Tangerine and Ochre
-class MCMCORANGES(bpy.types.Panel):
+class MCMORANGES(bpy.types.Panel):
     bl_idname = "ORANGES_PT_Panel"
     bl_label = "Tangerine and Ochre"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
-    bl_parent_id = 'MCMC_PT_Panel'
+    bl_parent_id = 'MCM_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
@@ -393,10 +393,10 @@ class MCMCORANGES(bpy.types.Panel):
         srow = layout.row()
         scol = srow.column(align=True)
         scol.scale_y = 1.25
-        scol.label(text="", icon_value=g.c_icons["mcmc_orange_01"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["mcmc_orange_02"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["mcmc_orange_03"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["mcmc_orange_04"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mcm_orange_01"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mcm_orange_02"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mcm_orange_03"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mcm_orange_04"].icon_id)
 
         scol = srow.column(align=True)
         scol.scale_y = 1.25
@@ -407,13 +407,13 @@ class MCMCORANGES(bpy.types.Panel):
         scol.operator("color.orange_fruit", text="Orange Fruit")
 
 # Pewter Gray
-class MCMCGRAYS(bpy.types.Panel):
+class MCMGRAYS(bpy.types.Panel):
     bl_idname = "GRAYS_PT_Panel"
     bl_label = "Pewter Gray"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
-    bl_parent_id = 'MCMC_PT_Panel'
+    bl_parent_id = 'MCM_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
@@ -423,10 +423,10 @@ class MCMCGRAYS(bpy.types.Panel):
         srow = layout.row()
         scol = srow.column(align=True)
         scol.scale_y = 1.25
-        scol.label(text="", icon_value=g.c_icons["mcmc_gray_01"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["mcmc_gray_02"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["mcmc_gray_03"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["mcmc_gray_04"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mcm_gray_01"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mcm_gray_02"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mcm_gray_03"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mcm_gray_04"].icon_id)
 
         scol = srow.column(align=True)
         scol.scale_y = 1.25
@@ -437,13 +437,13 @@ class MCMCGRAYS(bpy.types.Panel):
         scol.operator("color.after_hours", text="After Hours")
 
 # Soft and Earthy Brown
-class MCMCBROWNS(bpy.types.Panel):
+class MCMBROWNS(bpy.types.Panel):
     bl_idname = "BROWNS_PT_Panel"
     bl_label = "Soft and Earthy Brown"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
-    bl_parent_id = 'MCMC_PT_Panel'
+    bl_parent_id = 'MCM_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
@@ -453,10 +453,10 @@ class MCMCBROWNS(bpy.types.Panel):
         srow = layout.row()
         scol = srow.column(align=True)
         scol.scale_y = 1.25
-        scol.label(text="", icon_value=g.c_icons["mcmc_brown_01"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["mcmc_brown_02"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["mcmc_brown_03"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["mcmc_brown_04"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mcm_brown_01"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mcm_brown_02"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mcm_brown_03"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mcm_brown_04"].icon_id)
 
         scol = srow.column(align=True)
         scol.scale_y = 1.25
@@ -467,42 +467,42 @@ class MCMCBROWNS(bpy.types.Panel):
         scol.operator("color.cocoa_shell", text="Cocoa Shell")
 
 
-array_mcmc = [
-    MCMCPanel,
-    MCMCYELLOWS,
-    MCMCBLUES,
-    MCMCGREENS,
-    MCMCREDS,
-    MCMCORANGES,
-    MCMCGRAYS,
-    MCMCBROWNS,
-    MCMCGINGER_ALE,
-    MCMCPABLO_HONEY,
-    MCMCMIAMI_PARASOL,
-    MCMCTANLINES,
-    MCMCBLUE_SEAFOAM,
-    MCMCSATURDAY_ON_SUNDAY,
-    MCMCSICILY_OR_CYPRUS,
-    MCMCNOVELTY_WAVE,
-    MCMCRELENTLESS_OLIVE,
-    MCMCGREEN_ROOT,
-    MCMCSAGED,
-    MCMCDRIVE_THRU_SAFARI,
-    MCMCNATURAL_HABITAT,
-    MCMCCHEROKEE_RED,
-    MCMCLIPSTICK_ON_THE_MIRROR,
-    MCMCSELF_PORTRAIT,
-    MCMCNEGRONI,
-    MCMCAUTUMN_GLIMMER,
-    MCMCORANGE_FRUIT,
-    MCMCAPERITIVO_HOUR,
-    MCMCBRIGHT_MARIGOLD,
-    MCMCWRIGHT_SOFT_GRAY,
-    MCMCAFTER_HOURS,
-    MCMCMOTOR_GRAY,
-    MCMCNO_CURFEW,
-    MCMCCOCOA_SHELL,
-    MCMCFAWN_DOE,
-    MCMCSENTIMENTAL_REASONS,
-    MCMCCOBBLESTONE_STREETS,
+array_mcm = [
+    MCMPanel,
+    MCMYELLOWS,
+    MCMBLUES,
+    MCMGREENS,
+    MCMREDS,
+    MCMORANGES,
+    MCMGRAYS,
+    MCMBROWNS,
+    MCMGINGER_ALE,
+    MCMPABLO_HONEY,
+    MCMMIAMI_PARASOL,
+    MCMTANLINES,
+    MCMBLUE_SEAFOAM,
+    MCMSATURDAY_ON_SUNDAY,
+    MCMSICILY_OR_CYPRUS,
+    MCMNOVELTY_WAVE,
+    MCMRELENTLESS_OLIVE,
+    MCMGREEN_ROOT,
+    MCMSAGED,
+    MCMDRIVE_THRU_SAFARI,
+    MCMNATURAL_HABITAT,
+    MCMCHEROKEE_RED,
+    MCMLIPSTICK_ON_THE_MIRROR,
+    MCMSELF_PORTRAIT,
+    MCMNEGRONI,
+    MCMAUTUMN_GLIMMER,
+    MCMORANGE_FRUIT,
+    MCMAPERITIVO_HOUR,
+    MCMBRIGHT_MARIGOLD,
+    MCMWRIGHT_SOFT_GRAY,
+    MCMAFTER_HOURS,
+    MCMMOTOR_GRAY,
+    MCMNO_CURFEW,
+    MCMCOCOA_SHELL,
+    MCMFAWN_DOE,
+    MCMSENTIMENTAL_REASONS,
+    MCMCOBBLESTONE_STREETS,
 ]

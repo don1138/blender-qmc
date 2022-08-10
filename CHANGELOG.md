@@ -1,3 +1,8 @@
+### 1.0.3 <!-- 8/09/22 -->
+
+- Rename all instances of `QMC_MCMC` to `QMC_MCM`
+- Rename panel label `Mid-Century Modern Colors` to `Mid-Century Modern`
+
 ### 1.0.2 <!-- 8/03/22 -->
 
 - Add errror detection for missing `World`
