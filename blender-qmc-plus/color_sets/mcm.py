@@ -243,7 +243,7 @@ class MCMCOBBLESTONE_STREETS(bpy.types.Operator):
 
 class MCMPanel(bpy.types.Panel):
     bl_idname = "MCM_PT_Panel"
-    bl_label = "Mid-Century Modern Colors"
+    bl_label = "Mid-Century Modern"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
