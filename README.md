@@ -39,7 +39,7 @@ The operation will fail if:
 
 And if no `World` is set, changing the **World Background** will cause an error.
 
-## Swatches (219 Colors)
+## Swatches (437 Colors)
 
 ### Ford 1958 (13 Colors)
 
@@ -248,6 +248,247 @@ And if no `World` is set, changing the **World Background** will cause an error.
   - Dahlia
   - Poinciana
 ```
+### RAL Classic (218 Colors)
+[**View swatches on Wikipedia**](https://en.wikipedia.org/wiki/List_of_RAL_colors#RAL_Classic)
+
+```
+- RAL Classic Yellow
+  - 1000 Green Beige
+  - 1001 Beige
+  - 1002 Sand Yellow
+  - 1003 Signal Yellow
+  - 1004 Golden Yellow
+  - 1005 Honey Yellow
+  - 1006 Green Beige
+  - 1007 Beige
+  - 1008 Sand Yellow
+  - 1009 Green Beige
+  - 1010 Beige
+  - 1011 Brown Beige
+  - 1012 Lemon Yellow
+  - 1013 Oyster White
+  - 1014 Ivory
+  - 1015 Light Ivory
+  - 1016 Sulfur Yellow
+  - 1017 Saffron Yellow
+  - 1018 Zinc Yellow
+  - 1019 Grey Beige
+  - 1020 Olive Yellow
+  - 1021 Rope Yellow
+  - 1023 Traffic Yellow
+  - 1024 Ochre Yellow
+  - 1026 Luminous Yellow
+  - 1027 Curry
+  - 1028 Melon Yellow
+  - 1032 Broom Yellow
+  - 1033 Dahlia Yellow
+  - 1034 Pastel Yellow
+  - 1035 Pearl Beige
+  - 1036 Pearl Gold
+  - 1037 Sun Yellow
+
+- RAL Classic Orange
+  - 2000 Yellow Orange
+  - 2001 Red Orange
+  - 2002 Vermilion
+  - 2003 Pastel Orange
+  - 2004 Pure Orange
+  - 2005 Luminous Orange
+  - 2007 Luminous Bright Orange
+  - 2008 Bright Red Orange
+  - 2009 Traffic Orange
+  - 2010 Signal Orange
+  - 2011 Deep Orange
+  - 2012 Salmon Orange
+  - 2013 Pearl Orange
+  - 2017 RAL Orange
+
+- RAL Classic Red
+  - 3000 Flame Red
+  - 3001 Signal Red
+  - 3002 Carmine Red
+  - 3003 Ruby Red
+  - 3004 Purple Red
+  - 3005 Wine Red
+  - 3007 Black Red
+  - 3008 Oxide Red
+  - 3009 Oxide Red
+  - 3011 Brown Red
+  - 3012 Beige Red
+  - 3013 Tomato Red
+  - 3014 Antique Pink
+  - 3015 Light Pink
+  - 3016 Coral Red
+  - 3017 Rose
+  - 3018 Strawberry Red
+  - 3020 Traffic Red
+  - 3022 Salmon Pink
+  - 3024 Luminous Red
+  - 3026 Luminous Bright Red
+  - 3027 Raspberry Red
+  - 3028 Pure Red
+  - 3031 Orient Red
+  - 3032 Pearl Ruby Red
+  - 3033 Pearl Pink
+
+- RAL Classic Violet
+  - 4001 Red Lilac
+  - 4002 Red Violet
+  - 4003 Heather Violet
+  - 4004 Claret Violet
+  - 4005 Blue Lilac
+  - 4006 Traffic Purple
+  - 4007 Purple Violet
+  - 4008 Signal Violet
+  - 4009 Pastel Violet
+  - 4010 Telemagenta
+  - 4011 Pearl Violet
+  - 4012 Pearl Blackberry
+
+- RAL Classic Blue
+  - 5000 Violet Blue
+  - 5001 Green Blue
+  - 5002 Ultramarine Blue
+  - 5003 Sapphire Blue
+  - 5004 Black Blue
+  - 5005 Signal Blue
+  - 5007 Brilliant Blue
+  - 5008 Grey Blue
+  - 5009 Azure Blue
+  - 5010 Gentian Blue
+  - 5011 Steel Blue
+  - 5012 Light Blue
+  - 5013 Cobalt Blue
+  - 5014 Pigeon Blue
+  - 5015 Sky Blue
+  - 5017 Traffic Blue
+  - 5018 Turquoise Blue
+  - 5019 Capri Blue
+  - 5020 Ocean Blue
+  - 5021 Water Blue
+  - 5022 Night Blue
+  - 5023 Distant Blue
+  - 5024 Pastel Blue
+  - 5025 Pearl Gentian Blue
+  - 5026 Pearl Night Blue
+
+- RAL Classic Green
+  - 6000 Patina Green
+  - 6001 Emerald Green
+  - 6003 Olive Green
+  - 6004 Blue Green
+  - 6005 Moss Green
+  - 6006 Grey Olive
+  - 6007 Bottle Green
+  - 6008 Brown Green
+  - 6009 Fir Green
+  - 6010 Grass Green
+  - 6011 Reseda Green
+  - 6012 Black Green
+  - 6013 Reed Green
+  - 6014 Yellow Olive
+  - 6015 Black Olive
+  - 6016 Turquoise Green
+  - 6017 May Green
+  - 6018 Yellow Green
+  - 6019 Pastel Green
+  - 6020 Chrome Green
+  - 6021 Pale Green
+  - 6022 Olive-Drab/Brown Olive
+  - 6024 Traffic Green
+  - 6025 Fern Green
+  - 6026 Opal Green
+  - 6027 Light Green
+  - 6028 Pine Green
+  - 6029 Mint Green
+  - 6032 Signal Green
+  - 6033 Mint Turquoise
+  - 6034 Pastel Turquoise
+  - 6035 Pearl Green
+  - 6036 Pearl Opal Green
+  - 6037 Pure Green
+  - 6038 Luminous Green
+
+- RAL Classic Grey
+  - 7000 Squirrel Grey
+  - 7001 Silver Grey
+  - 7002 Olive Grey
+  - 7003 Moss Grey
+  - 7004 Signal Grey
+  - 7005 Mouse Grey
+  - 7006 Beige Grey
+  - 7008 Khaki Grey
+  - 7009 Green Grey
+  - 7010 Tarpaulin Grey
+  - 7011 Iron Grey
+  - 7012 Basalt Grey
+  - 7013 Brown Grey
+  - 7015 Slate Grey
+  - 7016 Anthracite Grey
+  - 7021 Black Grey
+  - 7022 Umbra Grey
+  - 7023 Concrete Grey
+  - 7024 Graphite Grey
+  - 7026 Granite Grey
+  - 7030 Stone Grey
+  - 7031 Blue Grey
+  - 7032 Pebble Grey
+  - 7033 Cement Grey
+  - 7034 Yellow Grey
+  - 7035 Light Grey
+  - 7036 Platinum Grey
+  - 7037 Dusty Grey
+  - 7038 Agate Grey
+  - 7039 Quartz Grey
+  - 7040 Window Grey
+  - 7042 Traffic Grey
+  - 7043 Traffic Grey
+  - 7044 Silk Grey
+  - 7045 Telegrey 1
+  - 7046 Telegrey 2
+  - 7047 Telegrey 4
+  - 7048 Pearl Mouse Grey
+
+- RAL Classic Brown
+  - 8000 Green Brown
+  - 8001 Ochre Brown
+  - 8002 Signal Brown
+  - 8003 Clay Brown
+  - 8004 Copper Brown
+  - 8007 Fawn Brown
+  - 8008 Olive Brown
+  - 8011 Nut Brown
+  - 8012 Red Brown
+  - 8014 Sepia Brown
+  - 8015 Chestnut Brown
+  - 8016 Mahogany Brown
+  - 8017 Chocolate Brown
+  - 8019 Grey Brown
+  - 8022 Black Brown
+  - 8023 Orange Brown
+  - 8024 Beige Brown
+  - 8025 Pale Brown
+  - 8028 Terra Brown
+  - 8029 Pearl Copper
+
+- RAL Classic White/Black
+  - 9001 Cream
+  - 9002 Grey White
+  - 9003 Signal White
+  - 9004 Signal Black
+  - 9005 Jet Black
+  - 9006 White Aluminium
+  - 9007 Grey Aluminium
+  - 9010 Pure White
+  - 9011 Graphite Black
+  - 9012 Clean Room White
+  - 9016 Traffic White
+  - 9017 Traffic Black
+  - 9018 Papyrus White
+  - 9022 Pearl Light Grey
+  - 9023 Pearl Dark Grey
+```
+
 ### Suburban Modern Exterior (27 Colors)
 
 ![Blender QMC](https://github.com/don1138/blender-qmc/blob/main/imx/blender-qmc-sme.jpg)
@@ -353,6 +594,10 @@ N.B. These sets are designed to be used as follows:
 - These colors were calculated for best use on interior walls.
 - IMO, the **Moods** colors also work well as `World` colors.
 
+### RAL Classic
+- These colors are calculated for use as varnish, powder coating, and plastics.
+- They look, like, *really* good in high-contrast Filmic renders.
+
 ### Pantone Color of the Year
 - These colors are calculated for use in print and digital design.
 - They might look over-saturated and garish on large objects, but can pop nicely on small objects and details.
@@ -371,6 +616,7 @@ N.B. These sets are designed to be used as follows:
 - **House & Garden Colors 1971** is sourced from a scan of a vintage magazine cover found online.
 - **Moods** is sourced from [**Paint Colors For Every Mood** (domino.com)](https://www.domino.com/content/paint-colors-for-every-mood).
 - **Pantone Color of the Year** is sourced from the [**Pantone**](https://www.pantone.com/articles/past-colors-of-the-year) website.
+- **RAL Classic** is sourced from the [**List of RAL colors**](https://en.wikipedia.org/wiki/List_of_RAL_colors#RAL_Classic) page on Wikipedia.
 - **Suburban Modern Exterior** is sourced from [**Exterior Color Schemes** (sherwin-williams.com)](https://www.sherwin-williams.com/homeowners/color/find-and-explore-colors/paint-colors-by-collection/exterior-color-schemes/suburban-modern).
 - **Suburban Modern Interior** is sourced from [**Historic Paint Colors** (sherwin-williams.com)](https://www.sherwin-williams.com/en-us/color/color-collections/historic-paint-colors).
 

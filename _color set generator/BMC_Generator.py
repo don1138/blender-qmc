@@ -1,7 +1,7 @@
 # BMC GENERATOR
 
 # WRITE THIS SCRIPT TO FILE WITH:
-# python BMC_Generator.py > moods.py
+# python BMC_Generator.py > ral.py
 
 
 from PIL import Image, ImageDraw, ImageColor
@@ -9,7 +9,7 @@ import os
 
 
 # IMPORT VARS
-from mood_vars import *
+from ral_vars import *
 
 
 dir = './icons/'
@@ -50,7 +50,7 @@ print("    bl_parent_id = 'QMC_PT_Panel'")
 print("    bl_options = {'DEFAULT_CLOSED'}")
 print("")
 print("    def draw(self, context):")
-print("        global c_icons")
+print("        g.c_icons")
 print("        layout = self.layout")
 print("")
 print("        srow = layout.row()")
