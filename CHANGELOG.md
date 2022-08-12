@@ -1,3 +1,8 @@
+### 1.1.0 <!-- 8/12/22 -->
+
+- Add **RAL Classic** set of 218 colors
+- Set Parent Panel default to open
+
 ### 1.0.3 <!-- 8/09/22 -->
 
 - Rename all instances of `QMC_MCMC` to `QMC_MCM`
