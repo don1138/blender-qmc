@@ -86,6 +86,7 @@ And if no `World` is set, changing the **World Background** will cause an error.
   - Antique Gold
   - Maple Sugar
   - Pongee
+
 - Greens
   - Moss Green
   - Lacquer Green
@@ -93,6 +94,7 @@ And if no `World` is set, changing the **World Background** will cause an error.
   - Parrot Green
   - Lettuce
   - Celery
+
 - Blues
   - Midnight Blue
   - Ultramarine Blue
@@ -100,6 +102,7 @@ And if no `World` is set, changing the **World Background** will cause an error.
   - Blue Opaline
   - Blue Sky
   - Aquamarine Blue
+
 - Oranges
   - Bittersweet
   - Tangerine
@@ -107,15 +110,18 @@ And if no `World` is set, changing the **World Background** will cause an error.
   - Zinnia
   - Creamy Apricot
   - Velvet Brown
+
 - Reds
   - Flag Red
   - Pink Coral
   - Pink Pink
   - Azalea
+
 - Purples
   - Beach Plum
   - African Violet
   - Lavender
+
 - Grays
   - Oyster White
   - Mercury
@@ -131,32 +137,38 @@ And if no `World` is set, changing the **World Background** will cause an error.
   - Ginger Ale
   - Pablo Honey
   - Tanlines
+
 - Serena Aqua
   - Blue Seafoam
   - Novelty Wave
   - Saturday On Sunday
   - Sicily Or Cyprus
+
 - Olive Green & Wasabi
   - Natural Habitat
   - Saged
   - Drive-Thru Safari
   - Green Root
   - Relentless Olive
+
 - Pops of Red
   - Cherokee Red
   - Self-Portrait
   - Negroni
   - Lipstick on the Mirror
+
 - Tangerine and Ochre
   - Aperitivo Hour
   - Bright Marigold
   - Autumn Glimmer
   - Orange Fruit
+
 - Pewter Gray
   - Wright Soft Gray
   - No Curfew
   - Motor Gray
   - After Hours
+
 - Soft and Earthy Brown
   - Fawn Doe
   - Sentimental Reasons
@@ -172,21 +184,25 @@ And if no `World` is set, changing the **World Background** will cause an error.
   - Blue 08
   - Green 02
   - Pink 1014
+
 - Energy
   - Green 07
   - Green 08
   - Green 13
   - Yellow 06
+
 - Cozy
   - Beige 02
   - Beige 03
   - Pink 07
   - Pink 08
+
 - Focus
   - Blue 06
   - Blue 07
   - Blue 17
   - Blue 111
+
 - Moody
   - Black 01
   - Purple 03
@@ -208,6 +224,7 @@ And if no `World` is set, changing the **World Background** will cause an error.
   - Chili Pepper
   - Blue Iris
   - Mimosa
+
 - 2010-19
   - Turquoise
   - Honeysuckle
@@ -220,11 +237,13 @@ And if no `World` is set, changing the **World Background** will cause an error.
   - Greenery
   - Ultra Violet
   - Living Coral
+
 - 2020-29
   - Classic Blue
   - Ultimate Gray
   - Illuminating
   - Very Peri
+
 - SS2022 London
   - Cascade
   - Coral Rose
@@ -236,6 +255,7 @@ And if no `World` is set, changing the **World Background** will cause an error.
   - Fragile Sprou
   - Orchid Bloom
   - Coffee Quartz
+
 - SS2022 New York
   - Spun Sugar
   - Gossamer Pink
@@ -497,34 +517,42 @@ And if no `World` is set, changing the **World Background** will cause an error.
   - Birdseye Maple
   - Cocoon
   - Olde World Gold
+
 - Set B
   - Wool Skein
   - Artisan Tan
   - Status Bronze
+
 - Set C
   - Tatami Tan
   - Colony Buff
   - Homburg Gray
+
 - Set D
   - Muslin
   - Straw Harvest
   - Rural Green
+
 - Set E
   - Extra White
   - Rushing River
   - Spiced Cider
+
 - Set F
   - Retreat
   - Netsuke
   - Edgy Gold
+
 - Set G
   - Jogging Path
   - Intellectual Gray
   - Thunder Gray
+
 - Set H
   - Anjou Pear
   - Jersey Cream
   - warm Stone
+
 - Set J
   - Cork Wedge
   - Smokehouse
