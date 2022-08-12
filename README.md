@@ -580,18 +580,18 @@ N.B. These sets are designed to be used as follows:
 ## Usage Notes
 
 ### Ford 1958
-- These colors were calculated for best use on automobiles.
+- These colors are calculated for best use on automobiles.
 
 ### General Electric
-- These colors were calculated for best use on home appliances.
+- These colors are calculated for best use on home appliances.
 - **Avacado** greens and **Harvest** yellows are as close to 60s and 70s era-correct as I've yet found.
 
 ### House & Garden 1971, Mid-Century Modern
-- These colors were calculated for best use on interior walls.
+- These colors are calculated for best use on interior walls.
 - The **MCM** blues, greens, reds, and browns are also great starters for terrains.
 
 ### Moods, Suburban Modern Interior, The Jazz Age
-- These colors were calculated for best use on interior walls.
+- These colors are calculated for best use on interior walls.
 - IMO, the **Moods** colors also work well as `World` colors.
 
 ### RAL Classic
@@ -605,7 +605,7 @@ N.B. These sets are designed to be used as follows:
 - [**The Ugliest Color in the World**](https://www.huffpost.com/entry/ugliest-color-pantone_n_57570df6e4b0ca5c7b504538) is nice for for dirt, cracks, or crevices.
 
 ### Suburban Modern Exterior
-- These colors were calculated for best use on building exteriors.
+- These colors are calculated for best use on building exteriors.
 - Each of the nine sets provides a **Body**, **Trim**, and **Accent** color.
 
 ## Attributions
