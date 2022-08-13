@@ -43,7 +43,7 @@ And if no `World` is set, changing the **World Background** will cause an error.
 
 ### Ford 1958 (13 Colors)
 
-![Blender QMC](https://github.com/don1138/blender-qmc/blob/main/imx/blender-qmc-f58.jpg)
+![Blender QMC F58](https://github.com/don1138/blender-qmc/blob/main/imx/blender-qmc-f58.jpg)
 ```
 - A Raven Black
 - B Desert Beige
@@ -61,7 +61,7 @@ And if no `World` is set, changing the **World Background** will cause an error.
 ```
 ### General Electric (11 Colors)
 
-![Blender QMC](https://github.com/don1138/blender-qmc/blob/main/imx/blender-qmc-ge.jpg)
+![Blender QMC GE](https://github.com/don1138/blender-qmc/blob/main/imx/blender-qmc-ge.jpg)
 ```
 - Avacado
 - Awacado Light
@@ -76,7 +76,7 @@ And if no `World` is set, changing the **World Background** will cause an error.
 ```
 ### House & Garden 1971 (36 Colors)
 
-![Blender QMC](https://github.com/don1138/blender-qmc/blob/main/imx/blender-qmc-hg71.jpg)
+![Blender QMC HG71](https://github.com/don1138/blender-qmc/blob/main/imx/blender-qmc-hg71.jpg)
 ```
 - Yellows
   - Pineapple
@@ -130,7 +130,7 @@ And if no `World` is set, changing the **World Background** will cause an error.
 ```
 ### Mid-Century Modern (29 Colors)
 
-![Blender QMC](https://github.com/don1138/blender-qmc/blob/main/imx/blender-qmc-mcm.jpg)
+![Blender QMC MMC](https://github.com/don1138/blender-qmc/blob/main/imx/blender-qmc-mcm.jpg)
 ```
 - Golden Yellow
   - Miami Parasol
@@ -177,7 +177,7 @@ And if no `World` is set, changing the **World Background** will cause an error.
 ```
 ### Moods (20 Colors)
 
-![Blender QMC](https://github.com/don1138/blender-qmc/blob/main/imx/blender-qmc-moods.jpg)
+![Blender QMC Moods](https://github.com/don1138/blender-qmc/blob/main/imx/blender-qmc-moods.jpg)
 ```
 - Relaxed
   - Blue 02
@@ -211,7 +211,7 @@ And if no `World` is set, changing the **World Background** will cause an error.
 ```
 ### Pantone Color of the Year (54 Colors)
 
-![Blender QMC](https://github.com/don1138/blender-qmc/blob/main/imx/blender-qmc-pcoy.jpg)
+![Blender QMC PCOY](https://github.com/don1138/blender-qmc/blob/main/imx/blender-qmc-pcoy.jpg)
 ```
 - 2000-09
   - Cerulean Blue
@@ -269,7 +269,10 @@ And if no `World` is set, changing the **World Background** will cause an error.
   - Poinciana
 ```
 ### RAL Classic (218 Colors)
-[**View swatches on Wikipedia**](https://en.wikipedia.org/wiki/List_of_RAL_colors#RAL_Classic)
+
+![Blender QMC RAL Classic](https://github.com/don1138/blender-qmc/blob/main/imx/blender-qmc-ral.jpg)
+
+[**View the full set of swatches on Wikipedia**](https://en.wikipedia.org/wiki/List_of_RAL_colors#RAL_Classic)
 
 ```
 - RAL Classic Yellow
@@ -511,7 +514,7 @@ And if no `World` is set, changing the **World Background** will cause an error.
 
 ### Suburban Modern Exterior (27 Colors)
 
-![Blender QMC](https://github.com/don1138/blender-qmc/blob/main/imx/blender-qmc-sme.jpg)
+![Blender QMC SME](https://github.com/don1138/blender-qmc/blob/main/imx/blender-qmc-sme.jpg)
 ```
 - Set A
   - Birdseye Maple
@@ -567,7 +570,7 @@ N.B. These sets are designed to be used as follows:
 ```
 ### Suburban Modern Interior (21 Colors)
 
-![Blender QMC](https://github.com/don1138/blender-qmc/blob/main/imx/blender-qmc-smi.jpg)
+![Blender QMC SMI](https://github.com/don1138/blender-qmc/blob/main/imx/blender-qmc-smi.jpg)
 ```
 - Pink Flamingo
 - Apple Blossom
@@ -593,7 +596,7 @@ N.B. These sets are designed to be used as follows:
 ```
 ### The Jazz Age (8 Colors)
 
-![Blender QMC](https://github.com/don1138/blender-qmc/blob/main/imx/blender-qmc-ja.jpg)
+![Blender QMC JA](https://github.com/don1138/blender-qmc/blob/main/imx/blender-qmc-ja.jpg)
 ```
 - Salon Rose
 - Chinese Red
