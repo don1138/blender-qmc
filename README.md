@@ -15,6 +15,7 @@ Once activated, a panel named **Quick Material Colors** will appear in the **MAT
 
 - Select an object in your view, and click one of the buttons to assign that color to it.
 - Set the **World Background** checkbox to `True` and the button will assign that color to the `World > Background Shader > Color`.
+- Set the **All Selected Materials** checkbox to `True` to change the **Base Color** of all selected shader nodes in a material. (This ignores nodes that do not have a **Base Color** attribute.)
 - Set the **Rename Material** checkbox to `True` to change the material or world name.
 
 ## Caveats & Warnings
@@ -36,6 +37,8 @@ The operation will fail if:
 - No object is selected
 - The active object has no material
 - The active material does not include a **Principled BSDF Shader** named `Principled BSDF` or a **Diffuse BSDF Shader** named `Diffuse BSDF`
+
+If the operation fails, set the **All Selected Nodes** checkbox to `True`, and manually select the shader nodes you want to change.
 
 And if no `World` is set, changing the **World Background** will cause an error.
 
