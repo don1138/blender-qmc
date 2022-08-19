@@ -19,9 +19,9 @@
 
 bl_info = {
     "name"       : "QMC+ (Quick Material Colors Plus)",
-    "description": "Sets the Base Color of a Principled BSDF",
+    "description": "Sets the Base Color of a Material Shader",
     "author"     : "Don Schnitzius",
-    "version"    : (1, 1, 0),
+    "version"    : (1, 2, 0),
     "blender"    : (2, 80, 0),
     "location"   : "3D Viewport > Sidebar > MAT > Quick Material Colors",
     "warning"    : "",
@@ -43,11 +43,15 @@ from .color_sets.globals import *
 # BOOLEAN FOR PANEL
 class QMC_SETTINGS(bpy.types.PropertyGroup):
     rename_material_more: bpy.props.BoolProperty(
-        name='Rename Material',
+        name='',
+        default=False
+    )
+    active_node_more: bpy.props.BoolProperty(
+        name='',
         default=False
     )
     world_color_more: bpy.props.BoolProperty(
-        name='World Background',
+        name='',
         default=False
     )
 
@@ -64,13 +68,23 @@ class QMCPanel(bpy.types.Panel):
     def draw(self, context):
         layout = self.layout
         more_bool = context.scene.more_bool
+        active_bool = context.scene.active_bool
         world_bool = context.scene.world_bool
 
-        col = layout.column(align=True)
-        col.prop(more_bool, "rename_material_more")
+        srow = layout.row()
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.prop(more_bool, "rename_material_more")
+        scol.prop(active_bool, "active_node_more")
+        scol.prop(world_bool, "world_color_more")
 
-        col = layout.column(align=True)
-        col.prop(world_bool, "world_color_more")
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.scale_x = 3.0
+        scol.label(text="Rename Material")
+        scol.label(text="Selected Node")
+        scol.label(text="World Background")
+
 
 
 # IMPORT PANELS
@@ -120,12 +134,14 @@ def register():
     for cls in classes:
         bpy.utils.register_class(cls)
         bpy.types.Scene.more_bool = bpy.props.PointerProperty(type=QMC_SETTINGS)
+        bpy.types.Scene.active_bool = bpy.props.PointerProperty(type=QMC_SETTINGS)
         bpy.types.Scene.world_bool = bpy.props.PointerProperty(type=QMC_SETTINGS)
 
 
 def unregister():
     bpy.utils.previews.remove(g.c_icons)
     del bpy.types.Scene.more_bool
+    del bpy.types.Scene.active_bool
     del bpy.types.Scene.world_bool
     for cls in reversed(classes):
         bpy.utils.unregister_class(cls)
