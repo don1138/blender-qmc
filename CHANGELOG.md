@@ -1,4 +1,4 @@
-### 1.2.0 <!-- 8/12/22 -->
+### 1.2.0 <!-- 8/18/22 -->
 
 - Add **All Selected Materials** checkbox
     - When selected, this changes the **Base Color** of all selected shader nodes. This ignores nodes that do not have a **Base Color** attribute.
