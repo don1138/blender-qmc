@@ -21,7 +21,7 @@ bl_info = {
     "name"       : "QMC+ (Quick Material Colors)",
     "description": "Sets the Base Color of a Material Shader",
     "author"     : "Don Schnitzius",
-    "version"    : (1, 2, 0),
+    "version"    : (1, 2,1),
     "blender"    : (2, 80, 0),
     "location"   : "3D Viewport > Sidebar > MAT > Quick Material Colors",
     "warning"    : "",

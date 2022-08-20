@@ -4,7 +4,7 @@ import bpy
 
 # MESSAGE BOX
 
-no_active = "One or More Nodes Are Wrong Type"
+no_active = "No Compatable Shader Node Found"
 no_bsdf = "No Principled BSDF Shader Found"
 no_material = "No Compatable Material Found"
 no_world = "No World Found"
@@ -37,6 +37,30 @@ def hex_to_rgb_sm(h):
 
 
 
+# SHADERS WITH BASE COLOR INPUTS
+node_bl_idnames = {
+    "ShaderNodeBackground",
+    "ShaderNodeBsdfAnisotropic",
+    "ShaderNodeBsdfDiffuse",
+    "ShaderNodeBsdfGlass",
+    "ShaderNodeBsdfGlossy",
+    "ShaderNodeBsdfHair",
+    "ShaderNodeBsdfHairPrincipled",
+    "ShaderNodeBsdfPrincipled",
+    "ShaderNodeBsdfRefraction",
+    "ShaderNodeBsdfToon",
+    "ShaderNodeBsdfTranslucent",
+    "ShaderNodeBsdfTransparent",
+    "ShaderNodeBsdfVelvet",
+    "ShaderNodeEmission",
+    "ShaderNodeSubsurfaceScattering",
+    "ShaderNodeVolumeAbsorption",
+    "ShaderNodeVolumePrincipled",
+    "ShaderNodeVolumeScatter",
+}
+
+
+
 # COLOR SWITCHER
 
 def set_base_color(hex, mat_name):
@@ -58,10 +82,8 @@ def set_base_color(hex, mat_name):
                     world.name = mat_name
             else:
                 ShowMessageBox(no_world_bg, "Unable To Comply")
-                return {'FINISHED'}
         else:
             ShowMessageBox(no_world, "Unable To Comply")
-            return {'FINISHED'}
     else:
         if material:
             plaster = bpy.data.materials.get('QMM Plaster')
@@ -71,69 +93,15 @@ def set_base_color(hex, mat_name):
             D_BSDF = material.node_tree.nodes.get('Diffuse BSDF')
             RGB = material.node_tree.nodes.get('RGB')
 
-
             if an_bool == True:
-                g = 0
+                changed = False
                 for n in AN:
-                    if n.select:
-                        if n and n.bl_idname == "ShaderNodeBsdfAnisotropic":
-                            n.inputs[0].default_value = hex_to_rgb(hex)
-                            material.diffuse_color = hex_to_rgb(hex)
-                        elif n and n.bl_idname == "ShaderNodeBsdfDiffuse":
-                            n.inputs[0].default_value = hex_to_rgb(hex)
-                            material.diffuse_color = hex_to_rgb(hex)
-                        elif n and n.bl_idname == "ShaderNodeEmission":
-                            n.inputs[0].default_value = hex_to_rgb(hex)
-                            material.diffuse_color = hex_to_rgb(hex)
-                        elif n and n.bl_idname == "ShaderNodeBsdfGlass":
-                            n.inputs[0].default_value = hex_to_rgb(hex)
-                            material.diffuse_color = hex_to_rgb(hex)
-                        elif n and n.bl_idname == "ShaderNodeBsdfGlossy":
-                            n.inputs[0].default_value = hex_to_rgb(hex)
-                            material.diffuse_color = hex_to_rgb(hex)
-                        elif n and n.bl_idname == "ShaderNodeBsdfHair":
-                            n.inputs[0].default_value = hex_to_rgb(hex)
-                            material.diffuse_color = hex_to_rgb(hex)
-                        elif n and n.bl_idname == "ShaderNodeBsdfPrincipled":
-                            n.inputs[0].default_value = hex_to_rgb(hex)
-                            material.diffuse_color = hex_to_rgb(hex)
-                            g += 1
-                        elif n and n.bl_idname == "ShaderNodeBsdfHairPrincipled":
-                            n.inputs[0].default_value = hex_to_rgb(hex)
-                            material.diffuse_color = hex_to_rgb(hex)
-                        elif n and n.bl_idname == "ShaderNodeVolumePrincipled":
-                            n.inputs[0].default_value = hex_to_rgb(hex)
-                            material.diffuse_color = hex_to_rgb(hex)
-                        elif n and n.bl_idname == "ShaderNodeBsdfRefraction":
-                            n.inputs[0].default_value = hex_to_rgb(hex)
-                            material.diffuse_color = hex_to_rgb(hex)
-                        elif n and n.bl_idname == "ShaderNodeSubsurfaceScattering":
-                            n.inputs[0].default_value = hex_to_rgb(hex)
-                            material.diffuse_color = hex_to_rgb(hex)
-                        elif n and n.bl_idname == "ShaderNodeBsdfToon":
-                            n.inputs[0].default_value = hex_to_rgb(hex)
-                            material.diffuse_color = hex_to_rgb(hex)
-                        elif n and n.bl_idname == "ShaderNodeBsdfTranslucent":
-                            n.inputs[0].default_value = hex_to_rgb(hex)
-                            material.diffuse_color = hex_to_rgb(hex)
-                        elif n and n.bl_idname == "ShaderNodeBsdfTransparent":
-                            n.inputs[0].default_value = hex_to_rgb(hex)
-                            material.diffuse_color = hex_to_rgb(hex)
-                        elif n and n.bl_idname == "ShaderNodeBsdfVelvet":
-                            n.inputs[0].default_value = hex_to_rgb(hex)
-                            material.diffuse_color = hex_to_rgb(hex)
-                        elif n and n.bl_idname == "ShaderNodeBackground":
-                            n.inputs[0].default_value = hex_to_rgb(hex)
-                            material.diffuse_color = hex_to_rgb(hex)
-                        elif n and n.bl_idname == "ShaderNodeVolumeAbsorption":
-                            n.inputs[0].default_value = hex_to_rgb(hex)
-                            material.diffuse_color = hex_to_rgb(hex)
-                        elif n and n.bl_idname == "ShaderNodeVolumeScatter":
-                            n.inputs[0].default_value = hex_to_rgb(hex)
-                            material.diffuse_color = hex_to_rgb(hex)
-                if g == 0:
+                    if n.select and n.bl_idname in node_bl_idnames:
+                        n.inputs[0].default_value = hex_to_rgb(hex)
+                        material.diffuse_color = hex_to_rgb(hex)
+                        changed = True
+                if changed == False:
                     ShowMessageBox(no_active, "Unable To Comply")
-                return {'FINISHED'}
             else:
                 if material == plaster:
                     ColorRamp.color_ramp.elements[0].color = hex_to_rgb(hex)
@@ -152,7 +120,6 @@ def set_base_color(hex, mat_name):
                         material.name = mat_name
                 else:
                     ShowMessageBox(no_bsdf, "Unable To Comply")
-                    return {'FINISHED'}
         else:
             ShowMessageBox(no_material, "Unable To Comply")
-            return {'FINISHED'}
+    return {'FINISHED'}
