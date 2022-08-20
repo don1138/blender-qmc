@@ -1,3 +1,8 @@
+### 1.2.1 <!-- 8/19/22 -->
+
+- Optimize `color_functions.py`
+  - Thank you to **iceythe** on [**Blender Artists**](https://blenderartists.org/t/roast-my-code-color-switcher/1397799/3) for code review
+
 ### 1.2.0 <!-- 8/18/22 -->
 
 - Add **All Selected Materials** checkbox
