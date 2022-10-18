@@ -4,7 +4,7 @@ import bpy
 
 # MESSAGE BOX
 
-no_active = "No Compatable Shader Node Found"
+no_active = "No Compatable Node Found"
 no_bsdf = "No Principled BSDF Shader Found"
 no_material = "No Compatable Material Found"
 no_world = "No World Found"
@@ -53,6 +53,7 @@ node_bl_idnames = {
     "ShaderNodeBsdfTransparent",
     "ShaderNodeBsdfVelvet",
     "ShaderNodeEmission",
+    "ShaderNodeRGB",
     "ShaderNodeSubsurfaceScattering",
     "ShaderNodeVolumeAbsorption",
     "ShaderNodeVolumePrincipled",
@@ -97,7 +98,10 @@ def set_base_color(hex, mat_name):
                 changed = False
                 for n in AN:
                     if n.select and n.bl_idname in node_bl_idnames:
-                        n.inputs[0].default_value = hex_to_rgb(hex)
+                        if n.bl_idname == 'ShaderNodeRGB':
+                            n.outputs[0].default_value = hex_to_rgb(hex)
+                        else:
+                            n.inputs[0].default_value = hex_to_rgb(hex)
                         material.diffuse_color = hex_to_rgb(hex)
                         changed = True
                 if changed == False:
