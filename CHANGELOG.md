@@ -1,3 +1,7 @@
+### 1.2.2 <!-- 10/17/22 -->
+
+- Add `ShaderNodeRGB` to nodes affected by **All Selected Materials** checkbox
+
 ### 1.2.1 <!-- 8/19/22 -->
 
 - Optimize `color_functions.py`
