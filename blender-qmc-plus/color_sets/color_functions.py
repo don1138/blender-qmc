@@ -92,6 +92,7 @@ def set_base_color(hex, mat_name):
             BSDF = material.node_tree.nodes.get('Principled BSDF')
             ColorRamp = material.node_tree.nodes.get('ColorRamp')
             D_BSDF = material.node_tree.nodes.get('Diffuse BSDF')
+            EC = material.node_tree.nodes.get('Energy Conservation')
             RGB = material.node_tree.nodes.get('RGB')
 
             if an_bool == True:
@@ -103,6 +104,9 @@ def set_base_color(hex, mat_name):
                         else:
                             n.inputs[0].default_value = hex_to_rgb(hex)
                         material.diffuse_color = hex_to_rgb(hex)
+                        changed = True
+                    if  n.select and n.name == 'Energy Conservation':
+                        n.inputs[1].default_value = hex_to_rgb(hex)
                         changed = True
                 if changed == False:
                     ShowMessageBox(no_active, "Unable To Comply")
@@ -122,6 +126,8 @@ def set_base_color(hex, mat_name):
                     material.diffuse_color = hex_to_rgb(hex)
                     if mat_bool == True:
                         material.name = mat_name
+                    if EC:
+                        EC.inputs[1].default_value = hex_to_rgb(hex)
                 else:
                     ShowMessageBox(no_bsdf, "Unable To Comply")
         else:

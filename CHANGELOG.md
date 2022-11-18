@@ -1,3 +1,8 @@
+### 1.2.3 <!-- 11/15/22 -->
+
+- Add **Baker-Miller Pink** to **QMC Plus** > **Don1138 Select**
+- Add **Energy Conservation** node group to list of affected nodes
+
 ### 1.2.2 <!-- 10/17/22 -->
 
 - Add `ShaderNodeRGB` to nodes affected by **All Selected Materials** checkbox

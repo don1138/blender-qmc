@@ -127,6 +127,14 @@ class DEEPLY_UNCOMFORTABLE(bpy.types.Operator):
         set_base_color(0x412a42, self.bl_label)
         return {'FINISHED'}
 
+class BAKER_MILLER_PINK(bpy.types.Operator):
+    """Baker-Miller Pink"""
+    bl_label = "Baker-Miller Pink"
+    bl_idname = 'color.baker_miller_pink'
+    def execute(self, context):
+        set_base_color(0xFF91AF, self.bl_label)
+        return {'FINISHED'}
+
 class FINALLY_HEALING(bpy.types.Operator):
     """Finally Healing"""
     bl_label = "Finally Healing"
@@ -209,6 +217,7 @@ class Don1138Panel(bpy.types.Panel):
         scol.label(text="", icon_value=g.c_icons["don_white"].icon_id)
         scol.label(text="", icon_value=g.c_icons["pms_7499_u"].icon_id)
         scol.label(text="", icon_value=g.c_icons["deeply_uncomfotable"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["baker_miller_pink"].icon_id)
         scol.label(text="", icon_value=g.c_icons["finally_healing"].icon_id)
         scol.label(text="", icon_value=g.c_icons["real_black"].icon_id)
         scol.label(text="", icon_value=g.c_icons["real_white"].icon_id)
@@ -234,6 +243,7 @@ class Don1138Panel(bpy.types.Panel):
         scol.operator("color.don_white", text="Don White")
         scol.operator("color.pms_7499_u", text="PMS 7499 U")
         scol.operator("color.deeply_uncomfotable", text="Deeply Uncomfortable")
+        scol.operator("color.baker_miller_pink", text="Baker-Miller Pink")
         scol.operator("color.finally_healing", text="Finally Healing")
         scol.operator("color.real_black", text="Real Black")
         scol.operator("color.real_white", text="Real White")
@@ -260,6 +270,7 @@ array_ds = [
     DON_WHITE,
     PMS_7499U,
     DEEPLY_UNCOMFORTABLE,
+    BAKER_MILLER_PINK,
     FINALLY_HEALING,
     REAL_BLACK,
     REAL_WHITE,
