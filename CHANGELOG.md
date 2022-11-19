@@ -2,6 +2,7 @@
 
 - Add **Baker-Miller Pink** to **QMC Plus** > **Don1138 Select**
 - Add **Energy Conservation** node group to list of affected nodes
+- Code refactoring
 
 ### 1.2.2 <!-- 10/17/22 -->
 
