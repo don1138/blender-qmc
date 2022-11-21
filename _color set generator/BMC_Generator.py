@@ -12,9 +12,9 @@ import os
 from ral_vars import *
 
 
-dir = './icons/'
-if not os.path.isdir(dir):
-    os.mkdir(dir)
+icons_dir = './icons/'
+if not os.path.isdir(icons_dir):
+    os.mkdir(icons_dir)
 
 
 # WRITE HEADER
@@ -27,20 +27,20 @@ print("from .color_functions import *")
 # WRITE OPERATORS
 print("\n#",panel_name,"OPERATORS")
 for i in array:
-  print("\nclass",i[0]+"(bpy.types.Operator):")
-  print("    \"\"\""+i[1]+"\"\"\"")
-  print("    bl_label = \""+i[2]+"\"")
-  print("    bl_idname = 'color."+i[3]+"'")
-  print("    def execute(self, context):")
-  print("        set_base_color(0x"+i[4]+", self.bl_label)")
-  print("        return {'FINISHED'}")
+    print("\nclass", f"{i[0]}(bpy.types.Operator):")
+    print("    \"\"\""+i[1]+"\"\"\"")
+    print("    bl_label = \""+i[2]+"\"")
+    print("    bl_idname = 'color."+i[3]+"'")
+    print("    def execute(self, context):")
+    print(f"        set_base_color(0x{i[4]}, self.bl_label)")
+    print("        return {'FINISHED'}")
 
 
 # WRITE PANEL
 print("\n")
 print("#",panel_name,"PANEL")
 print("")
-print("class "+panel_label+"Panel(bpy.types.Panel):")
+print(f"class {panel_label}Panel(bpy.types.Panel):")
 print("    bl_idname = \""+panel_name+"_PT_Panel\"")
 print("    bl_label = \""+panel_label+"\"")
 print("    bl_space_type = \"VIEW_3D\"")
@@ -69,21 +69,21 @@ for i in array:
 # WRITE CLASSES
 print("\n")
 print("#",panel_name,"CLASSES")
-print(array_name+" = [")
-print("    "+panel_label+"Panel,")
+print(f"{array_name} = [")
+print(f"    {panel_label}Panel,")
 for i in array:
-  print("    "+i[0]+",")
+    print(f"    {i[0]},")
 print("]")
 
 
 # CREATE PNG ICONS
 # !!! REMEMBER TO RUN ImageOptim ON FOLDER !!!
 for i in array:
-  # name of the file to save
-  filename = i[3]+".png"
-  file_path = os.path.join(dir, filename)
-  # create new image
-  col = ImageColor.getcolor("#"+i[4], "RGB")
-  image = Image.new(mode = "RGB", size = (32,32), color = col)
-  # save the file
-  image.save(file_path)
+      # name of the file to save
+    filename = f"{i[3]}.png"
+    file_path = os.path.join(dir, filename)
+    # create new image
+    col = ImageColor.getcolor(f"#{i[4]}", "RGB")
+    image = Image.new(mode = "RGB", size = (32,32), color = col)
+    # save the file
+    image.save(file_path)

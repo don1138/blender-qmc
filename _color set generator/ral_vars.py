@@ -2,7 +2,7 @@
 v    = "RAL"
 panel_label = v
 panel_name  = v.upper()
-array_name  = "array_"+v.lower()
+array_name = f"array_{v.lower()}"
 
 array = [
 ["RAL1000","RAL1000 - Green Beige","1000 Green Beige","ral_1000","Cdba88"],

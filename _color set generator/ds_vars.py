@@ -2,7 +2,7 @@
 v    = "DS"
 panel_label = v
 panel_name  = v.upper()
-array_name  = "array_"+v.lower()
+array_name = f"array_{v.lower()}"
 
 array = [
 # ["Class Name","Tool Tip","Button Label","ID Name","Hex Color"],

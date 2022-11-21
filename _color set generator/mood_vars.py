@@ -2,7 +2,7 @@
 set_name    = "Moods"
 panel_label = set_name
 panel_name  = set_name.upper()
-array_name  = "array_"+set_name.lower()
+array_name = f"array_{set_name.lower()}"
 
 array = [
 # ["Class Name","Tool Tip","Button Label","ID Name","Hex Color"],
