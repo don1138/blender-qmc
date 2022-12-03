@@ -212,6 +212,14 @@ class PMS2022(bpy.types.Operator):
         set_base_color(0x6567aa, self.bl_label)
         return {'FINISHED'}
 
+class PMS2023(bpy.types.Operator):
+    """Pantone 18-1750"""
+    bl_label = "Viva Magenta"
+    bl_idname = 'color.pms_2023'
+    def execute(self, context):
+        set_base_color(0xBB2649, self.bl_label)
+        return {'FINISHED'}
+
 # EXTRAS & APOCRYPHA
 
 class PMSPrince(bpy.types.Operator):
@@ -468,7 +476,7 @@ class PMSPanel(bpy.types.Panel):
 # 2000-09 PANEL
 class PMSPanel2000(bpy.types.Panel):
     bl_idname = "PMS_PT_Panel_2000"
-    bl_label = "2000-09"
+    bl_label = "    2000-09"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -525,7 +533,7 @@ class PMSPanel2000(bpy.types.Panel):
 # 2010-19 PANEL
 class PMSPanel2010(bpy.types.Panel):
     bl_idname = "PMS_PT_Panel_2010"
-    bl_label = "2010-19"
+    bl_label = "    2010-19"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -585,7 +593,7 @@ class PMSPanel2010(bpy.types.Panel):
 # 2020+ PANEL
 class PMSPanel2020(bpy.types.Panel):
     bl_idname = "PMS_PT_Panel_2020"
-    bl_label = "2020-29"
+    bl_label = "    2020-29"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -604,6 +612,7 @@ class PMSPanel2020(bpy.types.Panel):
         scol.label(text="2021")
         scol.label(text="2021")
         scol.label(text="2022")
+        scol.label(text="2023")
 
         scol = srow.column(align=True)
         scol.scale_y = 1.25
@@ -611,6 +620,7 @@ class PMSPanel2020(bpy.types.Panel):
         scol.label(text="", icon_value=g.c_icons["pcoy_2021a"].icon_id)
         scol.label(text="", icon_value=g.c_icons["pcoy_2021b"].icon_id)
         scol.label(text="", icon_value=g.c_icons["pcoy_2022"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["pcoy_2023"].icon_id)
 
         scol = srow.column(align=True)
         scol.scale_y = 1.25
@@ -619,12 +629,13 @@ class PMSPanel2020(bpy.types.Panel):
         scol.operator("color.pms_2021_a", text="Ultimate Gray")
         scol.operator("color.pms_2021_b", text="Illuminating")
         scol.operator("color.pms_2022", text="Very Peri")
+        scol.operator("color.pms_2023", text="Viva Magenta")
 
 
 # SS2022 NY PANEL
 class PMSPanelSS2022London(bpy.types.Panel):
     bl_idname = "PMS_PT_Panel_SS2022London"
-    bl_label = "SS2022 London"
+    bl_label = "    SS2022 London"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -667,7 +678,7 @@ class PMSPanelSS2022London(bpy.types.Panel):
 # SS2022 NY PANEL
 class PMSPanelSS2022NY(bpy.types.Panel):
     bl_idname = "PMS_PT_Panel_SS2022NY"
-    bl_label = "SS2022 New York"
+    bl_label = "    SS2022 New York"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -710,7 +721,7 @@ class PMSPanelSS2022NY(bpy.types.Panel):
 # Extras & Apocrypha PANEL
 class PMSPanelExtras(bpy.types.Panel):
     bl_idname = "PMS_PT_Panel_Extras"
-    bl_label = "Extras & Apocrypha"
+    bl_label = "    Extras & Apocrypha"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -781,6 +792,7 @@ array_pcoy = [
     PMS2021A,
     PMS2021B,
     PMS2022,
+    PMS2023,
     PMSPrince,
     PMSConan,
     PMSBCoral,

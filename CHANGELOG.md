@@ -1,3 +1,7 @@
+### 1.2.4 <!-- 12/02/22 -->
+
+- Add **Via Magenta** to **QMC Plus** > **Pantone Color of the Year**
+
 ### 1.2.3 <!-- 11/15/22 -->
 
 - Add **Baker-Miller Pink** to **QMC Plus** > **Don1138 Select**

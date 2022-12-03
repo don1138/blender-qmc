@@ -257,7 +257,7 @@ class MCMPanel(bpy.types.Panel):
 # Golden Yellow
 class MCMYELLOWS(bpy.types.Panel):
     bl_idname = "YELLOWS_PT_Panel"
-    bl_label = "Golden Yellow"
+    bl_label = "    Golden Yellow"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -287,7 +287,7 @@ class MCMYELLOWS(bpy.types.Panel):
 # Serena Aqua
 class MCMBLUES(bpy.types.Panel):
     bl_idname = "BLUES_PT_Panel"
-    bl_label = "Serena Aqua"
+    bl_label = "    Serena Aqua"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -317,7 +317,7 @@ class MCMBLUES(bpy.types.Panel):
 # Olive Green and Wasabi
 class MCMGREENS(bpy.types.Panel):
     bl_idname = "GREENS_PT_Panel"
-    bl_label = "Olive Green & Wasabi"
+    bl_label = "    Olive Green & Wasabi"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -349,7 +349,7 @@ class MCMGREENS(bpy.types.Panel):
 # Pops of Red
 class MCMREDS(bpy.types.Panel):
     bl_idname = "REDS_PT_Panel"
-    bl_label = "Pops of Red"
+    bl_label = "    Pops of Red"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -379,7 +379,7 @@ class MCMREDS(bpy.types.Panel):
 # Tangerine and Ochre
 class MCMORANGES(bpy.types.Panel):
     bl_idname = "ORANGES_PT_Panel"
-    bl_label = "Tangerine and Ochre"
+    bl_label = "    Tangerine and Ochre"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -409,7 +409,7 @@ class MCMORANGES(bpy.types.Panel):
 # Pewter Gray
 class MCMGRAYS(bpy.types.Panel):
     bl_idname = "GRAYS_PT_Panel"
-    bl_label = "Pewter Gray"
+    bl_label = "    Pewter Gray"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -439,7 +439,7 @@ class MCMGRAYS(bpy.types.Panel):
 # Soft and Earthy Brown
 class MCMBROWNS(bpy.types.Panel):
     bl_idname = "BROWNS_PT_Panel"
-    bl_label = "Soft and Earthy Brown"
+    bl_label = "    Soft and Earthy Brown"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"

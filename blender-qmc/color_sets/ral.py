@@ -1770,7 +1770,7 @@ class RALPanel(bpy.types.Panel):
 
 class RALYELLOWPanel(bpy.types.Panel):
     bl_idname = "RAL_YELLOW_PT_Panel"
-    bl_label = "RAL Classic Yellow"
+    bl_label = "    RAL Classic Yellow"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -1858,7 +1858,7 @@ class RALYELLOWPanel(bpy.types.Panel):
 
 class RALORANGEPanel(bpy.types.Panel):
     bl_idname = "RAL_ORANGE_PT_Panel"
-    bl_label = "RAL Classic Orange"
+    bl_label = "    RAL Classic Orange"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -1908,7 +1908,7 @@ class RALORANGEPanel(bpy.types.Panel):
 
 class RALREDPanel(bpy.types.Panel):
     bl_idname = "RAL_RED_PT_Panel"
-    bl_label = "RAL Classic Red"
+    bl_label = "    RAL Classic Red"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -1982,7 +1982,7 @@ class RALREDPanel(bpy.types.Panel):
 
 class RALVIOLETPanel(bpy.types.Panel):
     bl_idname = "RAL_VIOLET_PT_Panel"
-    bl_label = "RAL Classic Violet"
+    bl_label = "    RAL Classic Violet"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -2028,7 +2028,7 @@ class RALVIOLETPanel(bpy.types.Panel):
 
 class RALBLUEPanel(bpy.types.Panel):
     bl_idname = "RAL_BLUE_PT_Panel"
-    bl_label = "RAL Classic Blue"
+    bl_label = "    RAL Classic Blue"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -2100,7 +2100,7 @@ class RALBLUEPanel(bpy.types.Panel):
 
 class RALGREENPanel(bpy.types.Panel):
     bl_idname = "RAL_GREEN_PT_Panel"
-    bl_label = "RAL Classic Green"
+    bl_label = "    RAL Classic Green"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -2192,7 +2192,7 @@ class RALGREENPanel(bpy.types.Panel):
 
 class RALGREYPanel(bpy.types.Panel):
     bl_idname = "RAL_GREY_PT_Panel"
-    bl_label = "RAL Classic Grey"
+    bl_label = "    RAL Classic Grey"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -2290,7 +2290,7 @@ class RALGREYPanel(bpy.types.Panel):
 
 class RALBROWNPanel(bpy.types.Panel):
     bl_idname = "RAL_BROWN_PT_Panel"
-    bl_label = "RAL Classic Brown"
+    bl_label = "    RAL Classic Brown"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -2352,7 +2352,7 @@ class RALBROWNPanel(bpy.types.Panel):
 
 class RALWHITEPanel(bpy.types.Panel):
     bl_idname = "RAL_WHITE_PT_Panel"
-    bl_label = "RAL Classic White/Black"
+    bl_label = "    RAL Classic White/Black"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"

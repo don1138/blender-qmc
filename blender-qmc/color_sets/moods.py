@@ -215,7 +215,7 @@ class MOODSPanel(bpy.types.Panel):
 
 class MOODRELAXPanel(bpy.types.Panel):
     bl_idname = "MOODSRELAX_PT_Panel"
-    bl_label = "Relaxed"
+    bl_label = "    Relaxed"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -244,7 +244,7 @@ class MOODRELAXPanel(bpy.types.Panel):
 
 class MOODENERGYPanel(bpy.types.Panel):
     bl_idname = "MOODENERGY_PT_Panel"
-    bl_label = "Energy"
+    bl_label = "    Energy"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -273,7 +273,7 @@ class MOODENERGYPanel(bpy.types.Panel):
 
 class MOODCOZYPanel(bpy.types.Panel):
     bl_idname = "MOODCOZY_PT_Panel"
-    bl_label = "Cozy"
+    bl_label = "    Cozy"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -302,7 +302,7 @@ class MOODCOZYPanel(bpy.types.Panel):
 
 class MOODFOCUSPanel(bpy.types.Panel):
     bl_idname = "MOODFOCUS_PT_Panel"
-    bl_label = "Focus"
+    bl_label = "    Focus"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -331,7 +331,7 @@ class MOODFOCUSPanel(bpy.types.Panel):
 
 class MOODMOODYPanel(bpy.types.Panel):
     bl_idname = "MOODMOODY_PT_Panel"
-    bl_label = "Moody"
+    bl_label = "    Moody"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
