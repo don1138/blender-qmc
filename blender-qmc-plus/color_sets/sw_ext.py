@@ -240,7 +240,7 @@ class SMEPanel(bpy.types.Panel):
 
 class SME_APanel(bpy.types.Panel):
     bl_idname = "SME_A_PT_Panel"
-    bl_label = "Set A"
+    bl_label = "    Set A"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -269,7 +269,7 @@ class SME_APanel(bpy.types.Panel):
 
 class SME_BPanel(bpy.types.Panel):
     bl_idname = "SME_B_PT_Panel"
-    bl_label = "Set B"
+    bl_label = "    Set B"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -298,7 +298,7 @@ class SME_BPanel(bpy.types.Panel):
 
 class SME_CPanel(bpy.types.Panel):
     bl_idname = "SME_C_PT_Panel"
-    bl_label = "Set C"
+    bl_label = "    Set C"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -327,7 +327,7 @@ class SME_CPanel(bpy.types.Panel):
 
 class SME_DPanel(bpy.types.Panel):
     bl_idname = "SME_D_PT_Panel"
-    bl_label = "Set D"
+    bl_label = "    Set D"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -356,7 +356,7 @@ class SME_DPanel(bpy.types.Panel):
 
 class SME_EPanel(bpy.types.Panel):
     bl_idname = "SME_E_PT_Panel"
-    bl_label = "Set E"
+    bl_label = "    Set E"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -385,7 +385,7 @@ class SME_EPanel(bpy.types.Panel):
 
 class SME_FPanel(bpy.types.Panel):
     bl_idname = "SME_F_PT_Panel"
-    bl_label = "Set F"
+    bl_label = "    Set F"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -414,7 +414,7 @@ class SME_FPanel(bpy.types.Panel):
 
 class SME_GPanel(bpy.types.Panel):
     bl_idname = "SME_G_PT_Panel"
-    bl_label = "Set G"
+    bl_label = "    Set G"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -443,7 +443,7 @@ class SME_GPanel(bpy.types.Panel):
 
 class SME_HPanel(bpy.types.Panel):
     bl_idname = "SME_H_PT_Panel"
-    bl_label = "Set H"
+    bl_label = "    Set H"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -472,7 +472,7 @@ class SME_HPanel(bpy.types.Panel):
 
 class SME_JPanel(bpy.types.Panel):
     bl_idname = "SME_J_PT_Panel"
-    bl_label = "Set J"
+    bl_label = "    Set J"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"

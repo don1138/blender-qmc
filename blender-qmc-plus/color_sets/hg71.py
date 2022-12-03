@@ -312,7 +312,7 @@ class HG71Panel(bpy.types.Panel):
 # YELLOWS
 class HG71_YELLOW_Panel(bpy.types.Panel):
     bl_idname = "HG71_YELLOW_PT_Panel"
-    bl_label = "Yellows"
+    bl_label = "    Yellows"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -349,7 +349,7 @@ class HG71_YELLOW_Panel(bpy.types.Panel):
 # GREEN
 class HG71_GREEN_Panel(bpy.types.Panel):
     bl_idname = "HG71_GREEN_PT_Panel"
-    bl_label = "Greens"
+    bl_label = "    Greens"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -384,7 +384,7 @@ class HG71_GREEN_Panel(bpy.types.Panel):
 # BLUES
 class HG71_BLUE_Panel(bpy.types.Panel):
     bl_idname = "HG71_BLUE_PT_Panel"
-    bl_label = "Blues"
+    bl_label = "    Blues"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -419,7 +419,7 @@ class HG71_BLUE_Panel(bpy.types.Panel):
 # ORANGES
 class HG71_ORANGE_Panel(bpy.types.Panel):
     bl_idname = "HG71_ORANGE_PT_Panel"
-    bl_label = "Oranges"
+    bl_label = "    Oranges"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -454,7 +454,7 @@ class HG71_ORANGE_Panel(bpy.types.Panel):
 # REDS
 class HG71_RED_Panel(bpy.types.Panel):
     bl_idname = "HG71_RED_PT_Panel"
-    bl_label = "Reds"
+    bl_label = "    Reds"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -485,7 +485,7 @@ class HG71_RED_Panel(bpy.types.Panel):
 # PURPLES
 class HG71_PURPLE_Panel(bpy.types.Panel):
     bl_idname = "HG71_PURPLE_PT_Panel"
-    bl_label = "Purples"
+    bl_label = "    Purples"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -514,7 +514,7 @@ class HG71_PURPLE_Panel(bpy.types.Panel):
 # GRAYS
 class HG71_GRAY_Panel(bpy.types.Panel):
     bl_idname = "HG71_GRAY_PT_Panel"
-    bl_label = "Grays"
+    bl_label = "    Grays"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
