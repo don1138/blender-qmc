@@ -1,6 +1,13 @@
 ### 1.2.4 <!-- 12/02/22 -->
 
-- Add **Via Magenta** to **QMC Plus** > **Pantone Color of the Year**
+- Add **Viva Magenta** to **Pantone Color of the Year**
+- Indent names of sub-categories to improve legibility. This affects:
+  - **House & Garden 1971**
+  - **Mid-Century Modern**
+  - **Moods**
+  - **Pantone Color of the Year**
+  - **RAL Classic**
+  - **Suburban Modern Exterior**
 
 ### 1.2.3 <!-- 11/15/22 -->
 
