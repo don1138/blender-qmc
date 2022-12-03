@@ -1,7 +1,7 @@
 # BMC GENERATOR
 
 # WRITE THIS SCRIPT TO FILE WITH:
-# python BMC_Generator.py > ral.py
+# python BMC_Generator.py > pcoy-2023.py
 
 
 from PIL import Image, ImageDraw, ImageColor
@@ -9,7 +9,7 @@ import os
 
 
 # IMPORT VARS
-from ral_vars import *
+from pcoy_vars import *
 
 
 icons_dir = './icons/'
@@ -79,9 +79,10 @@ print("]")
 # CREATE PNG ICONS
 # !!! REMEMBER TO RUN ImageOptim ON FOLDER !!!
 for i in array:
-      # name of the file to save
+    # name of the file to save
     filename = f"{i[3]}.png"
-    file_path = os.path.join(dir, filename)
+    # file_path = os.path.join(dir, filename)
+    file_path = f"./icons/{i[3]}.png"
     # create new image
     col = ImageColor.getcolor(f"#{i[4]}", "RGB")
     image = Image.new(mode = "RGB", size = (32,32), color = col)
