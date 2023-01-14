@@ -1,3 +1,7 @@
+### 1.2.5 <!-- 12/18/22 -->
+
+- Code refactoring
+
 ### 1.2.4 <!-- 12/02/22 -->
 
 - Add **Viva Magenta** to **Pantone Color of the Year**
