@@ -9,7 +9,7 @@ import os
 
 
 # IMPORT VARS
-from pcoy_vars import *
+from _arrays.pcoy_vars import *
 
 
 icons_dir = './icons/'
