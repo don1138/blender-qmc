@@ -113,7 +113,7 @@ def set_material(material, hex, mat_name):
                     set_mat_name(material, mat_name)
                     changed = True
                 if n.name == 'Energy Conservation':
-                    set_input_color(n, 1, hex)
+                    set_input_color(n, 0, hex)
                     changed = True
         if changed == False:
             ShowMessageBox(no_active, "Unable To Comply")
@@ -127,7 +127,7 @@ def set_material(material, hex, mat_name):
     elif BSDF:
         set_bsdf(BSDF, hex, material, mat_name)
         if EC:
-            set_input_color(EC, 1, hex)
+            set_input_color(EC, 0, hex)
     else:
         ShowMessageBox(no_bsdf, "Unable To Comply")
 

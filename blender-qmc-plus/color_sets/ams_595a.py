@@ -7,6 +7,14 @@ from .color_functions import *
 
 # AMS OPERATORS
 
+class AMS10032(bpy.types.Operator):
+    """AMS10032 - Brown"""
+    bl_label = "10032 Brown"
+    bl_idname = 'color.ams_10032'
+    def execute(self, context):
+        set_base_color(0x473F3F, self.bl_label)
+        return {'FINISHED'}
+
 class AMS10045(bpy.types.Operator):
     """AMS10045 - Brown"""
     bl_label = "10045 Brown"
@@ -5531,7 +5539,7 @@ class AMS38907(bpy.types.Operator):
 # AMS PANEL
 class AMSPanel(bpy.types.Panel):
     bl_idname = "AMS_PT_Panel"
-    bl_label = "Aerospace Material Specification 595A"
+    bl_label = "AMS Standard 595A"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -5545,7 +5553,7 @@ class AMSPanel(bpy.types.Panel):
 # AMS GLOSS PANEL
 class AMSGlossPanel(bpy.types.Panel):
     bl_idname = "AMS_GLOSS_PT_Panel"
-    bl_label = "    Gloss (10045 - 17930)"
+    bl_label = "    Gloss"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -5574,6 +5582,7 @@ class AMSGlossBrownPanel(bpy.types.Panel):
         srow = layout.row()
         scol = srow.column(align=True)
         scol.scale_y = 1.25
+        scol.label(text="", icon_value=g.c_icons["ams_10032"].icon_id)
         scol.label(text="", icon_value=g.c_icons["ams_10045"].icon_id)
         scol.label(text="", icon_value=g.c_icons["ams_10049"].icon_id)
         scol.label(text="", icon_value=g.c_icons["ams_10055"].icon_id)
@@ -5594,6 +5603,7 @@ class AMSGlossBrownPanel(bpy.types.Panel):
         scol = srow.column(align=True)
         scol.scale_y = 1.25
         scol.scale_x = 3.0
+        scol.operator("color.ams_10032", text="10032 Brown")
         scol.operator("color.ams_10045", text="10045 Brown")
         scol.operator("color.ams_10049", text="10049 Maroon 81352 / ANA 510")
         scol.operator("color.ams_10055", text="10055 DoT Highway Brown")
@@ -6070,7 +6080,7 @@ class AMSGlossMiscPanel(bpy.types.Panel):
 # AMS SEMIGLOSS PANEL
 class AMSSemiGlossPanel(bpy.types.Panel):
     bl_idname = "AMS_SEMIGLOSS_PT_Panel"
-    bl_label = "    SemiGloss (20040 - 28915)"
+    bl_label = "    SemiGloss"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -6778,7 +6788,7 @@ class AMSSemiGlossFluorescentPanel(bpy.types.Panel):
 # AMS GLOSS PANEL
 class AMSMattePanel(bpy.types.Panel):
     bl_idname = "AMS_MATTE_PT_Panel"
-    bl_label = "    Matte (30037 - 38907)"
+    bl_label = "    Matte"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
@@ -7597,6 +7607,7 @@ array_ams = [
     AMSMatteGreyPanel,
     AMSMatteMiscPanel,
     AMSMatteFluorescentPanel,
+    AMS10032,
     AMS10045,
     AMS10049,
     AMS10055,
