@@ -1,6 +1,6 @@
 ### 1.2.6 <!-- 09/28/23 -->
 
-- Add **Aerospace Material Specification 595A** set of 691 colors
+- Add **AMS (Aerospace Material Specification) Standard 595A** set of 692 colors
 
 ### 1.2.5 <!-- 12/18/22 -->
 
