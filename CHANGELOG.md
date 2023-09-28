@@ -1,3 +1,7 @@
+### 1.2.6 <!-- 12/18/22 -->
+
+- Add **Aerospace Material Specification 595A** set of 691 colors
+
 ### 1.2.5 <!-- 12/18/22 -->
 
 - Code refactoring

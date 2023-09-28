@@ -1,7 +1,7 @@
 # BMC GENERATOR
 
 # WRITE THIS SCRIPT TO FILE WITH:
-# python BMC_Generator.py > pcoy-2023.py
+# python QMC_Generator.py > ams_595a.py
 
 
 from PIL import Image, ImageDraw, ImageColor
@@ -9,7 +9,7 @@ import os
 
 
 # IMPORT VARS
-from _arrays.pcoy_vars import *
+from _arrays.ams_595a import *
 
 
 icons_dir = './icons/'
