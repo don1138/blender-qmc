@@ -18,7 +18,7 @@
 
 
 bl_info = {
-    "name"       : "QMC+ (Quick Material Colors)",
+    "name"       : "QMC (Quick Material Colors)",
     "description": "Sets the Base Color of a Material Shader",
     "author"     : "Don Schnitzius",
     "version"    : (1, 2, 6),
