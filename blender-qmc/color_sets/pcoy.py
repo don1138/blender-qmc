@@ -220,6 +220,14 @@ class PMS2023(bpy.types.Operator):
         set_base_color(0xBB2649, self.bl_label)
         return {'FINISHED'}
 
+class PMS2024(bpy.types.Operator):
+    """Pantone 13-1023"""
+    bl_label = "Peach Fuzz"
+    bl_idname = 'color.pms_2024'
+    def execute(self, context):
+        set_base_color(0xfebe98, self.bl_label)
+        return {'FINISHED'}
+
 # EXTRAS & APOCRYPHA
 
 class PMSPrince(bpy.types.Operator):
@@ -613,6 +621,7 @@ class PMSPanel2020(bpy.types.Panel):
         scol.label(text="2021")
         scol.label(text="2022")
         scol.label(text="2023")
+        scol.label(text="2024")
 
         scol = srow.column(align=True)
         scol.scale_y = 1.25
@@ -621,6 +630,7 @@ class PMSPanel2020(bpy.types.Panel):
         scol.label(text="", icon_value=g.c_icons["pcoy_2021b"].icon_id)
         scol.label(text="", icon_value=g.c_icons["pcoy_2022"].icon_id)
         scol.label(text="", icon_value=g.c_icons["pcoy_2023"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["pcoy_2024"].icon_id)
 
         scol = srow.column(align=True)
         scol.scale_y = 1.25
@@ -630,6 +640,7 @@ class PMSPanel2020(bpy.types.Panel):
         scol.operator("color.pms_2021_b", text="Illuminating")
         scol.operator("color.pms_2022", text="Very Peri")
         scol.operator("color.pms_2023", text="Viva Magenta")
+        scol.operator("color.pms_2024", text="Peach Fuzz")
 
 
 # SS2022 NY PANEL
@@ -793,6 +804,7 @@ array_pcoy = [
     PMS2021B,
     PMS2022,
     PMS2023,
+    PMS2024,
     PMSPrince,
     PMSConan,
     PMSBCoral,

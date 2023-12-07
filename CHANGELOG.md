@@ -1,3 +1,7 @@
+### 1.3.0 <!-- 12/07/23 -->
+
+- Add **Peach Fuzz** to **Pantone Color of the Year**
+
 ### 1.2.6 <!-- 09/28/23 -->
 
 - Add **AMS (Aerospace Material Specification) Standard 595A** set of 692 colors
