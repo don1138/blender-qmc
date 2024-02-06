@@ -1,3 +1,7 @@
+### 1.4.0 <!-- 02/05/24 -->
+
+- Add **Cosmic Latte** to **Don1138 Select**
+
 ### 1.3.0 <!-- 12/07/23 -->
 
 - Add **Peach Fuzz** to **Pantone Color of the Year**
