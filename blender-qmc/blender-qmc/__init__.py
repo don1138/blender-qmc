@@ -88,6 +88,7 @@ class QMCPanel(bpy.types.Panel):
 
 # IMPORT PANELS
 from .color_sets.ams_595a import *
+from .color_sets.ecc import *
 from .color_sets.f58 import *
 from .color_sets.ge import *
 from .color_sets.hg71 import *
@@ -111,6 +112,7 @@ array_int = [
 classes = [
    *array_int,
    *array_ams,
+   *array_ecc,
    *array_f58,
    *array_ge,
    *array_hg71,
