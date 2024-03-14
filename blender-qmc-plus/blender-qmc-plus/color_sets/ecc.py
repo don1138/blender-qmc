@@ -719,6 +719,14 @@ class Lamborghini_Viola_Pasifae(bpy.types.Operator):
         set_base_color(0x6B0686, self.bl_label)
         return {'FINISHED'}
 
+class McLaren_Argon(bpy.types.Operator):
+    """McLaren's classic dark grey color"""
+    bl_label = "McLaren Argon"
+    bl_idname = 'color.mclaren_argon'
+    def execute(self, context):
+        set_base_color(0x626876, self.bl_label)
+        return {'FINISHED'}
+
 class McLaren_Aurora_Blue(bpy.types.Operator):
     """McLaren's deep blue color"""
     bl_label = "Aurora Blue"
@@ -783,28 +791,20 @@ class McLaren_Mantis_Green(bpy.types.Operator):
         set_base_color(0x63EA2E, self.bl_label)
         return {'FINISHED'}
 
-class McLaren_McLaren_Argon(bpy.types.Operator):
-    """McLaren's classic dark grey color"""
-    bl_label = "McLaren Argon"
-    bl_idname = 'color.mclaren_mclaren_argon'
-    def execute(self, context):
-        set_base_color(0x626876, self.bl_label)
-        return {'FINISHED'}
-
-class McLaren_Mclaren_Orange(bpy.types.Operator):
-    """McLaren's classic orange color"""
-    bl_label = "Mclaren Orange"
-    bl_idname = 'color.mclaren_mclaren_orange'
-    def execute(self, context):
-        set_base_color(0xFFC43D, self.bl_label)
-        return {'FINISHED'}
-
 class McLaren_Mercury_Red(bpy.types.Operator):
     """McLaren's dark red color"""
     bl_label = "Mercury Red"
     bl_idname = 'color.mclaren_mercury_red'
     def execute(self, context):
         set_base_color(0x9B0E1F, self.bl_label)
+        return {'FINISHED'}
+
+class McLaren_Orange(bpy.types.Operator):
+    """McLaren's classic orange color"""
+    bl_label = "McLaren Orange"
+    bl_idname = 'color.mclaren_orange'
+    def execute(self, context):
+        set_base_color(0xFFC43D, self.bl_label)
         return {'FINISHED'}
 
 class McLaren_Pearl_White(bpy.types.Operator):
@@ -951,10 +951,10 @@ class Porsche_Dolomite_Silver_Metallic(bpy.types.Operator):
         set_base_color(0x9FB1BC, self.bl_label)
         return {'FINISHED'}
 
-class Porsche_Emerald_Green_Metalli(bpy.types.Operator):
+class Porsche_Emerald_Green_Metallic(bpy.types.Operator):
     """Porsche's British racing green color"""
-    bl_label = "Emerald Green Metalli"
-    bl_idname = 'color.porsche_emerald_green_metalli'
+    bl_label = "Emerald Green Metallic"
+    bl_idname = 'color.porsche_emerald_green_metallic'
     def execute(self, context):
         set_base_color(0x328983, self.bl_label)
         return {'FINISHED'}
@@ -1432,6 +1432,7 @@ class MCLARENPanel(bpy.types.Panel):
         srow = layout.row()
         scol = srow.column(align=True)
         scol.scale_y = 1.25
+        scol.label(text="", icon_value=g.c_icons["mclaren_argon"].icon_id)
         scol.label(text="", icon_value=g.c_icons["mclaren_aurora_blue"].icon_id)
         scol.label(text="", icon_value=g.c_icons["mclaren_cobalt_violet"].icon_id)
         scol.label(text="", icon_value=g.c_icons["mclaren_curacao_blue"].icon_id)
@@ -1440,9 +1441,8 @@ class MCLARENPanel(bpy.types.Panel):
         scol.label(text="", icon_value=g.c_icons["mclaren_lantana_purple"].icon_id)
         scol.label(text="", icon_value=g.c_icons["mclaren_lime_green"].icon_id)
         scol.label(text="", icon_value=g.c_icons["mclaren_mantis_green"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["mclaren_mclaren_argon"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["mclaren_mclaren_orange"].icon_id)
         scol.label(text="", icon_value=g.c_icons["mclaren_mercury_red"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mclaren_orange"].icon_id)
         scol.label(text="", icon_value=g.c_icons["mclaren_pearl_white"].icon_id)
         scol.label(text="", icon_value=g.c_icons["mclaren_racing_green"].icon_id)
         scol.label(text="", icon_value=g.c_icons["mclaren_sapphire_black"].icon_id)
@@ -1455,6 +1455,7 @@ class MCLARENPanel(bpy.types.Panel):
         scol = srow.column(align=True)
         scol.scale_y = 1.25
         scol.scale_x = 3.0
+        scol.operator("color.mclaren_argon", text="McLaren Argon")
         scol.operator("color.mclaren_aurora_blue", text="Aurora Blue")
         scol.operator("color.mclaren_cobalt_violet", text="Cobalt Violet")
         scol.operator("color.mclaren_curacao_blue", text="Curacao Blue")
@@ -1463,9 +1464,8 @@ class MCLARENPanel(bpy.types.Panel):
         scol.operator("color.mclaren_lantana_purple", text="Lantana Purple")
         scol.operator("color.mclaren_lime_green", text="Lime Green")
         scol.operator("color.mclaren_mantis_green", text="Mantis Green")
-        scol.operator("color.mclaren_mclaren_argon", text="McLaren Argon")
-        scol.operator("color.mclaren_mclaren_orange", text="Mclaren Orange")
         scol.operator("color.mclaren_mercury_red", text="Mercury Red")
+        scol.operator("color.mclaren_orange", text="McLaren Orange")
         scol.operator("color.mclaren_pearl_white", text="Pearl White")
         scol.operator("color.mclaren_racing_green", text="Racing Green")
         scol.operator("color.mclaren_sapphire_black", text="Sapphire Black")
@@ -1505,7 +1505,7 @@ class PORSCHEPanel(bpy.types.Panel):
         scol.label(text="", icon_value=g.c_icons["porsche_carmine_red"].icon_id)
         scol.label(text="", icon_value=g.c_icons["porsche_chalk"].icon_id)
         scol.label(text="", icon_value=g.c_icons["porsche_dolomite_silver_metallic"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["porsche_emerald_green_metalli"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["porsche_emerald_green_metallic"].icon_id)
         scol.label(text="", icon_value=g.c_icons["porsche_gentian_blue_metallic"].icon_id)
         scol.label(text="", icon_value=g.c_icons["porsche_graphite_grey"].icon_id)
         scol.label(text="", icon_value=g.c_icons["porsche_graphite_metallic"].icon_id)
@@ -1543,7 +1543,7 @@ class PORSCHEPanel(bpy.types.Panel):
         scol.operator("color.porsche_carmine_red", text="Carmine Red")
         scol.operator("color.porsche_chalk", text="Chalk")
         scol.operator("color.porsche_dolomite_silver_metallic", text="Dolomite Silver Metallic")
-        scol.operator("color.porsche_emerald_green_metalli", text="Emerald Green Metalli")
+        scol.operator("color.porsche_emerald_green_metallic", text="Emerald Green Metalli")
         scol.operator("color.porsche_gentian_blue_metallic", text="Gentian Blue Metallic")
         scol.operator("color.porsche_graphite_grey", text="Graphite Grey")
         scol.operator("color.porsche_graphite_metallic", text="Graphite Metallic")
@@ -1666,6 +1666,7 @@ array_ecc = [
     Lamborghini_Viola_30,
     Lamborghini_Viola_Aletheia,
     Lamborghini_Viola_Pasifae,
+    McLaren_Argon,
     McLaren_Aurora_Blue,
     McLaren_Cobalt_Violet,
     McLaren_Curacao_Blue,
@@ -1674,9 +1675,8 @@ array_ecc = [
     McLaren_Lantana_Purple,
     McLaren_Lime_Green,
     McLaren_Mantis_Green,
-    McLaren_McLaren_Argon,
-    McLaren_Mclaren_Orange,
     McLaren_Mercury_Red,
+    McLaren_Orange,
     McLaren_Pearl_White,
     McLaren_Racing_Green,
     McLaren_Sapphire_Black,
@@ -1695,7 +1695,7 @@ array_ecc = [
     Porsche_Carmine_Red,
     Porsche_Chalk,
     Porsche_Dolomite_Silver_Metallic,
-    Porsche_Emerald_Green_Metalli,
+    Porsche_Emerald_Green_Metallic,
     Porsche_Gentian_Blue_Metallic,
     Porsche_Graphite_Grey,
     Porsche_Graphite_Metallic,
