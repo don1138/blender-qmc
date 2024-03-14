@@ -2,3 +2,4 @@
 .DS_Store
 *.zip
 _hidden
+venv
