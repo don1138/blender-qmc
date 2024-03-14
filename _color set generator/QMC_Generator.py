@@ -1,15 +1,19 @@
 # BMC GENERATOR
 
 # WRITE THIS SCRIPT TO FILE WITH:
-# python QMC_Generator.py > ams_595a.py
-
+# Create virtual environment:
+# python3 -m venv venv
+# Activate virtual environment:
+# source venv/bin/activate
+# Run script:
+# python QMC_Generator.py > ecc_vars.py
 
 from PIL import Image, ImageDraw, ImageColor
 import os
 
 
 # IMPORT VARS
-from _arrays.ams_595a import *
+from _arrays.ecc_vars import *
 
 
 icons_dir = './icons/'
