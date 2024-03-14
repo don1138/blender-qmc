@@ -1,5 +1,11 @@
-### 1.4.0 <!-- 02/05/24 -->
+### 1.4.0 <!-- 03/14/24 -->
 
+- Add **Exotic Car Colors** set of 142 colors
+  - **Audi** - 1 color
+  - **Ferrari** - 25 colors
+  - **Lamborghini** - 63 colors
+  - **McLaren** - 19 colors
+  - **Porsche** - 34 colors
 - Add **Cosmic Latte** to **Don1138 Select**
 
 ### 1.3.0 <!-- 12/07/23 -->
@@ -43,7 +49,7 @@
 ### 1.2.0 <!-- 8/18/22 -->
 
 - Add **All Selected Materials** checkbox
-    - When selected, this changes the **Base Color** of all selected shader nodes. This ignores nodes that do not have a **Base Color** attribute.
+  - When selected, this changes the **Base Color** of all selected shader nodes. This ignores nodes that do not have a **Base Color** attribute.
 
 ### 1.1.0 <!-- 8/12/22 -->
 
