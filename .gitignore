@@ -2,4 +2,5 @@
 .DS_Store
 *.zip
 _hidden
+_deprecated
 venv
