@@ -1,3 +1,10 @@
+### 1.5.0 <!-- 03/15/24 -->
+
+- Add **British Standard Colors** set of 453 colors
+  - **BS 2660 (1964)** - 96 color
+  - **BS 381C (1930)** - 119 colors
+  - **BS 5252 (1976)** - 238 colors
+
 ### 1.4.0 <!-- 03/14/24 -->
 
 - Add **Exotic Car Colors** set of 142 colors

@@ -503,7 +503,7 @@ class BS5064_Bredon_Green(bpy.types.Operator):
         set_base_color(0x697e3f, self.bl_label)
         return {'FINISHED'}
 
-class BS5_5065_Clover_Leaf(bpy.types.Operator):
+class BS5065_Clover_Leaf(bpy.types.Operator):
     """5065 Clover Leaf"""
     bl_label = "5065 Clover Leaf"
     bl_idname = 'color.5065_clover_leaf'
@@ -4685,7 +4685,7 @@ array_bsc = [
     BS5062_Yaffie_Green,
     BS5063_Moss_Green,
     BS5064_Bredon_Green,
-    BS5_5065_Clover_Leaf,
+    BS5065_Clover_Leaf,
     BS5066_Grotto,
     BS5067_Atlantic_Green,
     BS6068_Marble_Green,
