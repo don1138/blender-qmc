@@ -1,4 +1,3 @@
-
 v    = "DS"
 panel_label = v
 panel_name  = v.upper()
