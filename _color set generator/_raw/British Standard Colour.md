@@ -42,7 +42,7 @@ BS 2660 is an old colour standard for building and decorating, now largely super
   rgb(0, 140, 81)
 
 - #005d62
-  00 11 Baltic Blue
+  0011 Baltic Blue
   rgb(0, 93, 98)
 
 - #137299
@@ -254,7 +254,7 @@ BS 2660 is an old colour standard for building and decorating, now largely super
   rgb(105, 126, 63)
 
 - #56653d
-  BS2660 5-5065 Clover Leaf
+  5065 Clover Leaf
   rgb(86, 101, 61)
 
 - #899e89
