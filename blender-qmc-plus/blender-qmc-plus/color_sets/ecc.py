@@ -1455,7 +1455,7 @@ class MCLARENPanel(bpy.types.Panel):
         scol = srow.column(align=True)
         scol.scale_y = 1.25
         scol.scale_x = 3.0
-        scol.operator("color.mclaren_argon", text="McLaren Argon")
+        scol.operator("color.mclaren_argon", text="Argon")
         scol.operator("color.mclaren_aurora_blue", text="Aurora Blue")
         scol.operator("color.mclaren_cobalt_violet", text="Cobalt Violet")
         scol.operator("color.mclaren_curacao_blue", text="Curacao Blue")
@@ -1465,7 +1465,7 @@ class MCLARENPanel(bpy.types.Panel):
         scol.operator("color.mclaren_lime_green", text="Lime Green")
         scol.operator("color.mclaren_mantis_green", text="Mantis Green")
         scol.operator("color.mclaren_mercury_red", text="Mercury Red")
-        scol.operator("color.mclaren_orange", text="McLaren Orange")
+        scol.operator("color.mclaren_orange", text="Orange")
         scol.operator("color.mclaren_pearl_white", text="Pearl White")
         scol.operator("color.mclaren_racing_green", text="Racing Green")
         scol.operator("color.mclaren_sapphire_black", text="Sapphire Black")
@@ -1543,7 +1543,7 @@ class PORSCHEPanel(bpy.types.Panel):
         scol.operator("color.porsche_carmine_red", text="Carmine Red")
         scol.operator("color.porsche_chalk", text="Chalk")
         scol.operator("color.porsche_dolomite_silver_metallic", text="Dolomite Silver Metallic")
-        scol.operator("color.porsche_emerald_green_metallic", text="Emerald Green Metalli")
+        scol.operator("color.porsche_emerald_green_metallic", text="Emerald Green Metallic")
         scol.operator("color.porsche_gentian_blue_metallic", text="Gentian Blue Metallic")
         scol.operator("color.porsche_graphite_grey", text="Graphite Grey")
         scol.operator("color.porsche_graphite_metallic", text="Graphite Metallic")

@@ -1,3 +1,7 @@
+### 1.5.1 <!-- 03/18/24 -->
+
+- Bugfix: Color chip names
+
 ### 1.5.0 <!-- 03/15/24 -->
 
 - Add **British Standard Colors** set of 453 colors
