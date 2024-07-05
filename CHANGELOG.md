@@ -1,3 +1,7 @@
+### 1.6.0 <!-- 07/05/24 -->
+
+- Add **COCO Segmentation** set of 183 colors
+
 ### 1.5.1 <!-- 03/18/24 -->
 
 - Bugfix: Color chip names
