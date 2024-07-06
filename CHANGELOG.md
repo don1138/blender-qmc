@@ -2,9 +2,9 @@
 
 - Add **COCO Segmentation** set of 183 colors
 - Add **Emission Shader** to chain of shader nodes affected.
-  - If Principled BSDF node found, change Base Color and exit. In not, go to next.
-  - If Diffuse node found, change Base Color and exit. In not, go to next.
-  - If Emmission node found, change Base Color and exit. In not, exit.
+  - If Principled BSDF node found, change Base Color and exit. If not, go to next.
+  - If Diffuse node found, change Base Color and exit. If not, go to next.
+  - If Emmission node found, change Base Color and exit. If not, exit.
 
 ### 1.5.1 <!-- 03/18/24 -->
 
