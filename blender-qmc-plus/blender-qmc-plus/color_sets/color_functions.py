@@ -93,9 +93,13 @@ def set_base_color(hex, mat_name):
 def set_material(material, hex, mat_name):
     AN = material.node_tree.nodes
     BSDF = material.node_tree.nodes.get('Principled BSDF')
-    ColorRamp = material.node_tree.nodes.get('ColorRamp')
+    if bpy.app.version < (4, 0, 0):
+        ColorRamp = material.node_tree.nodes.get('ColorRamp')
+    else:
+        ColorRamp = material.node_tree.nodes.get('Color Ramp')
     D_BSDF = material.node_tree.nodes.get('Diffuse BSDF')
     EC = material.node_tree.nodes.get('Energy Conservation')
+    EM = material.node_tree.nodes.get('Emission')
     Plaster = bpy.data.materials.get('QMM Plaster')
     RGB = material.node_tree.nodes.get('RGB')
 
@@ -119,15 +123,20 @@ def set_material(material, hex, mat_name):
             ShowMessageBox(no_active, "Unable To Comply")
     elif material == Plaster:
         ColorRamp.color_ramp.elements[0].color = hex_to_rgb(hex)
-        set_input_color(BSDF, 3, hex)
+        if bpy.app.version < (4, 0, 0):
+            set_input_color(BSDF, 3, hex)
+        else:
+            set_input_color(BSDF, 0, hex)
         # set_input_color(RGB, 0, hex)
         set_dif_color(material, hex)
-    elif D_BSDF:
-        set_bsdf(D_BSDF, hex, material, mat_name)
     elif BSDF:
         set_bsdf(BSDF, hex, material, mat_name)
         if EC:
             set_input_color(EC, 0, hex)
+    elif D_BSDF:
+        set_bsdf(D_BSDF, hex, material, mat_name)
+    elif EM:
+        set_bsdf(EM, hex, material, mat_name)
     else:
         ShowMessageBox(no_bsdf, "Unable To Comply")
 
