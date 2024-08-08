@@ -75,7 +75,7 @@ class QMCPanel(bpy.types.Panel):
         scol = srow.column(align=True)
         scol.scale_y = 1.25
         scol.scale_x = 3.0
-        scol.label(text="Selected Node Only")
+        scol.label(text="Selected Nodes Only")
         scol.label(text="Rename Material")
         scol.label(text="Set Viewport Color")
         scol.label(text="Set World Background")

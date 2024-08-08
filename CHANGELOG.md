@@ -2,7 +2,7 @@
 
 - Add **Set Viewport Color** checkbox
   - When selected, this changes the **Viewport Color** of the material.
-- Rename **Selected Node** > **Selected Node Only**
+- Rename **Selected Node** > **Selected Nodes Only**
 - Rename **World Background** > **Set World Background**
 
 ### 1.6.0 <!-- 07/05/24 -->
