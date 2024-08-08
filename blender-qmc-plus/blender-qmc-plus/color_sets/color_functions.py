@@ -148,7 +148,9 @@ def set_bsdf(name, hex, material, mat_name):
 
 
 def set_dif_color(thing, hex):
-    thing.diffuse_color = hex_to_rgb(hex)
+    diffuse_bool = bpy.context.scene.diffuse_bool.diffuse_more
+    if diffuse_bool == True:
+        thing.diffuse_color = hex_to_rgb(hex)
 
 
 def set_input_color(node, num, hex):

@@ -1,3 +1,10 @@
+### 1.7.0 <!-- 08/08/24 -->
+
+- Add **Set Viewport Color** checkbox
+  - When selected, this changes the **Viewport Color** of the material.
+- Rename **Selected Node** > **Selected Node Only**
+- Rename **World Background** > **Set World Background**
+
 ### 1.6.0 <!-- 07/05/24 -->
 
 - Add **COCO Segmentation** set of 183 colors
