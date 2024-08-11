@@ -1,3 +1,7 @@
+### 1.8.0 <!-- 08/11/24 -->
+
+- Refactor code
+
 ### 1.7.0 <!-- 08/08/24 -->
 
 - Add **Set Viewport Color** checkbox

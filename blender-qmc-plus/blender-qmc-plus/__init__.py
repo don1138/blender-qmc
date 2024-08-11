@@ -21,7 +21,7 @@ bl_info = {
     "name"       : "QMC+ (Quick Material Colors Plus)",
     "description": "Sets the Base Color of a Material Shader",
     "author"     : "Don Schnitzius",
-    "version"    : (1, 7, 0),
+    "version"    : (1, 8, 0),
     "blender"    : (2, 80, 0),
     "location"   : "3D Viewport > Sidebar > MAT > Quick Material Colors",
     "warning"    : "",
@@ -55,7 +55,7 @@ class QMCPanel(bpy.types.Panel):
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "MAT"
-    bl_options = {'DEFAULT_CLOSED'}
+    # bl_options = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
         layout = self.layout
@@ -129,24 +129,40 @@ classes = [
 
 def register():
     # LOAD CUSTOM ICONS
-    addon_path =  os.path.dirname(__file__)
+    addon_path = os.path.dirname(__file__)
     icons_dir = os.path.join(addon_path, "icons")
-    for entry in os.listdir(icons_dir):
-        g.c_icons.load(os.path.splitext(entry)[0], os.path.join(icons_dir, entry), "IMAGE")
+    
+    if not os.path.exists(icons_dir):
+        print(f"Warning: Icons directory {icons_dir} not found.")
+    else:
+        for entry in os.listdir(icons_dir):
+            icon_path = os.path.join(icons_dir, entry)
+            if os.path.isfile(icon_path):
+                try:
+                    icon_name = os.path.splitext(entry)[0]
+                    g.c_icons.load(icon_name, icon_path, "IMAGE")
+                except Exception as e:
+                    print(f"Error loading icon {entry}: {e}")
+            else:
+                print(f"Warning: {entry} is not a file and will be skipped.")
+
+    # Register classes
+    bpy_types_scene_properties = ["active_bool", "more_bool", "diffuse_bool", "world_bool"]
+
     for cls in classes:
         bpy.utils.register_class(cls)
-        bpy.types.Scene.active_bool = bpy.props.PointerProperty(type=QMC_SETTINGS)
-        bpy.types.Scene.more_bool = bpy.props.PointerProperty(type=QMC_SETTINGS)
-        bpy.types.Scene.diffuse_bool = bpy.props.PointerProperty(type=QMC_SETTINGS)
-        bpy.types.Scene.world_bool = bpy.props.PointerProperty(type=QMC_SETTINGS)
+    
+    for prop in bpy_types_scene_properties:
+        setattr(bpy.types.Scene, prop, bpy.props.PointerProperty(type=QMC_SETTINGS))
 
 
 def unregister():
     bpy.utils.previews.remove(g.c_icons)
-    del bpy.types.Scene.active_bool
-    del bpy.types.Scene.more_bool
-    del bpy.types.Scene.diffuse_bool
-    del bpy.types.Scene.world_bool
+    bpy_types_scene_properties = ["active_bool", "more_bool", "diffuse_bool", "world_bool"]
+    
+    for prop in bpy_types_scene_properties:
+        delattr(bpy.types.Scene, prop)
+        
     for cls in reversed(classes):
         bpy.utils.unregister_class(cls)
 
