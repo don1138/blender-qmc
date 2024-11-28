@@ -3,8 +3,7 @@
 
 import bpy
 
-# CONSTANTS
-
+# Constants
 NO_ACTIVE = "No Compatible Node Found"
 NO_BSDF = "No Principled BSDF Shader Found"
 NO_MATERIAL = "No Compatible Material Found"
@@ -17,8 +16,8 @@ BACKGROUND = 'Background'
 ENERGY_CONSERVATION = 'Energy Conservation'
 RGB = 'RGB'
 
-
 # MESSAGE BOX
+
 
 def show_message_box(message="", title="", icon='INFO'):
     def draw(self, context):
@@ -58,6 +57,7 @@ NODE_BL_IDNAMES = {
     "ShaderNodeBsdfGlossy",
     "ShaderNodeBsdfHair",
     "ShaderNodeBsdfHairPrincipled",
+    "ShaderNodeBsdfMetallic",
     "ShaderNodeBsdfPrincipled",
     "ShaderNodeBsdfRayPortal",
     "ShaderNodeBsdfRefraction",

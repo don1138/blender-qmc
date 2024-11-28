@@ -122,7 +122,7 @@ class PMS_7499U(bpy.types.Operator):
 class DEEPLY_UNCOMFORTABLE(bpy.types.Operator):
     """Deeply Uncomfortable"""
     bl_label = "Deeply Uncomfortable"
-    bl_idname = 'color.deeply_uncomfotable'
+    bl_idname = 'color.deeply_uncomfortable'
     def execute(self, context):
         set_base_color(0x412a42, self.bl_label)
         return {'FINISHED'}
@@ -193,8 +193,7 @@ class TRUE_WHITE(bpy.types.Operator):
 
 
 # DON1138 SELECT PANEL
-
-class Don1138Panel(bpy.types.Panel):
+class DON1138Panel(bpy.types.Panel):
     bl_idname = "DON1138_PT_Panel"
     bl_label = "Don1138 Select"
     bl_space_type = "VIEW_3D"
@@ -207,24 +206,99 @@ class Don1138Panel(bpy.types.Panel):
         g.c_icons
         layout = self.layout
 
+
+# DON1138 TRUE
+class DON1138TruePanel(bpy.types.Panel):
+    bl_idname = "DON1138_TRUE_PT_Panel"
+    bl_label = "    True"
+    bl_space_type = "VIEW_3D"
+    bl_region_type = "UI"
+    bl_category = "MAT"
+    bl_parent_id = 'DON1138_PT_Panel'
+    bl_options = {'DEFAULT_CLOSED'}
+    
+    def draw(self, context):
+        g.c_icons
+        layout = self.layout
+
         srow = layout.row()
         scol = srow.column(align=True)
         scol.scale_y = 1.25
         scol.label(text="", icon_value=g.c_icons["don_green"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["pms_381_u"].icon_id)
         scol.label(text="", icon_value=g.c_icons["don_red"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["pms_172_c"].icon_id)
         scol.label(text="", icon_value=g.c_icons["don_blue"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["pms_2685_u"].icon_id)
         scol.label(text="", icon_value=g.c_icons["don_yellow"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["pms_396_u"].icon_id)
         scol.label(text="", icon_value=g.c_icons["don_bronze_pale"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["pms_729_u"].icon_id)
         scol.label(text="", icon_value=g.c_icons["don_bronze_rich"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["pms_7518_u"].icon_id)
         scol.label(text="", icon_value=g.c_icons["don_white"].icon_id)
+
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.scale_x = 3.0
+        scol.operator("color.don_green", text="Don Green")
+        scol.operator("color.don_red", text="Don Red")
+        scol.operator("color.don_blue", text="Don Blue")
+        scol.operator("color.don_yellow", text="Don Yellow")
+        scol.operator("color.don_bronze_pale", text="Don Bronze Pale")
+        scol.operator("color.don_bronze_rich", text="Don Bronze Rich")
+        scol.operator("color.don_white", text="Don White")
+
+
+# DON1138 SAFE
+class DON1138SafePanel(bpy.types.Panel):
+    bl_idname = "DON1138_SAFE_PT_Panel"
+    bl_label = "    Safe"
+    bl_space_type = "VIEW_3D"
+    bl_region_type = "UI"
+    bl_category = "MAT"
+    bl_parent_id = 'DON1138_PT_Panel'
+    bl_options = {'DEFAULT_CLOSED'}
+
+    def draw(self, context):
+        g.c_icons
+        layout = self.layout
+
+        srow = layout.row()
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.label(text="", icon_value=g.c_icons["pms_381_u"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["pms_172_c"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["pms_2685_u"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["pms_396_u"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["pms_729_u"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["pms_7518_u"].icon_id)
         scol.label(text="", icon_value=g.c_icons["pms_7499_u"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["deeply_uncomfotable"].icon_id)
+
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.scale_x = 3.0
+        scol.operator("color.pms_381_u", text="PMS 381 U")
+        scol.operator("color.pms_172_c", text="PMS 172 C")
+        scol.operator("color.pms_2685_u", text="PMS 2685 U")
+        scol.operator("color.pms_396_u", text="PMS 396 U")
+        scol.operator("color.pms_729_u", text="PMS 729 U")
+        scol.operator("color.pms_7518_u", text="PMS 7518 U")
+        scol.operator("color.pms_7499_u", text="PMS 7499 U")
+
+
+# DON1138 ALSO
+class DON1138AlsoPanel(bpy.types.Panel):
+    bl_idname = "DON1138_ALSO_PT_Panel"
+    bl_label = "    Also"
+    bl_space_type = "VIEW_3D"
+    bl_region_type = "UI"
+    bl_category = "MAT"
+    bl_parent_id = 'DON1138_PT_Panel'
+    bl_options = {'DEFAULT_CLOSED'}
+
+    def draw(self, context):
+        g.c_icons
+        layout = self.layout
+
+        srow = layout.row()
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.label(text="", icon_value=g.c_icons["deeply_uncomfortable"].icon_id)
         scol.label(text="", icon_value=g.c_icons["baker_miller_pink"].icon_id)
         scol.label(text="", icon_value=g.c_icons["finally_healing"].icon_id)
         scol.label(text="", icon_value=g.c_icons["cosmic_latte"].icon_id)
@@ -237,21 +311,7 @@ class Don1138Panel(bpy.types.Panel):
         scol = srow.column(align=True)
         scol.scale_y = 1.25
         scol.scale_x = 3.0
-        scol.operator("color.don_green", text="Don Green")
-        scol.operator("color.pms_381_u", text="PMS 381 U")
-        scol.operator("color.don_red", text="Don Red")
-        scol.operator("color.pms_172_c", text="PMS 172 C")
-        scol.operator("color.don_blue", text="Don Blue")
-        scol.operator("color.pms_2685_u", text="PMS 2685 U")
-        scol.operator("color.don_yellow", text="Don Yellow")
-        scol.operator("color.pms_396_u", text="PMS 396 U")
-        scol.operator("color.don_bronze_pale", text="Don Bronze Pale")
-        scol.operator("color.pms_729_u", text="PMS 729 U")
-        scol.operator("color.don_bronze_rich", text="Don Bronze Rich")
-        scol.operator("color.pms_7518_u", text="PMS 7518 U")
-        scol.operator("color.don_white", text="Don White")
-        scol.operator("color.pms_7499_u", text="PMS 7499 U")
-        scol.operator("color.deeply_uncomfotable", text="Deeply Uncomfortable")
+        scol.operator("color.deeply_uncomfortable", text="Deeply Uncomfortable")
         scol.operator("color.baker_miller_pink", text="Baker-Miller Pink")
         scol.operator("color.finally_healing", text="Finally Healing")
         scol.operator("color.cosmic_latte", text="Cosmic Latte")
@@ -264,7 +324,10 @@ class Don1138Panel(bpy.types.Panel):
 
 # DON1138 SELECT CLASSES
 array_ds = [
-    Don1138Panel,
+    DON1138Panel,
+    DON1138TruePanel,
+    DON1138SafePanel,
+    DON1138AlsoPanel,    
     DON_GREEN,
     PMS_381U,
     DON_RED,

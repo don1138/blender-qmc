@@ -57,6 +57,7 @@ NODE_BL_IDNAMES = {
     "ShaderNodeBsdfGlossy",
     "ShaderNodeBsdfHair",
     "ShaderNodeBsdfHairPrincipled",
+    "ShaderNodeBsdfMetallic",
     "ShaderNodeBsdfPrincipled",
     "ShaderNodeBsdfRayPortal",
     "ShaderNodeBsdfRefraction",
