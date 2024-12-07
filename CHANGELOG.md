@@ -1,3 +1,7 @@
+### 1.10.0 <!-- 12/06/24 -->
+
+- Add **Mocha Mousse** to **Pantone Color of the Year**
+
 ### 1.9.0 <!-- 11/27/24 -->
 
 - Blender 4.3.0 compatability update
@@ -5,7 +9,6 @@
 - Updates to **Don1138 Select** in **QMC+**
   - Bugfix and menu reorganization
   - Rename `deeply_uncomfotable` to `deeply_uncomfortable`
-
 
 ### 1.8.0 <!-- 08/11/24 -->
 
