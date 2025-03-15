@@ -5,6 +5,7 @@ panel_name  = v.upper()
 array_name = f"array_{v.lower()}"
 
 array = [
+# ["Class Name","Tool Tip","Button Label","ID Name","Hex Color"],
 ["RAL1000","RAL1000 - Green Beige","1000 Green Beige","ral_1000","Cdba88"],
 ["RAL1001","RAL1001 - Beige","1001 Beige","ral_1001","D0b084"],
 ["RAL1002","RAL1002 - Sand Yellow","1002 Sand Yellow","ral_1002","D2aa6d"],

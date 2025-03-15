@@ -1,3 +1,7 @@
+### 1.11.0 <!-- 03/15/25 -->
+
+- Add **Best Colors for Living Rooms** set of 13 colors
+
 ### 1.10.0 <!-- 12/06/24 -->
 
 - Add **Mocha Mousse** to **Pantone Color of the Year**

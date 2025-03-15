@@ -6,14 +6,14 @@
 # Activate virtual environment:
 # source venv/bin/activate
 # Run script:
-# python QMC_Generator.py > pcoy_vars.py
+# python QMC_Generator.py > bclr_vars.py
 
 from PIL import Image, ImageDraw, ImageColor
 import os
 
 
 # IMPORT VARS
-from _arrays.pcoy_vars import *
+from _arrays.bclr_vars import *
 
 
 icons_dir = './icons/'

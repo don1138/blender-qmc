@@ -21,7 +21,7 @@ bl_info = {
     "name"       : "QMC+ (Quick Material Colors Plus)",
     "description": "Sets the Base Color of a Material Shader",
     "author"     : "Don Schnitzius",
-    "version"    : (1, 10, 0),
+    "version"    : (1, 11, 0),
     "blender"    : (2, 80, 0),
     "location"   : "3D Viewport > Sidebar > MAT > Quick Material Colors",
     "warning"    : "",
@@ -84,6 +84,7 @@ class QMCPanel(bpy.types.Panel):
 # IMPORT PANELS
 from .color_sets.ds import *
 from .color_sets.ams_595a import *
+from .color_sets.bclr import *
 from .color_sets.bsc import *
 from .color_sets.coco import *
 from .color_sets.ecc import *
@@ -111,6 +112,7 @@ classes = [
    *array_int,
    *array_ds,
    *array_ams,
+   *array_bclr,
    *array_bsc,
    *array_coco,
    *array_ecc,
