@@ -743,10 +743,10 @@ class BS9096_Shire_Grey(bpy.types.Operator):
         set_base_color(0x918f88, self.bl_label)
         return {'FINISHED'}
 
-class BS9097_Dark_Admiralty_Grey(bpy.types.Operator):
-    """9097 Dark Admiralty Grey"""
-    bl_label = "9097 Dark Admiralty Grey"
-    bl_idname = 'color.9097_dark_admiralty_grey'
+class BS9097_Dark_Amiralty_Grey(bpy.types.Operator):
+    """9097 Dark Amiralty Grey"""
+    bl_label = "9097 Dark Amiralty Grey"
+    bl_idname = 'color.9097_dark_amiralty_grey'
     def execute(self, context):
         set_base_color(0x5f6669, self.bl_label)
         return {'FINISHED'}
@@ -4014,7 +4014,7 @@ class BSC2660Panel(bpy.types.Panel):
         scol.label(text="", icon_value=g.c_icons["9094_flake_grey"].icon_id)
         scol.label(text="", icon_value=g.c_icons["9095_minerva_grey"].icon_id)
         scol.label(text="", icon_value=g.c_icons["9096_shire_grey"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["9097_dark_admiralty_grey"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["9097_dark_amiralty_grey"].icon_id)
         scol.label(text="", icon_value=g.c_icons["9098_blue_grey"].icon_id)
         scol.label(text="", icon_value=g.c_icons["9100_graphite"].icon_id)
         scol.label(text="", icon_value=g.c_icons["9101_charcoal"].icon_id)
@@ -4114,7 +4114,7 @@ class BSC2660Panel(bpy.types.Panel):
         scol.operator("color.9094_flake_grey", text="9094 Flake Grey")
         scol.operator("color.9095_minerva_grey", text="9095 Minerva Grey")
         scol.operator("color.9096_shire_grey", text="9096 Shire Grey")
-        scol.operator("color.9097_dark_admiralty_grey", text="9097 Dark Admiralty Grey")
+        scol.operator("color.9097_dark_amiralty_grey", text="9097 Dark Amiralty Grey")
         scol.operator("color.9098_blue_grey", text="9098 Blue Grey")
         scol.operator("color.9100_graphite", text="9100 Graphite")
         scol.operator("color.9101_charcoal", text="9101 Charcoal")
@@ -4715,7 +4715,7 @@ array_bsc = [
     BS9094_Flake_Grey,
     BS9095_Minerva_Grey,
     BS9096_Shire_Grey,
-    BS9097_Dark_Admiralty_Grey,
+    BS9097_Dark_Amiralty_Grey,
     BS9098_Blue_Grey,
     BS9100_Graphite,
     BS9101_Charcoal,

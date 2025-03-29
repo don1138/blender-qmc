@@ -1,7 +1,6 @@
 ### 1.11.1 <!-- 03/29/25 -->
 
 - Reorder **British Standard Colors** sets by year
-- Fix spelling of **9097 Dark Admiralty Grey**
 - Fix acronym capitalization for **633 RAF Blue Grey** and **636 PRU Blue**
   - **RAF**: Royal Air Force
   - **PRU**: Photographic Reconnaissance Unit (RAF)
