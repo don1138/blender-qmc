@@ -1,3 +1,10 @@
+### 1.11.1 <!-- 03/29/25 -->
+
+- Reorder **British Standard Colors** sets by year
+- Fix acronym capitalization for **633 RAF Blue Grey** and **636 PRU Blue**
+  - **RAF**: Royal Air Force
+  - **PRU**: Photographic Reconnaissance Unit (RAF)
+
 ### 1.11.0 <!-- 03/15/25 -->
 
 - Add **Best Colors for Living Rooms** set of 13 colors
