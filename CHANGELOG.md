@@ -1,4 +1,4 @@
-### 1.12.0 <!-- 03/15/25 -->
+### 1.12.0 <!-- 07/08/25 -->
 
 - Add **WGSN & Coloro Color Trends** set of 64 colors
 
