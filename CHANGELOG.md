@@ -1,3 +1,7 @@
+### 1.12.0 <!-- 03/15/25 -->
+
+- Add **WGSN & Coloro Color Trends** set of 64 colors
+
 ### 1.11.1 <!-- 03/29/25 -->
 
 - Reorder **British Standard Colors** sets by year

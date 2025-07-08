@@ -21,7 +21,7 @@ bl_info = {
     "name"       : "QMC+ (Quick Material Colors Plus)",
     "description": "Sets the Base Color of a Material Shader",
     "author"     : "Don Schnitzius",
-    "version"    : (1, 11, 1),
+    "version"    : (1, 12, 0),
     "blender"    : (2, 80, 0),
     "location"   : "3D Viewport > Sidebar > MAT > Quick Material Colors",
     "warning"    : "",
@@ -98,6 +98,7 @@ from .color_sets.ral import *
 from .color_sets.sw_ext import *
 from .color_sets.sw_int import *
 from .color_sets.sw_ja import *
+from .color_sets.wgsn import *
 
 
 # INTERNAL CLASSES
@@ -126,6 +127,7 @@ classes = [
    *array_sw_ext,
    *array_sw_int,
    *array_sw_ja,
+   *array_wgsn,
 ]
 
 
