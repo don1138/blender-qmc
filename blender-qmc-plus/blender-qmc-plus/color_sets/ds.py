@@ -310,7 +310,7 @@ class DON1138AlsoPanel(bpy.types.Panel):
         scol.label(text="", icon_value=g.c_icons["baker_miller_pink"].icon_id)
         scol.label(text="", icon_value=g.c_icons["finally_healing"].icon_id)
         scol.label(text="", icon_value=g.c_icons["cosmic_latte"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["Cosmic Spectrum Green"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["cosmic_spectrum_green"].icon_id)
         scol.label(text="", icon_value=g.c_icons["real_black"].icon_id)
         scol.label(text="", icon_value=g.c_icons["real_white"].icon_id)
         scol.label(text="", icon_value=g.c_icons["true_black"].icon_id)
