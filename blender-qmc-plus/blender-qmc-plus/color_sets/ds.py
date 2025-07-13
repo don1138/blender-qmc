@@ -151,6 +151,14 @@ class COSMIC_LATTE(bpy.types.Operator):
         set_base_color(0xfff8e7, self.bl_label)
         return {'FINISHED'}
 
+class COSMIC_SPECTRUM_GREEN(bpy.types.Operator):
+    """Cosmic Spectrum Green"""
+    bl_label = "Cosmic Spectrum Green"
+    bl_idname = 'color.cosmic_spectrum_green'
+    def execute(self, context):
+        set_base_color(0x9cffce, self.bl_label)
+        return {'FINISHED'}
+
 class REAL_BLACK(bpy.types.Operator):
     """Real Black (Eigengrau)"""
     bl_label = "Real Black"
@@ -302,6 +310,7 @@ class DON1138AlsoPanel(bpy.types.Panel):
         scol.label(text="", icon_value=g.c_icons["baker_miller_pink"].icon_id)
         scol.label(text="", icon_value=g.c_icons["finally_healing"].icon_id)
         scol.label(text="", icon_value=g.c_icons["cosmic_latte"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["Cosmic Spectrum Green"].icon_id)
         scol.label(text="", icon_value=g.c_icons["real_black"].icon_id)
         scol.label(text="", icon_value=g.c_icons["real_white"].icon_id)
         scol.label(text="", icon_value=g.c_icons["true_black"].icon_id)
@@ -315,6 +324,7 @@ class DON1138AlsoPanel(bpy.types.Panel):
         scol.operator("color.baker_miller_pink", text="Baker-Miller Pink")
         scol.operator("color.finally_healing", text="Finally Healing")
         scol.operator("color.cosmic_latte", text="Cosmic Latte")
+        scol.operator("color.cosmic_spectrum_green", text="Cosmic Spectrum Green")
         scol.operator("color.real_black", text="Real Black")
         scol.operator("color.real_white", text="Real White")
         scol.operator("color.true_black", text="True Black (Eigengrau)")
@@ -346,6 +356,7 @@ array_ds = [
     BAKER_MILLER_PINK,
     FINALLY_HEALING,
     COSMIC_LATTE,
+    COSMIC_SPECTRUM_GREEN,
     REAL_BLACK,
     REAL_WHITE,
     SAFETY_BLACK,

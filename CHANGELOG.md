@@ -1,3 +1,7 @@
+### 1.13.0 <!-- 07/13/25 -->
+
+- Add **Cosmic Spectrum Green** to **Don1138 Select**
+
 ### 1.12.0 <!-- 07/08/25 -->
 
 - Add **WGSN & Coloro Color Trends** set of 64 colors
