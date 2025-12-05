@@ -1,5 +1,5 @@
-# Color Functions v.2
-# Revised: 24-08-11
+# Color Functions v.2.1
+# Revised: 25-12-05
 
 import bpy
 
@@ -9,12 +9,7 @@ NO_BSDF = "No Principled BSDF Shader Found"
 NO_MATERIAL = "No Compatible Material Found"
 NO_WORLD = "No World Found"
 NO_WORLD_BG = 'World Background Shader Named "Background" Required'
-
-PRINCIPLED_BSDF = 'Principled BSDF'
-COLOR_RAMP = 'Color Ramp' if bpy.app.version >= (4, 0, 0) else 'ColorRamp'
-BACKGROUND = 'Background'
 ENERGY_CONSERVATION = 'Energy Conservation'
-RGB = 'RGB'
 
 # MESSAGE BOX
 
@@ -26,6 +21,7 @@ def show_message_box(message="", title="", icon='INFO'):
 
 
 # HEX TO RGB CALCS
+
 
 def srgb_to_linearrgb(c):
     if c <= 0:
@@ -46,7 +42,32 @@ def set_input_color(node, num, hex):
     node.inputs[num].default_value = color
 
 
+# RECURSIVE NODE ITERATOR (SEARCH INSIDE GROUPS)
+
+
+def iter_nodes_recursive(node_tree, include_groups=True, _visited=None):
+    """Yield all nodes in a node tree, optionally diving into groups."""
+    if not node_tree:
+        return
+    if _visited is None:
+        _visited = set()
+    if node_tree in _visited:
+        return
+
+    _visited.add(node_tree)
+
+    for node in node_tree.nodes:
+        yield node
+
+        # Dive into groups if allowed
+        if include_groups and node.bl_idname == "ShaderNodeGroup":
+            sub_tree = getattr(node, "node_tree", None)
+            if sub_tree:
+                yield from iter_nodes_recursive(sub_tree, include_groups, _visited)
+
+
 # SHADERS WITH BASE COLOR INPUTS
+
 
 NODE_BL_IDNAMES = {
     "ShaderNodeAmbientOcclusion",
@@ -74,18 +95,29 @@ NODE_BL_IDNAMES = {
     "ShaderNodeVolumeScatter",
 }
 
-
 # COLOR SWITCHER
 
+
+def get_first_node_by_bl_idname(nodes, bl_idname):
+    """Return the first node whose bl_idname matches."""
+    for node in nodes:
+        if node.bl_idname == bl_idname:
+            return node
+    return None
+
+
 def set_base_color(hex, mat_name):
-    wor_bool = bpy.context.scene.world_bool.world_color_more
+    wor_bool = bpy.context.scene.qmc_settings.world_color_more
 
     if wor_bool:
         world = bpy.context.scene.world
         if world:
             world_name = world.name
             curr_world = bpy.data.worlds.get(world_name)
-            world_bg = curr_world.node_tree.nodes.get(BACKGROUND)
+            world_bg = get_first_node_by_bl_idname(
+                curr_world.node_tree.nodes,
+                "ShaderNodeBackground",
+            )
             if world_bg:
                 set_input_color(world_bg, 0, hex)
                 bpy.context.scene.world.color = hex_to_rgb(hex)
@@ -95,28 +127,50 @@ def set_base_color(hex, mat_name):
         else:
             show_message_box(NO_WORLD, "Unable To Comply")
     else:
-        material = bpy.context.object.active_material
-        if material:
-            set_material(material, hex, mat_name)
+        active_object = bpy.context.object
+
+        if active_object:
+            material = active_object.active_material
+            if material:
+                set_material(material, hex, mat_name)
+            else:
+                show_message_box(NO_MATERIAL, "Unable To Comply")
         else:
-            show_message_box(NO_MATERIAL, "Unable To Comply")
+            show_message_box("No Active Object Found", "Unable To Comply")
 
     return {'FINISHED'}
 
 
 def set_material(material, hex, mat_name):
+    include_groups = not bpy.context.scene.qmc_settings.group_more
+    
     nodes = material.node_tree.nodes
-    bsdf_node = nodes.get(PRINCIPLED_BSDF)
-    color_ramp_node = nodes.get(COLOR_RAMP)
-    d_bsdf_node = nodes.get('Diffuse BSDF')
+    all_nodes = list(iter_nodes_recursive(material.node_tree, include_groups))
+    
+    bsdf_node = None
+    color_ramp_node = None
+    d_bsdf_node = None
+    em_node = None
+    
+    for n in all_nodes:
+        if n.bl_idname == "ShaderNodeBsdfPrincipled":
+            bsdf_node = n
+        elif n.bl_idname == "ShaderNodeValToRGB":
+            color_ramp_node = n
+        elif n.bl_idname == "ShaderNodeBsdfDiffuse":
+            d_bsdf_node = n
+        elif n.bl_idname == "ShaderNodeEmission":
+            em_node = n
+            
     ec_node = nodes.get(ENERGY_CONSERVATION)
-    em_node = nodes.get('Emission')
     plaster = bpy.data.materials.get('QMM Plaster')
 
-    an_bool = bpy.context.scene.active_bool.active_node_more
+    an_bool = bpy.context.scene.qmc_settings.active_node_more
+    
     if an_bool:
         changed = False
-        for n in nodes:
+
+        for n in iter_nodes_recursive(material.node_tree, include_groups):
             if n.select and n.bl_idname in NODE_BL_IDNAMES:
                 if n.bl_idname == 'ShaderNodeRGB':
                     n.outputs[0].default_value = hex_to_rgb(hex)
@@ -153,14 +207,10 @@ def set_bsdf(node, hex, material, mat_name):
 
 
 def set_dif_color(thing, hex):
-    if bpy.context.scene.diffuse_bool.diffuse_more:
+    if bpy.context.scene.qmc_settings.diffuse_more:
         thing.diffuse_color = hex_to_rgb(hex)
 
 
-def set_input_color(node, num, hex):
-    node.inputs[num].default_value = hex_to_rgb(hex)
-
-
 def set_mat_name(thing, mat_name):
-    if bpy.context.scene.more_bool.rename_material_more:
+    if bpy.context.scene.qmc_settings.rename_material_more:
         thing.name = mat_name
