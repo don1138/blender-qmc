@@ -1,3 +1,7 @@
+### 1.14.0 <!-- 12/05/25 -->
+
+- Add **Cloud Dancer** to **Pantone Color of the Year**
+
 ### 1.13.0 <!-- 07/13/25 -->
 
 - Add **Cosmic Spectrum Green** to **Don1138 Select**
