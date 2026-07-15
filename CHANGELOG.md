@@ -1,3 +1,17 @@
+### 1.15.0 <!-- 07/14/26 -->
+
+- Update minimum supported Blender version to **4.5.0**
+- Improve color application across Blender 4.5+ and 5.2+
+  - Find shader nodes by node type instead of editable node name
+  - Add safer handling for missing objects, materials, worlds, and node trees
+  - Add support for selected utility and texture nodes with writable color inputs
+  - Set the **B** color input on selected Mix nodes
+  - Preserve automatic material fallback order: Principled BSDF, Diffuse BSDF, then Emission
+- Add **9 WGSN & Coloro colors** for **2027** and **2028**
+  - 4 colors for 2027
+  - 5 colors for 2028
+- Fix duplicate color helper code and improve error messages
+
 ### 1.14.0 <!-- 12/05/25 -->
 
 - Add **Cloud Dancer** to **Pantone Color of the Year**

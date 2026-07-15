@@ -18,11 +18,11 @@
 
 
 bl_info = {
-    "name"       : "QMC (Quick Material Colors)",
+    "name"       : "QMC+ (Quick Material Colors Plus)",
     "description": "Sets the Base Color of a Material Shader",
     "author"     : "Don Schnitzius",
     "version"    : (1, 15, 0),
-    "blender"    : (2, 80, 0),
+    "blender"    : (4, 5, 0),
     "location"   : "3D Viewport > Sidebar > MAT > Quick Material Colors",
     "warning"    : "",
     "doc_url"    : "https://github.com/don1138/blender-qmc",
@@ -42,11 +42,10 @@ from .color_sets.globals import *
 
 # BOOLEAN FOR PANEL
 class QMC_SETTINGS(bpy.types.PropertyGroup):
-    active_node_more:     bpy.props.BoolProperty(name='Selected Nodes Only', default=False)
-    group_more:           bpy.props.BoolProperty(name='Skip Node Groups', default=False)
-    rename_material_more: bpy.props.BoolProperty(name='Rename Material', default=False)
-    diffuse_more:         bpy.props.BoolProperty(name='Set Viewport Color', default=False)
-    world_color_more:     bpy.props.BoolProperty(name='Set World Background', default=False)
+    active_node_more: bpy.props.BoolProperty(name="",default=False)
+    rename_material_more: bpy.props.BoolProperty(name="",default=False)
+    diffuse_more: bpy.props.BoolProperty(name="",default=False)
+    world_color_more: bpy.props.BoolProperty(name="",default=False)
 
 
 # PARENT PANEL
@@ -60,28 +59,30 @@ class QMCPanel(bpy.types.Panel):
 
     def draw(self, context):
         layout = self.layout
-        settings = context.scene.qmc_settings
+        active_bool = context.scene.active_bool
+        more_bool = context.scene.more_bool
+        diffuse_bool = context.scene.diffuse_bool
+        world_bool = context.scene.world_bool
 
-        row2 = layout.row(align=True)
-        check_col = row2.column(align=True)
-        check_col.scale_y = 1.25
-        check_col.prop(settings, "active_node_more", text="")
-        check_col.prop(settings, "group_more", text="")
-        check_col.prop(settings, "rename_material_more", text="")
-        check_col.prop(settings, "diffuse_more", text="")
-        check_col.prop(settings, "world_color_more", text="")
+        srow = layout.row()
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.prop(active_bool, "active_node_more")
+        scol.prop(more_bool, "rename_material_more")
+        scol.prop(diffuse_bool, "diffuse_more")
+        scol.prop(world_bool, "world_color_more")
 
-        label_col = row2.column(align=True)
-        label_col.scale_y = 1.25
-        label_col.scale_x = 3
-        label_col.label(text="Selected Nodes Only")
-        label_col.label(text="Skip Node Groups")
-        label_col.label(text="Rename Material")
-        label_col.label(text="Set Viewport Color")
-        label_col.label(text="Set World Background")
+        scol = srow.column(align=True)
+        scol.scale_y = 1.25
+        scol.scale_x = 3.0
+        scol.label(text="Selected Nodes Only")
+        scol.label(text="Rename Material")
+        scol.label(text="Set Viewport Color")
+        scol.label(text="Set World Background")
 
 
 # IMPORT PANELS
+from .color_sets.ds import *
 from .color_sets.ams_595a import *
 from .color_sets.bclr import *
 from .color_sets.bsc import *
@@ -110,6 +111,7 @@ array_int = [
 # IMPORT & CONCATENATE CLASSES
 classes = [
    *array_int,
+   *array_ds,
    *array_ams,
    *array_bclr,
    *array_bsc,
@@ -133,7 +135,7 @@ def register():
     # LOAD CUSTOM ICONS
     addon_path = os.path.dirname(__file__)
     icons_dir = os.path.join(addon_path, "icons")
-
+    
     if not os.path.exists(icons_dir):
         print(f"Warning: Icons directory {icons_dir} not found.")
     else:
@@ -149,27 +151,23 @@ def register():
                 print(f"Warning: {entry} is not a file and will be skipped.")
 
     # Register classes
+    bpy_types_scene_properties = ["active_bool", "more_bool", "diffuse_bool", "world_bool"]
+
     for cls in classes:
         bpy.utils.register_class(cls)
-
-    # Register the single PointerProperty ONCE outside the loop,
-    # after the QMC_SETTINGS class has been registered.
-    bpy.types.Scene.qmc_settings = bpy.props.PointerProperty(type=QMC_SETTINGS)
+    
+    for prop in bpy_types_scene_properties:
+        setattr(bpy.types.Scene, prop, bpy.props.PointerProperty(type=QMC_SETTINGS))
 
 
 def unregister():
     bpy.utils.previews.remove(g.c_icons)
-
-    # Remove the single PointerProperty (New structure cleanup)
-    if hasattr(bpy.types.Scene, 'qmc_settings'):
-        delattr(bpy.types.Scene, 'qmc_settings')
-
-    # Safely remove the 5 old properties if they somehow persist
-    old_props = ["active_bool", "more_bool", "diffuse_bool", "group_bool", "world_bool"]
-    for prop in old_props:
+    bpy_types_scene_properties = ["active_bool", "more_bool", "diffuse_bool", "world_bool"]
+    
+    for prop in bpy_types_scene_properties:
         if hasattr(bpy.types.Scene, prop):
             delattr(bpy.types.Scene, prop)
-
+        
     for cls in reversed(classes):
         bpy.utils.unregister_class(cls)
 
