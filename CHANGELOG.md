@@ -1,3 +1,7 @@
+### 1.15.1 <!-- 08/09/26 -->
+
+- Fix custom icon preview cleanup when disabling, reloading, or reinstalling the add-on
+
 ### 1.15.0 <!-- 07/14/26 -->
 
 - Update minimum supported Blender version to **4.5.0**
