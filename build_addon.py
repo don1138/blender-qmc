@@ -13,7 +13,7 @@ from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent
 SHARED_SOURCE = PROJECT_ROOT / "qmc-shared"
-PERSONAL_OVERLAY = PROJECT_ROOT / "qmc-personal-overlay"
+PERSONAL_OVERLAY = PROJECT_ROOT / "qmc-plus"
 SKIP_NAMES = {".DS_Store", "__pycache__"}
 
 
@@ -41,7 +41,7 @@ def apply_qmc_plus_overlay(addon: Path) -> None:
     ds_source = PERSONAL_OVERLAY / "color_sets" / "ds.py"
     overlay_icons = PERSONAL_OVERLAY / "icons"
     if not ds_source.is_file() or not overlay_icons.is_dir():
-        raise FileNotFoundError("QMC+ needs qmc-personal-overlay/color_sets/ds.py and icons/.")
+        raise FileNotFoundError("QMC+ needs qmc-plus/color_sets/ds.py and icons/.")
 
     missing_icons = [
         icon for icon in sorted(required_personal_icons(ds_source))
