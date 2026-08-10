@@ -1759,7 +1759,7 @@ class RALPanel(bpy.types.Panel):
     bl_label = "RAL Classic"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'QMC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -1773,7 +1773,7 @@ class RALYELLOWPanel(bpy.types.Panel):
     bl_label = "    RAL Classic Yellow"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'RAL_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -1861,7 +1861,7 @@ class RALORANGEPanel(bpy.types.Panel):
     bl_label = "    RAL Classic Orange"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'RAL_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -1911,7 +1911,7 @@ class RALREDPanel(bpy.types.Panel):
     bl_label = "    RAL Classic Red"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'RAL_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -1985,7 +1985,7 @@ class RALVIOLETPanel(bpy.types.Panel):
     bl_label = "    RAL Classic Violet"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'RAL_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2031,7 +2031,7 @@ class RALBLUEPanel(bpy.types.Panel):
     bl_label = "    RAL Classic Blue"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'RAL_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2103,7 +2103,7 @@ class RALGREENPanel(bpy.types.Panel):
     bl_label = "    RAL Classic Green"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'RAL_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2195,7 +2195,7 @@ class RALGREYPanel(bpy.types.Panel):
     bl_label = "    RAL Classic Grey"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'RAL_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2293,7 +2293,7 @@ class RALBROWNPanel(bpy.types.Panel):
     bl_label = "    RAL Classic Brown"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'RAL_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2355,7 +2355,7 @@ class RALWHITEPanel(bpy.types.Panel):
     bl_label = "    RAL Classic White/Black"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'RAL_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 

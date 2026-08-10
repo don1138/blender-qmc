@@ -206,7 +206,7 @@ class DON1138Panel(bpy.types.Panel):
     bl_label = "Don1138 Select"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'QMC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -221,7 +221,7 @@ class DON1138TruePanel(bpy.types.Panel):
     bl_label = "    True"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'DON1138_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
     
@@ -258,7 +258,7 @@ class DON1138SafePanel(bpy.types.Panel):
     bl_label = "    Safe"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'DON1138_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -295,7 +295,7 @@ class DON1138AlsoPanel(bpy.types.Panel):
     bl_label = "    Also"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'DON1138_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 

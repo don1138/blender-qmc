@@ -301,7 +301,7 @@ class HG71Panel(bpy.types.Panel):
     bl_label = "House & Garden 1971"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'QMC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -315,7 +315,7 @@ class HG71_YELLOW_Panel(bpy.types.Panel):
     bl_label = "    Yellows"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'HG71_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -352,7 +352,7 @@ class HG71_GREEN_Panel(bpy.types.Panel):
     bl_label = "    Greens"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'HG71_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -387,7 +387,7 @@ class HG71_BLUE_Panel(bpy.types.Panel):
     bl_label = "    Blues"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'HG71_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -422,7 +422,7 @@ class HG71_ORANGE_Panel(bpy.types.Panel):
     bl_label = "    Oranges"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'HG71_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -457,7 +457,7 @@ class HG71_RED_Panel(bpy.types.Panel):
     bl_label = "    Reds"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'HG71_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -488,7 +488,7 @@ class HG71_PURPLE_Panel(bpy.types.Panel):
     bl_label = "    Purples"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'HG71_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -517,7 +517,7 @@ class HG71_GRAY_Panel(bpy.types.Panel):
     bl_label = "    Grays"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'HG71_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 

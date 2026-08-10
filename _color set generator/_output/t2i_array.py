@@ -1844,7 +1844,7 @@ class T2IPanel(bpy.types.Panel):
     bl_label = "COCO Segmentation"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'QMC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2236,7 +2236,7 @@ class T2IThingsOutPanel(bpy.types.Panel):
     bl_label = "    Things Outdoor"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'T2I_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2251,7 +2251,7 @@ class T2IThingsInPanel(bpy.types.Panel):
     bl_label = "    Things Indoor"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'T2I_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2266,7 +2266,7 @@ class T2IStuffOutPanel(bpy.types.Panel):
     bl_label = "    Stuff Outdoor"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'T2I_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2281,7 +2281,7 @@ class T2IStuffInPanel(bpy.types.Panel):
     bl_label = "    Stuff Indoor"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'T2I_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2297,7 +2297,7 @@ class T2ITOAccessoryPanel(bpy.types.Panel):
     bl_label = "        Accessory"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'T2I_THINGS_OUT_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2336,7 +2336,7 @@ class T2ITOAnimalPanel(bpy.types.Panel):
     bl_label = "        Animal"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'T2I_THINGS_OUT_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2379,7 +2379,7 @@ class T2ITOOutdoorPanel(bpy.types.Panel):
     bl_label = "        Outdoor"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'T2I_THINGS_OUT_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2414,7 +2414,7 @@ class T2ITOSportsPanel(bpy.types.Panel):
     bl_label = "        Sports"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'T2I_THINGS_OUT_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2457,7 +2457,7 @@ class T2ITOVehiclePanel(bpy.types.Panel):
     bl_label = "        Vehicle"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'T2I_THINGS_OUT_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2497,7 +2497,7 @@ class T2ITIAppliancePanel(bpy.types.Panel):
     bl_label = "        Appliance"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'T2I_THINGS_IN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2532,7 +2532,7 @@ class T2ITIElectronicPanel(bpy.types.Panel):
     bl_label = "        Electronic"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'T2I_THINGS_IN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2567,7 +2567,7 @@ class T2ITIFoodPanel(bpy.types.Panel):
     bl_label = "        Food"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'T2I_THINGS_IN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2610,7 +2610,7 @@ class T2ITIFurniturePanel(bpy.types.Panel):
     bl_label = "        Furniture"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'T2I_THINGS_IN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2653,7 +2653,7 @@ class T2ITIIndoorPanel(bpy.types.Panel):
     bl_label = "        Indoor"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'T2I_THINGS_IN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2692,7 +2692,7 @@ class T2ITIKitchenPanel(bpy.types.Panel):
     bl_label = "        Kitchen"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'T2I_THINGS_IN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2734,7 +2734,7 @@ class T2ISOBuildingPanel(bpy.types.Panel):
     bl_label = "        Building"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'T2I_STUFF_OUT_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2769,7 +2769,7 @@ class T2ISOGroundPanel(bpy.types.Panel):
     bl_label = "        Ground"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'T2I_STUFF_OUT_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2814,7 +2814,7 @@ class T2ISOPlantPanel(bpy.types.Panel):
     bl_label = "        Plant"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'T2I_STUFF_OUT_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2855,7 +2855,7 @@ class T2ISOSkyPanel(bpy.types.Panel):
     bl_label = "        Sky"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'T2I_STUFF_OUT_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2882,7 +2882,7 @@ class T2ISOSolidPanel(bpy.types.Panel):
     bl_label = "        Solid"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'T2I_STUFF_OUT_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2917,7 +2917,7 @@ class T2ISOStructuralPanel(bpy.types.Panel):
     bl_label = "        Structural"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'T2I_STUFF_OUT_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2951,7 +2951,7 @@ class T2ISOWaterPanel(bpy.types.Panel):
     bl_label = "        Water"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'T2I_STUFF_OUT_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2985,7 +2985,7 @@ class T2ISICeilingPanel(bpy.types.Panel):
     bl_label = "        Ceiling"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'T2I_STUFF_IN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -3014,7 +3014,7 @@ class T2ISIFloorPanel(bpy.types.Panel):
     bl_label = "        Floor"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'T2I_STUFF_IN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -3047,7 +3047,7 @@ class T2ISIFoodPanel(bpy.types.Panel):
     bl_label = "        Food"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'T2I_STUFF_IN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -3078,7 +3078,7 @@ class T2ISIFurniturePanel(bpy.types.Panel):
     bl_label = "        Furniture"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'T2I_STUFF_IN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -3124,7 +3124,7 @@ class T2ISIRawMaterialPanel(bpy.types.Panel):
     bl_label = "        Raw Material"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'T2I_STUFF_IN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -3155,7 +3155,7 @@ class T2ISITextilePanel(bpy.types.Panel):
     bl_label = "        Textile"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'T2I_STUFF_IN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -3200,7 +3200,7 @@ class T2ISIWallPanel(bpy.types.Panel):
     bl_label = "        Wall"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'T2I_STUFF_IN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -3237,7 +3237,7 @@ class T2ISIWindowPanel(bpy.types.Panel):
     bl_label = "        Window"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'T2I_STUFF_IN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 

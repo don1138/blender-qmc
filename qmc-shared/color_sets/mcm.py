@@ -246,7 +246,7 @@ class MCMPanel(bpy.types.Panel):
     bl_label = "Mid-Century Modern"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'QMC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -260,7 +260,7 @@ class MCMYELLOWS(bpy.types.Panel):
     bl_label = "    Golden Yellow"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'MCM_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -290,7 +290,7 @@ class MCMBLUES(bpy.types.Panel):
     bl_label = "    Serena Aqua"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'MCM_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -320,7 +320,7 @@ class MCMGREENS(bpy.types.Panel):
     bl_label = "    Olive Green & Wasabi"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'MCM_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -352,7 +352,7 @@ class MCMREDS(bpy.types.Panel):
     bl_label = "    Pops of Red"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'MCM_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -382,7 +382,7 @@ class MCMORANGES(bpy.types.Panel):
     bl_label = "    Tangerine and Ochre"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'MCM_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -412,7 +412,7 @@ class MCMGRAYS(bpy.types.Panel):
     bl_label = "    Pewter Gray"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'MCM_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -442,7 +442,7 @@ class MCMBROWNS(bpy.types.Panel):
     bl_label = "    Soft and Earthy Brown"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'MCM_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 

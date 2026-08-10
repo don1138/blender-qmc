@@ -1151,7 +1151,7 @@ class ECCPanel(bpy.types.Panel):
     bl_label = "Exotic Car Colors"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'QMC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -1164,7 +1164,7 @@ class AUDIPanel(bpy.types.Panel):
     bl_label = "    Audi"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'ECC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -1191,7 +1191,7 @@ class FERRARIPanel(bpy.types.Panel):
     bl_label = "    Ferrari"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'ECC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -1266,7 +1266,7 @@ class LAMBORGHINIPanel(bpy.types.Panel):
     bl_label = "    Lamborghini"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'ECC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -1417,7 +1417,7 @@ class MCLARENPanel(bpy.types.Panel):
     bl_label = "    McLaren"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'ECC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -1480,7 +1480,7 @@ class PORSCHEPanel(bpy.types.Panel):
     bl_label = "    Porsche"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'ECC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 

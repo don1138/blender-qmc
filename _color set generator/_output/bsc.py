@@ -3639,7 +3639,7 @@ class BSCPanel(bpy.types.Panel):
     bl_label = "British Standard"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'QMC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -3652,7 +3652,7 @@ class BSC2660Panel(bpy.types.Panel):
     bl_label = "    BS2660 (1964)"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'BSC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -3865,7 +3865,7 @@ class BSC381CPanel(bpy.types.Panel):
     bl_label = "    BS381C (1930)"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'BSC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -4124,7 +4124,7 @@ class BSC5252Panel(bpy.types.Panel):
     bl_label = "    BS5252 (1976)"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'BSC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 

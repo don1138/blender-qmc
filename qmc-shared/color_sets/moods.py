@@ -205,7 +205,7 @@ class MOODSPanel(bpy.types.Panel):
     bl_label = "Moods"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'QMC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -218,7 +218,7 @@ class MOODRELAXPanel(bpy.types.Panel):
     bl_label = "    Relaxed"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'MOODS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -247,7 +247,7 @@ class MOODENERGYPanel(bpy.types.Panel):
     bl_label = "    Energy"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'MOODS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -276,7 +276,7 @@ class MOODCOZYPanel(bpy.types.Panel):
     bl_label = "    Cozy"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'MOODS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -305,7 +305,7 @@ class MOODFOCUSPanel(bpy.types.Panel):
     bl_label = "    Focus"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'MOODS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -334,7 +334,7 @@ class MOODMOODYPanel(bpy.types.Panel):
     bl_label = "    Moody"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'MOODS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -363,7 +363,7 @@ class MOODMOODYPanel(bpy.types.Panel):
 #     bl_label = "Whites"
 #     bl_space_type = "VIEW_3D"
 #     bl_region_type = "UI"
-#     bl_category = "MAT"
+#     bl_category = "Quick Tools"
 #     bl_parent_id = 'MOODS_PT_Panel'
 #     bl_options = {'DEFAULT_CLOSED'}
 

@@ -21,7 +21,7 @@ bl_info = {
     "name"       : "QMC (Quick Material Colors)",
     "description": "Sets the Base Color of a Material Shader",
     "author"     : "Don Schnitzius",
-    "version"    : (1, 16, 0),
+    "version"    : (1, 16, 1),
     "blender"    : (4, 5, 0),
     "location"   : "3D Viewport > Sidebar > MAT > Quick Material Colors",
     "warning"    : "",
@@ -187,7 +187,7 @@ class QMCPanel(bpy.types.Panel):
     bl_label = "Quick Material Colors"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     # bl_options = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
@@ -291,7 +291,7 @@ class QMCColorFinderPanel(bpy.types.Panel):
     bl_label = "Color Finder"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'QMC_PT_Panel'
 
     def draw(self, context):
@@ -379,7 +379,7 @@ class QMCBrowseCollectionsPanel(bpy.types.Panel):
     bl_label = "Browse Collections"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'QMC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 

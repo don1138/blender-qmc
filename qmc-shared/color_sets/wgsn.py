@@ -746,7 +746,7 @@ class WGSNPanel(bpy.types.Panel):
     bl_label = "WGSN & Coloro Color Trends"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'QMC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -762,7 +762,7 @@ class WGSNPanel2020(bpy.types.Panel):
     bl_label = "2020"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'WGSN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -796,7 +796,7 @@ class WGSNPanel2021(bpy.types.Panel):
     bl_label = "2021"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'WGSN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -838,7 +838,7 @@ class WGSNPanel2022(bpy.types.Panel):
     bl_label = "2022"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'WGSN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -880,7 +880,7 @@ class WGSNPanel2023(bpy.types.Panel):
     bl_label = "2023"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'WGSN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -920,7 +920,7 @@ class WGSNPanel2024(bpy.types.Panel):
     bl_label = "2024"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'WGSN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -964,7 +964,7 @@ class WGSNPanel2025(bpy.types.Panel):
     bl_label = "2025"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'WGSN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -1006,7 +1006,7 @@ class WGSNPanel2026(bpy.types.Panel):
     bl_label = "2026"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'WGSN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -1048,7 +1048,7 @@ class WGSNPanel2027(bpy.types.Panel):
     bl_label = "2027"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'WGSN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -1090,7 +1090,7 @@ class WGSNPanel2028(bpy.types.Panel):
     bl_label = "2028"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'WGSN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 

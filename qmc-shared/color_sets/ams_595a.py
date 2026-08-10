@@ -5542,7 +5542,7 @@ class AMSPanel(bpy.types.Panel):
     bl_label = "AMS Standard 595A"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'QMC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -5556,7 +5556,7 @@ class AMSGlossPanel(bpy.types.Panel):
     bl_label = "    Gloss"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'AMS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -5571,7 +5571,7 @@ class AMSGlossBrownPanel(bpy.types.Panel):
     bl_label = "        Gloss Brown"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'AMS_GLOSS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -5628,7 +5628,7 @@ class AMSGlossRedPanel(bpy.types.Panel):
     bl_label = "        Gloss Red"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'AMS_GLOSS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -5677,7 +5677,7 @@ class AMSGlossOrangePanel(bpy.types.Panel):
     bl_label = "        Gloss Orange"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'AMS_GLOSS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -5720,7 +5720,7 @@ class AMSGlossYellowPanel(bpy.types.Panel):
     bl_label = "        Gloss Yellow"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'AMS_GLOSS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -5787,7 +5787,7 @@ class AMSGlossGreenPanel(bpy.types.Panel):
     bl_label = "        Gloss Green"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'AMS_GLOSS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -5882,7 +5882,7 @@ class AMSGlossBluePanel(bpy.types.Panel):
     bl_label = "        Gloss Blue"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'AMS_GLOSS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -5959,7 +5959,7 @@ class AMSGlossGreyPanel(bpy.types.Panel):
     bl_label = "        Gloss Grey"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'AMS_GLOSS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -6028,7 +6028,7 @@ class AMSGlossMiscPanel(bpy.types.Panel):
     bl_label = "        Gloss Misc"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'AMS_GLOSS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -6083,7 +6083,7 @@ class AMSSemiGlossPanel(bpy.types.Panel):
     bl_label = "    SemiGloss"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'AMS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -6098,7 +6098,7 @@ class AMSSemiGlossBrownPanel(bpy.types.Panel):
     bl_label = "        SemiGloss Brown"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'AMS_SEMIGLOSS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -6191,7 +6191,7 @@ class AMSSemiGlossRedPanel(bpy.types.Panel):
     bl_label = "        SemiGloss Red"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'AMS_SEMIGLOSS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -6238,7 +6238,7 @@ class AMSSemiGlossOrangePanel(bpy.types.Panel):
     bl_label = "        SemiGloss Orange"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'AMS_SEMIGLOSS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -6289,7 +6289,7 @@ class AMSSemiGlossYellowPanel(bpy.types.Panel):
     bl_label = "        SemiGloss Yellow"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'AMS_SEMIGLOSS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -6372,7 +6372,7 @@ class AMSSemiGlossGreenPanel(bpy.types.Panel):
     bl_label = "        SemiGloss Green"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'AMS_SEMIGLOSS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -6497,7 +6497,7 @@ class AMSSemiGlossBluePanel(bpy.types.Panel):
     bl_label = "        SemiGloss Blue"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'AMS_SEMIGLOSS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -6588,7 +6588,7 @@ class AMSSemiGlossGreyPanel(bpy.types.Panel):
     bl_label = "        SemiGloss Grey"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'AMS_SEMIGLOSS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -6707,7 +6707,7 @@ class AMSSemiGlossMiscPanel(bpy.types.Panel):
     bl_label = "        SemiGloss Misc"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'AMS_SEMIGLOSS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -6764,7 +6764,7 @@ class AMSSemiGlossFluorescentPanel(bpy.types.Panel):
     bl_label = "        SemiGloss Fluorescent"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'AMS_SEMIGLOSS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -6791,7 +6791,7 @@ class AMSMattePanel(bpy.types.Panel):
     bl_label = "    Matte"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'AMS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -6806,7 +6806,7 @@ class AMSMatteBrownPanel(bpy.types.Panel):
     bl_label = "        Matte Brown"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'AMS_MATTE_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -6909,7 +6909,7 @@ class AMSMatteRedPanel(bpy.types.Panel):
     bl_label = "        Matte Red"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'AMS_MATTE_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -6964,7 +6964,7 @@ class AMSMatteOrangePanel(bpy.types.Panel):
     bl_label = "        Matte Orange"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'AMS_MATTE_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -7009,7 +7009,7 @@ class AMSMatteYellowPanel(bpy.types.Panel):
     bl_label = "        Matte Yellow"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'AMS_MATTE_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -7096,7 +7096,7 @@ class AMSMatteGreenPanel(bpy.types.Panel):
     bl_label = "        Matte Green"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'AMS_MATTE_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -7273,7 +7273,7 @@ class AMSMatteBluePanel(bpy.types.Panel):
     bl_label = "        Matte Blue"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'AMS_MATTE_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -7370,7 +7370,7 @@ class AMSMatteGreyPanel(bpy.types.Panel):
     bl_label = "        Matte Grey"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'AMS_MATTE_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -7477,7 +7477,7 @@ class AMSMatteMiscPanel(bpy.types.Panel):
     bl_label = "        Matte Misc"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'AMS_MATTE_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -7550,7 +7550,7 @@ class AMSMatteFluorescentPanel(bpy.types.Panel):
     bl_label = "        Matte Fluorescent"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'AMS_MATTE_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 

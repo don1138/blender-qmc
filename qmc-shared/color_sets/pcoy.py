@@ -489,7 +489,7 @@ class PMSPanel(bpy.types.Panel):
     bl_label = "Pantone Color of the Year"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'QMC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -503,7 +503,7 @@ class PMSPanel2000(bpy.types.Panel):
     bl_label = "    2000-09"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'PMS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -560,7 +560,7 @@ class PMSPanel2010(bpy.types.Panel):
     bl_label = "    2010-19"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'PMS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -620,7 +620,7 @@ class PMSPanel2020(bpy.types.Panel):
     bl_label = "    2020-29"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'PMS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -671,7 +671,7 @@ class PMSPanelSS2022London(bpy.types.Panel):
     bl_label = "    SS2022 London"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'PMS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -714,7 +714,7 @@ class PMSPanelSS2022NY(bpy.types.Panel):
     bl_label = "    SS2022 New York"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'PMS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -757,7 +757,7 @@ class PMSPanelExtras(bpy.types.Panel):
     bl_label = "    Extras & Apocrypha"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'PMS_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 

@@ -229,7 +229,7 @@ class SMEPanel(bpy.types.Panel):
     bl_label = "Suburban Modern Exterior"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'QMC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -243,7 +243,7 @@ class SME_APanel(bpy.types.Panel):
     bl_label = "    Set A"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'SME_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -272,7 +272,7 @@ class SME_BPanel(bpy.types.Panel):
     bl_label = "    Set B"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'SME_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -301,7 +301,7 @@ class SME_CPanel(bpy.types.Panel):
     bl_label = "    Set C"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'SME_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -330,7 +330,7 @@ class SME_DPanel(bpy.types.Panel):
     bl_label = "    Set D"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'SME_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -359,7 +359,7 @@ class SME_EPanel(bpy.types.Panel):
     bl_label = "    Set E"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'SME_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -388,7 +388,7 @@ class SME_FPanel(bpy.types.Panel):
     bl_label = "    Set F"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'SME_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -417,7 +417,7 @@ class SME_GPanel(bpy.types.Panel):
     bl_label = "    Set G"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'SME_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -446,7 +446,7 @@ class SME_HPanel(bpy.types.Panel):
     bl_label = "    Set H"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'SME_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -475,7 +475,7 @@ class SME_JPanel(bpy.types.Panel):
     bl_label = "    Set J"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'SME_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 

@@ -1,3 +1,7 @@
+### 1.16.1 <!-- 08/10/26 -->
+
+- Change panel category from **MAT** to **Quick Tools**
+
 ### 1.16.0 <!-- 08/09/26 -->
 
 - Add a persistent **Color Finder** for searching colors by name, catalog code, or collection

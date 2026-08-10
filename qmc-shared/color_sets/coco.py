@@ -1664,7 +1664,7 @@ class COCOPanel(bpy.types.Panel):
     bl_label = "COCO Segmentation"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'QMC_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -1692,7 +1692,7 @@ class COCOThingsOutPanel(bpy.types.Panel):
     bl_label = "    Things Outdoor"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'COCO_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -1707,7 +1707,7 @@ class COCOThingsInPanel(bpy.types.Panel):
     bl_label = "    Things Indoor"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'COCO_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -1722,7 +1722,7 @@ class COCOStuffOutPanel(bpy.types.Panel):
     bl_label = "    Stuff Outdoor"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'COCO_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -1737,7 +1737,7 @@ class COCOStuffInPanel(bpy.types.Panel):
     bl_label = "    Stuff Indoor"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'COCO_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -1752,7 +1752,7 @@ class COCOTOAccessoryPanel(bpy.types.Panel):
     bl_label = "        Accessory"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'COCO_THINGS_OUT_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -1791,7 +1791,7 @@ class COCOTOAnimalPanel(bpy.types.Panel):
     bl_label = "        Animal"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'COCO_THINGS_OUT_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -1834,7 +1834,7 @@ class COCOTOOutdoorPanel(bpy.types.Panel):
     bl_label = "        Outdoor"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'COCO_THINGS_OUT_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -1869,7 +1869,7 @@ class COCOTOSportsPanel(bpy.types.Panel):
     bl_label = "        Sports"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'COCO_THINGS_OUT_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -1912,7 +1912,7 @@ class COCOTOVehiclePanel(bpy.types.Panel):
     bl_label = "        Vehicle"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'COCO_THINGS_OUT_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -1951,7 +1951,7 @@ class COCOTIAppliancePanel(bpy.types.Panel):
     bl_label = "        Appliance"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'COCO_THINGS_IN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -1986,7 +1986,7 @@ class COCOTIElectronicPanel(bpy.types.Panel):
     bl_label = "        Electronic"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'COCO_THINGS_IN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2021,7 +2021,7 @@ class COCOTIFoodPanel(bpy.types.Panel):
     bl_label = "        Food"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'COCO_THINGS_IN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2064,7 +2064,7 @@ class COCOTIFurniturePanel(bpy.types.Panel):
     bl_label = "        Furniture"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'COCO_THINGS_IN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2107,7 +2107,7 @@ class COCOTIIndoorPanel(bpy.types.Panel):
     bl_label = "        Indoor"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'COCO_THINGS_IN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2146,7 +2146,7 @@ class COCOTIKitchenPanel(bpy.types.Panel):
     bl_label = "        Kitchen"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'COCO_THINGS_IN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2185,7 +2185,7 @@ class COCOSOBuildingPanel(bpy.types.Panel):
     bl_label = "        Building"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'COCO_STUFF_OUT_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2220,7 +2220,7 @@ class COCOSOGroundPanel(bpy.types.Panel):
     bl_label = "        Ground"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'COCO_STUFF_OUT_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2265,7 +2265,7 @@ class COCOSOPlantPanel(bpy.types.Panel):
     bl_label = "        Plant"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'COCO_STUFF_OUT_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2306,7 +2306,7 @@ class COCOSOSkyPanel(bpy.types.Panel):
     bl_label = "        Sky"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'COCO_STUFF_OUT_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2333,7 +2333,7 @@ class COCOSOSolidPanel(bpy.types.Panel):
     bl_label = "        Solid"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'COCO_STUFF_OUT_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2368,7 +2368,7 @@ class COCOSOStructuralPanel(bpy.types.Panel):
     bl_label = "        Structural"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'COCO_STUFF_OUT_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2402,7 +2402,7 @@ class COCOSOWaterPanel(bpy.types.Panel):
     bl_label = "        Water"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'COCO_STUFF_OUT_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2435,7 +2435,7 @@ class COCOSICeilingPanel(bpy.types.Panel):
     bl_label = "        Ceiling"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'COCO_STUFF_IN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2462,7 +2462,7 @@ class COCOSIFloorPanel(bpy.types.Panel):
     bl_label = "        Floor"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'COCO_STUFF_IN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2497,7 +2497,7 @@ class COCOSIFoodPanel(bpy.types.Panel):
     bl_label = "        Food"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'COCO_STUFF_IN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2528,7 +2528,7 @@ class COCOSIFurniturePanel(bpy.types.Panel):
     bl_label = "        Furniture"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'COCO_STUFF_IN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2573,7 +2573,7 @@ class COCOSIRawMaterialPanel(bpy.types.Panel):
     bl_label = "        Raw Material"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'COCO_STUFF_IN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2604,7 +2604,7 @@ class COCOSITextilePanel(bpy.types.Panel):
     bl_label = "        Textile"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'COCO_STUFF_IN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2649,7 +2649,7 @@ class COCOSIWallPanel(bpy.types.Panel):
     bl_label = "        Wall"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'COCO_STUFF_IN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
@@ -2686,7 +2686,7 @@ class COCOSIWindowPanel(bpy.types.Panel):
     bl_label = "        Window"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "MAT"
+    bl_category = "Quick Tools"
     bl_parent_id = 'COCO_STUFF_IN_PT_Panel'
     bl_options = {'DEFAULT_CLOSED'}
 
