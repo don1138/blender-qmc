@@ -95,10 +95,11 @@ and CMY hue anchors:
 
 Boundary ownership must be consistent and covered by automated validation.
 
-Neutral is provisional in V1. The initial candidate rule is HSV saturation at
-or below 10 percent. The catalog audit found too few items to justify separate
-Black, Grey, and White filters under the initial thresholds, so V1 uses one
-Neutral filter. Thresholds remain subject to visual review before implementation.
+Neutral uses HSV saturation at or below 5 percent. Catalog review showed that
+colors between 8 and 10 percent saturation already include visibly tinted
+pinks, greens, and blues. The catalog contains too few very dark neutral items
+to justify separate Black, Grey, and White filters, so V1 uses one Neutral
+filter.
 
 ### Collection filters
 
@@ -275,54 +276,60 @@ calls `set_base_color()` with a literal HEX value.
 | QMC | `sw_ext.py` | 27 |
 | QMC | `sw_int.py` | 21 |
 | QMC | `sw_ja.py` | 8 |
-| QMC | `wgsn.py` | 74 |
+| QMC | `wgsn.py` | 73 |
 | QMC Plus | `ds.py` | 24 |
-| **Total** | | **2,024** |
+| **Total** | | **2,023** |
 
-All 2,024 audited operators exposed an extractable label, operator ID, and HEX
+All 2,023 current operators expose an extractable label, operator ID, and HEX
 value. There were no extraction failures.
 
 ### Duplicate findings
 
-Five labels appear more than once with different HEX values:
+Four valid labels appear more than once with different HEX values:
 
 - Blue Sky
 - Harvest Gold
-- Radiant Earth
 - Saged
 - Tangerine
 
-Four are valid cross-collection name collisions. Collection identity
-disambiguates them.
+They are cross-collection name collisions. Collection identity disambiguates
+them.
 
-`Radiant Earth` is an invalid source collision in `wgsn.py`: the file defines
-`WGSN_RadiantEarth` and `color.wgsn_radiant_earth` twice with different HEX
-values, `#EAA6C5` and `#BA4433`. This must be resolved before generating a valid
-QMC master list.
+The initial audit also found an invalid `Radiant Earth` source collision in
+`wgsn.py`. The file defined `WGSN_RadiantEarth` and
+`color.wgsn_radiant_earth` twice. `#EAA6C5` was a duplicate of Pop Pink;
+Radiant Earth's shipped swatch confirms `#BA4433` as its value. The erroneous
+definition was removed on the Color Finder branch, leaving 1,999 QMC colors.
+
+### Icon findings
+
+`qmc-shared/icons` contains 2,001 files. Excluding `_null.png`, one icon remains
+without a matching color or UI reference: `ams_24172.png`. It is a legacy
+unsuffixed icon; the active catalog contains separate `ams_24172a.png` and
+`ams_24172b.png` entries. The orphan does not represent a missing color.
 
 ### Provisional hue distribution
 
-Using six 60-degree hue buckets and treating saturation at or below 10 percent
+Using six 60-degree hue buckets and treating saturation at or below 5 percent
 as Neutral produced:
 
 | Category | Colors |
 | --- | ---: |
-| Red | 464 |
-| Yellow | 562 |
-| Green | 166 |
-| Cyan | 288 |
-| Blue | 156 |
-| Magenta | 73 |
-| Neutral | 315 |
+| Red | 483 |
+| Yellow | 612 |
+| Green | 194 |
+| Cyan | 330 |
+| Blue | 169 |
+| Magenta | 74 |
+| Neutral | 161 |
 
-Within the 315 provisional Neutral records:
+Within the 161 Neutral records:
 
 - 4 have value at or below 10 percent.
-- 260 have value between 10 and 90 percent.
-- 51 have value at or above 90 percent.
+- 122 have value between 10 and 90 percent.
+- 35 have value at or above 90 percent.
 
-This distribution supports one Neutral filter for V1. The saturation threshold
-and representative boundary colors still require visual review.
+This distribution supports one Neutral filter for V1.
 
 ## Deferred work
 
