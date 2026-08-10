@@ -220,6 +220,7 @@ Each record requires:
 | `id` | Stable record identifier unique within its source |
 | `source` | Index source, such as `qmc`, `qmc_plus`, or a future user source |
 | `collection_id` | Stable collection identifier used for filtering |
+| `collection_key` | Source-qualified collection key used by merged indexes |
 | `collection_name` | User-facing collection name |
 | `label` | Existing user-facing color label, including code when present |
 | `hex` | Original 24-bit sRGB color value |
