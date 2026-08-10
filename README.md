@@ -14,9 +14,15 @@ Once activated, a panel named **Quick Material Colors** will appear in the **MAT
 ## Usage
 
 - Select an object in your view, and click one of the buttons to assign that color to it.
+- Use **Color Finder** to search all included colors by name, catalog code, or collection.
+- Narrow Finder results by hue or by selecting one or more collections.
+- Sort results by relevance, color name, or collection. Click **Show More** to display additional matches.
+- Click any Finder result to apply it. The Finder remains open so you can try other colors immediately.
+- Expand **Browse Collections** to use the original palette and sub-palette panels.
 - Set the **Rename Material** checkbox to `True` to change the material or world name.
-- Set the **All Selected Materials** checkbox to `True` to change the **Base Color** of all selected shader nodes in a material. (This ignores nodes that do not have a **Base Color** attribute.)
-- Set the **World Background** checkbox to `True` and the button will assign that color to the `World > Background Shader > Color`.
+- Set **Selected Nodes Only** to change compatible color inputs on selected shader nodes.
+- Set **Set Viewport Color** to update the material's viewport display color.
+- Set **Set World Background** to apply the selected color to the World Background shader.
 
 ## Caveats & Warnings
 

@@ -1,3 +1,14 @@
+### 1.16.0 <!-- 08/09/26 -->
+
+- Add a persistent **Color Finder** for searching colors by name, catalog code, or collection
+- Add filters for collection, six HSV hue families, and neutral colors
+- Add relevance, alphabetical, and collection sorting with cumulative **Show More** results
+- Keep Color Finder controls and results open while trying different colors
+- Include **Don1138 Select** results when using QMC Plus
+- Group existing palette panels under a collapsible **Browse Collections** panel
+- Display the installed QMC version in the main panel
+- Fix a duplicate **Radiant Earth** definition in **WGSN & Coloro Color Trends**
+
 ### 1.15.1 <!-- 08/09/26 -->
 
 - Fix custom icon preview cleanup when disabling, reloading, or reinstalling the add-on
