@@ -227,6 +227,7 @@ Each record requires:
 | `saturation` | Precomputed HSV saturation from 0 through 100 |
 | `value` | Precomputed HSV value from 0 through 100 |
 | `search_text` | Pre-normalized color label and collection name |
+| `icon` | Existing swatch icon key used by the result button |
 | `operator_id` | Optional existing operator ID for validation and traceability |
 
 The runtime apply operation uses `hex` and `label`; `operator_id` is not
@@ -270,7 +271,7 @@ calls `set_base_color()` with a literal HEX value.
 | QMC | `ge.py` | 10 |
 | QMC | `hg71.py` | 36 |
 | QMC | `mcm.py` | 29 |
-| QMC | `moods.py` | 24 |
+| QMC | `moods.py` | 20 active, plus 4 unregistered definitions |
 | QMC | `pcoy.py` | 58 |
 | QMC | `ral.py` | 218 |
 | QMC | `sw_ext.py` | 27 |
@@ -278,10 +279,14 @@ calls `set_base_color()` with a literal HEX value.
 | QMC | `sw_ja.py` | 8 |
 | QMC | `wgsn.py` | 73 |
 | QMC Plus | `ds.py` | 24 |
-| **Total** | | **2,023** |
+| **Active total** | | **2,019** |
 
-All 2,023 current operators expose an extractable label, operator ID, and HEX
-value. There were no extraction failures.
+All 2,019 registered color operators expose an extractable label, operator ID,
+HEX value, and panel icon mapping. There were no extraction failures. Four
+additional Moods white operators exist in source but are commented out of both
+the panel and `array_moods`, so Blender does not register them and the master
+index excludes them. The active source totals are 1,995 QMC colors and 24 QMC
+Plus colors.
 
 ### Duplicate findings
 
@@ -299,35 +304,39 @@ The initial audit also found an invalid `Radiant Earth` source collision in
 `wgsn.py`. The file defined `WGSN_RadiantEarth` and
 `color.wgsn_radiant_earth` twice. `#EAA6C5` was a duplicate of Pop Pink;
 Radiant Earth's shipped swatch confirms `#BA4433` as its value. The erroneous
-definition was removed on the Color Finder branch, leaving 1,999 QMC colors.
+definition was removed on the Color Finder branch, leaving 1,999 QMC color
+definitions and 1,995 registered QMC colors.
 
 ### Icon findings
 
 `qmc-shared/icons` contains 2,001 files. Excluding `_null.png`, one icon remains
 without a matching color or UI reference: `ams_24172.png`. It is a legacy
 unsuffixed icon; the active catalog contains separate `ams_24172a.png` and
-`ams_24172b.png` entries. The orphan does not represent a missing color.
+`ams_24172b.png` entries. The orphan does not represent a missing color. Four
+additional icons belong to the intentionally unregistered Moods white
+definitions and are excluded from the active index with those definitions.
 
 ### Provisional hue distribution
 
 Using six 60-degree hue buckets and treating saturation at or below 5 percent
-as Neutral produced:
+as Neutral produces the following counts across the 2,019 active indexed
+colors:
 
 | Category | Colors |
 | --- | ---: |
-| Red | 483 |
-| Yellow | 612 |
-| Green | 194 |
-| Cyan | 330 |
-| Blue | 169 |
+| Red | 467 |
+| Yellow | 622 |
+| Green | 196 |
+| Cyan | 329 |
+| Blue | 170 |
 | Magenta | 74 |
 | Neutral | 161 |
 
 Within the 161 Neutral records:
 
 - 4 have value at or below 10 percent.
-- 122 have value between 10 and 90 percent.
-- 35 have value at or above 90 percent.
+- 124 have value between 10 and 90 percent.
+- 33 have value at or above 90 percent.
 
 This distribution supports one Neutral filter for V1.
 
@@ -339,3 +348,45 @@ cross-collection alternatives, and user-saved collections.
 
 The V1 index stores numeric HSV values so these features do not require a new
 catalog format.
+
+## Full Tree
+
+```
+Quick Material Colors
+├── Version 1.15.1
+│
+├── [✓] Selected Nodes Only
+├── [✓] Rename Material
+├── [✓] Set Viewport Color
+├── [✓] Set World Background
+│
+├── Color Finder (sub-panel)
+│   ├── Search
+│   │   └── [________________________________]
+│   ├── Sort
+│   │   ├── [Relevance ▾]
+│   │   └── [Ascending / Descending]
+│   ├── Hue
+│   │   ├── [All]             [Neutral]
+│   │   ├── [Red]   [Yellow]    [Green]
+│   │   └── [Cyan]   [Blue]   [Magenta]
+│   ├── Filter by Collection (collapsible)
+│   │   ├── [All] [Clear]
+│   │   ├── [✓] Collection Name
+│   │   ├── [ ] Collection Name
+│   │   └── ...
+│   └── Results
+│       ├── 2,024 matches
+│       ├── ■ [Color Name · Collection Name]
+│       ├── ■ [Color Name · Collection Name]
+│       ├── ...
+│       └── [Show More]
+│
+└── Browse Collections (sub-panel)
+    ├── Collection Name
+    │   └── Sub-collection Name
+    │       ├── [Swatch] [Color Name]
+    │       ├── [Swatch] [Color Name]
+    │       └── ...
+    └── ...
+```

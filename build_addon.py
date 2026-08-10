@@ -1,6 +1,7 @@
 # Build both Blender QMC editions with: python3 build_addon.py
-# Run this command from the project root. It writes QMC_<version>.zip and
-# QMC_PLUS_<version>.zip beside this script, without changing the source folders.
+# Run this command from the project root. It validates the generated Color
+# Finder indexes, then writes QMC_<version>.zip and QMC_PLUS_<version>.zip beside
+# this script without changing the source folders.
 
 from __future__ import annotations
 
@@ -9,6 +10,8 @@ import shutil
 import tempfile
 import zipfile
 from pathlib import Path
+
+from generate_color_indexes import check_indexes
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent
@@ -39,9 +42,12 @@ def required_personal_icons(ds_source: Path) -> set[str]:
 
 def apply_qmc_plus_overlay(addon: Path) -> None:
     ds_source = PERSONAL_OVERLAY / "color_sets" / "ds.py"
+    index_source = PERSONAL_OVERLAY / "color_index_plus.py"
     overlay_icons = PERSONAL_OVERLAY / "icons"
-    if not ds_source.is_file() or not overlay_icons.is_dir():
-        raise FileNotFoundError("QMC+ needs qmc-plus/color_sets/ds.py and icons/.")
+    if not ds_source.is_file() or not index_source.is_file() or not overlay_icons.is_dir():
+        raise FileNotFoundError(
+            "QMC+ needs qmc-plus/color_sets/ds.py, color_index_plus.py, and icons/."
+        )
 
     missing_icons = [
         icon for icon in sorted(required_personal_icons(ds_source))
@@ -51,6 +57,7 @@ def apply_qmc_plus_overlay(addon: Path) -> None:
         raise FileNotFoundError(f"QMC+ is missing icon files: {', '.join(missing_icons)}")
 
     shutil.copy2(ds_source, addon / "color_sets" / "ds.py")
+    shutil.copy2(index_source, addon / "color_index_plus.py")
     for icon in overlay_icons.iterdir():
         if icon.is_file() and icon.name not in SKIP_NAMES:
             shutil.copy2(icon, addon / "icons" / icon.name)
@@ -111,6 +118,7 @@ def build(addon_name: str, archive_name: str, include_personal: bool) -> Path:
 
 
 def main() -> None:
+    check_indexes()
     source_init = SHARED_SOURCE / "__init__.py"
     if not source_init.is_file():
         raise FileNotFoundError("Missing qmc-shared/__init__.py.")
