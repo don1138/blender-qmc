@@ -691,16 +691,6 @@ class WGSN_DeepGreen(bpy.types.Operator):
 class WGSN_RadiantEarth(bpy.types.Operator):
     """Radiant Earth (Coloro 017-42-31)"""
     bl_label = "Radiant Earth"
-    bl_idname = 'color.wgsn_radiant_earth'
-
-    def execute(self, context):
-        set_base_color(0xeaa6c5, self.bl_label)
-        return {'FINISHED'}
-
-
-class WGSN_RadiantEarth(bpy.types.Operator):
-    """Radiant Earth (Coloro 017-42-31)"""
-    bl_label = "Radiant Earth"
     bl_idname = "color.wgsn_radiant_earth"
 
     def execute(self, context):
