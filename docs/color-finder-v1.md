@@ -15,17 +15,36 @@ nearest-color filtering.
 ## Interface
 
 Color Finder is a persistent sub-panel inside the Quick Material Colors panel
-in the 3D Viewport sidebar. It is not a floating popup.
+in the 3D Viewport sidebar. It is not a floating popup. The installed add-on
+version appears directly below the Quick Material Colors title and is read from
+`bl_info["version"]` rather than stored as a second version string.
 
-The panel contains:
+The top-level panel hierarchy is:
+
+```text
+Quick Material Colors
+├── Version
+├── Selected Nodes Only
+├── Rename Material
+├── Set Viewport Color
+├── Set World Background
+├── Color Finder
+└── Browse Collections
+    └── Existing collection and sub-collection panels
+```
+
+Color Finder contains:
 
 1. A text search field.
-2. Single-choice hue filters.
-3. A collapsible, multi-select Collections section.
-4. Sort and direction controls.
+2. Compact sort and direction controls.
+3. Single-choice hue filters.
+4. A collapsible, multi-select Filter by Collection section.
 5. A consolidated results list.
 
-The existing collection panels remain unchanged in V1.
+Browse Collections wraps the existing collection panels so the entire catalog
+browser can be collapsed at once. Existing top-level collection panels are
+reparented from Quick Material Colors to Browse Collections. Their internal
+sub-collection panels and color buttons otherwise remain unchanged in V1.
 
 ### Text search
 
@@ -49,6 +68,19 @@ V1 allows one hue filter at a time:
 - Magenta
 - Neutral
 
+The controls use text-only buttons. Blender's depressed-button state identifies
+the active filter; no color chips appear beside the labels. The preferred
+layout is:
+
+```text
+[       All       ] [    Neutral    ]
+[ Red   ] [ Yellow ] [ Green       ]
+[ Cyan  ] [ Blue   ] [ Magenta     ]
+```
+
+The implementation may use Blender's adaptive grid layout to reduce the column
+count when the sidebar is too narrow.
+
 Chromatic colors use six 60-degree HSV hue ranges centered on the standard RGB
 and CMY hue anchors:
 
@@ -70,8 +102,10 @@ Neutral filter. Thresholds remain subject to visual review before implementation
 
 ### Collection filters
 
-Collections appear as persistent checkboxes in a collapsible Collections
-section. Users may select any number of collections.
+Collections appear as persistent checkboxes in a collapsible Filter by
+Collection section inside Color Finder. This is distinct from the Browse
+Collections sub-panel containing the existing palette browser. Users may
+select any number of collections.
 
 - Selected collections use OR logic with each other.
 - Collection, hue, and text filters use AND logic with each other.
@@ -163,10 +197,14 @@ V1 provides:
 - Alphabetical
 - Collection
 
+The three options appear in one dropdown, which shows only the active sort
+label. A compact adjacent arrow icon toggles ascending and descending order.
+The icon has an Ascending or Descending tooltip and is disabled for Relevance.
+
 Alphabetical and Collection support ascending and descending directions.
 Collection sort groups by collection name, then sorts by color label within
 each collection. Relevance is disabled or unavailable when there is no text
-query.
+query and always uses its defined ranking direction.
 
 ## Master color-list records
 
