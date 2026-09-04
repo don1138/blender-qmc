@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Added
 
-- Added the 39-color **QMC Select** collection to the public QMC edition
+- Added the 46-color **QMC Select** collection to the public QMC edition
 
 ### Changed
 

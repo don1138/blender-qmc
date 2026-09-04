@@ -63,6 +63,14 @@ class BUFF(bpy.types.Operator):
         set_base_color(0xE0AB76, self.bl_label)
         return {'FINISHED'}
 
+class GAMBOGE(bpy.types.Operator):
+    """Gamboge"""
+    bl_label = "Gamboge"
+    bl_idname = 'color.gamboge'
+    def execute(self, context):
+        set_base_color(0xE49B0F, self.bl_label)
+        return {'FINISHED'}
+
 class COSMIC_LATTE(bpy.types.Operator):
     """Cosmic Latte"""
     bl_label = "Cosmic Latte"
@@ -93,6 +101,22 @@ class FINALLY_HEALING(bpy.types.Operator):
     bl_idname = 'color.finally_healing'
     def execute(self, context):
         set_base_color(0xEBE094, self.bl_label)
+        return {'FINISHED'}
+
+class CELADON(bpy.types.Operator):
+    """Celadon"""
+    bl_label = "Celadon"
+    bl_idname = 'color.celadon'
+    def execute(self, context):
+        set_base_color(0xACE1AF, self.bl_label)
+        return {'FINISHED'}
+
+class FELDGRAU(bpy.types.Operator):
+    """Feldgrau"""
+    bl_label = "Feldgrau"
+    bl_idname = 'color.feldgrau'
+    def execute(self, context):
+        set_base_color(0x4D5D53, self.bl_label)
         return {'FINISHED'}
 
 class COSMIC_SPECTRUM_GREEN(bpy.types.Operator):
@@ -127,6 +151,14 @@ class OLO(bpy.types.Operator):
         set_base_color(0x00FFCC, self.bl_label)
         return {'FINISHED'}
 
+class MARRS_GREEN(bpy.types.Operator):
+    """Marrs Green"""
+    bl_label = "Marrs Green"
+    bl_idname = 'color.marrs_green'
+    def execute(self, context):
+        set_base_color(0x008C8C, self.bl_label)
+        return {'FINISHED'}
+
 class CERULEAN(bpy.types.Operator):
     """Cerulean"""
     bl_label = "Cerulean"
@@ -141,6 +173,22 @@ class CERULEAN_GREEN(bpy.types.Operator):
     bl_idname = 'color.cerulean_green'
     def execute(self, context):
         set_base_color(0x007BA7, self.bl_label)
+        return {'FINISHED'}
+
+class GLAUCOUS(bpy.types.Operator):
+    """Glaucous"""
+    bl_label = "Glaucous"
+    bl_idname = 'color.glaucous'
+    def execute(self, context):
+        set_base_color(0x6082B6, self.bl_label)
+        return {'FINISHED'}
+
+class YINMN_BLUE(bpy.types.Operator):
+    """YInMn Blue"""
+    bl_label = "YInMn Blue"
+    bl_idname = 'color.yinmn_blue'
+    def execute(self, context):
+        set_base_color(0x2E5090, self.bl_label)
         return {'FINISHED'}
 
 class KLEIN_BLUE(bpy.types.Operator):
@@ -247,6 +295,14 @@ class CERISE(bpy.types.Operator):
         set_base_color(0xFF00BF, self.bl_label)
         return {'FINISHED'}
 
+class MOUNTBATTEN_PINK(bpy.types.Operator):
+    """Mountbatten Pink"""
+    bl_label = "Mountbatten Pink"
+    bl_idname = 'color.mountbatten_pink'
+    def execute(self, context):
+        set_base_color(0x997A8D, self.bl_label)
+        return {'FINISHED'}
+
 class AUBERGINE(bpy.types.Operator):
     """Aubergine"""
     bl_label = "Aubergine"
@@ -345,16 +401,22 @@ class QMCSelectPanel(bpy.types.Panel):
         scol.label(text="", icon_value=g.c_icons["persimmon"].icon_id)
         scol.label(text="", icon_value=g.c_icons["persian_orange"].icon_id)
         scol.label(text="", icon_value=g.c_icons["buff"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["gamboge"].icon_id)
         scol.label(text="", icon_value=g.c_icons["cosmic_latte"].icon_id)
         scol.label(text="", icon_value=g.c_icons["amber"].icon_id)
         scol.label(text="", icon_value=g.c_icons["saffron"].icon_id)
         scol.label(text="", icon_value=g.c_icons["finally_healing"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["celadon"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["feldgrau"].icon_id)
         scol.label(text="", icon_value=g.c_icons["cosmic_spectrum_green"].icon_id)
         scol.label(text="", icon_value=g.c_icons["phthalo_green"].icon_id)
         scol.label(text="", icon_value=g.c_icons["viridian"].icon_id)
         scol.label(text="", icon_value=g.c_icons["olo"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["marrs_green"].icon_id)
         scol.label(text="", icon_value=g.c_icons["cerulean"].icon_id)
         scol.label(text="", icon_value=g.c_icons["cerulean_green"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["glaucous"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["yinmn_blue"].icon_id)
         scol.label(text="", icon_value=g.c_icons["klein_blue"].icon_id)
         scol.label(text="", icon_value=g.c_icons["cerulean_blue"].icon_id)
         scol.label(text="", icon_value=g.c_icons["phthalo_blue"].icon_id)
@@ -368,6 +430,7 @@ class QMCSelectPanel(bpy.types.Panel):
         scol.label(text="", icon_value=g.c_icons["heliotrope"].icon_id)
         scol.label(text="", icon_value=g.c_icons["deeply_uncomfortable"].icon_id)
         scol.label(text="", icon_value=g.c_icons["cerise"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["mountbatten_pink"].icon_id)
         scol.label(text="", icon_value=g.c_icons["aubergine"].icon_id)
         scol.label(text="", icon_value=g.c_icons["baker_miller_pink"].icon_id)
         scol.label(text="", icon_value=g.c_icons["crimson"].icon_id)
@@ -388,16 +451,22 @@ class QMCSelectPanel(bpy.types.Panel):
         scol.operator("color.persimmon", text="Persimmon")
         scol.operator("color.persian_orange", text="Persian Orange")
         scol.operator("color.buff", text="Buff")
+        scol.operator("color.gamboge", text="Gamboge")
         scol.operator("color.cosmic_latte", text="Cosmic Latte")
         scol.operator("color.amber", text="Amber")
         scol.operator("color.saffron", text="Saffron")
         scol.operator("color.finally_healing", text="Finally Healing")
+        scol.operator("color.celadon", text="Celadon")
+        scol.operator("color.feldgrau", text="Feldgrau")
         scol.operator("color.cosmic_spectrum_green", text="Cosmic Spectrum Green")
         scol.operator("color.phthalo_green", text="Phthalo Green")
         scol.operator("color.viridian", text="Viridian")
         scol.operator("color.olo", text="Olo")
+        scol.operator("color.marrs_green", text="Marrs Green")
         scol.operator("color.cerulean", text="Cerulean")
         scol.operator("color.cerulean_green", text="Cerulean Green")
+        scol.operator("color.glaucous", text="Glaucous")
+        scol.operator("color.yinmn_blue", text="YInMn Blue")
         scol.operator("color.klein_blue", text="Klein Blue")
         scol.operator("color.cerulean_blue", text="Cerulean Blue")
         scol.operator("color.phthalo_blue", text="Phthalo Blue")
@@ -411,6 +480,7 @@ class QMCSelectPanel(bpy.types.Panel):
         scol.operator("color.heliotrope", text="Heliotrope")
         scol.operator("color.deeply_uncomfortable", text="Deeply Uncomfortable")
         scol.operator("color.cerise", text="Cerise")
+        scol.operator("color.mountbatten_pink", text="Mountbatten Pink")
         scol.operator("color.aubergine", text="Aubergine")
         scol.operator("color.baker_miller_pink", text="Baker-Miller Pink")
         scol.operator("color.crimson", text="Crimson")
@@ -432,16 +502,22 @@ array_qmc_select = [
     PERSIMMON,
     PERSIAN_ORANGE,
     BUFF,
+    GAMBOGE,
     COSMIC_LATTE,
     AMBER,
     SAFFRON,
     FINALLY_HEALING,
+    CELADON,
+    FELDGRAU,
     COSMIC_SPECTRUM_GREEN,
     PHTHALO_GREEN,
     VIRIDIAN,
     OLO,
+    MARRS_GREEN,
     CERULEAN,
     CERULEAN_GREEN,
+    GLAUCOUS,
+    YINMN_BLUE,
     KLEIN_BLUE,
     CERULEAN_BLUE,
     PHTHALO_BLUE,
@@ -455,6 +531,7 @@ array_qmc_select = [
     HELIOTROPE,
     DEEPLY_UNCOMFORTABLE,
     CERISE,
+    MOUNTBATTEN_PINK,
     AUBERGINE,
     BAKER_MILLER_PINK,
     CRIMSON,
