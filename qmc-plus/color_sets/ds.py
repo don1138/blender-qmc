@@ -119,87 +119,6 @@ class PMS_7499U(bpy.types.Operator):
         set_base_color(0xf6edca, self.bl_label)
         return {'FINISHED'}
 
-class DEEPLY_UNCOMFORTABLE(bpy.types.Operator):
-    """Deeply Uncomfortable"""
-    bl_label = "Deeply Uncomfortable"
-    bl_idname = 'color.deeply_uncomfortable'
-    def execute(self, context):
-        set_base_color(0x412a42, self.bl_label)
-        return {'FINISHED'}
-
-class BAKER_MILLER_PINK(bpy.types.Operator):
-    """Baker-Miller Pink"""
-    bl_label = "Baker-Miller Pink"
-    bl_idname = 'color.baker_miller_pink'
-    def execute(self, context):
-        set_base_color(0xFF91AF, self.bl_label)
-        return {'FINISHED'}
-
-class FINALLY_HEALING(bpy.types.Operator):
-    """Finally Healing"""
-    bl_label = "Finally Healing"
-    bl_idname = 'color.finally_healing'
-    def execute(self, context):
-        set_base_color(0xebe094, self.bl_label)
-        return {'FINISHED'}
-
-class COSMIC_LATTE(bpy.types.Operator):
-    """Cosmic Latte"""
-    bl_label = "Cosmic Latte"
-    bl_idname = 'color.cosmic_latte'
-    def execute(self, context):
-        set_base_color(0xfff8e7, self.bl_label)
-        return {'FINISHED'}
-
-class COSMIC_SPECTRUM_GREEN(bpy.types.Operator):
-    """Cosmic Spectrum Green"""
-    bl_label = "Cosmic Spectrum Green"
-    bl_idname = 'color.cosmic_spectrum_green'
-    def execute(self, context):
-        set_base_color(0x9cffce, self.bl_label)
-        return {'FINISHED'}
-
-class REAL_BLACK(bpy.types.Operator):
-    """Real Black (Eigengrau)"""
-    bl_label = "Real Black"
-    bl_idname = 'color.real_black'
-    def execute(self, context):
-        set_base_color(0x292724, self.bl_label)
-        return {'FINISHED'}
-
-class REAL_WHITE(bpy.types.Operator):
-    """Real White"""
-    bl_label = "Real White"
-    bl_idname = 'color.real_white'
-    def execute(self, context):
-        set_base_color(0xD6D8DB, self.bl_label)
-        return {'FINISHED'}
-
-class SAFETY_BLACK(bpy.types.Operator):
-    """Non-Zero Black (0.01, 0.01, 0.01) for use in CGI"""
-    bl_label = "Safety Black"
-    bl_idname = 'color.safety_black'
-    def execute(self, context):
-        set_base_color(0x191919, self.bl_label)
-        return {'FINISHED'}
-
-class TRUE_BLACK(bpy.types.Operator):
-    """True Black (Eigengrau)"""
-    bl_label = "True Black (Eigengrau)"
-    bl_idname = 'color.true_black'
-    def execute(self, context):
-        set_base_color(0x16161d, self.bl_label)
-        return {'FINISHED'}
-
-class TRUE_WHITE(bpy.types.Operator):
-    """True White"""
-    bl_label = "True White"
-    bl_idname = 'color.true_white'
-    def execute(self, context):
-        set_base_color(0xE9E9E2, self.bl_label)
-        return {'FINISHED'}
-
-
 # DON1138 SELECT PANEL
 class DON1138Panel(bpy.types.Panel):
     bl_idname = "DON1138_PT_Panel"
@@ -289,55 +208,11 @@ class DON1138SafePanel(bpy.types.Panel):
         scol.operator("color.pms_7499_u", text="PMS 7499 U")
 
 
-# DON1138 ALSO
-class DON1138AlsoPanel(bpy.types.Panel):
-    bl_idname = "DON1138_ALSO_PT_Panel"
-    bl_label = "    Also"
-    bl_space_type = "VIEW_3D"
-    bl_region_type = "UI"
-    bl_category = "Quick Tools"
-    bl_parent_id = 'DON1138_PT_Panel'
-    bl_options = {'DEFAULT_CLOSED'}
-
-    def draw(self, context):
-        g.c_icons
-        layout = self.layout
-
-        srow = layout.row()
-        scol = srow.column(align=True)
-        scol.scale_y = 1.25
-        scol.label(text="", icon_value=g.c_icons["deeply_uncomfortable"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["baker_miller_pink"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["finally_healing"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["cosmic_latte"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["cosmic_spectrum_green"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["real_black"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["real_white"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["true_black"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["true_white"].icon_id)
-        scol.label(text="", icon_value=g.c_icons["safety_black"].icon_id)
-
-        scol = srow.column(align=True)
-        scol.scale_y = 1.25
-        scol.scale_x = 3.0
-        scol.operator("color.deeply_uncomfortable", text="Deeply Uncomfortable")
-        scol.operator("color.baker_miller_pink", text="Baker-Miller Pink")
-        scol.operator("color.finally_healing", text="Finally Healing")
-        scol.operator("color.cosmic_latte", text="Cosmic Latte")
-        scol.operator("color.cosmic_spectrum_green", text="Cosmic Spectrum Green")
-        scol.operator("color.real_black", text="Real Black")
-        scol.operator("color.real_white", text="Real White")
-        scol.operator("color.true_black", text="True Black (Eigengrau)")
-        scol.operator("color.true_white", text="True White")
-        scol.operator("color.safety_black", text="Safety Black")
-
-
 # DON1138 SELECT CLASSES
 array_ds = [
     DON1138Panel,
     DON1138TruePanel,
     DON1138SafePanel,
-    DON1138AlsoPanel,    
     DON_GREEN,
     PMS_381U,
     DON_RED,
@@ -352,14 +227,4 @@ array_ds = [
     PMS_7518U,
     DON_WHITE,
     PMS_7499U,
-    DEEPLY_UNCOMFORTABLE,
-    BAKER_MILLER_PINK,
-    FINALLY_HEALING,
-    COSMIC_LATTE,
-    COSMIC_SPECTRUM_GREEN,
-    REAL_BLACK,
-    REAL_WHITE,
-    SAFETY_BLACK,
-    TRUE_BLACK,
-    TRUE_WHITE,
 ]

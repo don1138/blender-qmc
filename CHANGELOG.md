@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.17.0] - 2026-09-04
+
+### Added
+
+- Added the 39-color **QMC Select** collection to the public QMC edition
+
+### Changed
+
+- Moved the former **Don1138 Select > Also** colors into **QMC Select**
+- Kept **Don1138 Select > True** and **Don1138 Select > Safe** exclusive to QMC Plus
+
 ## [1.16.2] - 2026-08-14
 
 ### Changed

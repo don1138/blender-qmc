@@ -70,8 +70,8 @@ def apply_qmc_plus_overlay(addon: Path) -> None:
             '"name"       : "QMC+ (Quick Material Colors Plus)",',
         ),
         (
-            "# IMPORT PANELS\nfrom .color_sets.ams_595a import *",
-            "# IMPORT PANELS\nfrom .color_sets.ds import *\nfrom .color_sets.ams_595a import *",
+            "# IMPORT PANELS\nfrom .color_sets.qmc_select import *",
+            "# IMPORT PANELS\nfrom .color_sets.ds import *\nfrom .color_sets.qmc_select import *",
         ),
         (
             "classes = [\n   *array_int,",

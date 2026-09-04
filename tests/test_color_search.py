@@ -173,10 +173,17 @@ class GeneratedIndexTests(unittest.TestCase):
     def test_generated_indexes_have_expected_active_counts(self):
         public = load_index(PROJECT_ROOT / "qmc-shared" / "color_index.py")
         plus = load_index(PROJECT_ROOT / "qmc-plus" / "color_index_plus.py")
-        self.assertEqual(len(public), 1995)
-        self.assertEqual(len(plus), 24)
+        self.assertEqual(len(public), 2034)
+        self.assertEqual(len(plus), 14)
+        self.assertEqual(
+            sum(item["collection_key"] == "qmc:qmc_select" for item in public),
+            39,
+        )
+        self.assertTrue(
+            all(item["collection_key"] == "qmc_plus:ds" for item in plus)
+        )
         combined = public + plus
-        self.assertEqual(len({item["id"] for item in combined}), 2019)
+        self.assertEqual(len({item["id"] for item in combined}), 2048)
         self.assertTrue(all(item["collection_key"].startswith(f'{item["source"]}:') for item in combined))
 
 
