@@ -31,6 +31,22 @@ class VERMILION(bpy.types.Operator):
         set_base_color(0xFF4000, self.bl_label)
         return {'FINISHED'}
 
+class ELEPHANTS_BREATH(bpy.types.Operator):
+    """Elephant’s Breath"""
+    bl_label = "Elephant’s Breath"
+    bl_idname = 'color.elephants_breath'
+    def execute(self, context):
+        set_base_color(0xB7A69F, self.bl_label)
+        return {'FINISHED'}
+
+class BEARS_EAR(bpy.types.Operator):
+    """Bear’s Ear"""
+    bl_label = "Bear’s Ear"
+    bl_idname = 'color.bears_ear'
+    def execute(self, context):
+        set_base_color(0x563426, self.bl_label)
+        return {'FINISHED'}
+
 class INTERNATIONAL_ORANGE_AEROSPACE(bpy.types.Operator):
     """International Orange Aerospace"""
     bl_label = "International Orange Aerospace"
@@ -95,12 +111,44 @@ class SAFFRON(bpy.types.Operator):
         set_base_color(0xF4C430, self.bl_label)
         return {'FINISHED'}
 
+class LOST_LAMB(bpy.types.Operator):
+    """Lost Lamb"""
+    bl_label = "Lost Lamb"
+    bl_idname = 'color.lost_lamb'
+    def execute(self, context):
+        set_base_color(0xD2CFC4, self.bl_label)
+        return {'FINISHED'}
+
 class FINALLY_HEALING(bpy.types.Operator):
     """Finally Healing"""
     bl_label = "Finally Healing"
     bl_idname = 'color.finally_healing'
     def execute(self, context):
         set_base_color(0xEBE094, self.bl_label)
+        return {'FINISHED'}
+
+class CHOU(bpy.types.Operator):
+    """Chou"""
+    bl_label = "Chou"
+    bl_idname = 'color.chou'
+    def execute(self, context):
+        set_base_color(0xA6A267, self.bl_label)
+        return {'FINISHED'}
+
+class SERPENT_GREEN(bpy.types.Operator):
+    """Serpent Green"""
+    bl_label = "Serpent Green"
+    bl_idname = 'color.serpent_green'
+    def execute(self, context):
+        set_base_color(0x6A6C3D, self.bl_label)
+        return {'FINISHED'}
+
+class ALDEHYDE_GREEN(bpy.types.Operator):
+    """Aldehyde Green (Emeraldine)"""
+    bl_label = "Aldehyde Green (Emeraldine)"
+    bl_idname = 'color.aldehyde_green'
+    def execute(self, context):
+        set_base_color(0x789447, self.bl_label)
         return {'FINISHED'}
 
 class CELADON(bpy.types.Operator):
@@ -117,6 +165,14 @@ class FELDGRAU(bpy.types.Operator):
     bl_idname = 'color.feldgrau'
     def execute(self, context):
         set_base_color(0x4D5D53, self.bl_label)
+        return {'FINISHED'}
+
+class GASLIGHT_GREEN(bpy.types.Operator):
+    """Gaslight Green"""
+    bl_label = "Gaslight Green"
+    bl_idname = 'color.gaslight_green'
+    def execute(self, context):
+        set_base_color(0x3F7658, self.bl_label)
         return {'FINISHED'}
 
 class COSMIC_SPECTRUM_GREEN(bpy.types.Operator):
@@ -205,6 +261,14 @@ class CERULEAN_BLUE(bpy.types.Operator):
     bl_idname = 'color.cerulean_blue'
     def execute(self, context):
         set_base_color(0x2A52BE, self.bl_label)
+        return {'FINISHED'}
+
+class PIGEON_BLUE(bpy.types.Operator):
+    """Pigeon Blue"""
+    bl_label = "Pigeon Blue"
+    bl_idname = 'color.pigeon_blue'
+    def execute(self, context):
+        set_base_color(0x4B506D, self.bl_label)
         return {'FINISHED'}
 
 class PHTHALO_BLUE(bpy.types.Operator):
@@ -335,6 +399,22 @@ class ALIZARIN_CRIMSON(bpy.types.Operator):
         set_base_color(0xE32636, self.bl_label)
         return {'FINISHED'}
 
+class PIGEONS_BLOOD(bpy.types.Operator):
+    """Pigeon’s Blood"""
+    bl_label = "Pigeon’s Blood"
+    bl_idname = 'color.pigeons_blood'
+    def execute(self, context):
+        set_base_color(0x9E1B20, self.bl_label)
+        return {'FINISHED'}
+
+class SETTLED_GRIEF(bpy.types.Operator):
+    """Settled Grief"""
+    bl_label = "Settled Grief"
+    bl_idname = 'color.settled_grief'
+    def execute(self, context):
+        set_base_color(0x4A4646, self.bl_label)
+        return {'FINISHED'}
+
 class SAFETY_BLACK(bpy.types.Operator):
     """Safety Black"""
     bl_label = "Safety Black"
@@ -397,6 +477,8 @@ class QMCSelectPanel(bpy.types.Panel):
         scol.label(text="", icon_value=g.c_icons["international_orange_engineering"].icon_id)
         scol.label(text="", icon_value=g.c_icons["scarlet"].icon_id)
         scol.label(text="", icon_value=g.c_icons["vermilion"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["elephants_breath"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["bears_ear"].icon_id)
         scol.label(text="", icon_value=g.c_icons["international_orange_aerospace"].icon_id)
         scol.label(text="", icon_value=g.c_icons["persimmon"].icon_id)
         scol.label(text="", icon_value=g.c_icons["persian_orange"].icon_id)
@@ -405,9 +487,14 @@ class QMCSelectPanel(bpy.types.Panel):
         scol.label(text="", icon_value=g.c_icons["cosmic_latte"].icon_id)
         scol.label(text="", icon_value=g.c_icons["amber"].icon_id)
         scol.label(text="", icon_value=g.c_icons["saffron"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["lost_lamb"].icon_id)
         scol.label(text="", icon_value=g.c_icons["finally_healing"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["chou"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["serpent_green"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["aldehyde_green"].icon_id)
         scol.label(text="", icon_value=g.c_icons["celadon"].icon_id)
         scol.label(text="", icon_value=g.c_icons["feldgrau"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["gaslight_green"].icon_id)
         scol.label(text="", icon_value=g.c_icons["cosmic_spectrum_green"].icon_id)
         scol.label(text="", icon_value=g.c_icons["phthalo_green"].icon_id)
         scol.label(text="", icon_value=g.c_icons["viridian"].icon_id)
@@ -419,6 +506,7 @@ class QMCSelectPanel(bpy.types.Panel):
         scol.label(text="", icon_value=g.c_icons["yinmn_blue"].icon_id)
         scol.label(text="", icon_value=g.c_icons["klein_blue"].icon_id)
         scol.label(text="", icon_value=g.c_icons["cerulean_blue"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["pigeon_blue"].icon_id)
         scol.label(text="", icon_value=g.c_icons["phthalo_blue"].icon_id)
         scol.label(text="", icon_value=g.c_icons["lavender"].icon_id)
         scol.label(text="", icon_value=g.c_icons["periwinkle"].icon_id)
@@ -435,6 +523,8 @@ class QMCSelectPanel(bpy.types.Panel):
         scol.label(text="", icon_value=g.c_icons["baker_miller_pink"].icon_id)
         scol.label(text="", icon_value=g.c_icons["crimson"].icon_id)
         scol.label(text="", icon_value=g.c_icons["alizarin_crimson"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["pigeons_blood"].icon_id)
+        scol.label(text="", icon_value=g.c_icons["settled_grief"].icon_id)
         scol.label(text="", icon_value=g.c_icons["real_black"].icon_id)
         scol.label(text="", icon_value=g.c_icons["real_white"].icon_id)
         scol.label(text="", icon_value=g.c_icons["true_black"].icon_id)
@@ -447,6 +537,8 @@ class QMCSelectPanel(bpy.types.Panel):
         scol.operator("color.international_orange_engineering", text="International Orange Engineering")
         scol.operator("color.scarlet", text="Scarlet")
         scol.operator("color.vermilion", text="Vermilion")
+        scol.operator("color.elephants_breath", text="Elephant’s Breath")
+        scol.operator("color.bears_ear", text="Bear’s Ear")
         scol.operator("color.international_orange_aerospace", text="International Orange Aerospace")
         scol.operator("color.persimmon", text="Persimmon")
         scol.operator("color.persian_orange", text="Persian Orange")
@@ -455,9 +547,14 @@ class QMCSelectPanel(bpy.types.Panel):
         scol.operator("color.cosmic_latte", text="Cosmic Latte")
         scol.operator("color.amber", text="Amber")
         scol.operator("color.saffron", text="Saffron")
+        scol.operator("color.lost_lamb", text="Lost Lamb")
         scol.operator("color.finally_healing", text="Finally Healing")
+        scol.operator("color.chou", text="Chou")
+        scol.operator("color.serpent_green", text="Serpent Green")
+        scol.operator("color.aldehyde_green", text="Aldehyde Green (Emeraldine)")
         scol.operator("color.celadon", text="Celadon")
         scol.operator("color.feldgrau", text="Feldgrau")
+        scol.operator("color.gaslight_green", text="Gaslight Green")
         scol.operator("color.cosmic_spectrum_green", text="Cosmic Spectrum Green")
         scol.operator("color.phthalo_green", text="Phthalo Green")
         scol.operator("color.viridian", text="Viridian")
@@ -469,6 +566,7 @@ class QMCSelectPanel(bpy.types.Panel):
         scol.operator("color.yinmn_blue", text="YInMn Blue")
         scol.operator("color.klein_blue", text="Klein Blue")
         scol.operator("color.cerulean_blue", text="Cerulean Blue")
+        scol.operator("color.pigeon_blue", text="Pigeon Blue")
         scol.operator("color.phthalo_blue", text="Phthalo Blue")
         scol.operator("color.lavender", text="Lavender")
         scol.operator("color.periwinkle", text="Periwinkle")
@@ -485,6 +583,8 @@ class QMCSelectPanel(bpy.types.Panel):
         scol.operator("color.baker_miller_pink", text="Baker-Miller Pink")
         scol.operator("color.crimson", text="Crimson")
         scol.operator("color.alizarin_crimson", text="Alizarin Crimson")
+        scol.operator("color.pigeons_blood", text="Pigeon’s Blood")
+        scol.operator("color.settled_grief", text="Settled Grief")
         scol.operator("color.real_black", text="Real Black")
         scol.operator("color.real_white", text="Real White")
         scol.operator("color.true_black", text="True Black (Eigengrau)")
@@ -498,6 +598,8 @@ array_qmc_select = [
     INTERNATIONAL_ORANGE_ENGINEERING,
     SCARLET,
     VERMILION,
+    ELEPHANTS_BREATH,
+    BEARS_EAR,
     INTERNATIONAL_ORANGE_AEROSPACE,
     PERSIMMON,
     PERSIAN_ORANGE,
@@ -506,9 +608,14 @@ array_qmc_select = [
     COSMIC_LATTE,
     AMBER,
     SAFFRON,
+    LOST_LAMB,
     FINALLY_HEALING,
+    CHOU,
+    SERPENT_GREEN,
+    ALDEHYDE_GREEN,
     CELADON,
     FELDGRAU,
+    GASLIGHT_GREEN,
     COSMIC_SPECTRUM_GREEN,
     PHTHALO_GREEN,
     VIRIDIAN,
@@ -520,6 +627,7 @@ array_qmc_select = [
     YINMN_BLUE,
     KLEIN_BLUE,
     CERULEAN_BLUE,
+    PIGEON_BLUE,
     PHTHALO_BLUE,
     LAVENDER,
     PERIWINKLE,
@@ -536,6 +644,8 @@ array_qmc_select = [
     BAKER_MILLER_PINK,
     CRIMSON,
     ALIZARIN_CRIMSON,
+    PIGEONS_BLOOD,
+    SETTLED_GRIEF,
     REAL_BLACK,
     REAL_WHITE,
     TRUE_BLACK,
